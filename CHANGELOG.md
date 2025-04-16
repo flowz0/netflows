@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/flowz0/netflows-website/compare/v1.0.0...v1.0.1) (2025-04-16)
+
+
+### Bug Fixes
+
+* update node-version ([adbf16b](https://github.com/flowz0/netflows-website/commit/adbf16bf3260d6dd3047fa51d2f91ca274b31374))
+
 # 1.0.0 (2025-04-16)
 
 
