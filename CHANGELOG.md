@@ -1,3 +1,16 @@
+# [1.1.0](https://github.com/flowz0/netflows/compare/v1.0.1...v1.1.0) (2025-04-17)
+
+
+### Bug Fixes
+
+* add two sections to test navbar ([bc0029b](https://github.com/flowz0/netflows/commit/bc0029b1fc16b7f5b28712c0c3661b7951b3e259))
+
+
+### Features
+
+* create page not-found ([758c55a](https://github.com/flowz0/netflows/commit/758c55aa80d386c1bec32102139762596517a1d9))
+* implement responsive navbar ([6636b37](https://github.com/flowz0/netflows/commit/6636b3766edac437ef2b6e0416137d2d8654fc3e))
+
 ## [1.0.1](https://github.com/flowz0/netflows-website/compare/v1.0.0...v1.0.1) (2025-04-16)
 
 
