@@ -39,16 +39,17 @@ export default function NavBar() {
             : <Image src={BrandLogo} alt="Netflows logo" className="h-28 w-auto" draggable="false" priority />
           }
         </Link>
+
         {/* Desktop Links */}
-        <ul className="hidden font-bold sm:flex sm:gap-x-4">
+        <ul className="hidden font-bold text-lg sm:flex sm:gap-x-4">
           {Links.map((link) => (
             <li key={link.href} className="group">
               <Link
                 href={link.href}
                 className={`${pathname === link.href
                   ? "text-[#01BAEF]"
-                  : "hover:text-[#01BAEF] group-last:hover:text-[#FBFBFF]"
-                  } group-last:text-[#FBFBFF] group-last:bg-[#01BAEF] group-last:px-4 group-last:py-2 group-last:rounded-lg group-last:hover:bg-[hsl(193,99%,37%)]`}
+                  : "hover:text-[#01BAEF] group-last:hover:text-[#040F16]"
+                  } group-last:text-[#040F16] group-last:bg-[#01BAEF] group-last:px-4 group-last:py-2 group-last:rounded-lg group-last:hover:bg-[hsl(193,99%,37%)]`}
               >
                 {link.name}
               </Link>
@@ -60,7 +61,7 @@ export default function NavBar() {
         <button
           type="button"
           onClick={() => setIsOpen(!isOpen)}
-          className="sm:hidden flex flex-col justify-center items-center"
+          className="sm:hidden flex flex-col justify-center items-center cursor-pointer py-2.5"
           aria-label="Toggle menu"
           aria-expanded={isOpen}
         >
@@ -92,7 +93,7 @@ export default function NavBar() {
             transition={{ duration: 0.4, ease: "easeInOut" }}
             className="sm:hidden bg-[#040F16]"
           >
-            <ul className="flex flex-col gap-y-2 px-6 overflow-hidden">
+            <ul className="flex flex-col gap-y-2 px-8 font-bold text-2xl">
               {Links.map((link) => (
                 <li key={link.href}>
                   <Link
