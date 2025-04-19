@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/flowz0/netflows/compare/v1.1.1...v1.1.2) (2025-04-19)
+
+
+### Bug Fixes
+
+* update README.md ([44e599f](https://github.com/flowz0/netflows/commit/44e599f5d32cc9eb788fba4f6170750f64199945))
+
 ## [1.1.1](https://github.com/flowz0/netflows/compare/v1.1.0...v1.1.1) (2025-04-18)
 
 
