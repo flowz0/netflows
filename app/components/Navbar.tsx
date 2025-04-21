@@ -7,6 +7,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 
 import BrandLogo from "@/public/Netflows-brand.png";
+import Button from "./Button";
 
 export default function NavBar() {
   const Links = [
@@ -28,54 +29,57 @@ export default function NavBar() {
   }, [isOpen]);
 
   return (
-    <nav className="bg-[#040F16] text-[#FBFBFF] fixed h-24 z-50 w-full shadow-lg shadow-[#040F16]/30">
-      <div className="px-6 flex justify-between items-center h-full max-w-7xl mx-auto">
+    <nav className="bg-[#040F16] text-[rgba(250,250,255,0.7)] fixed h-24 w-full z-50 shadow shadow-[#040F16]">
+      <div className="flex justify-between items-center h-full max-w-7xl mx-auto px-6">
         <Link
           href="/"
           onClick={() => setIsOpen(false)}
         >
           {isOpen
             ? ""
-            : <Image src={BrandLogo} alt="Netflows logo" className="h-28 w-auto" draggable="false" priority />
+            : <Image src={BrandLogo} alt="Netflows logo" className="h-24 w-auto" draggable="false" priority />
           }
         </Link>
 
         {/* Desktop Links */}
-        <ul className="hidden font-bold text-lg sm:flex sm:gap-x-4">
+        <ul className="hidden font-bold text-lg/[32px] md:flex md:items-center md:gap-x-6">
           {Links.map((link) => (
-            <li key={link.href} className="group">
+            <li key={link.href}>
               <Link
                 href={link.href}
                 className={`${pathname === link.href
                   ? "text-[#01BAEF]"
-                  : "hover:text-[#01BAEF] group-last:hover:text-[#040F16]"
-                  } group-last:text-[#040F16] group-last:bg-[#01BAEF] group-last:px-4 group-last:py-2 group-last:rounded-lg group-last:hover:bg-[hsl(193,99%,37%)]`}
+                  : "hover:text-[#01BAEF]"
+                  }`}
               >
                 {link.name}
               </Link>
             </li>
           ))}
+          <Link href="/contact">
+            <Button>Contact</Button>
+          </Link>
         </ul>
 
         {/* Mobile menu button */}
         <button
           type="button"
           onClick={() => setIsOpen(!isOpen)}
-          className="sm:hidden flex flex-col justify-center items-center cursor-pointer py-2.5"
+          className="md:hidden flex flex-col justify-center items-center cursor-pointer py-2.5"
           aria-label="Toggle menu"
           aria-expanded={isOpen}
         >
-          <span className={`bg-[#FBFBFF] block transition-all duration-300 ease-out 
+          <span className={`bg-[rgba(250,250,255,0.7)] block transition-all duration-300 ease-out 
                     h-0.5 w-7 rounded-sm ${isOpen ?
               'rotate-45 translate-y-1' : '-translate-y-0.5'
             }`} >
           </span>
-          <span className={`bg-[#FBFBFF] block transition-all duration-300 ease-out 
+          <span className={`bg-[rgba(250,250,255,0.7)] block transition-all duration-300 ease-out 
                     h-0.5 w-7 rounded-sm my-0.5 ${isOpen ?
               'opacity-0' : 'opacity-100'
             }`} >
           </span>
-          <span className={`bg-[#FBFBFF] block transition-all duration-300 ease-out
+          <span className={`bg-[rgba(250,250,255,0.7)] block transition-all duration-300 ease-out
             h-0.5 w-7 rounded-sm ${isOpen ?
               '-rotate-45 -translate-y-1' : 'translate-y-0.5'
             }`} >
@@ -91,9 +95,9 @@ export default function NavBar() {
             animate={{ height: "100vh", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.4, ease: "easeInOut" }}
-            className="sm:hidden bg-[#040F16]"
+            className="md:hidden bg-[#040F16]"
           >
-            <ul className="flex flex-col gap-y-2 px-8 font-bold text-2xl">
+            <ul className="flex flex-col gap-y-2 px-8 font-bold text-2xl/[36px]">
               {Links.map((link) => (
                 <li key={link.href}>
                   <Link
