@@ -1,3 +1,19 @@
+# [1.3.0](https://github.com/flowz0/netflows/compare/v1.2.0...v1.3.0) (2025-04-21)
+
+
+### Bug Fixes
+
+* optimize Hero component and implement Button component ([43ca282](https://github.com/flowz0/netflows/commit/43ca282c2c8de5616b4fcb7f2775cacd3b43f92b))
+* optimize Navbar component and implement Button component for contact ([bfcd404](https://github.com/flowz0/netflows/commit/bfcd4046f6e2886ca55a39041e581f52d991fff2))
+* optimize not-found page and implement Button component ([c5f617a](https://github.com/flowz0/netflows/commit/c5f617a02f4073a1a05790b77c6ff24f67be8016))
+* optimize ReviewsTag component css ([4718af5](https://github.com/flowz0/netflows/commit/4718af5302eca551b4aefb0b877614a17db63425))
+* remove Statistics component implementation until the component is complete ([5156a0b](https://github.com/flowz0/netflows/commit/5156a0b2ff709e0360169a35d30d6a200b5e274b))
+
+
+### Features
+
+* create Button component with variants and other props ([d928f7e](https://github.com/flowz0/netflows/commit/d928f7e006b462d831699dd852dc460e0ec28781))
+
 # [1.2.0](https://github.com/flowz0/netflows/compare/v1.1.3...v1.2.0) (2025-04-21)
 
 
