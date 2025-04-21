@@ -1,3 +1,16 @@
+# [1.2.0](https://github.com/flowz0/netflows/compare/v1.1.3...v1.2.0) (2025-04-21)
+
+
+### Bug Fixes
+
+* update css for consistency ([ee5a863](https://github.com/flowz0/netflows/commit/ee5a8638ca947b8be2855dd04c7f88a5f46e850e))
+
+
+### Features
+
+* add Hero and ReviewsTag component to homepage ([ecc6671](https://github.com/flowz0/netflows/commit/ecc667161745e66a0013746aa36909af99c81c10))
+* install react-icons for icons ([b68268f](https://github.com/flowz0/netflows/commit/b68268f41b21bc317f0b0943b29697387d64b47c))
+
 ## [1.1.3](https://github.com/flowz0/netflows/compare/v1.1.2...v1.1.3) (2025-04-20)
 
 
