@@ -29,7 +29,7 @@ export default function NavBar() {
   }, [isOpen]);
 
   return (
-    <nav className="bg-[#040F16] text-[rgba(250,250,255,0.7)] fixed h-24 w-full z-50 shadow shadow-[#040F16]">
+    <nav className="bg-[#040F16] text-[rgba(250,250,255,0.7)] fixed h-20 w-full z-50 shadow shadow-[#040F16]">
       <div className="flex justify-between items-center h-full max-w-7xl mx-auto px-6">
         <Link
           href="/"
@@ -42,7 +42,7 @@ export default function NavBar() {
         </Link>
 
         {/* Desktop Links */}
-        <ul className="hidden font-bold text-lg/[32px] md:flex md:items-center md:gap-x-6">
+        <ul className="hidden font-bold text-lg/[32px] tracking-[0.016em] md:flex md:items-center md:gap-x-6">
           {Links.map((link) => (
             <li key={link.href}>
               <Link
@@ -97,7 +97,7 @@ export default function NavBar() {
             transition={{ duration: 0.4, ease: "easeInOut" }}
             className="md:hidden bg-[#040F16]"
           >
-            <ul className="flex flex-col gap-y-2 px-8 font-bold text-2xl/[36px]">
+            <ul className="flex flex-col gap-y-2 px-8 font-bold text-2xl/[36px] tracking-[0.016em]">
               {Links.map((link) => (
                 <li key={link.href}>
                   <Link
