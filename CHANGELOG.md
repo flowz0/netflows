@@ -1,3 +1,16 @@
+# [1.4.0](https://github.com/flowz0/netflows/compare/v1.3.0...v1.4.0) (2025-04-24)
+
+
+### Bug Fixes
+
+* optimize css and html structure ([2c4fb55](https://github.com/flowz0/netflows/commit/2c4fb5540e2adb716d3105afb5ddd4d6a3f6d501))
+
+
+### Features
+
+* add waves to seperate Hero from Benefits ([a5dc49b](https://github.com/flowz0/netflows/commit/a5dc49b519dd3e70f3b57d74a08bbc5430aeb579))
+* create Features section with a reusable Feature component ([c7a380f](https://github.com/flowz0/netflows/commit/c7a380febd761ecd11b715aad273d712b331bc85))
+
 # [1.3.0](https://github.com/flowz0/netflows/compare/v1.2.0...v1.3.0) (2025-04-21)
 
 
