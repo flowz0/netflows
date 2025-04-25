@@ -36,7 +36,7 @@ export default function NavBar() {
         >
           {isOpen
             ? ""
-            : <Image src={BrandLogo} alt="Netflows logo" className="h-24 w-auto" draggable="false" priority />
+            : <Image src={BrandLogo} alt="Netflows logo" className="h-20 w-auto" draggable="false" priority />
           }
         </Link>
 
