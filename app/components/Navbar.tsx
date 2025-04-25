@@ -111,6 +111,18 @@ export default function NavBar() {
                   </Link>
                 </li>
               ))}
+              <li>
+                <Link
+                  href="/contact"
+                  className={`${pathname === "/contact"
+                    ? "text-sky-500"
+                    : "hover:text-sky-600"
+                    }`}
+                  onClick={() => setIsOpen(!isOpen)}
+                >
+                  Contact
+                </Link>
+              </li>
             </ul>
           </motion.div>
         )}
