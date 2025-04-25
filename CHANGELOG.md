@@ -1,3 +1,10 @@
+## [1.4.3](https://github.com/flowz0/netflows/compare/v1.4.2...v1.4.3) (2025-04-25)
+
+
+### Bug Fixes
+
+* rename Features to Benefits ([95847a5](https://github.com/flowz0/netflows/commit/95847a53d57e09399a075905492b83ba662893e8))
+
 ## [1.4.2](https://github.com/flowz0/netflows/compare/v1.4.1...v1.4.2) (2025-04-25)
 
 
