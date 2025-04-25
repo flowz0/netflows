@@ -1,3 +1,10 @@
+## [1.4.2](https://github.com/flowz0/netflows/compare/v1.4.1...v1.4.2) (2025-04-25)
+
+
+### Bug Fixes
+
+* add Contact link to mobile Navbar menu ([f921fe3](https://github.com/flowz0/netflows/commit/f921fe33843471c4aae020f180b827a64b436aa3))
+
 ## [1.4.1](https://github.com/flowz0/netflows/compare/v1.4.0...v1.4.1) (2025-04-25)
 
 
