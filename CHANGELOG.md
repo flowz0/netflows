@@ -1,3 +1,16 @@
+# [1.5.0](https://github.com/flowz0/netflows/compare/v1.4.3...v1.5.0) (2025-04-25)
+
+
+### Bug Fixes
+
+* decrease logo size for Navbar ([5d549c9](https://github.com/flowz0/netflows/commit/5d549c97c9b98ae8ff208871d715ed75c2e10797))
+* optimize css for Hero component ([a3b0524](https://github.com/flowz0/netflows/commit/a3b05247c2206644863c6f404fd38bace5be4a56))
+
+
+### Features
+
+* create Services section and Service component ([23807e1](https://github.com/flowz0/netflows/commit/23807e1ca6025e00afea8804b62523eee888f536))
+
 ## [1.4.3](https://github.com/flowz0/netflows/compare/v1.4.2...v1.4.3) (2025-04-25)
 
 
