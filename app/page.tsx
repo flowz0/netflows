@@ -1,11 +1,11 @@
 import Hero from "./components/home/Hero";
-import Features from "./components/home/Features";
+import Benefits from "./components/home/Benefits";
 
 export default function Home() {
   return (
     <>
       <Hero />
-      <Features />
+      <Benefits />
     </>
   );
 };

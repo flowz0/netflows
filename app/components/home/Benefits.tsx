@@ -1,7 +1,7 @@
-import Stat from "./Feature";
+import Stat from "./Benefit";
 import { FaRocket, FaStar, FaSmile } from "react-icons/fa";
 
-export default function Features() {
+export default function Benefits() {
   return (
     <div className="bg-[#FBFBFF] flex justify-center px-6 py-4">
       <div className="max-w-6xl">

@@ -1,10 +1,10 @@
-interface FeatureProps {
+interface BenefitProps {
   icon: React.ElementType;
   title: string;
   desc: string;
 }
 
-export default function StatCard({ icon: Icon, title, desc }: FeatureProps) {
+export default function BenefitCard({ icon: Icon, title, desc }: BenefitProps) {
   return (
     <div className="text-[#040F16] flex flex-col items-center justify-center gap-x-6 px-6 py-6 w-56 rounded-4xl">
       <div className="bg-[hsl(193,99%,80%)] p-4 rounded-full">
