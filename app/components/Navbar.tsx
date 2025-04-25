@@ -14,7 +14,6 @@ export default function NavBar() {
     { name: "Home", href: "/" },
     { name: "Services", href: "/services" },
     { name: "Work", href: "/work" },
-    { name: "Contact", href: "/contact" },
   ];
 
   const [isOpen, setIsOpen] = useState(false);
