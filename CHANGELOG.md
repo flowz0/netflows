@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/flowz0/netflows/compare/v1.4.0...v1.4.1) (2025-04-25)
+
+
+### Bug Fixes
+
+* remove Contact link from Navbar ([86feceb](https://github.com/flowz0/netflows/commit/86feceb242b764bd0981d5c482334ec0f590e611))
+
 # [1.4.0](https://github.com/flowz0/netflows/compare/v1.3.0...v1.4.0) (2025-04-24)
 
 
