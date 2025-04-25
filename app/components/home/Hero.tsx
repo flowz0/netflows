@@ -19,10 +19,10 @@ export default function Hero() {
         <h1 className="text-4xl/[46px] font-bold tracking-[-0.031em] sm:text-5xl/[58px] sm:text-center">
           Grow Online. <br /> Sell More.
         </h1>
-        <p className="text-[rgba(250,250,255,0.7)] max-w-sm text-base/[30px] tracking-[0.016em] mt-2 sm:max-w-xl sm:text-lg/[32px] sm:text-center">
+        <p className="text-[rgba(250,250,255,0.7)] text-base/[30px] tracking-[0.016em] mt-4 sm:text-lg/[32px] sm:text-center">
           Strategic web design and development that turns visitors into customers.
         </p>
-        <Button className="w-fit mt-6">Request a free consultation</Button>
+        <Button className="w-fit mt-8">Request a free consultation</Button>
       </div>
     </header>
   );
