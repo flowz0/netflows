@@ -36,7 +36,7 @@ export default function NavBar() {
         >
           {isOpen
             ? ""
-            : <Image src={BrandLogo} alt="Netflows logo" className="h-20 w-auto" draggable="false" priority />
+            : <Image src={BrandLogo} alt="Netflows logo" className="h-16 w-auto duration-300 transition-opacity hover:opacity-80" draggable="false" priority />
           }
         </Link>
 
@@ -47,16 +47,22 @@ export default function NavBar() {
               <Link
                 href={link.href}
                 className={`${pathname === link.href
-                  ? "text-[#01BAEF]"
-                  : "hover:text-[#01BAEF]"
+                  ? "duration-300 transition-colors text-[#01BAEF]"
+                  : "duration-300 transition-colors hover:text-[rgb(250,250,255)]"
                   }`}
               >
                 {link.name}
               </Link>
             </li>
           ))}
-          <Link href="/contact">
-            <Button>Contact</Button>
+          <Link 
+          href="/contact"
+          className={`${pathname === "/contact"
+            ? "duration-300 transition-colors text-[#01BAEF]"
+            : "duration-300 transition-colors hover:text-[rgb(250,250,255)]"
+            }`}
+          >
+            Contact
           </Link>
         </ul>
 

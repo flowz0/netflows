@@ -6,7 +6,7 @@ import LayeredWaves from "@/public/layered-waves.svg";
 
 export default function Hero() {
   return (
-    <header className="bg-[#040F16] text-[#FBFBFF] flex relative sm:justify-center h-screen px-6">
+    <header className="bg-[#040F16] text-[#FBFBFF] relative flex justify-center pb-52 pt-28 px-6 sm:pb-60 sm:pt-28">
       <Image
         src={LayeredWaves}
         alt="Blob background"
@@ -14,16 +14,17 @@ export default function Hero() {
         draggable={false}
         fill
       />
-      <ReviewsTag />
-      <div className="relative flex flex-col justify-center sm:items-center">
-        <h1 className="text-4xl/[46px] font-bold tracking-[-0.031em] sm:text-5xl/[58px] sm:text-center">
-          Grow Online. <br /> Sell More.
+      <div className="relative flex flex-col items-center">
+        <ReviewsTag />
+        <h1 className="text-4xl/[46px] font-bold tracking-[-0.031em] max-w-lg mt-4 sm:mt-8 sm:text-5xl/[58px] text-center">
+        We Build Websites That Grow Your Business
         </h1>
-        <p className="text-[rgba(250,250,255,0.7)] text-base/[30px] tracking-[0.016em] mt-4 sm:text-lg/[32px] sm:text-center">
-          Strategic web design and development that turns visitors into customers.
+        <p className="text-[rgba(250,250,255,0.7)] text-base/[30px] tracking-[0.016em] mt-2 sm:mt-4 sm:text-lg/[32px] text-center">
+          Strategic web design and development that turns visitors into
+          customers.
         </p>
-        <Button className="w-fit mt-8">Request a free consultation</Button>
+        <Button className="w-fit mt-4 sm:mt-8">Book a Free Consultation</Button>
       </div>
     </header>
   );
-};
+}

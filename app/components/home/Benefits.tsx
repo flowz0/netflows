@@ -3,7 +3,7 @@ import { FaRocket, FaStar, FaSmile } from "react-icons/fa";
 
 export default function Benefits() {
   return (
-    <div className="bg-[#FBFBFF] flex justify-center px-6 py-4">
+    <div className="bg-[#FBFBFF] flex justify-center px-6 py-8 sm:py-12">
       <div className="max-w-6xl">
         <div className="flex flex-wrap justify-center">
           <Stat icon={FaRocket} title="54" desc="Projects Launched" />
