@@ -1,3 +1,17 @@
+# [1.6.0](https://github.com/flowz0/netflows/compare/v1.5.0...v1.6.0) (2025-04-27)
+
+
+### Bug Fixes
+
+* optimize css on Benefits section and Benefit component ([8de9e39](https://github.com/flowz0/netflows/commit/8de9e395bdad5dda768e681204f9df1c194daeb0))
+* optimize css on Hero section ([ca69cad](https://github.com/flowz0/netflows/commit/ca69cad8174d82107e779e876d58a7d467a42ab3))
+* optimize css on ReviewsTag component ([90eb6ed](https://github.com/flowz0/netflows/commit/90eb6edae0b147291d8a79c9f296aaeacae644e3))
+
+
+### Features
+
+* create Service component and Services section ([558d4f5](https://github.com/flowz0/netflows/commit/558d4f5d671955ca84ce9500aedefbfe44fe7f3a))
+
 # [1.5.0](https://github.com/flowz0/netflows/compare/v1.4.3...v1.5.0) (2025-04-25)
 
 
