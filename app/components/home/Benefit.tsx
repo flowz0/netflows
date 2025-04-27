@@ -6,8 +6,8 @@ interface BenefitProps {
 
 export default function BenefitCard({ icon: Icon, title, desc }: BenefitProps) {
   return (
-    <div className="text-[#040F16] flex flex-col items-center justify-center gap-x-6 px-6 py-6 w-56 rounded-4xl">
-      <div className="bg-[rgba(154,232,254,0.5)] p-4 rounded-full">
+    <div className="text-[#040F16] flex flex-col items-center w-56">
+      <div className="bg-[rgba(154,232,254,0.5)] p-5 rounded-full">
         <Icon className="text-[hsl(193,99%,20%)] h-12 w-12" />
       </div>
       <div className="flex flex-col items-center justify-center">
