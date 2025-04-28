@@ -1,3 +1,17 @@
+# [1.7.0](https://github.com/flowz0/netflows/compare/v1.6.1...v1.7.0) (2025-04-28)
+
+
+### Bug Fixes
+
+* implement AnimatedLink component into Navbar links ([8b0dd69](https://github.com/flowz0/netflows/commit/8b0dd698c8257bc08832b045685f05980bed228e))
+* optimize Benefit component and update Benefits ([4f4e203](https://github.com/flowz0/netflows/commit/4f4e203282bcca3c5cb03dbff62bc58ef3f9df8a))
+* optimize css on ReviewsTag component ([6eac6ce](https://github.com/flowz0/netflows/commit/6eac6ce7a822447b07badd525bf35fe4921ec952))
+
+
+### Features
+
+* create AnimatedLink component ([10347fa](https://github.com/flowz0/netflows/commit/10347faf55ea2bc9ffb57156ca700f681fdb1aac))
+
 ## [1.6.1](https://github.com/flowz0/netflows/compare/v1.6.0...v1.6.1) (2025-04-28)
 
 
