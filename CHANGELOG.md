@@ -1,3 +1,11 @@
+## [1.6.1](https://github.com/flowz0/netflows/compare/v1.6.0...v1.6.1) (2025-04-28)
+
+
+### Bug Fixes
+
+* adjust css on Hero component ([d440951](https://github.com/flowz0/netflows/commit/d440951dd56a64aff9ece9dd09946ba2b5bab893))
+* adjust css on ReviewsTag component ([042930b](https://github.com/flowz0/netflows/commit/042930bf0945f10d121d5d2111873a8091ebd3d1))
+
 # [1.6.0](https://github.com/flowz0/netflows/compare/v1.5.0...v1.6.0) (2025-04-27)
 
 
