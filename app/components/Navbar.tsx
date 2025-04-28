@@ -7,13 +7,13 @@ import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 
 import BrandLogo from "@/public/Netflows-brand.png";
-import Button from "./Button";
+import AnimatedLink from "./AnimatedLink";
 
 export default function NavBar() {
   const Links = [
-    { name: "Home", href: "/" },
     { name: "Services", href: "/services" },
     { name: "Work", href: "/work" },
+    { name: "Contact", href: "/contact" },
   ];
 
   const [isOpen, setIsOpen] = useState(false);
@@ -36,7 +36,12 @@ export default function NavBar() {
         >
           {isOpen
             ? ""
-            : <Image src={BrandLogo} alt="Netflows logo" className="h-16 w-auto duration-300 transition-opacity hover:opacity-80" draggable="false" priority />
+            : <Image 
+                src={BrandLogo} 
+                alt="Netflows logo" 
+                className="h-16 w-auto duration-300 transition-opacity hover:opacity-80"
+                draggable="false" priority 
+              />
           }
         </Link>
 
@@ -44,7 +49,7 @@ export default function NavBar() {
         <ul className="hidden font-bold text-lg/[32px] tracking-[0.016em] md:flex md:items-center md:gap-x-6">
           {Links.map((link) => (
             <li key={link.href}>
-              <Link
+              <AnimatedLink
                 href={link.href}
                 className={`${pathname === link.href
                   ? "duration-300 transition-colors text-[#01BAEF]"
@@ -52,18 +57,9 @@ export default function NavBar() {
                   }`}
               >
                 {link.name}
-              </Link>
+              </AnimatedLink>
             </li>
           ))}
-          <Link 
-          href="/contact"
-          className={`${pathname === "/contact"
-            ? "duration-300 transition-colors text-[#01BAEF]"
-            : "duration-300 transition-colors hover:text-[rgb(250,250,255)]"
-            }`}
-          >
-            Contact
-          </Link>
         </ul>
 
         {/* Mobile menu button */}
