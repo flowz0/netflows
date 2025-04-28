@@ -16,13 +16,13 @@ export default function Hero() {
       />
       <div className="relative flex flex-col items-center">
         <ReviewsTag />
-        <h1 className="text-4xl/[46px] font-bold tracking-[-0.031em] max-w-lg mt-4 sm:mt-8 sm:text-5xl/[58px] text-center">
+        <h1 className="text-4xl/[46px] font-bold tracking-[-0.031em] max-w-lg mt-8 sm:mt-9 sm:text-5xl/[58px] text-center">
         We Build Websites That Grow Your Business
         </h1>
-        <p className="text-[rgba(250,250,255,0.7)] text-base/[30px] tracking-[0.016em] mt-2 max-w-sm sm:mt-4 sm:text-lg/[32px] text-center">
+        <p className="text-[rgba(250,250,255,0.7)] text-base/[30px] tracking-[0.016em] mt-4 max-w-sm sm:mt-5 sm:text-lg/[32px] text-center">
           Strategic web design and development that turns visitors into customers.
         </p>
-        <Button className="w-fit mt-4 sm:mt-8">Book a Free Consultation</Button>
+        <Button className="w-fit mt-6 sm:mt-7">Book a Free Consultation</Button>
       </div>
     </header>
   );
