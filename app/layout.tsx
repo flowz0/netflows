@@ -1,11 +1,18 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
-import NavBar from "./components/Navbar";
+import Navbar from "./components/Navbar";
 
 const roboto = Roboto({
   variable: "--font-roboto-sans",
   weight: ["300", "400", "500", "600", "700"],
+  subsets: ["latin"],
+});
+
+const inter = Inter({
+  variable: "--font-inter-sans",
+  weight: ["200", "300", "400", "500", "600", "700"],
   subsets: ["latin"],
 });
 
@@ -22,9 +29,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${roboto.variable} antialiased`}
+        className={`${roboto.variable} ${inter.variable} bg-[#efefef] text-[#252323] antialiased`}
       >
-        <NavBar />
+        <Navbar />
         {children}
       </body>
     </html>

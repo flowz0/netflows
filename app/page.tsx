@@ -1,13 +1,9 @@
-import Hero from "./components/home/Hero";
-import Benefits from "./components/home/Benefits";
-import Services from "./components/home/Services";
+import Hero from "./components/pages/home/Hero";
 
 export default function Home() {
   return (
     <>
       <Hero />
-      <Benefits />
-      <Services />
     </>
   );
 };

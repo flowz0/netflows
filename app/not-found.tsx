@@ -1,25 +1,34 @@
-import Link from "next/link";
+import Image from "next/image";
 import Button from "./components/Button";
+import Link from "next/link";
 
-import { FaQuestionCircle } from "react-icons/fa";
+import NotFound404 from "@/public/404-not-found.svg";
 
 export default function PageNotFound() {
   return (
-    <div className="bg-[#040F16] text-[#FBFBFF] flex flex-col items-center h-screen px-6">
-      <div className="mt-28 max-w-lg py-12 px-6 rounded-2xl sm:mt-24 flex flex-col items-center sm:py-16 sm:px-12">
-        <div className="bg-[rgba(1,79,101,0.5)] p-2 w-fit rounded-full">
-          <FaQuestionCircle className="text-[rgb(154,233,254)] h-12 w-12 sm:h-14 sm:w-14" />
-        </div>
-        <h1 className="text-4xl/[46px] font-bold mt-5 text-center sm:text-5xl/[58px]">
-          Page not found
+    <section className="py-32 max-w-7xl px-6 mx-auto flex flex-col lg:flex-row justify-between">
+      <div className="flex flex-col justify-center items-start">
+        <h1 className="text-4xl/[2.75rem] font-bold font-(family-name:--font-roboto-sans) sm:text-5xl/[3.54rem]">
+          This Page
+          <br />
+          Does Not Exist
         </h1>
-        <p className="text-[rgba(250,250,255,0.7)] mt-2 text-base/[30px] text-center sm:text-lg/[32px]">
-          Sorry, the page you are looking for does not exist.
+        <p className="font-(family-name:--font-inter-sans) text-[#595454] text-base/[2rem] max-w-sm mt-4">
+          Looks like you&apos;ve hit a dead end. But don&apos;t worry — you can head back home and keep exploring.
         </p>
-        <Link href="/" className="mt-6">
-          <Button variant="ghost" className="w-full duration-300 transition-colors">Go home</Button>
+        <Link href="/" className="mt-9">
+          <Button type="button">
+            Back to Home
+          </Button>
         </Link>
       </div>
-    </div>
+
+      <Image
+        src={NotFound404}
+        alt="Page not found image"
+        className="animate-float transition-transform h-auto w-fit max-w-lg mt-8 lg:mt-0"
+        draggable="false"
+      />
+    </section>
   );
-}
+};
