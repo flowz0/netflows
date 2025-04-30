@@ -1,3 +1,10 @@
+## [1.7.1](https://github.com/flowz0/netflows/compare/v1.7.0...v1.7.1) (2025-04-30)
+
+
+### Bug Fixes
+
+* optimize responsive page not-found component ([cebe7d1](https://github.com/flowz0/netflows/commit/cebe7d1a78ac0759f4b77178e0600d77b252a964))
+
 # [1.7.0](https://github.com/flowz0/netflows/compare/v1.6.1...v1.7.0) (2025-04-28)
 
 
