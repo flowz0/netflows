@@ -6,8 +6,8 @@ import NotFound404 from "@/public/404-not-found.svg";
 
 export default function PageNotFound() {
   return (
-    <section className="py-32 max-w-7xl px-6 mx-auto flex flex-col lg:flex-row justify-between">
-      <div className="flex flex-col justify-center items-start">
+    <section className="py-8 px-6 flex flex-col items-center justify-between max-w-7xl mx-auto lg:flex-row lg:py-32">
+      <div className="flex flex-col order-2">
         <h1 className="text-4xl/[2.75rem] font-bold font-(family-name:--font-roboto-sans) sm:text-5xl/[3.54rem]">
           This Page
           <br />
@@ -26,7 +26,7 @@ export default function PageNotFound() {
       <Image
         src={NotFound404}
         alt="Page not found image"
-        className="animate-float transition-transform h-auto w-fit max-w-lg mt-8 lg:mt-0"
+        className="animate-float transition-transform h-full w-96 order-1 mt-8 lg:mt-0 lg:order-2"
         draggable="false"
       />
     </section>
