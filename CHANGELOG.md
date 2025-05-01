@@ -1,3 +1,10 @@
+## [1.7.3](https://github.com/flowz0/netflows/compare/v1.7.2...v1.7.3) (2025-05-01)
+
+
+### Bug Fixes
+
+* remove old assets ([ef1d4e4](https://github.com/flowz0/netflows/commit/ef1d4e4ae6a663f2ffbc4808d90247d8ac52d70b))
+
 ## [1.7.2](https://github.com/flowz0/netflows/compare/v1.7.1...v1.7.2) (2025-05-01)
 
 
