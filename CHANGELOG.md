@@ -1,3 +1,10 @@
+## [1.7.2](https://github.com/flowz0/netflows/compare/v1.7.1...v1.7.2) (2025-05-01)
+
+
+### Bug Fixes
+
+* optimize CSS & UX on not-found page ([4db1fb8](https://github.com/flowz0/netflows/commit/4db1fb89f771322848098a2fce3e9031d126ca1d))
+
 ## [1.7.1](https://github.com/flowz0/netflows/compare/v1.7.0...v1.7.1) (2025-04-30)
 
 
