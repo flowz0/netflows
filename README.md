@@ -1,4 +1,4 @@
-# Netflows - Creative Digital Agency Website
-### Currently in development [WIP]
+# Netflows Website
+Currently in development
 ## 🛠️ Tech Stack
 - **Frontend:** Next.js, TypeScript, Tailwind CSS, Framer Motion
