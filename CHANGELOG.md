@@ -1,3 +1,10 @@
+## [1.7.4](https://github.com/flowz0/netflows/compare/v1.7.3...v1.7.4) (2025-05-03)
+
+
+### Bug Fixes
+
+* update README.md ([dac83c6](https://github.com/flowz0/netflows/commit/dac83c6f25fb754674ced10ee0cb72c3b1c35e4f))
+
 ## [1.7.3](https://github.com/flowz0/netflows/compare/v1.7.2...v1.7.3) (2025-05-01)
 
 
