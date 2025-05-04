@@ -1,3 +1,18 @@
+# [1.8.0](https://github.com/flowz0/netflows/compare/v1.7.4...v1.8.0) (2025-05-04)
+
+
+### Bug Fixes
+
+* add bg color to Navbar ([5fcb5f5](https://github.com/flowz0/netflows/commit/5fcb5f582ec485ccc2ae9f2eb915ca0c72f956cb))
+* optimize page not-found ([1f35190](https://github.com/flowz0/netflows/commit/1f35190eec236a9b1bbc112c374048d13494da54))
+* update Hero section & import hero-img ([acea0e1](https://github.com/flowz0/netflows/commit/acea0e1bfac95ce68831ae47e295c07908ca0b8a))
+* update metadata title and desc to optimize SEO ([5e853c2](https://github.com/flowz0/netflows/commit/5e853c2c22825b243a7dae7f5e4775f7c2db36ca))
+
+
+### Features
+
+* create Feature component and Features section ([05f5e76](https://github.com/flowz0/netflows/commit/05f5e76ff1a3d96113f1e700510a46eb23dee922))
+
 ## [1.7.4](https://github.com/flowz0/netflows/compare/v1.7.3...v1.7.4) (2025-05-03)
 
 
