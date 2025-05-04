@@ -17,8 +17,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Netflows",
-  description: "Creative Digital Agency",
+  title: "Netflows | Web Development for Startups and Small Businesses",
+  description: "Netflows is a web development agency that builds, designs, and maintains high-performance websites and apps for startups and small businesses.",
 };
 
 export default function RootLayout({
