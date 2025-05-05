@@ -5,7 +5,7 @@ import HeroImg from "@/public/hero-img.svg";
 
 export default function Hero() {
   return (
-    <header className="pt-32 pb-64">
+    <header className="pt-32 pb-48">
       <div className="max-w-7xl mx-auto px-6 flex flex-col justify-between gap-8 items-center lg:flex-row">
         <div className="max-w-xl">
           <h1 className="text-[#252323] text-4xl/[2.666rem] font-bold md:text-5xl/[3.516rem]">We Build Websites That Grow Your Business</h1>
