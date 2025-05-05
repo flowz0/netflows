@@ -1,3 +1,15 @@
+# [1.9.0](https://github.com/flowz0/netflows/compare/v1.8.0...v1.9.0) (2025-05-05)
+
+
+### Bug Fixes
+
+* decrease bottom padding for Hero section ([1dae39b](https://github.com/flowz0/netflows/commit/1dae39b0cd3b9e0b7cb16ff54395e87e6dcb94f3))
+
+
+### Features
+
+* add iconColor, descTextColor, borderClass props for style customization ([3ebb47d](https://github.com/flowz0/netflows/commit/3ebb47dc030524d88d6491e7da91915462205d2a))
+
 # [1.8.0](https://github.com/flowz0/netflows/compare/v1.7.4...v1.8.0) (2025-05-04)
 
 
