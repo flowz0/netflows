@@ -1,3 +1,12 @@
+## [1.9.1](https://github.com/flowz0/netflows/compare/v1.9.0...v1.9.1) (2025-05-07)
+
+
+### Bug Fixes
+
+* optimize Hero component style customization ([902fe4b](https://github.com/flowz0/netflows/commit/902fe4b52ba4e110fc2cd691b0ad7b1fd47dc645))
+* optimize page not-found css ([65d58c2](https://github.com/flowz0/netflows/commit/65d58c27209be5ad327e2fc280de844989676a0e))
+* remove descTextColor & borderClass props, optimize Feature component style customization ([e67b549](https://github.com/flowz0/netflows/commit/e67b54925df483e497a891b67b436a7c164e765b))
+
 # [1.9.0](https://github.com/flowz0/netflows/compare/v1.8.0...v1.9.0) (2025-05-05)
 
 
