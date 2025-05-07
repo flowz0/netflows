@@ -6,20 +6,18 @@ interface FeatureProps {
   desc: string;
   className?: string;
   iconColor?: string;
-  descTextColor?: string;
-  borderClass?: string;
 }
 
-export default function Feature({ Icon, title, desc, className, iconColor, descTextColor, borderClass }: FeatureProps) {
+export default function Feature({ Icon, title, desc, className, iconColor }: FeatureProps) {
   return (
-    <div className={`${className} ${borderClass} rounded-2xl w-full pt-8 pb-6 px-5`}>
-      <div>
+    <div className={`${className} bg-[#252323] text-[#EFEFEF] shadow shadow-[#252323] rounded-2xl w-full py-8 px-6`}>
+      <div className="border border-[hsl(0,3%,24%)] rounded-xl w-fit p-3">
         <Icon className={`w-6 h-6 ${iconColor}`} />
       </div>
-      <h3 className={`${className} text-xl font-semibold mt-5 md:text-2xl/[2rem]`}>
+      <h3 className="mt-5 text-xl font-semibold md:text-2xl/[2rem]">
         {title}
       </h3>
-      <p className={`${descTextColor} leading-[1.8rem] mt-2`}>
+      <p className="text-[#EFEFEF]/60 mt-2 leading-[1.8rem]">
         {desc}
       </p>
     </div>
