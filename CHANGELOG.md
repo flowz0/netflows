@@ -1,3 +1,10 @@
+# [1.10.0](https://github.com/flowz0/netflows/compare/v1.9.2...v1.10.0) (2025-05-10)
+
+
+### Features
+
+* create Services section with reusable ServiceButton and ServiceDetail components ([034f926](https://github.com/flowz0/netflows/commit/034f9265c3f29d3cce46bf6717318a1ab2b55a79))
+
 ## [1.9.2](https://github.com/flowz0/netflows/compare/v1.9.1...v1.9.2) (2025-05-10)
 
 
