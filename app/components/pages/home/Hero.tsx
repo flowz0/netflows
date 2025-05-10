@@ -14,7 +14,7 @@ export default function Hero() {
           <p className="text-[rgba(37,35,35,0.8)] text-base/[2.224rem] mt-4 md:text-lg/[2.274rem]">
             Strategic web design and development that turns visitors into customers.
           </p>
-          <Button className="mt-9 w-full lg:w-fit">Book a Free Consultation</Button>
+          <Button className="mt-8 w-full lg:w-fit">Book a Free Consultation</Button>
         </div>
         <Image
           src={HeroImg}
