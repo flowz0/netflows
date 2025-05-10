@@ -1,3 +1,12 @@
+## [1.9.2](https://github.com/flowz0/netflows/compare/v1.9.1...v1.9.2) (2025-05-10)
+
+
+### Bug Fixes
+
+* increase margin-top for title and description in Feature component ([663240a](https://github.com/flowz0/netflows/commit/663240a015f3484fe06497daeb2df9b2472af6d3))
+* lower margin-top for Button component in Hero section/component ([92c3fe2](https://github.com/flowz0/netflows/commit/92c3fe2277f9c98a4283af9a05d88d387bfbbb83))
+* set standard section padding & highlight keyword in title ([55042f6](https://github.com/flowz0/netflows/commit/55042f67cef340ef68485c260eca81db4da50e2a))
+
 ## [1.9.1](https://github.com/flowz0/netflows/compare/v1.9.0...v1.9.1) (2025-05-07)
 
 
