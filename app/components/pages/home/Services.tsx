@@ -47,7 +47,7 @@ function Services() {
         </p>
 
         <div className="mt-12 flex flex-col gap-6 lg:flex-row lg:justify-between">
-          <div className="bg-[#252323] px-4 py-6 md:px-6 md:py-8 rounded-xl h-fit flex flex-col gap-y-4 lg:w-2/5">
+          <div className="bg-[#252323] px-4 py-6 rounded-xl h-fit flex flex-col gap-y-4 shadow shadow-[#252323] md:px-6 md:py-8 lg:w-2/5">
             {/* Service Button */}
             {serviceData.map((service) => (
               <ServiceButton
