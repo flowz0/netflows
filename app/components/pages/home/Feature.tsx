@@ -12,7 +12,7 @@ export default function Feature({ Icon, title, desc, className, iconColor }: Fea
   return (
     <div className={`${className} bg-[#252323] text-[#EFEFEF] shadow shadow-[#252323] rounded-2xl w-full py-8 px-6`}>
       <div className="border border-[hsl(0,3%,24%)] rounded-xl w-fit p-3">
-        <Icon className={`w-6 h-6 ${iconColor}`} />
+        <Icon className={`w-4 h-4 ${iconColor}`} />
       </div>
       <h3 className="mt-6 text-xl font-semibold md:text-2xl/[2rem]">
         {title}
