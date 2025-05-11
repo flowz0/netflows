@@ -1,3 +1,18 @@
+# [1.11.0](https://github.com/flowz0/netflows/compare/v1.10.0...v1.11.0) (2025-05-11)
+
+
+### Bug Fixes
+
+* add shadow to ServiceDetail component & height to Image ([ca6580b](https://github.com/flowz0/netflows/commit/ca6580bb6e68b8a64e79ec8ac0a255a0a1cca65f))
+* lower height and width for Icon in Feature component (1.5rem -> 1rem) ([c106dda](https://github.com/flowz0/netflows/commit/c106dda2768e4f402c6938109c0fe32ec4ec4f34))
+* optimize ServiceButton component list css & add shadow ([d1bd14a](https://github.com/flowz0/netflows/commit/d1bd14a040ffd3b64fd6461b5f2c00259592303c))
+* SEO optimization ([9fa5a39](https://github.com/flowz0/netflows/commit/9fa5a395ad43575a3e0060c89dce8ffc04269381))
+
+
+### Features
+
+* **ui:** add arrow icon to ServiceButton for improved UX & implement gradient background ([c36aff3](https://github.com/flowz0/netflows/commit/c36aff3f6f78f7bf96d2769049b9ad06d53e3422))
+
 # [1.10.0](https://github.com/flowz0/netflows/compare/v1.9.2...v1.10.0) (2025-05-10)
 
 
