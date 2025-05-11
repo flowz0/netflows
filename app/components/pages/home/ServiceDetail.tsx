@@ -9,7 +9,7 @@ type Props = {
 
 function ServiceDetail({ service }: Props) {
   return (
-    <div className="bg-[#252323] p-6 rounded-xl md:px-8 md:py-6 lg:w-3/5">
+    <div className="bg-[#252323] p-6 rounded-xl shadow shadow-[#252323] md:px-8 md:py-6 lg:w-3/5">
       {/* Active Service Content */}
       <h4 className="text-[#EFEFEF] text-3xl/[2.491rem] font-bold md:text-4xl/[3.399rem]">
         {service.title}
@@ -21,7 +21,7 @@ function ServiceDetail({ service }: Props) {
         <Image
           src={service.image}
           alt={`${service.title} image`}
-          className="object-cover h-auto max-w-fit pointer-events-none mt-8"
+          className="object-cover h-96 w-auto pointer-events-none mt-8"
         />
       </div>
     </div>
