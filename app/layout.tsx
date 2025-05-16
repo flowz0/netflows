@@ -17,7 +17,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Netflows | Web Development for Startups and Small Businesses",
+  title: "Web Development for Startups and Small Businesses | Netflows",
   description: "Netflows is a web development agency that builds, designs, and maintains high-performance websites and apps for startups and small businesses.",
 };
 
@@ -29,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${roboto.variable} ${inter.variable} bg-[#efefef] text-[#252323] antialiased`}
+        className={`${roboto.variable} ${inter.variable} bg-[#0a0a0a] text-[#f5f5f5] antialiased`}
       >
         <Navbar />
         {children}
