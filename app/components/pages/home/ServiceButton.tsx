@@ -13,10 +13,10 @@ function ServiceButton({ service, isActive, onClick }: Props) {
   return (
     <button
       onClick={onClick}
-      className={`text-xl/[1.466rem] font-bold p-4 rounded-xl flex items-center gap-x-2 transition-colors md:px-5 md:py-2 md:text-2xl/[2.649rem] ${
+      className={`text-base/[1.466rem] font-bold p-4 rounded-2xl flex items-center gap-x-2 transition-all md:px-6 md:py-2 md:text-2xl/[2.649rem] ${
         isActive
-        ? "bg-linear-to-r from-[#00A5CF] to-[#00cfcf] text-[#EFEFEF] cursor-not-allowed"
-        : "bg-[#CDCACC] text-[#252323] cursor-pointer hover:bg-[hsl(320,3%,70%)]"
+        ? "bg-[#00b4ff] text-[#0a0a0a] cursor-not-allowed gap-x-3"
+        : "bg-[#3d3d3d] text-[#f5f5f5] cursor-pointer active:bg-[hsl(0,0%,34%)] hover:text-[#f5f5f5] hover:gap-x-3"
       }`}
     >
       {service.title}
