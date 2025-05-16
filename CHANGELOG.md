@@ -1,3 +1,24 @@
+# [1.12.0](https://github.com/flowz0/netflows/compare/v1.11.0...v1.12.0) (2025-05-16)
+
+
+### Bug Fixes
+
+* optimize Button component style customization & primary variant color ([62c4c66](https://github.com/flowz0/netflows/commit/62c4c6668de575fe6340cd70a9ae695de829148c))
+* optimize Features component style customization, update Icon, and add shadowColors ([06125bc](https://github.com/flowz0/netflows/commit/06125bca6f621402f5e23aa5d44954488a1bcdd2))
+* optimize Hero component style customization & update Hero image ([5af4bda](https://github.com/flowz0/netflows/commit/5af4bda78ddc3e1aea1e01880dfc2afe7262b85e))
+* optimize Navbar component style customization ([749d0e7](https://github.com/flowz0/netflows/commit/749d0e7b7ff75e033ed7394ab5edd224927cecf4))
+* optimize ServiceButton component style customization ([4f58254](https://github.com/flowz0/netflows/commit/4f58254a26c413709406cca661dc89494eed3330))
+* optimize ServiceDetail component architecture & style customization ([14d18bf](https://github.com/flowz0/netflows/commit/14d18bfcc1c129b73e4bccacf6000df857c3205d))
+* optimize Services component style customization ([0c9e389](https://github.com/flowz0/netflows/commit/0c9e3897dc0828045dde9a45a2e7adba5599fd32))
+* SEO optimization & update brand colors ([5d659d3](https://github.com/flowz0/netflows/commit/5d659d32bc8cee071a98ed440d287c2566d57400))
+* update old assets ([67ec6b4](https://github.com/flowz0/netflows/commit/67ec6b409da28dd0b85edf342ef96c245713bc6c))
+* update page not-found style customization ([3fbe1b1](https://github.com/flowz0/netflows/commit/3fbe1b1e0647a58b0b3eb1350c8d8e5ca75e8792))
+
+
+### Features
+
+* optimize Feature component style customization & add shadowColor prop to Icon shadow color ([bcf3514](https://github.com/flowz0/netflows/commit/bcf351404de0dc9bacfabe17cc4efc8d3c6c14e4))
+
 # [1.11.0](https://github.com/flowz0/netflows/compare/v1.10.0...v1.11.0) (2025-05-11)
 
 
