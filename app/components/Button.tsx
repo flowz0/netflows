@@ -17,9 +17,9 @@ const Button: React.FC<ButtonProps> = ({
   disabled = false,
   variant = 'primary',
 }) => {
-  const baseStyle = "px-5 py-2 rounded-lg transition cursor-pointer font-bold text-base/[30px] tracking-[0.016em]";
+  const baseStyle = "px-7 py-2 rounded-full transition cursor-pointer font-bold text-base/[30px] tracking-[0.016em]";
   const variantStyle = {
-    primary: "bg-[#01BAEF] text-[#efefef] duration-500 transition-colors hover:bg-[#0193bc] active:bg-[#016b89]",
+    primary: "bg-[#00b4ff] text-[#0a0a0a] duration-500 transition-colors hover:bg-[hsl(198,100%,40%)] active:bg-[hsl(198,100%,30%)]",
     secondary: "bg-[#040F16] text-[#01BAEF]",
     ghost: "bg-transparent border border-[#01BAEF] text-[#FBFBFF] hover:bg-[#01BAEF]",
   }[variant];
