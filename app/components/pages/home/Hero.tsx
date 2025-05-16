@@ -1,20 +1,20 @@
 import Image from "next/image";
 import Button from "../../Button";
 
-import HeroImg from "@/public/hero-img.svg";
+import HeroImg from "@/public/home/homepage-img.svg";
 
 export default function Hero() {
   return (
     <header className="py-32">
-      <div className="max-w-7xl mx-auto px-6 flex flex-col justify-between gap-8 items-center lg:flex-row">
-        <div className="max-w-xl">
-          <h1 className="text-[#252323] text-4xl/[2.466rem] font-bold md:text-5xl/[3.416rem]">
-            We Build Websites That <span className="text-[#00A5CF]">Grow</span> Your Business
+      <div className="max-w-7xl mx-auto px-6 flex flex-col justify-between gap-12 items-center lg:flex-row">
+        <div className="max-w-xl flex flex-col items-center lg:items-start">
+          <h1 className="text-[#f5f5f5] text-4xl/[2.466rem] font-bold text-center lg:text-start md:text-5xl/[3.016rem]">
+            We Build Websites That <span className="text-[rgb(0,180,255)]">Grow</span> Your Business
           </h1>
-          <p className="text-[rgba(37,35,35,0.8)] text-base/[2.224rem] mt-4 md:text-lg/[2.274rem]">
+          <p className="text-[#a8a8a8] text-base/[2.024rem] mt-4 text-center lg:text-start md:text-lg/[2.274rem]">
             Strategic web design and development that turns visitors into customers.
           </p>
-          <Button className="mt-8 w-full lg:w-fit">Book a Free Consultation</Button>
+          <Button className="mt-8">Book Free Consultation</Button>
         </div>
         <Image
           src={HeroImg}
