@@ -15,7 +15,7 @@ const serviceData: ServiceType[] = [
   {
     id: 1,
     title: "Web Development",
-    description: "We build fast, secure, and scalable websites that grow with your business — from sleek landing pages to full-stack web applications.",
+    description: "We build fast, secure, and scalable websites that grow with your business from sleek landing pages to full-stack web applications.",
     image: WebDevImg,
   },
   {
@@ -37,17 +37,17 @@ function Services() {
   const activeService = serviceData.find((s) => s.id === activeServiceId);
 
   return (
-    <section className="py-32">
+    <section className="py-32 bg-[#0a0a0a]">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-[#252323] text-4xl/[2.466rem] font-bold md:text-5xl/[3.416rem]">
-          <span className="text-[#00A5CF]">What</span> We Do Best
+        <h2 className="text-[#f5f5f5] text-4xl/[2.4rem] font-bold text-center lg:text-start md:text-5xl/[3rem]">
+          What We <span className="text-[#00b4ff]">Do</span> Best
         </h2>
-        <p className="text-[rgba(37,35,35,0.8)] text-base/[2.224rem] mt-4 md:text-lg/[2.274rem]">
-          Tailored web solutions designed to grow your business faster.
+        <p className="text-[#a8a8a8] text-base/[1.8rem] mt-4 max-w-2xl mx-auto text-center lg:text-start lg:mx-0 md:text-lg/[2rem]">
+          We build custom websites and web apps designed to convert. Optimized for performance and growth with secure, accessible, and responsive experiences on every device.
         </p>
 
         <div className="mt-12 flex flex-col gap-6 lg:flex-row lg:justify-between">
-          <div className="bg-[#252323] px-4 py-6 rounded-xl h-fit flex flex-col gap-y-4 shadow shadow-[#252323] md:px-6 md:py-8 lg:w-2/5">
+          <div className="bg-[#242424] px-4 py-6 rounded-2xl h-fit flex flex-col gap-y-3 md:p-4 lg:w-2/5">
             {/* Service Button */}
             {serviceData.map((service) => (
               <ServiceButton
