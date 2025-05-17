@@ -9,7 +9,7 @@ type Props = {
 
 function ServiceDetail({ service }: Props) {
   return (
-    <div className="bg-[#242424] py-12 px-6 rounded-xl md:px-8 md:py-6 lg:w-3/5">
+    <article className="bg-[#242424] py-12 px-6 rounded-xl md:px-8 md:py-8 lg:w-3/5">
       <div className="flex justify-center">
         <Image
           src={service.image}
@@ -26,7 +26,7 @@ function ServiceDetail({ service }: Props) {
           {service.description}
         </p>
       </div>
-    </div>
+    </article>
   );
 }
 
