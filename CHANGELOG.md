@@ -1,3 +1,15 @@
+# [1.13.0](https://github.com/flowz0/netflows/compare/v1.12.0...v1.13.0) (2025-05-18)
+
+
+### Bug Fixes
+
+* optimize SEO & increase top/bottom padding for md screen sizes ([77c6900](https://github.com/flowz0/netflows/commit/77c69005c97cca0d9066b6e2cf298c080a507221))
+
+
+### Features
+
+* create functional testimonal selector component to improve UX/UI & credibility ([2eb9267](https://github.com/flowz0/netflows/commit/2eb9267e9e46034132186abe2e52cc711278685a))
+
 # [1.12.0](https://github.com/flowz0/netflows/compare/v1.11.0...v1.12.0) (2025-05-16)
 
 
