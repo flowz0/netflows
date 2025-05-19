@@ -50,39 +50,38 @@ export default function Testimonials() {
   return (
     <section className="py-32">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="flex flex-col justify-between gap-8 lg:items-end lg:flex-row">
+        <div className="flex flex-col justify-between gap-12 lg:items-end lg:flex-row">
           <h1 className="text-[#f5f5f5] text-4xl/[2.4rem] font-bold lg:text-start md:text-5xl">
-            What our clients <br className="" />
-            are <span className="text-[#00b4ff]">saying</span> about{" "}
-            <br className="" />
+            What our clients
+            <br />
+            are <span className="text-[#00b4ff]">saying</span> about
+            <br />
             working with us
           </h1>
-          <div className="flex items-center justify-end gap-5">
+          <div className="flex items-center justify-end gap-4">
             <p className="text-[#8f8f8f]">{currentTestimonial.id + 1}/{TestimonialData.length}</p>
-            <div className="flex justify-end gap-3">
+            <div className="flex justify-end gap-2">
               <button onClick={prevIndex}>
                 <FaArrowLeft
-                  className={`bg-[hsl(0,0%,14%)] p-2 rounded-full w-8 h-8 ${
-                    currentIndex === 0
+                  className={`bg-[hsl(0,0%,14%)] p-2 rounded-full w-8 h-8 ${currentIndex === 0
                       ? "text-[hsl(0,0%,56%)] cursor-not-allowed"
                       : "cursor-pointer hover:bg-[hsl(0,0%,24%)]"
-                  }`}
+                    }`}
                 />
               </button>
               <button onClick={nextIndex}>
                 <FaArrowRight
-                  className={`bg-[hsl(0,0%,14%)] p-2 rounded-full w-8 h-8 ${
-                    currentIndex === TestimonialData.length - 1
+                  className={`bg-[hsl(0,0%,14%)] p-2 rounded-full w-8 h-8 ${currentIndex === TestimonialData.length - 1
                       ? "text-[hsl(0,0%,56%)] cursor-not-allowed"
                       : "cursor-pointer hover:bg-[hsl(0,0%,24%)]"
-                  }`}
+                    }`}
                 />
               </button>
             </div>
           </div>
         </div>
 
-        <div className="flex justify-end mt-6">
+        <div className="flex justify-end mt-4">
           <Testimonial
             key={currentTestimonial.id}
             review={currentTestimonial.review}
