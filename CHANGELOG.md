@@ -1,3 +1,10 @@
+## [1.14.1](https://github.com/flowz0/netflows/compare/v1.14.0...v1.14.1) (2025-05-19)
+
+
+### Bug Fixes
+
+* optimize Projects component SEO and style customization ([ac2bbb1](https://github.com/flowz0/netflows/commit/ac2bbb1efd87acd9c98d36fcbd0818c8a0592891))
+
 # [1.14.0](https://github.com/flowz0/netflows/compare/v1.13.2...v1.14.0) (2025-05-19)
 
 
