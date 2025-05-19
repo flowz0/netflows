@@ -57,7 +57,7 @@ export default function Testimonials() {
             <br className="" />
             working with us
           </h1>
-          <div className="flex items-center justify-between sm:justify-end gap-6">
+          <div className="flex items-center justify-end gap-5">
             <p className="text-[#8f8f8f]">{currentTestimonial.id + 1}/{TestimonialData.length}</p>
             <div className="flex justify-end gap-3">
               <button onClick={prevIndex}>
@@ -82,7 +82,7 @@ export default function Testimonials() {
           </div>
         </div>
 
-        <div className="flex justify-end mt-8">
+        <div className="flex justify-end mt-6">
           <Testimonial
             key={currentTestimonial.id}
             review={currentTestimonial.review}
