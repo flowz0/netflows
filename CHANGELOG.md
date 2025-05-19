@@ -1,3 +1,11 @@
+## [1.13.1](https://github.com/flowz0/netflows/compare/v1.13.0...v1.13.1) (2025-05-19)
+
+
+### Bug Fixes
+
+* optimize Testimonial component style customization (decrease margin top for review & image, add semibold to name) ([f24fa61](https://github.com/flowz0/netflows/commit/f24fa6103f1d5f65a71273d28a1e8d373dd354a2))
+* optimize Testimonials component style customization (remove justify between for review count & arrows, decrease spacing) ([99fc974](https://github.com/flowz0/netflows/commit/99fc9742c0db1b582537f73c4b8181a4910f1dea))
+
 # [1.13.0](https://github.com/flowz0/netflows/compare/v1.12.0...v1.13.0) (2025-05-18)
 
 
