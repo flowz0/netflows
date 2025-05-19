@@ -1,3 +1,10 @@
+## [1.13.2](https://github.com/flowz0/netflows/compare/v1.13.1...v1.13.2) (2025-05-19)
+
+
+### Bug Fixes
+
+* optimize Testimonial component style customization (lower space between review image and name/role) ([e8537a2](https://github.com/flowz0/netflows/commit/e8537a2e3e456c8f410b29ce697f293b551c7086))
+
 ## [1.13.1](https://github.com/flowz0/netflows/compare/v1.13.0...v1.13.1) (2025-05-19)
 
 
