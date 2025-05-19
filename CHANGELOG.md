@@ -1,3 +1,17 @@
+# [1.14.0](https://github.com/flowz0/netflows/compare/v1.13.2...v1.14.0) (2025-05-19)
+
+
+### Bug Fixes
+
+* code optimization by removing a blank line ([1da1789](https://github.com/flowz0/netflows/commit/1da17890f07cbccb338dea9f2253e10e0cdc02af))
+* optimize accessibility by adding reviewerName to Image alt property for more context ([79fd103](https://github.com/flowz0/netflows/commit/79fd10352922cd8f1178b35a6cdc0bb3db693969))
+* optimize structure for jsx and style customization ([ee029ee](https://github.com/flowz0/netflows/commit/ee029eeea3c8ee34c2fb7006bcfaa138e3ad6744))
+
+
+### Features
+
+* create ProjectCard component to display project details ([e594c57](https://github.com/flowz0/netflows/commit/e594c573dfcd14d9ebf93f03c45ac1d60a965d45))
+
 ## [1.13.2](https://github.com/flowz0/netflows/compare/v1.13.1...v1.13.2) (2025-05-19)
 
 
