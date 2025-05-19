@@ -32,7 +32,7 @@ export default function Testimonial({
       <div className="flex items-start gap-4 mt-4">
         <Image
           src={reviewerImg || PlaceholderImg}
-          alt="Testimonial Image"
+          alt={`${reviewerName} reviewer image`}
           className="rounded-full w-12 h-12"
         />
         <div>
