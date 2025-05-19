@@ -1,6 +1,5 @@
 "use client";
 
-
 import { ServiceType } from "@/app/types/service";
 import { useState } from "react";
 
