@@ -9,7 +9,7 @@ const TestimonialData = [
   {
     id: 0,
     review:
-      "“We had no online presence before partnering with the team. They built a professional, industry-focused website that led to a clear increase in customer inquiries. The process was smooth and efficient from start to finish.”",
+      "We had no online presence before partnering with the team. They built a professional, industry-focused website that led to a clear increase in customer inquiries. The process was smooth and efficient from start to finish.",
     // reviewerImg: "/path/to/image.jpg",
     reviewerName: "Karson Kolle",
     reviewerTitle: "Founder at Duct Daddy",
@@ -17,14 +17,14 @@ const TestimonialData = [
   {
     id: 1,
     review:
-      "“Working with this team was a game-changer for our business. They took the time to understand our needs and delivered a website that not only looks great but also performs exceptionally well. Highly recommend!”",
+      "Working with this team was a game-changer for our business. They took the time to understand our needs and delivered a website that not only looks great but also performs exceptionally well. Highly recommend!",
     reviewerName: "John Doe",
     reviewerTitle: "CEO at Tech Innovations",
   },
   {
     id: 2,
     review:
-      "“From the initial consultation to the final launch, the team was professional and attentive. They transformed our outdated website into a modern, user-friendly platform that has received rave reviews from our customers.”",
+      "From the initial consultation to the final launch, the team was professional and attentive. They transformed our outdated website into a modern, user-friendly platform that has received rave reviews from our customers.",
     reviewerName: "Jane Smith",
     reviewerTitle: "Marketing Director at Creative Solutions",
   },
