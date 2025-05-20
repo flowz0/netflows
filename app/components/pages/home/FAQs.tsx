@@ -10,9 +10,9 @@ export default function FAQs() {
   return (
     <section className="py-32 px-6 max-w-7xl mx-auto">
       <div className="flex flex-col items-center">
-        <p className="bg-[#00b3ff] text-[#0a0a0a] font-bold py-1 px-3 rounded-full">FAQs</p>
+        <p className="bg-[#00b3ff] text-[#0a0a0a] font-bold py-1 px-5 rounded-full">FAQs</p>
         <h2 className="text-[#f5f5f5] mt-4 text-4xl/[2.6rem] font-semibold text-center md:text-5xl/[3.4rem]">
-          Everything <span className="font-bold">You</span>
+          Everything You
           <br />
           Need to Know
         </h2>

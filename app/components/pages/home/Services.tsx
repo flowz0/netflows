@@ -38,14 +38,15 @@ function Services() {
   return (
     <section className="py-32 bg-[#0a0a0a]">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-[#f5f5f5] text-4xl/[2.6rem] font-semibold text-center lg:text-start md:text-5xl/[3.4rem]">
-          What We 
-          <br />
-          <span className="text-[#00b4ff] font-bold">Do</span> Best
-        </h2>
-        <p className="text-[#a8a8a8] text-base/[1.8rem] mt-4 max-w-2xl mx-auto text-center lg:text-start lg:mx-0 md:text-lg/[2rem]">
-          We build custom websites and web apps designed to convert. Optimized for performance and growth with secure, accessible, and responsive experiences on every device.
-        </p>
+        <div className="flex flex-col items-center">
+          <p className="bg-[#00b3ff] text-[#0a0a0a] font-bold py-1 px-5 w-fit rounded-full">Case Studies</p>
+          <h2 className="text-[#f5f5f5] text-4xl/[2.6rem] mt-4 font-semibold text-center md:text-5xl/[3.4rem]">
+            What We Do Best
+          </h2>
+          <p className="text-[#a8a8a8] text-base/[1.8rem] mt-4 max-w-2xl mx-auto text-center lg:mx-0 md:text-lg/[2rem]">
+            We build custom websites and web apps designed to convert. Optimized for performance and growth with secure, accessible, and responsive experiences on every device.
+          </p>
+        </div>
 
         <div className="mt-12 flex flex-col gap-6 lg:flex-row lg:justify-between">
           <div className="bg-[#242424] px-4 py-6 rounded-2xl h-fit flex flex-col gap-y-3 md:p-4 lg:w-2/5">

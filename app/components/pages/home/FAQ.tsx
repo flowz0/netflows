@@ -9,10 +9,10 @@ export default function FAQ({ question, answer }: FAQProps) {
   return (
     <button
       onClick={() => setIsOpen(!isOpen)}
-      className="bg-[hsl(0,0%,14%)] py-6 px-6 w-full h-fit rounded-lg cursor-pointer"
+      className="bg-[hsl(0,0%,14%)] py-6 px-7 w-full h-fit rounded-lg cursor-pointer"
     >
       <h3 className="flex items-center justify-between gap-4">
-        <span className="text-[#f5f5f5] text-lg font-medium text-start">{question}</span>
+        <span className="text-[#f5f5f5] text-lg text-start">{question}</span>
         <span className={`transition-transform duration-300 ${isOpen ? "rotate-135" : ""}`}>
           <FaPlus className="w-4 h-4" />
         </span>
