@@ -1,3 +1,11 @@
+## [1.17.2](https://github.com/flowz0/netflows/compare/v1.17.1...v1.17.2) (2025-05-20)
+
+
+### Bug Fixes
+
+* optimize FAQ, FAQs, Projects, and Services components style customization ([d4b616e](https://github.com/flowz0/netflows/commit/d4b616e2c0b7bd26cb12ba27a3530eedc2a3bf3f))
+* optimize faqs data grammar ([c9c295a](https://github.com/flowz0/netflows/commit/c9c295acf6ecef22d8d9c841008a631d51394bb8))
+
 ## [1.17.1](https://github.com/flowz0/netflows/compare/v1.17.0...v1.17.1) (2025-05-20)
 
 
