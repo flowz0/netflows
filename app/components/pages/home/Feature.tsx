@@ -13,10 +13,10 @@ export default function Feature({ Icon, title, desc, className }: FeatureProps) 
       <div className="bg-[#00b4ff] shadow-xs rounded-lg w-fit p-3">
         <Icon className="text-[#0a0a0a] w-4 h-4" />
       </div>
-      <h3 className="mt-8 text-xl font-semibold md:text-2xl/[1.8rem]">
+      <h3 className="mt-6 text-xl font-semibold md:text-2xl/[1.8rem]">
         {title}
       </h3>
-      <p className="text-[hsl(0,0%,66%)] mt-4 leading-[1.6rem]">
+      <p className="text-[hsl(0,0%,66%)] mt-2 leading-[1.6rem]">
         {desc}
       </p>
     </div>
