@@ -1,3 +1,12 @@
+## [1.16.1](https://github.com/flowz0/netflows/compare/v1.16.0...v1.16.1) (2025-05-20)
+
+
+### Bug Fixes
+
+* optimize Projects component structure and increase line-height css ([a7f18de](https://github.com/flowz0/netflows/commit/a7f18de82ab8bd3356618235a68ca5892c8adbdf))
+* optimize Services component structure and line-height css ([abab703](https://github.com/flowz0/netflows/commit/abab703a8c0493b144256b882595efa2fd493140))
+* optimize Testimonials component header line-height ([31aa810](https://github.com/flowz0/netflows/commit/31aa81026b0ad0d19b9892354ecc77e408338e45))
+
 # [1.16.0](https://github.com/flowz0/netflows/compare/v1.15.0...v1.16.0) (2025-05-20)
 
 
