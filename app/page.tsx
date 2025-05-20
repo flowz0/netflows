@@ -4,6 +4,7 @@ import Services from "./components/pages/home/Services";
 import Projects from "./components/pages/home/Projects";
 import Testimonials from "./components/pages/home/Testimonials";
 import FAQs from "./components/pages/home/FAQs";
+import CTA from "./components/pages/home/CTA";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Projects />
       <Testimonials />
       <FAQs />
+      <CTA />
     </>
   );
 };
