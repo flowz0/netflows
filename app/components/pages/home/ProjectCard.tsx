@@ -1,10 +1,15 @@
+"use client";
+
 import Image from "next/image";
 import { ProjectProps } from "@/app/types/project";
 
 import { FaArrowUp } from "react-icons/fa";
 import PlaceholderImg from "@/public/1920x1080.svg";
+import { useRouter } from "next/navigation";
+import { slugify } from "@/app/lib/slugify";
 
 const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
+  const router = useRouter();
   const {
     brandName,
     industry,
@@ -15,16 +20,27 @@ const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
     comingSoon = false,
   } = project;
 
+  const handleClick = () => {
+    if (comingSoon) return;
+
+    const brandSlug = slugify(brandName);
+    const industrySlug = slugify(industry);
+    router.push(`/projects/${brandSlug}-${industrySlug}`);
+  };
+
   return (
-    <div className={`bg-[hsl(0,0%,14%)] py-6 px-6 rounded-3xl transition duration-300 group ${comingSoon
-      ? "cursor-not-allowed"
-      : "cursor-pointer hover:-translate-y-2"
-      }`}>
+    <div
+      onClick={handleClick}
+      className={`bg-[hsl(0,0%,14%)] py-6 px-6 rounded-3xl ${comingSoon
+        ? "cursor-not-allowed"
+        : "cursor-pointer"
+        }`}>
       <div className="flex justify-between items-center">
         <h3 className="text-[#f5f5f5] text-2xl font-semibold md:text-3xl">
           {brandName || "Project Name"}
         </h3>
-        <p className="text-[#a8a8a8] flex items-center transition-colors duration-300 group-hover:text-[#f5f5f5]">
+        <p className="text-[#a8a8a8] flex items-center transition-colors duration-300 hover:text-[#00b4ff]">
+          <span>View Project</span>
           <FaArrowUp className="w-6 h-6 rotate-45 ml-2" />
         </p>
       </div>
