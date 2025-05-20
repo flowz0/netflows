@@ -1,3 +1,10 @@
+# [1.16.0](https://github.com/flowz0/netflows/compare/v1.15.0...v1.16.0) (2025-05-20)
+
+
+### Features
+
+* create Feature & Features components ([0ae81b6](https://github.com/flowz0/netflows/commit/0ae81b6bf3280def8019794c66a37cda0c17c9ae))
+
 # [1.15.0](https://github.com/flowz0/netflows/compare/v1.14.1...v1.15.0) (2025-05-20)
 
 
