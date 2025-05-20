@@ -1,3 +1,11 @@
+## [1.17.4](https://github.com/flowz0/netflows/compare/v1.17.3...v1.17.4) (2025-05-20)
+
+
+### Bug Fixes
+
+* optimize Feature component style customization (decrease title & desc margin-top) ([43f74b4](https://github.com/flowz0/netflows/commit/43f74b4596d8550c3ae1e2480c96738501b3bc9e))
+* optimize Features component SEO ([26849f7](https://github.com/flowz0/netflows/commit/26849f7df312d849bf4834dc007f574459406fb1))
+
 ## [1.17.3](https://github.com/flowz0/netflows/compare/v1.17.2...v1.17.3) (2025-05-20)
 
 
