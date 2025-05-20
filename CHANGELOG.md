@@ -1,3 +1,17 @@
+# [1.15.0](https://github.com/flowz0/netflows/compare/v1.14.1...v1.15.0) (2025-05-20)
+
+
+### Bug Fixes
+
+* optimize Hero, ServiceDetail, Services, and Testimonials components style customization ([65ac7dd](https://github.com/flowz0/netflows/commit/65ac7ddf45b6d9ac4c737fa6dc3083a69bc567c9))
+* optimize Projects component style customization and update ProjectData import ([14ff696](https://github.com/flowz0/netflows/commit/14ff696aec17b8542b9bc9bfc1228ce10701ec62))
+* remove iconColor & shadowColor props from Feature component, optimize SEO for Features component ([79aa22b](https://github.com/flowz0/netflows/commit/79aa22bc44cee53d27a8c259f5dbb008aece6795))
+
+
+### Features
+
+* create functional dynamic slug routes for Projects page ([78f4c8f](https://github.com/flowz0/netflows/commit/78f4c8fc0c603933a63f0a35269be72a2cdae67b))
+
 ## [1.14.1](https://github.com/flowz0/netflows/compare/v1.14.0...v1.14.1) (2025-05-19)
 
 
