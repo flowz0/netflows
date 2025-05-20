@@ -8,8 +8,8 @@ export default function Hero() {
     <header className="py-32">
       <div className="max-w-7xl mx-auto px-6 flex flex-col justify-between gap-12 items-center lg:flex-row">
         <div className="max-w-xl flex flex-col items-center lg:items-start">
-          <h1 className="text-[#f5f5f5] text-4xl/[2.466rem] font-bold text-center lg:text-start md:text-5xl/[3.016rem]">
-            We Build Websites That <span className="text-[rgb(0,180,255)]">Grow</span> Your Business
+          <h1 className="text-[#f5f5f5] text-4xl/[2.466rem] font-semibold text-center lg:text-start md:text-5xl/[3.016rem]">
+            We Build Websites That <span className="text-[rgb(0,180,255)] font-bold">Grow</span> Your Business
           </h1>
           <p className="text-[#a8a8a8] text-base/[2.024rem] mt-4 text-center lg:text-start md:text-lg/[2.274rem]">
             Strategic web design and development that turns visitors into customers.

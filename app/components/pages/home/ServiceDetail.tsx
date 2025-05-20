@@ -19,7 +19,7 @@ function ServiceDetail({ service }: Props) {
       </div>
       {/* Active Service Content */}
       <div className="flex flex-col items-center">
-        <h4 className="text-[#f5f5f5] text-3xl/[1.8rem] font-bold mt-8 text-center md:text-4xl/[3rem]">
+        <h4 className="text-[#f5f5f5] text-3xl/[1.8rem] font-bold mt-6 text-center md:text-4xl/[3rem]">
           {service.title}
         </h4>
         <p className="text-[#a8a8a8] text-base/[1.6rem] md:text-base/[1.8rem] mt-4 text-center max-w-xl md:mt-2">

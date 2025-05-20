@@ -51,10 +51,10 @@ export default function Testimonials() {
     <section className="py-32">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col justify-between gap-12 lg:items-end lg:flex-row">
-          <h1 className="text-[#f5f5f5] text-4xl/[2.4rem] font-bold lg:text-start md:text-5xl">
+          <h1 className="text-[#f5f5f5] text-4xl/[2.4rem] font-semibold lg:text-start md:text-5xl">
             What our clients
             <br />
-            are <span className="text-[#00b4ff]">saying</span> about
+            are <span className="text-[#00b4ff] font-bold">saying</span> about
             <br />
             working with us
           </h1>
