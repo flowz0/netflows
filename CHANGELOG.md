@@ -1,3 +1,10 @@
+## [1.17.3](https://github.com/flowz0/netflows/compare/v1.17.2...v1.17.3) (2025-05-20)
+
+
+### Bug Fixes
+
+* optimize Projects, ServiceDetail, and Services components structure and style customization ([7b544c1](https://github.com/flowz0/netflows/commit/7b544c1742da5fb976e0ed3fb9e0e9175a20368b))
+
 ## [1.17.2](https://github.com/flowz0/netflows/compare/v1.17.1...v1.17.2) (2025-05-20)
 
 
