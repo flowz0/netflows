@@ -12,7 +12,7 @@ export default function FAQ({ question, answer }: FAQProps) {
       className="bg-[hsl(0,0%,14%)] py-6 px-6 w-full h-fit rounded-lg cursor-pointer"
     >
       <h3 className="flex items-center justify-between gap-4">
-        <span className="text-lg font-medium text-start">{question}</span>
+        <span className="text-[#f5f5f5] text-lg font-medium text-start">{question}</span>
         <span className={`transition-transform duration-300 ${isOpen ? "rotate-135" : ""}`}>
           <FaPlus className="w-4 h-4" />
         </span>
@@ -32,7 +32,7 @@ export default function FAQ({ question, answer }: FAQProps) {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.2 }}
-              className="text-[#a8a8a8] mt-4 text-start text-base/[1.6rem]"
+              className="text-[#f5f5f5] mt-4 text-start text-base/[1.6rem]"
             >
               {answer}
             </motion.p>
