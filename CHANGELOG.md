@@ -1,3 +1,12 @@
+## [1.17.1](https://github.com/flowz0/netflows/compare/v1.17.0...v1.17.1) (2025-05-20)
+
+
+### Bug Fixes
+
+* optimize FAQs component style customization ([28510a0](https://github.com/flowz0/netflows/commit/28510a0f8a6b8a256117d160a2e1feb824b9dc0b))
+* optimize Testimonial component quotes style customization & structure ([578b3a9](https://github.com/flowz0/netflows/commit/578b3a9133505feca5b66ad6d0de75298e4ac0d8))
+* update FAQ component question and answer text color ([ba8ea41](https://github.com/flowz0/netflows/commit/ba8ea412528164a43d2938203a2da939e841d61e))
+
 # [1.17.0](https://github.com/flowz0/netflows/compare/v1.16.1...v1.17.0) (2025-05-20)
 
 
