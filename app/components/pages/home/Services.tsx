@@ -39,7 +39,9 @@ function Services() {
     <section className="py-32 bg-[#0a0a0a]">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col items-center">
-          <p className="bg-[#00b3ff] text-[#0a0a0a] font-bold py-1 px-5 w-fit rounded-full">Case Studies</p>
+          <p className="bg-[#00b3ff] text-[#0a0a0a] font-bold py-1 px-5 w-fit rounded-full">
+            Our Services
+          </p>
           <h2 className="text-[#f5f5f5] text-4xl/[2.6rem] mt-4 font-semibold text-center md:text-5xl/[3.4rem]">
             What We Do Best
           </h2>
