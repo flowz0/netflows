@@ -1,3 +1,10 @@
+# [1.18.0](https://github.com/flowz0/netflows/compare/v1.17.4...v1.18.0) (2025-05-21)
+
+
+### Features
+
+* create Footer component, import brand-logo & Footer into app/layout.tsx ([f5615b3](https://github.com/flowz0/netflows/commit/f5615b3c7b50b36e119334c31986bc6bcd938ca8))
+
 ## [1.17.4](https://github.com/flowz0/netflows/compare/v1.17.3...v1.17.4) (2025-05-20)
 
 
