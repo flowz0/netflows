@@ -40,7 +40,7 @@ const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
           {brandName || "Project Name"}
         </h3>
         <p className="text-[#a8a8a8] flex items-center transition-colors duration-300 hover:text-[#00b4ff]">
-          <span>View Project</span>
+          <span className="hidden sm:block">View Project</span>
           <FaArrowUp className="w-6 h-6 rotate-45 ml-2" />
         </p>
       </div>
