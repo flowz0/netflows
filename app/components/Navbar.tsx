@@ -14,7 +14,6 @@ export default function Navbar() {
     { name: "About", href: "/about" },
     { name: "Services", href: "/services" },
     { name: "Work", href: "/work" },
-    { name: "Contact", href: "/contact" },
   ];
 
   const [isOpen, setIsOpen] = useState(false);
@@ -48,13 +47,13 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Links */}
-        <ul className="hidden text-[#f5f5f5] font-semibold text-base/[32px] tracking-[0.016em] md:flex md:items-center md:gap-x-8">
+        <ul className="hidden text-[#f5f5f5] font-semibold text-base/[32px] tracking-[0.016em] md:flex md:items-center md:gap-x-6">
           {Links.map((link) => (
             <li key={link.href}>
               <AnimatedLink
                 href={link.href}
                 className={`${pathname === link.href
-                  ? "duration-300 transition-colors text-[#01BAEF]"
+                  ? "duration-300 transition-colors text-[#00b4ff]"
                   : ""
                   }`}
               >
@@ -63,6 +62,17 @@ export default function Navbar() {
             </li>
           ))}
         </ul>
+
+        <Link
+          href="/book-consultation"
+          className={`hidden duration-300 transition-colors py-1 px-4 font-semibold text-base/[32px] tracking-[0.016em] rounded-lg md:block
+          ${pathname === "/book-consultation"
+              ? " bg-[#00b4ff] text-[#0a0a0a]"
+              : "bg-[#242424] text-[#f5f5f5] hover:bg-[hsl(0,0%,24%)] active:bg-[hsl(0,0%,34%)]"
+            } `}
+        >
+          Book Consultation
+        </Link>
 
         {/* Mobile menu button */}
         <button
@@ -106,7 +116,7 @@ export default function Navbar() {
                   <Link
                     href={link.href}
                     className={`${pathname === link.href
-                      ? "text-[#00deff]"
+                      ? "text-[#00b4ff]"
                       : "text-[#f5f5f5]"
                       }`}
                     onClick={() => setIsOpen(!isOpen)}
@@ -115,6 +125,15 @@ export default function Navbar() {
                   </Link>
                 </li>
               ))}
+              <Link
+                href="/book-consultation"
+                className={`${pathname === "/book-consultation"
+                  ? "text-[#00b4ff]"
+                  : "text-[#f5f5f5]"
+                  }`}
+              >
+                Book Consultation
+              </Link>
             </ul>
           </motion.div>
         )}
