@@ -15,7 +15,7 @@ const FooterLink: React.FC<FooterLinkProps> = ({ children, href, className, targ
     <Link
       href={href}
       target={target}
-      className={`${className} text-[#f5f5f5] font-semibold transition-colors duration-300 hover:text-[#a8a8a8]`}
+      className={`${className} text-[#f5f5f5] font-semibold transition-colors duration-300 hover:text-[#00b4ff]`}
     >
       {children}
     </Link>
@@ -24,19 +24,16 @@ const FooterLink: React.FC<FooterLinkProps> = ({ children, href, className, targ
 
 export default function Footer() {
   return (
-    <footer className="bg-[#242424] py-16 md:py-24 px-6">
-      <div className="max-w-7xl mx-auto">
+    <footer className="bg-[#242424] py-16 md:py-24">
+      <div className="max-w-7xl px-6 mx-auto">
         <div className="flex flex-col flex-wrap justify-between gap-8 sm:flex-row">
           <div className="flex flex-col gap-2">
             <h3 className="text-[#a8a8a8] uppercase">Resources</h3>
             <FooterLink href="/about">
               About
             </FooterLink>
-            <FooterLink href="/projects">
-              Projects
-            </FooterLink>
-            <FooterLink href="/contact">
-              Contact
+            <FooterLink href="/work">
+              Work
             </FooterLink>
             <FooterLink href="/#FAQ">
               FAQ
@@ -77,23 +74,25 @@ export default function Footer() {
           </div>
         </div>
 
+        <Link href="/">
+          <Image
+            src={NetflowsImg}
+            alt="Netflows Brand"
+            className="h-fit w-full mt-16 transition-transform duration-500 hover:translate-y-2"
+            draggable={false}
+          />
+        </Link>
+
+        <hr className="text-[hsl(0,0%,26%)] mt-12" />
+
         <div className="flex gap-4 items-center justify-between mt-12">
-          <h4 className="font-semibold text-lg">
+          <h4 className="font-semibold sm:text-lg">
             © 2025 Netflows
           </h4>
-          <FooterLink href="/legal/privacy-policy" className="font-normal">
+          <FooterLink href="/legal/privacy-policy">
             Privacy Policy
           </FooterLink>
         </div>
-
-        <hr className="text-[hsl(0,0%,26%)] mt-8 md:mt-16" />
-
-        <Image
-          src={NetflowsImg}
-          alt="Netflows Brand"
-          className="h-fit w-full mt-8 md:mt-16"
-          draggable={false}
-        />
       </div>
     </footer>
   );
