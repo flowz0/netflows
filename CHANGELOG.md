@@ -1,3 +1,10 @@
+## [1.18.2](https://github.com/flowz0/netflows/compare/v1.18.1...v1.18.2) (2025-05-21)
+
+
+### Bug Fixes
+
+* optimize CTA component structure and SEO ([7a72428](https://github.com/flowz0/netflows/commit/7a72428d3374ca8ab657632467423de1bab5194d))
+
 ## [1.18.1](https://github.com/flowz0/netflows/compare/v1.18.0...v1.18.1) (2025-05-21)
 
 
