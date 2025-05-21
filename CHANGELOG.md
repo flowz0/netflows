@@ -1,3 +1,12 @@
+## [1.18.1](https://github.com/flowz0/netflows/compare/v1.18.0...v1.18.1) (2025-05-21)
+
+
+### Bug Fixes
+
+* add View Project text to ProjectCard component for sm: breakpoint ([d6f8ac0](https://github.com/flowz0/netflows/commit/d6f8ac0f5acaa4cac7699ba8636e344d971418fa))
+* optimize Footer component style customization ([6e87ef3](https://github.com/flowz0/netflows/commit/6e87ef35bb72834e3490fd561090a85e2aa61875))
+* optimize Navbar component Book Consultation links ([f12405d](https://github.com/flowz0/netflows/commit/f12405d990374c1fd875daaeb0fdac6a882f68ae))
+
 # [1.18.0](https://github.com/flowz0/netflows/compare/v1.17.4...v1.18.0) (2025-05-21)
 
 
