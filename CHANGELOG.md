@@ -1,3 +1,17 @@
+## [1.18.3](https://github.com/flowz0/netflows/compare/v1.18.2...v1.18.3) (2025-05-24)
+
+
+### Bug Fixes
+
+* add faq id to FAQs component ([e14ec42](https://github.com/flowz0/netflows/commit/e14ec42bfc086af90152a42fd6438d2200d72ea7))
+* optimize app layout style customization (add scroll-smooth to html element) ([ade3466](https://github.com/flowz0/netflows/commit/ade3466fddd9931121052dfb80c438f26605a1e9))
+* optimize ServiceDetail component style customization (decrease image height) ([26ed283](https://github.com/flowz0/netflows/commit/26ed28325f85c041ae98231c1a0acde40362b9ee))
+* update Button import in CTA component & optimize SEO ([90c0edc](https://github.com/flowz0/netflows/commit/90c0edc0329b2d888eebbfde877c5f200a5812a2))
+* update CTA import in app page (home) ([97337b8](https://github.com/flowz0/netflows/commit/97337b8f1e678e67e1e9a2b94ec4440a4cfde3f5))
+* update CTA import in app page (home) ([f468a18](https://github.com/flowz0/netflows/commit/f468a189a4d97da0d684d88b9919bede0ca4d7ea))
+* update FooterLinks in Footer component to use correct names & hrefs ([2917c28](https://github.com/flowz0/netflows/commit/2917c28b633aff11ae33030d27746e6775020222))
+* update Links for Navbar component to use correct name and href ([9144f2d](https://github.com/flowz0/netflows/commit/9144f2d20af420a79c24fce21e3756a4f0407a29))
+
 ## [1.18.2](https://github.com/flowz0/netflows/compare/v1.18.1...v1.18.2) (2025-05-21)
 
 
