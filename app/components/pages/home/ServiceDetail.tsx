@@ -23,7 +23,7 @@ function ServiceDetail({ service }: Props) {
         <Image
           src={service.image}
           alt={`${service.title} image`}
-          className="object-cover h-96 w-auto pointer-events-none"
+          className="object-cover h-80 w-auto pointer-events-none"
         />
       </div>
     </article>
