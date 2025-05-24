@@ -28,7 +28,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body
         className={`${roboto.variable} ${inter.variable} bg-[#0a0a0a] text-[#f5f5f5] antialiased`}
       >
