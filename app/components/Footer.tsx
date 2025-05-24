@@ -32,10 +32,10 @@ export default function Footer() {
             <FooterLink href="/about">
               About
             </FooterLink>
-            <FooterLink href="/work">
-              Work
+            <FooterLink href="/projects">
+              Projects
             </FooterLink>
-            <FooterLink href="/#FAQ">
+            <FooterLink href="#faq">
               FAQ
             </FooterLink>
           </div>
