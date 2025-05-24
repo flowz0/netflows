@@ -11,9 +11,9 @@ import AnimatedLink from "./AnimatedLink";
 
 export default function Navbar() {
   const Links = [
-    { name: "About", href: "/about" },
     { name: "Services", href: "/services" },
-    { name: "Work", href: "/work" },
+    { name: "Projects", href: "/projects" },
+    { name: "FAQ", href: "#faq" },
   ];
 
   const [isOpen, setIsOpen] = useState(false);
@@ -71,7 +71,7 @@ export default function Navbar() {
               : "bg-[#242424] text-[#f5f5f5] hover:bg-[hsl(0,0%,24%)] active:bg-[hsl(0,0%,34%)]"
             } `}
         >
-          Book Consultation
+          Book Free Consultation
         </Link>
 
         {/* Mobile menu button */}
@@ -125,15 +125,6 @@ export default function Navbar() {
                   </Link>
                 </li>
               ))}
-              <Link
-                href="/book-consultation"
-                className={`${pathname === "/book-consultation"
-                  ? "text-[#00b4ff]"
-                  : "text-[#f5f5f5]"
-                  }`}
-              >
-                Book Consultation
-              </Link>
             </ul>
           </motion.div>
         )}
