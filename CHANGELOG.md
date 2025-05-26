@@ -1,3 +1,16 @@
+# [1.19.0](https://github.com/flowz0/netflows/compare/v1.18.3...v1.19.0) (2025-05-26)
+
+
+### Bug Fixes
+
+* optimize Navbar component style customization ([191d5cc](https://github.com/flowz0/netflows/commit/191d5cceb10a4f843dc20f656e5c5eb267abccb0))
+* update projectThumbnail data name in ProjectCard component and update View Project hover text-color ([74dc0cc](https://github.com/flowz0/netflows/commit/74dc0cc2069ef840307997429115f01bb73bfff2))
+
+
+### Features
+
+* create ProjectBody & ProjectHeader components to display the project data on the projects slug page ([fd727d0](https://github.com/flowz0/netflows/commit/fd727d061d1dfacfc3e324ff249eb7e547c99014))
+
 ## [1.18.3](https://github.com/flowz0/netflows/compare/v1.18.2...v1.18.3) (2025-05-24)
 
 
