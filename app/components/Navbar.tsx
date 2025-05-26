@@ -39,7 +39,7 @@ export default function Navbar() {
             : <Image
               src={BrandLogo}
               alt="Netflows logo"
-              className="h-16 w-auto duration-500 transition-transform hover:scale-105"
+              className="h-16 w-auto"
               draggable="false"
               priority={false}
             />
@@ -60,19 +60,21 @@ export default function Navbar() {
                 {link.name}
               </AnimatedLink>
             </li>
-          ))}
+          ))} <li>
+
+            <Link
+              href="/book-consultation"
+              className={`hidden duration-300 transition-colors py-1 px-4 font-semibold text-base/[32px] tracking-[0.016em] rounded-lg md:block
+            ${pathname === "/book-consultation"
+                  ? " bg-[#00b4ff] text-[#0a0a0a]"
+                  : "bg-[#242424] text-[#f5f5f5] hover:bg-[hsl(0,0%,24%)] active:bg-[hsl(0,0%,34%)]"
+                } `}
+            >
+              Book Free Consultation
+            </Link>
+          </li>
         </ul>
 
-        <Link
-          href="/book-consultation"
-          className={`hidden duration-300 transition-colors py-1 px-4 font-semibold text-base/[32px] tracking-[0.016em] rounded-lg md:block
-          ${pathname === "/book-consultation"
-              ? " bg-[#00b4ff] text-[#0a0a0a]"
-              : "bg-[#242424] text-[#f5f5f5] hover:bg-[hsl(0,0%,24%)] active:bg-[hsl(0,0%,34%)]"
-            } `}
-        >
-          Book Free Consultation
-        </Link>
 
         {/* Mobile menu button */}
         <button
@@ -107,7 +109,7 @@ export default function Navbar() {
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "100vh", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.4, ease: "easeInOut" }}
+            transition={{ duration: 0.2, ease: "easeInOut" }}
             className="md:hidden bg-[#0a0a0a]"
           >
             <ul className="flex flex-col gap-y-4 px-8 font-bold text-3xl/[42px] tracking-[0.016em]">
