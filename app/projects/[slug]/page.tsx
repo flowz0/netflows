@@ -1,6 +1,8 @@
 import ProjectData from "@/app/data/projects";
 import { slugify } from "@/app/lib/slugify";
 import { notFound } from "next/navigation";
+import ProjectHeader from "@/app/components/pages/projects/ProjectHeader";
+import ProjectBody from "@/app/components/pages/projects/ProjectBody";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -16,13 +18,37 @@ export default async function ProjectPage({ params }: Props) {
   if (!project) notFound();
 
   return (
-    <section className="py-32 px-6 max-w-7xl mx-auto">
-      <h1 className="text-[#f5f5f5] text-4xl/[2.4rem] font-semibold text-center lg:text-start md:text-5xl/[3rem]">
-        {project.brandName}
-      </h1>
-      <p className="text-[#a8a8a8] text-base/[1.8rem] mt-4 max-w-2xl mx-auto text-center lg:text-start lg:mx-0 md:text-lg/[2rem]">
-        {project.industry}
-      </p>
-    </section>
+    <article className="pt-24 px-6 max-w-7xl mx-auto">
+      <ProjectHeader
+        id={project.id}
+        brandName={project.brandName}
+        industry={project.industry}
+        summary={project.summary}
+        brandLogo={project.brandLogo}
+        projectBanner={project.projectBanner}
+      />
+      <ProjectBody
+        id={project.id}
+        brandName={project.brandName}
+        industry={project.industry}
+        challenge={project.challenge}
+        challengeDesc={project.challengeDesc}
+        challengeImg={project.challengeImg}
+        solution={project.solution}
+        solutionDesc={project.solutionDesc}
+        solutionImg={project.solutionImg}
+        solutionImg2={project.solutionImg2}
+        solutionImg3={project.solutionImg3}
+        solutionImg4={project.solutionImg4}
+        results={project.results}
+        resultsDesc={project.resultsDesc}
+        resultsImg={project.resultsImg}
+        takeaways={project.takeaways}
+        takeawaysDesc={project.takeawaysDesc}
+        takeawaysImg={project.takeawaysImg}
+        takeawaysImg2={project.takeawaysImg2}
+        takeawaysImg3={project.takeawaysImg3}
+      />
+    </article>
   );
 }
