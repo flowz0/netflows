@@ -13,7 +13,7 @@ const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
   const {
     brandName,
     industry,
-    projectCoverImg,
+    projectThumbnail,
     development = false,
     design = false,
     maintenance = false,
@@ -39,7 +39,7 @@ const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
         <h3 className="text-[#f5f5f5] text-2xl font-semibold md:text-3xl">
           {brandName || "Project Name"}
         </h3>
-        <p className="text-[#a8a8a8] flex items-center transition-colors duration-300 hover:text-[#00b4ff]">
+        <p className="text-[#a8a8a8] flex items-center transition-colors duration-300 hover:text-[#f5f5f5]">
           <span className="hidden sm:block">View Project</span>
           <FaArrowUp className="w-6 h-6 rotate-45 ml-2" />
         </p>
@@ -82,7 +82,7 @@ const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
           ) : ""
         }
         <Image
-          src={projectCoverImg || PlaceholderImg}
+          src={projectThumbnail || PlaceholderImg}
           alt={`${brandName} project image`}
           className="h-fit w-auto rounded-3xl transition duration-300 ease-in-out hover:scale-110"
         />
