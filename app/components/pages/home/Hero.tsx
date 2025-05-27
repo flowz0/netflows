@@ -2,6 +2,7 @@ import Image from "next/image";
 import Button from "../../Button";
 
 import HeroImg from "@/public/home/homepage-img.svg";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -14,7 +15,9 @@ export default function Hero() {
           <p className="text-[#a8a8a8] text-base/[2.024rem] mt-4 text-center lg:text-start md:text-lg/[2.274rem]">
             Strategic web design and development that turns visitors into customers.
           </p>
-          <Button className="mt-8">Book Free Consultation</Button>
+          <Link href="/book-consultation">
+            <Button className="mt-8">Book Free Consultation</Button>
+          </Link>
         </div>
         <Image
           src={HeroImg}

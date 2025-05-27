@@ -1,4 +1,5 @@
 import Button from "@/app/components/Button";
+import Link from "next/link";
 
 export default function CTA() {
   return (
@@ -10,7 +11,9 @@ export default function CTA() {
         <p className="text-[#a8a8a8] text-base/[1.8rem] mt-4 max-w-3xl text-center lg:mx-0 md:text-lg/[2rem]">
           We design and develop fast, user-focused websites that convert. Perfect for startups, small businesses, or growing brands.
         </p>
-        <Button variant="primary" className="mt-8">Book Free Consultation</Button>
+        <Link href="/book-consultation">
+          <Button variant="primary" className="mt-8">Book Free Consultation</Button>
+        </Link>
       </div>
     </section>
   );
