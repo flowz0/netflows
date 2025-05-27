@@ -3,7 +3,7 @@ import ProjectCard from "@/app/components/pages/home/ProjectCard";
 
 export default function ProjectsPage() {
   return (
-    <main className="pt-32 px-6 max-w-7xl mx-auto">
+    <main className="pt-32 px-6 max-w-7xl mx-auto lg:pb-32">
       <h1 className="text-[#f5f5f5] mt-4 text-4xl/[2.6rem] font-semibold md:text-5xl/[3.4rem]">
         What We&apos;ve <span className="text-[#00b4ff] font-bold">Built</span> With Our Partners
       </h1>
