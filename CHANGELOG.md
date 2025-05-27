@@ -1,3 +1,10 @@
+## [1.19.6](https://github.com/flowz0/netflows/compare/v1.19.5...v1.19.6) (2025-05-27)
+
+
+### Bug Fixes
+
+* **layout:** add CTA component in app layout ([c6b5942](https://github.com/flowz0/netflows/commit/c6b5942c68aea74f7bb323d91e19d3f20e1c5e36))
+
 ## [1.19.5](https://github.com/flowz0/netflows/compare/v1.19.4...v1.19.5) (2025-05-27)
 
 
