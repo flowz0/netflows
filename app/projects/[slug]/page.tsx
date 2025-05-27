@@ -1,12 +1,33 @@
 import ProjectData from "@/app/data/projects";
 import { slugify } from "@/app/lib/slugify";
 import { notFound } from "next/navigation";
+import { Metadata } from "next";
 import ProjectHeader from "@/app/components/pages/projects/ProjectHeader";
 import ProjectBody from "@/app/components/pages/projects/ProjectBody";
 
 type Props = {
   params: Promise<{ slug: string }>;
 };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params
+
+  const project = ProjectData.find(
+    (project) =>
+      `${slugify(project.brandName)}-${slugify(project.industry)}` === slug
+  )
+
+  if (!project) {
+    return {
+      title: "Project Not Found | Netflows",
+    };
+  }
+
+  return {
+    title: `${project.brandName} Case Study | Netflows`,
+    description: project.summary,
+  }
+}
 
 export default async function ProjectPage({ params }: Props) {
   const { slug } = await params
