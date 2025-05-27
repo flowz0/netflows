@@ -1,3 +1,10 @@
+## [1.20.1](https://github.com/flowz0/netflows/compare/v1.20.0...v1.20.1) (2025-05-27)
+
+
+### Bug Fixes
+
+* **pages:** add priority attribute to Image for not-found pages ([b3cbfd5](https://github.com/flowz0/netflows/commit/b3cbfd579165f7053efa76450c0ad1eb1ec301b7))
+
 # [1.20.0](https://github.com/flowz0/netflows/compare/v1.19.10...v1.20.0) (2025-05-27)
 
 
