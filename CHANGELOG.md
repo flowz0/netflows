@@ -1,3 +1,11 @@
+## [1.19.8](https://github.com/flowz0/netflows/compare/v1.19.7...v1.19.8) (2025-05-27)
+
+
+### Bug Fixes
+
+* **pages:** remove CTA component from Projects layout and update metadata title ([79c805b](https://github.com/flowz0/netflows/commit/79c805b687bc368dfb8c8c1fbfeff2d1ffccd55c))
+* **styles:** add margin-bottom to ProjectsPage in desktop view ([f6ae328](https://github.com/flowz0/netflows/commit/f6ae32823c5b47e5108c28694eced0f6f4f6a59b))
+
 ## [1.19.7](https://github.com/flowz0/netflows/compare/v1.19.6...v1.19.7) (2025-05-27)
 
 
