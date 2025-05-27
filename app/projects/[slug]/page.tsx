@@ -18,7 +18,7 @@ export default async function ProjectPage({ params }: Props) {
   if (!project) notFound();
 
   return (
-    <article className="pt-24 px-6 max-w-7xl mx-auto">
+    <article className="pt-24 px-6 max-w-7xl mx-auto lg:pb-24">
       <ProjectHeader
         id={project.id}
         brandName={project.brandName}
