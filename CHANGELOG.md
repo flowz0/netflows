@@ -1,3 +1,10 @@
+## [1.19.4](https://github.com/flowz0/netflows/compare/v1.19.3...v1.19.4) (2025-05-27)
+
+
+### Bug Fixes
+
+* **navbar:** update Links FAQ href ([f660a2a](https://github.com/flowz0/netflows/commit/f660a2aaa7b76241908329298c57b38ca37a91ec))
+
 ## [1.19.3](https://github.com/flowz0/netflows/compare/v1.19.2...v1.19.3) (2025-05-27)
 
 
