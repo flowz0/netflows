@@ -1,3 +1,10 @@
+## [1.19.2](https://github.com/flowz0/netflows/compare/v1.19.1...v1.19.2) (2025-05-27)
+
+
+### Bug Fixes
+
+* decrease row gap for NavLinks in mobile menu in Navbar component ([06456c7](https://github.com/flowz0/netflows/commit/06456c7ad14b7c783dd424b0a4d91be018a5cb06))
+
 ## [1.19.1](https://github.com/flowz0/netflows/compare/v1.19.0...v1.19.1) (2025-05-27)
 
 
