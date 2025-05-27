@@ -1,3 +1,10 @@
+# [1.20.0](https://github.com/flowz0/netflows/compare/v1.19.10...v1.20.0) (2025-05-27)
+
+
+### Features
+
+* **projects:** dynamically set metadata title based on project slug ([3cea427](https://github.com/flowz0/netflows/commit/3cea427dad458c970e0d4e7235a6785331f8dab4))
+
 ## [1.19.10](https://github.com/flowz0/netflows/compare/v1.19.9...v1.19.10) (2025-05-27)
 
 
