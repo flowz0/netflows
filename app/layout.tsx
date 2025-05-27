@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import CTA from "./components/CTA";
 
 const roboto = Roboto({
   variable: "--font-roboto-sans",
@@ -34,6 +35,7 @@ export default function RootLayout({
       >
         <Navbar />
         {children}
+        <CTA />
         <Footer />
       </body>
     </html>
