@@ -13,7 +13,7 @@ export default function Navbar() {
   const Links = [
     { name: "Services", href: "/services" },
     { name: "Projects", href: "/projects" },
-    { name: "FAQ", href: "#faq" },
+    { name: "FAQ", href: "/#faq" },
   ];
 
   const [isOpen, setIsOpen] = useState(false);
