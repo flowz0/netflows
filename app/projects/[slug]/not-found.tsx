@@ -29,6 +29,7 @@ export default function PageNotFound() {
           src={NotFound404}
           alt="Landing page hero image"
           className="object-cover h-full pointer-events-none"
+          priority
         />
       </div>
     </header>
