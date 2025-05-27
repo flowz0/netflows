@@ -10,7 +10,7 @@ export const metadata = {
 
 export default function PageNotFound() {
   return (
-    <header className="pt-32 pb-48">
+    <header className="pt-32 pb-16">
       <div className="max-w-7xl mx-auto px-6 flex flex-col justify-between gap-8 items-center lg:flex-row">
         <div className="max-w-xl flex flex-col items-center lg:items-start">
           <h1 className="text-[#f5f5f5] text-4xl/[2.466rem] text-center font-bold md:text-5xl/[3.016rem] lg:text-start">
