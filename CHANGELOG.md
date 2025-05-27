@@ -1,3 +1,10 @@
+## [1.19.9](https://github.com/flowz0/netflows/compare/v1.19.8...v1.19.9) (2025-05-27)
+
+
+### Bug Fixes
+
+* **styles:** decrease padding-bottom for PageNotFound headers ([a279689](https://github.com/flowz0/netflows/commit/a279689ffa71631b3451f5dfe1f6ca101b09c531))
+
 ## [1.19.8](https://github.com/flowz0/netflows/compare/v1.19.7...v1.19.8) (2025-05-27)
 
 
