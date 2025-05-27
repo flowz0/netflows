@@ -1,3 +1,10 @@
+## [1.19.5](https://github.com/flowz0/netflows/compare/v1.19.4...v1.19.5) (2025-05-27)
+
+
+### Bug Fixes
+
+* **cta,hero:** add Link with href="/book-consultation" to CTA buttons ([2178c76](https://github.com/flowz0/netflows/commit/2178c76bd4844d544663a1a0a2449c910ac30fe8))
+
 ## [1.19.4](https://github.com/flowz0/netflows/compare/v1.19.3...v1.19.4) (2025-05-27)
 
 
