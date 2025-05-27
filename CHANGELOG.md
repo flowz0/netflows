@@ -1,3 +1,10 @@
+## [1.19.1](https://github.com/flowz0/netflows/compare/v1.19.0...v1.19.1) (2025-05-27)
+
+
+### Bug Fixes
+
+* update FAQ href in Navbar component to "/#faq" ([8922ae5](https://github.com/flowz0/netflows/commit/8922ae5d95bf1098d9ca5f347ea7741588d0df3e))
+
 # [1.19.0](https://github.com/flowz0/netflows/compare/v1.18.3...v1.19.0) (2025-05-26)
 
 
