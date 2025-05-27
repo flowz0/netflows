@@ -29,33 +29,33 @@ export default function Footer() {
         <div className="flex flex-col flex-wrap justify-between gap-8 sm:flex-row">
           <div className="flex flex-col gap-2">
             <h3 className="text-[#a8a8a8] uppercase">Resources</h3>
-            <FooterLink href="/about">
-              About
+            <FooterLink href="/">
+              Home
             </FooterLink>
             <FooterLink href="/projects">
               Projects
             </FooterLink>
-            <FooterLink href="#faq">
-              FAQ
+            <FooterLink href="/#faqs">
+              FAQs
             </FooterLink>
           </div>
 
           <div className="flex flex-col gap-2">
             <h3 className="text-[#a8a8a8] uppercase">Services</h3>
-            <FooterLink href="/services/web-design">
+            <FooterLink href="/#services">
               Web Design
             </FooterLink>
-            <FooterLink href="/services/web-development">
+            <FooterLink href="/#services">
               Web Development
             </FooterLink>
-            <FooterLink href="/services/website-maintenance">
+            <FooterLink href="/#services">
               Website Maintenance
             </FooterLink>
           </div>
 
           <div className="flex flex-col gap-2">
             <h3 className="text-[#a8a8a8] uppercase">Contact Us</h3>
-            <FooterLink href="mailto:contact@netflows.xyz">
+            <FooterLink href="mailto:netflowsxyz@gmail.com">
               contact@netflows.xyz
             </FooterLink>
           </div>
