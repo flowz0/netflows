@@ -1,3 +1,10 @@
+## [1.19.7](https://github.com/flowz0/netflows/compare/v1.19.6...v1.19.7) (2025-05-27)
+
+
+### Bug Fixes
+
+* **cta:** remove CTA component from app home page ([7d2fae5](https://github.com/flowz0/netflows/commit/7d2fae5ffeafe0f6f72456949219f2ed5efeecea))
+
 ## [1.19.6](https://github.com/flowz0/netflows/compare/v1.19.5...v1.19.6) (2025-05-27)
 
 
