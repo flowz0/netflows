@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import NetflowsImg from "@/public/Netflows-brand-blue.png";
+import NetflowsImg from "@/public/Netflows-brand.png";
 
 type FooterLinkProps = {
   children: React.ReactNode;

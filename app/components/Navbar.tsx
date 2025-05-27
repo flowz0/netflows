@@ -11,7 +11,7 @@ import AnimatedLink from "./AnimatedLink";
 
 export default function Navbar() {
   const Links = [
-    { name: "Services", href: "/services" },
+    { name: "Services", href: "/#services" },
     { name: "Projects", href: "/projects" },
     { name: "FAQ", href: "/#faq" },
   ];
@@ -39,7 +39,7 @@ export default function Navbar() {
             : <Image
               src={BrandLogo}
               alt="Netflows logo"
-              className="h-16 w-auto"
+              className="h-6 w-auto"
               draggable="false"
               priority={false}
             />
