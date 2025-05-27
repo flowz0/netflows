@@ -1,3 +1,10 @@
+## [1.19.10](https://github.com/flowz0/netflows/compare/v1.19.9...v1.19.10) (2025-05-27)
+
+
+### Bug Fixes
+
+* **styles:** add margin-bottom to Projects slug page for desktop view ([a8ca70b](https://github.com/flowz0/netflows/commit/a8ca70bea5ef3e7121e85ba5e8daafc587eb7119))
+
 ## [1.19.9](https://github.com/flowz0/netflows/compare/v1.19.8...v1.19.9) (2025-05-27)
 
 
