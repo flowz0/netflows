@@ -1,3 +1,10 @@
+## [1.20.2](https://github.com/flowz0/netflows/compare/v1.20.1...v1.20.2) (2025-05-27)
+
+
+### Bug Fixes
+
+* **features:** update Features title, desc, icon to optimize SEO and conversions ([311d1a2](https://github.com/flowz0/netflows/commit/311d1a221eef0a69e32945ebd5e754c839ae4fb8))
+
 ## [1.20.1](https://github.com/flowz0/netflows/compare/v1.20.0...v1.20.1) (2025-05-27)
 
 
