@@ -1,3 +1,12 @@
+## [1.19.3](https://github.com/flowz0/netflows/compare/v1.19.2...v1.19.3) (2025-05-27)
+
+
+### Bug Fixes
+
+* **components:** improve spacing and add section IDs for FAQs and Services ([8bcc4cc](https://github.com/flowz0/netflows/commit/8bcc4cc2d01631811ebffabc5424f3fe3e50d917))
+* **footer:** update FooterLink HREFs to properly navigate ([1251f09](https://github.com/flowz0/netflows/commit/1251f0944e8c54d8644591c18ddfcf53bea0c473))
+* **navbar, footer:** update Navbar Links href & Footer import ([6212198](https://github.com/flowz0/netflows/commit/6212198d644ebea16b01ef7ebe49ee9bc0524ae0))
+
 ## [1.19.2](https://github.com/flowz0/netflows/compare/v1.19.1...v1.19.2) (2025-05-27)
 
 
