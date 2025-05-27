@@ -1,30 +1,30 @@
 import Feature from "./Feature";
 
-import { FaCode, FaPaintBrush, FaWrench, FaSearchDollar } from "react-icons/fa";
+import { FaDollarSign, FaRocket, FaChartLine, FaBrain } from "react-icons/fa";
 
 export default function Features() {
   return (
     <section>
       <div className="max-w-7xl pb-32 px-6 mx-auto grid lg:justify-evenly gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
         <Feature
-          title="Web Development"
-          desc="Get a custom, responsive website/app designed to drive traffic and conversions, tailored to your business needs."
-          Icon={FaCode}
+          title="Results-Driven Design That Converts"
+          desc="We use proven design strategies to create interfaces that not only look great but guide users toward action and drive real results."
+          Icon={FaDollarSign}
         />
         <Feature
-          title="Web Design"
-          desc="We create intuitive, modern designs that enhance user experience and boost engagement across all devices."
-          Icon={FaPaintBrush}
+          title="Lightning-Fast Load Times"
+          desc="We build performance-first websites that load quickly and keep users engaged from the first click."
+          Icon={FaRocket}
         />
         <Feature
-          title="Website Maintenance"
-          desc="Ensure your site runs smoothly with regular updates, backups, and performance optimizations so you can focus on your business."
-          Icon={FaWrench}
+          title="Scalable Solutions Built for Growth"
+          desc="Our builds are future-ready making it easy to add features like e-commerce or booking systems without starting over."
+          Icon={FaChartLine}
         />
         <Feature
-          title="SEO Optimizations"
-          desc="Boost your site&apos;s Google ranking and optimize for mobile, ensuring fast, accessible experiences for all users."
-          Icon={FaSearchDollar}
+          title="Strategic Consulting Included"
+          desc="Get expert guidance on what to build and why, helping you invest in features that deliver the highest return."
+          Icon={FaBrain}
         />
       </div>
     </section>
