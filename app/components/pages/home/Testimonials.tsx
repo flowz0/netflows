@@ -48,7 +48,7 @@ export default function Testimonials() {
   const currentTestimonial = TestimonialData[currentIndex];
 
   return (
-    <section className="py-32">
+    <section className="pt-32 lg:pb-32">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col justify-between gap-12 lg:items-end lg:flex-row">
           <h2 className="text-[#f5f5f5] text-4xl/[2.6rem] font-semibold lg:text-start md:text-5xl/[3.4rem]">

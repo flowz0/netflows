@@ -3,7 +3,7 @@ import ProjectCard from "./ProjectCard";
 
 export default function Projects() {
   return (
-    <section className="py-32">
+    <section className="pt-32 lg:pb-32">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col items-center md:items-start">
           <h2 className="text-[#f5f5f5] text-4xl/[2.6rem] font-semibold text-center md:text-start md:text-5xl/[3.4rem]">

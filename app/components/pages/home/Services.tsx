@@ -36,7 +36,7 @@ function Services() {
   const activeService = serviceData.find((s) => s.id === activeServiceId);
 
   return (
-    <section className="py-32 bg-[#0a0a0a]">
+    <section id="services" className="pt-32 bg-[#0a0a0a] lg:pb-32">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col items-center">
           <p className="bg-[#00b3ff] text-[#0a0a0a] font-bold py-1 px-5 w-fit rounded-full">
