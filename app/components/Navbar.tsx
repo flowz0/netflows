@@ -112,7 +112,7 @@ export default function Navbar() {
             transition={{ duration: 0.2, ease: "easeInOut" }}
             className="md:hidden bg-[#0a0a0a]"
           >
-            <ul className="flex flex-col gap-y-4 px-8 font-bold text-3xl/[42px] tracking-[0.016em]">
+            <ul className="flex flex-col gap-y-2 px-8 font-bold text-3xl/[42px] tracking-[0.016em]">
               {Links.map((link) => (
                 <li key={link.href}>
                   <Link
