@@ -1,3 +1,17 @@
+# [1.21.0](https://github.com/flowz0/netflows/compare/v1.20.3...v1.21.0) (2025-05-28)
+
+
+### Bug Fixes
+
+* **footer:** update Privacy Policy href to correct route ([6ba5c99](https://github.com/flowz0/netflows/commit/6ba5c99144215f3e96bfa4a9ef01fb38068e8496))
+* **styles:** decrease padding-top for main on ProjectsPage ([8e4ec26](https://github.com/flowz0/netflows/commit/8e4ec26b725a45d54018e2d34623952617928b9e))
+
+
+### Features
+
+* **components:** create CopyEmailBtn component to improve UI/UX ([76ee1c6](https://github.com/flowz0/netflows/commit/76ee1c60b6b404ce8bb7ac9032596a6b22d9eb72))
+* **pages:** create Privacy page for privacy policy ([f9ba817](https://github.com/flowz0/netflows/commit/f9ba81731ea8043c5d7924653d94da6c04a5c5a0))
+
 ## [1.20.3](https://github.com/flowz0/netflows/compare/v1.20.2...v1.20.3) (2025-05-27)
 
 
