@@ -89,7 +89,7 @@ export default function Footer() {
           <h4 className="font-semibold sm:text-lg">
             © 2025 Netflows
           </h4>
-          <FooterLink href="/legal/privacy-policy">
+          <FooterLink href="/privacy">
             Privacy Policy
           </FooterLink>
         </div>
