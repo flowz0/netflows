@@ -1,3 +1,10 @@
+## [1.21.1](https://github.com/flowz0/netflows/compare/v1.21.0...v1.21.1) (2025-05-28)
+
+
+### Bug Fixes
+
+* **footer:** optimize structure and FooterLinks in Footer component ([be8b97f](https://github.com/flowz0/netflows/commit/be8b97f3f95c2353d4c3b1fb1c637967ef6b8cea))
+
 # [1.21.0](https://github.com/flowz0/netflows/compare/v1.20.3...v1.21.0) (2025-05-28)
 
 
