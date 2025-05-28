@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Testimonials from "../components/pages/home/Testimonials";
 
 export const metadata: Metadata = {
   title: "Case Studies | Netflows",
@@ -13,6 +14,7 @@ export default function ProjectLayout({
   return (
     <>
       {children}
+      <Testimonials />
     </>
   );
 }
