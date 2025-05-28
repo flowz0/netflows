@@ -29,15 +29,15 @@ export default function Footer() {
         <div className="flex flex-col flex-wrap justify-between gap-8 sm:flex-row">
           <div className="flex flex-col gap-2">
             <h3 className="text-[#a8a8a8] uppercase">Resources</h3>
-            <FooterLink href="/">
-              Home
-            </FooterLink>
             <FooterLink href="/projects">
               Projects
             </FooterLink>
             <FooterLink href="/#faqs">
               FAQs
             </FooterLink>
+            <FooterLink href="/privacy">Privacy Policy</FooterLink>
+            <FooterLink href="/tos">Terms of Service</FooterLink>
+            <FooterLink href="/guidelines">Guidelines</FooterLink>
           </div>
 
           <div className="flex flex-col gap-2">
@@ -74,6 +74,10 @@ export default function Footer() {
           </div>
         </div>
 
+        <h4 className="mt-16 font-semibold sm:text-lg">
+          © 2025 Netflows
+        </h4>
+
         <Link href="/">
           <Image
             src={NetflowsImg}
@@ -83,16 +87,6 @@ export default function Footer() {
           />
         </Link>
 
-        <hr className="text-[hsl(0,0%,26%)] mt-12" />
-
-        <div className="flex gap-4 items-center justify-between mt-12">
-          <h4 className="font-semibold sm:text-lg">
-            © 2025 Netflows
-          </h4>
-          <FooterLink href="/privacy">
-            Privacy Policy
-          </FooterLink>
-        </div>
       </div>
     </footer>
   );
