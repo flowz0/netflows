@@ -1,3 +1,10 @@
+## [1.21.2](https://github.com/flowz0/netflows/compare/v1.21.1...v1.21.2) (2025-05-28)
+
+
+### Bug Fixes
+
+* **pages:** implement Testimonials component in Projects layout ([beece82](https://github.com/flowz0/netflows/commit/beece822d70b5596d5ebe3cf4c445621a9da2a33))
+
 ## [1.21.1](https://github.com/flowz0/netflows/compare/v1.21.0...v1.21.1) (2025-05-28)
 
 
