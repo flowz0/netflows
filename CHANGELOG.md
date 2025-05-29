@@ -1,3 +1,15 @@
+# [1.22.0](https://github.com/flowz0/netflows/compare/v1.21.2...v1.22.0) (2025-05-29)
+
+
+### Bug Fixes
+
+* **components:** update CopyEmailBtn component text ([d5173a0](https://github.com/flowz0/netflows/commit/d5173a00baf494a01673a1c4a1ab1a7916c6c027))
+
+
+### Features
+
+* **pages:** create TOS page ([05fbd8d](https://github.com/flowz0/netflows/commit/05fbd8da1049aa76c4a15207ca48a2f4368c6a32))
+
 ## [1.21.2](https://github.com/flowz0/netflows/compare/v1.21.1...v1.21.2) (2025-05-28)
 
 
