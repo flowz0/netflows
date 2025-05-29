@@ -26,7 +26,7 @@ export default function CopyEmailBtn() {
         onClick={handleCopy}
         className="bg-[#242424] text-[#f5f5f5] px-6 py-1 rounded-full transition-all cursor-pointer font-semibold text-sm/[30px] tracking-[0.016em] hover:bg-[hsl(0,0%,24%)] active:bg-[hsl(0,0%,34%)]"
       >
-        {copied ? "Email Copied" : "Copy Email"}
+        {copied ? "Copied Email" : "Copy Email"}
       </button>
     </div>
   );
