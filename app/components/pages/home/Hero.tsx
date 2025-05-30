@@ -23,6 +23,7 @@ export default function Hero() {
           src={HeroImg}
           alt="Landing page hero image"
           className="object-cover h-full pointer-events-none"
+          priority
         />
       </div>
     </header>
