@@ -13,7 +13,7 @@ export default function Features() {
         />
         <Feature
           title="Lightning-Fast Load Times"
-          desc="We build performance-first websites that load quickly and keep users engaged from the first click."
+          desc="We build performance-first websites that load quickly and keep users engaged."
           Icon={FaRocket}
         />
         <Feature
@@ -23,7 +23,7 @@ export default function Features() {
         />
         <Feature
           title="Strategic Consulting Included"
-          desc="Get expert guidance on what to build and why, helping you invest in features that deliver the highest return."
+          desc="Expert guidance on what to build and why, helping you with features that deliver high ROI."
           Icon={FaBrain}
         />
       </div>
