@@ -1,3 +1,15 @@
+# [1.23.0](https://github.com/flowz0/netflows/compare/v1.22.0...v1.23.0) (2025-05-30)
+
+
+### Bug Fixes
+
+* **pages:** optimize architecture and update component imports for Projects, Privacy, & TOS ([111ec7f](https://github.com/flowz0/netflows/commit/111ec7f9c67a07f78b02c762386361cc2f132019))
+
+
+### Features
+
+* **pages:** create Guidelines page ([cfa49f1](https://github.com/flowz0/netflows/commit/cfa49f1d1a3819f3286771b2fb99a33120eaabbe))
+
 # [1.22.0](https://github.com/flowz0/netflows/compare/v1.21.2...v1.22.0) (2025-05-29)
 
 
