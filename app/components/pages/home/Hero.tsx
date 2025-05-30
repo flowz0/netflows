@@ -16,7 +16,7 @@ export default function Hero() {
             Strategic web design and development that turns visitors into customers.
           </p>
           <Link href="/book-consultation">
-            <Button className="mt-8">Book Free Consultation</Button>
+            <Button className="mt-8">Schedule Free Call</Button>
           </Link>
         </div>
         <Image

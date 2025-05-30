@@ -12,7 +12,7 @@ export default function CTA() {
           We design and develop fast, user-focused websites that convert. Perfect for startups, small businesses, or growing brands.
         </p>
         <Link href="/book-consultation">
-          <Button variant="primary" className="mt-8">Book Free Consultation</Button>
+          <Button variant="primary" className="mt-8">Schedule Free Call</Button>
         </Link>
       </div>
     </section>
