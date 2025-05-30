@@ -1,5 +1,5 @@
-import AnimatedLink from "../components/AnimatedLink";
-import CopyEmailBtn from "../components/CopyEmailBtn";
+import AnimatedLink from "@/app/components/AnimatedLink";
+import CopyEmailBtn from "@/app/components/CopyEmailBtn";
 
 export default function TOSPage() {
   return (
