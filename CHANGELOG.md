@@ -1,3 +1,11 @@
+## [1.23.1](https://github.com/flowz0/netflows/compare/v1.23.0...v1.23.1) (2025-05-30)
+
+
+### Bug Fixes
+
+* **components:** update CTA buttons text ([1189338](https://github.com/flowz0/netflows/commit/118933893a3f38fa6ff36bad8b014c89b6bd20fb))
+* **features:** optimize Features descriptions SEO ([380082e](https://github.com/flowz0/netflows/commit/380082ebdfa10bb09f47f09b47b7a203945e6ebd))
+
 # [1.23.0](https://github.com/flowz0/netflows/compare/v1.22.0...v1.23.0) (2025-05-30)
 
 
