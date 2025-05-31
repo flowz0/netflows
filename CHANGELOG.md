@@ -1,3 +1,10 @@
+## [1.23.2](https://github.com/flowz0/netflows/compare/v1.23.1...v1.23.2) (2025-05-30)
+
+
+### Bug Fixes
+
+* **hero:** enable priority on HeroImg ([e350d14](https://github.com/flowz0/netflows/commit/e350d14a15999a6790e893c16b85c97732409bfa))
+
 ## [1.23.1](https://github.com/flowz0/netflows/compare/v1.23.0...v1.23.1) (2025-05-30)
 
 
