@@ -1,3 +1,10 @@
+# [1.24.0](https://github.com/flowz0/netflows/compare/v1.23.2...v1.24.0) (2025-05-31)
+
+
+### Features
+
+* **assets:** import Consultation hero image ([2323015](https://github.com/flowz0/netflows/commit/232301565d492eae213d2a0c42b81383a19f6328))
+
 ## [1.23.2](https://github.com/flowz0/netflows/compare/v1.23.1...v1.23.2) (2025-05-30)
 
 
