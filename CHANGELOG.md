@@ -1,3 +1,10 @@
+# [1.25.0](https://github.com/flowz0/netflows/compare/v1.24.0...v1.25.0) (2025-06-01)
+
+
+### Features
+
+* **pages:** create book-consultation page header ([03592ce](https://github.com/flowz0/netflows/commit/03592ce28d5700f8cea641f2105e8a7a4a7c4310))
+
 # [1.24.0](https://github.com/flowz0/netflows/compare/v1.23.2...v1.24.0) (2025-05-31)
 
 
