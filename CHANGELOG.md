@@ -1,3 +1,10 @@
+## [1.25.1](https://github.com/flowz0/netflows/compare/v1.25.0...v1.25.1) (2025-06-08)
+
+
+### Bug Fixes
+
+* optimize projects page header and description css ([bb0fa45](https://github.com/flowz0/netflows/commit/bb0fa45081efd5426c4ed6b04e177e3734867077))
+
 # [1.25.0](https://github.com/flowz0/netflows/compare/v1.24.0...v1.25.0) (2025-06-01)
 
 
