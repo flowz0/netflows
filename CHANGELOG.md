@@ -1,3 +1,11 @@
+## [1.25.2](https://github.com/flowz0/netflows/compare/v1.25.1...v1.25.2) (2025-06-24)
+
+
+### Bug Fixes
+
+* disable draggable Image in ProjectCard component ([9fbe917](https://github.com/flowz0/netflows/commit/9fbe9174119643d3842c3c8a3a6e719b0c4bc8c8))
+* increase padding for Schedule Free Call Link in Navbar component ([b0b09af](https://github.com/flowz0/netflows/commit/b0b09afc632aa674be6c8de8551792cce59ddc8d))
+
 ## [1.25.1](https://github.com/flowz0/netflows/compare/v1.25.0...v1.25.1) (2025-06-08)
 
 
