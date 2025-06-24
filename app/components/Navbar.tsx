@@ -64,7 +64,7 @@ export default function Navbar() {
 
             <Link
               href="/book-consultation"
-              className={`hidden duration-300 transition-colors py-1 px-4 font-semibold text-base/[32px] tracking-[0.016em] rounded-lg md:block
+              className={`hidden duration-300 transition-colors py-1 px-5 font-semibold text-base/[32px] tracking-[0.016em] rounded-lg md:block
             ${pathname === "/book-consultation"
                   ? " bg-[#00b4ff] text-[#0a0a0a]"
                   : "bg-[#242424] text-[#f5f5f5] hover:bg-[hsl(0,0%,24%)] active:bg-[hsl(0,0%,34%)]"
