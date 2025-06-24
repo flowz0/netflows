@@ -85,6 +85,7 @@ const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
           src={projectThumbnail || PlaceholderImg}
           alt={`${brandName} project image`}
           className="h-fit w-auto rounded-3xl transition duration-300 ease-in-out hover:scale-110"
+          draggable={false}
         />
       </div>
     </div>
