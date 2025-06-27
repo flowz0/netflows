@@ -1,3 +1,10 @@
+# [1.26.0](https://github.com/flowz0/netflows/compare/v1.25.2...v1.26.0) (2025-06-27)
+
+
+### Features
+
+* create BookConsultationPage form UI ([2c189ea](https://github.com/flowz0/netflows/commit/2c189ea093e36b8f11b2ca716df17f9a7ee30e00))
+
 ## [1.25.2](https://github.com/flowz0/netflows/compare/v1.25.1...v1.25.2) (2025-06-24)
 
 
