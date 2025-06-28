@@ -1,18 +1,20 @@
 import { ProjectType } from "../types/project";
 
 import DuctDaddyLogo from "@/public/projects/duct-daddy-logo.png";
-import DDDCBanner from "@/public/projects/dddc-banner.png";
+import DDDCThumbnail from "@/public/projects/dddc-thumbnail.jpg";
+import DDDCBanner from "@/public/projects/dddc-banner.jpg";
 
 const ProjectData: ProjectType[] = [
   {
     id: 0,
     brandName: "Duct Daddy",
-    industry: "HVAC Cleaning Company",
+    industry: "Informational HVAC Services Website",
     summary: "The owner of Duct Daddy reached out to us to help them design and develop a website for their business. A professional design for a service based business with a booking system integrated.",
     brandLogo: DuctDaddyLogo,
     development: true,
     design: true,
     maintenance: true,
+    projectThumbnail: DDDCThumbnail,
     projectBanner: DDDCBanner,
     challenge: "The Challenge",
     challengeDesc: "Show what problem needed solving and how complex it was. The problem the client was facing. Specific pain points. Technical or business challenges.",
