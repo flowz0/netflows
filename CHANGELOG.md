@@ -1,3 +1,12 @@
+## [1.26.1](https://github.com/flowz0/netflows/compare/v1.26.0...v1.26.1) (2025-06-28)
+
+
+### Bug Fixes
+
+* set Image height and add object-cover in ProjectCard component ([4b640e6](https://github.com/flowz0/netflows/commit/4b640e649235142ceefbd114e51174d1abe6d441))
+* update assets and remove some ([0f5a382](https://github.com/flowz0/netflows/commit/0f5a382397865c0954c0dd3b09f39e5b117270b4))
+* update Duct Daddy industry and assets in ProjectData ([ad0addc](https://github.com/flowz0/netflows/commit/ad0addc3a6b83bdba70f9302e893d26b6207320b))
+
 # [1.26.0](https://github.com/flowz0/netflows/compare/v1.25.2...v1.26.0) (2025-06-27)
 
 
