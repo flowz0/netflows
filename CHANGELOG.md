@@ -1,3 +1,10 @@
+## [1.26.2](https://github.com/flowz0/netflows/compare/v1.26.1...v1.26.2) (2025-06-29)
+
+
+### Bug Fixes
+
+* update README.md ([7208eac](https://github.com/flowz0/netflows/commit/7208eacdd4a9cfb8dcbad4b03c40bce8efb8a369))
+
 ## [1.26.1](https://github.com/flowz0/netflows/compare/v1.26.0...v1.26.1) (2025-06-28)
 
 
