@@ -1,3 +1,11 @@
+## [1.26.5](https://github.com/flowz0/netflows/compare/v1.26.4...v1.26.5) (2025-07-02)
+
+
+### Bug Fixes
+
+* add active state color to Schedule Free Call link in Navbar component ([88a2c22](https://github.com/flowz0/netflows/commit/88a2c221caece112cf8c8e7315e92bf70bf05ac4))
+* decrease max width for paragraph in BookConsultationPage ([9985792](https://github.com/flowz0/netflows/commit/9985792390cdfac01e89fa7a96a75220d26eb3b2))
+
 ## [1.26.4](https://github.com/flowz0/netflows/compare/v1.26.3...v1.26.4) (2025-07-02)
 
 
