@@ -11,6 +11,7 @@ export type ProjectType = {
   design?: boolean;
   maintenance?: boolean;
   comingSoon?: boolean;
+  link?: string;
   projectThumbnail?: StaticImageData;
   projectBanner?: StaticImageData;
   challenge?: string;
