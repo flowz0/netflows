@@ -1,3 +1,10 @@
+## [1.26.4](https://github.com/flowz0/netflows/compare/v1.26.3...v1.26.4) (2025-07-02)
+
+
+### Bug Fixes
+
+* add pathname.startsWith /projects for Mobile active state in Navbar component ([f6e3d00](https://github.com/flowz0/netflows/commit/f6e3d00e76695bca67bf76be38f96ffa7a74102d))
+
 ## [1.26.3](https://github.com/flowz0/netflows/compare/v1.26.2...v1.26.3) (2025-07-02)
 
 
