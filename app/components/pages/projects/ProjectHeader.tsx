@@ -12,19 +12,20 @@ export default function ProjectHeader({
   brandLogo,
   brandName,
   summary,
+  link,
   projectBanner
 }: ProjectType) {
   return (
     <>
       <div className="md:flex md:flex-col">
-        <Link href="/" className="flex items-center gap-4 w-fit">
+        <Link href={`${link}`} target="_blank" className="flex items-center gap-4 w-fit">
           <Image
             src={brandLogo || PlaceholderLogo}
             alt={`${brandName} brand logo`}
-            className="w-16 h-16 object-cover rounded-lg"
+            className="w-12 h-auto object-cover rounded-lg"
             draggable={false}
           />
-          <h1 className="text-[#f5f5f5] text-4xl/[2.4rem] font-semibold md:text-5xl/[3rem]">
+          <h1 className="text-[#f5f5f5] text-3xl/[2.4rem] font-semibold hover:underline md:text-4xl/[3rem]">
             {brandName}
           </h1>
         </Link>
@@ -89,7 +90,7 @@ export default function ProjectHeader({
         <Image
           src={projectBanner || PlaceholderLogo}
           alt={`${brandName} project cover image`}
-          className="object-cover h-96 w-full rounded-xl"
+          className="object-cover max-h-96 h-full w-auto rounded-xl"
           draggable={false}
         />
       </div>
