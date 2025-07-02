@@ -1,3 +1,21 @@
+## [1.26.3](https://github.com/flowz0/netflows/compare/v1.26.2...v1.26.3) (2025-07-02)
+
+
+### Bug Fixes
+
+* add currentTestimonail.reviewerImg and review 1 img to Testimonials component ([50821c9](https://github.com/flowz0/netflows/commit/50821c9e8c6a96cfd5cb1956c91a3a1f0778ef4a))
+* add link href to brand title to view live demo and add height to Image in ProjectHeader component ([c54cd0a](https://github.com/flowz0/netflows/commit/c54cd0a503909f63d2b2ad2eacf5267421d4b673))
+* add object-cover to Image in Testimonial component ([cb1ce1f](https://github.com/flowz0/netflows/commit/cb1ce1f55d8cba70d84de6372b119279fb7e0b14))
+* add optional link to ProjectType ([2c83b44](https://github.com/flowz0/netflows/commit/2c83b44b1cec12ed5160c38ab501cf46c49111f4))
+* add pathname.startsWith /projects for Desktop active state in Navbar component ([7163eb0](https://github.com/flowz0/netflows/commit/7163eb0b8f9f28350dc8924202c029d5d155dd6e))
+* change viewport for grid cols 2 to md in Projects component ([b8af766](https://github.com/flowz0/netflows/commit/b8af766e34e9aac33dbcf27d202421d25db2d559))
+* new project assets ([2c8d366](https://github.com/flowz0/netflows/commit/2c8d366146559f06e584a42809393847b1679dee))
+* optimize data and import new Duct Daddy assets in ProjectsData ([2ae4d95](https://github.com/flowz0/netflows/commit/2ae4d954a3ba239b369e69b2f58f76e9f46d5336))
+* pass project.link through ProjectHeader component in ProjectPage ([9d6b88d](https://github.com/flowz0/netflows/commit/9d6b88d44833fcd235e2750df239c6386f79f386))
+* set Images to 100% height in ProjectBody component ([08e191c](https://github.com/flowz0/netflows/commit/08e191cbf3b9e38bf70535b34267e2c108806148))
+* update Follow Us FooterLink hrefs in Footer component ([dd85432](https://github.com/flowz0/netflows/commit/dd854326891f336b75666acae019e17e433b3883))
+* update service tag colors and image responsive Image height for ProjectCard component ([9c47dff](https://github.com/flowz0/netflows/commit/9c47dff4fcef22549c9846b27ad032ea2ea73e79))
+
 ## [1.26.2](https://github.com/flowz0/netflows/compare/v1.26.1...v1.26.2) (2025-06-29)
 
 
