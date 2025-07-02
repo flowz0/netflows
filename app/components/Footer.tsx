@@ -62,13 +62,13 @@ export default function Footer() {
 
           <div className="flex flex-col gap-2">
             <h3 className="text-[#a8a8a8] uppercase">Follow Us</h3>
-            <FooterLink href="https://www.instagram.com/netflowsxyz" target="_blank">
+            <FooterLink href="https://www.instagram.com/netflowsxyz/" target="_blank">
               Instagram
             </FooterLink>
-            <FooterLink href="http://linkedin.com/in/netflowsxyz" target="_blank">
+            <FooterLink href="https://www.linkedin.com/company/netflowsxyz" target="_blank">
               LinkedIn
             </FooterLink>
-            <FooterLink href="https://x.com/netflowsxyz" target="_blank">
+            <FooterLink href="https://x.com/Netflowsxyz" target="_blank">
               X
             </FooterLink>
           </div>
