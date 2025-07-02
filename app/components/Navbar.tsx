@@ -53,8 +53,8 @@ export default function Navbar() {
               <AnimatedLink
                 href={link.href}
                 className={`${(link.href === "/projects" && pathname.startsWith("/projects")) || pathname === link.href
-                    ? "duration-300 transition-colors text-[#00b4ff]"
-                    : ""
+                  ? "duration-300 transition-colors text-[#00b4ff]"
+                  : ""
                   }`}
 
               >
@@ -118,10 +118,11 @@ export default function Navbar() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className={`${pathname === link.href
-                      ? "text-[#00b4ff]"
-                      : "text-[#f5f5f5]"
+                    className={`${(link.href === "/projects" && pathname.startsWith("/projects")) || pathname === link.href
+                        ? "text-[#00b4ff]"
+                        : "text-[#f5f5f5]"
                       }`}
+
                     onClick={() => setIsOpen(!isOpen)}
                   >
                     {link.name}
