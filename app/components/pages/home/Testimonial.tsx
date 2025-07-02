@@ -33,7 +33,7 @@ export default function Testimonial({
         <Image
           src={reviewerImg || PlaceholderImg}
           alt={`${reviewerName} reviewer image`}
-          className="rounded-full w-12 h-12"
+          className="rounded-full object-cover w-12 h-12"
         />
         <div>
           <h3 className="text-[#f5f5f5] max-w-2xl mx-auto font-semibold lg:text-start lg:mx-0">
