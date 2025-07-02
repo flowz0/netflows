@@ -43,6 +43,7 @@ export default async function ProjectPage({ params }: Props) {
       <ProjectHeader
         id={project.id}
         brandName={project.brandName}
+        link={project.link}
         industry={project.industry}
         summary={project.summary}
         brandLogo={project.brandLogo}
