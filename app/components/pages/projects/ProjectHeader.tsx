@@ -7,6 +7,7 @@ import TypeScriptLogo from "@/public/logos/typescript.svg";
 import TailwindLogo from "@/public/logos/tailwindcss.svg";
 import Link from "next/link";
 import { ProjectType } from "@/app/types/project";
+import { HiExternalLink } from "react-icons/hi";
 
 export default function ProjectHeader({
   brandLogo,
@@ -18,15 +19,16 @@ export default function ProjectHeader({
   return (
     <>
       <div className="md:flex md:flex-col">
-        <Link href={`${link}`} target="_blank" className="flex items-center gap-4 w-fit">
+        <Link href={`${link}`} target="_blank" className="flex items-center gap-4 w-fit group">
           <Image
             src={brandLogo || PlaceholderLogo}
             alt={`${brandName} brand logo`}
             className="w-12 h-auto object-cover rounded-lg"
             draggable={false}
           />
-          <h1 className="text-[#f5f5f5] text-3xl/[2.4rem] font-semibold hover:underline md:text-4xl/[3rem]">
+          <h1 className="text-[#f5f5f5] text-3xl/[2.4rem] font-semibold flex items-baseline gap-x-2 md:text-4xl/[3rem]">
             {brandName}
+            <HiExternalLink className="text-[hsl(0,0%,60%)] transition-transform duration-300 ease-in-out w-6 h-6 group-hover:text-[#00b4ff] group-hover:scale-125 group-hover:translate-x-2" />
           </h1>
         </Link>
 
