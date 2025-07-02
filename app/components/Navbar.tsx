@@ -52,10 +52,11 @@ export default function Navbar() {
             <li key={link.href}>
               <AnimatedLink
                 href={link.href}
-                className={`${pathname === link.href
-                  ? "duration-300 transition-colors text-[#00b4ff]"
-                  : ""
+                className={`${(link.href === "/projects" && pathname.startsWith("/projects")) || pathname === link.href
+                    ? "duration-300 transition-colors text-[#00b4ff]"
+                    : ""
                   }`}
+
               >
                 {link.name}
               </AnimatedLink>
