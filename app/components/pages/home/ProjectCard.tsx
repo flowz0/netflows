@@ -31,7 +31,7 @@ const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
   return (
     <div
       onClick={handleClick}
-      className={`bg-[hsl(0,0%,14%)] py-6 px-6 rounded-3xl ${comingSoon
+      className={`bg-[hsl(0,0%,14%)] py-6 px-6 sm:py-12 sm:px-12 md:py-8 md:px-8 rounded-3xl ${comingSoon
         ? "cursor-not-allowed"
         : "cursor-pointer"
         }`}>
@@ -40,7 +40,7 @@ const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
           {brandName || "Project Name"}
         </h3>
         <p className="text-[#a8a8a8] flex items-center transition-colors duration-300 hover:text-[#f5f5f5]">
-          <span className="hidden sm:block">View Project</span>
+          <span className="sr-only">View Project</span>
           <FaArrowUp className="w-6 h-6 rotate-45 ml-2" />
         </p>
       </div>
@@ -52,21 +52,21 @@ const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
         {/* Tags */}
         {development ?
           (
-            <p className="bg-sky-200/80 text-sky-950 py-1 px-4 font-medium rounded-full">
+            <p className="bg-sky-200 text-sky-900 py-1 px-2 font-medium text-sm rounded-full">
               Development
             </p>
           ) : ""
         }
         {design ?
           (
-            <p className="bg-indigo-200/80 text-indigo-950 py-1 px-4 font-medium rounded-full">
+            <p className="bg-purple-200 text-purple-900 py-1 px-2 font-medium text-sm rounded-full">
               Web Design
             </p>
           ) : ""
         }
         {maintenance ?
           (
-            <p className="bg-emerald-200/80 text-emerald-950 py-1 px-4 font-medium rounded-full">
+            <p className="bg-amber-200 text-amber-900 py-1 px-2 font-medium text-sm rounded-full">
               Maintenance
             </p>
           ) : ""
@@ -84,7 +84,7 @@ const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
         <Image
           src={projectThumbnail || PlaceholderImg}
           alt={`${brandName} project image`}
-          className="h-80 object-cover w-auto rounded-3xl transition duration-300 ease-in-out hover:scale-110"
+          className="h-[200px] object-cover rounded-2xl transition duration-300 ease-in-out hover:scale-110 sm:h-[300px]"
           draggable={false}
         />
       </div>
