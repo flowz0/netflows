@@ -13,7 +13,7 @@ export default function Projects() {
             Explore the web design and development solutions we&apos;ve crafted for clients across industries.
           </p>
         </div>
-        <div className="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
           {ProjectData.slice(0, 4).map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))}
