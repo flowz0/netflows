@@ -33,7 +33,7 @@ export default function ProjectBody({
       <Image
         src={challengeImg || PlaceholderImg}
         alt="Project image"
-        className="object-cover h-fit w-full mt-8 rounded-xl"
+        className="object-cover h-full w-full mt-8 rounded-xl"
         draggable={false}
       />
       <h2 className="text-[#f5f5f5] text-4xl/[2.4rem] font-semibold mt-12 md:text-5xl/[3rem]">
@@ -46,25 +46,25 @@ export default function ProjectBody({
         <Image
           src={solutionImg || PlaceholderImg}
           alt="Project image"
-          className="object-cover h-fit w-full rounded-xl"
+          className="object-cover h-full w-full rounded-xl"
           draggable={false}
         />
         <Image
           src={solutionImg2 || PlaceholderImg}
           alt="Project image"
-          className="object-cover h-fit w-full rounded-xl"
+          className="object-cover h-full w-full rounded-xl"
           draggable={false}
         />
         <Image
           src={solutionImg3 || PlaceholderImg}
           alt="Project image"
-          className="object-cover h-fit w-full rounded-xl"
+          className="object-cover h-full w-full rounded-xl"
           draggable={false}
         />
         <Image
           src={solutionImg4 || PlaceholderImg}
           alt="Project image"
-          className="object-cover h-fit w-full rounded-xl"
+          className="object-cover h-full w-full rounded-xl"
           draggable={false}
         />
       </div>
@@ -77,7 +77,7 @@ export default function ProjectBody({
       <Image
         src={resultsImg || PlaceholderImg}
         alt="Project image"
-        className="object-cover h-fit w-full mt-8 rounded-xl"
+        className="object-cover h-full w-full mt-8 rounded-xl"
         draggable={false}
       />
       <h2 className="text-[#f5f5f5] text-4xl/[2.4rem] font-semibold mt-12 md:text-5xl/[3rem]">
@@ -90,19 +90,19 @@ export default function ProjectBody({
         <Image
           src={takeawaysImg || PlaceholderImg}
           alt="Project image"
-          className="object-cover h-96 w-full rounded-xl"
+          className="object-cover h-full w-full rounded-xl"
           draggable={false}
         />
         <Image
           src={takeawaysImg2 || PlaceholderImg}
           alt="Project image"
-          className="object-cover h-96 w-full rounded-xl"
+          className="object-cover h-full w-full rounded-xl"
           draggable={false}
         />
         <Image
           src={takeawaysImg3 || PlaceholderImg}
           alt="Project image"
-          className="object-cover h-96 w-full rounded-xl sm:col-span-2"
+          className="object-cover h-full w-full rounded-xl sm:col-span-2"
           draggable={false}
         />
       </div>
