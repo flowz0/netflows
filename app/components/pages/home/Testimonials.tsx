@@ -5,12 +5,14 @@ import Testimonial from "./Testimonial";
 
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
+import KarsonTestiImg from "@/public/testimonials/karson-template-img.jpg";
+
 const TestimonialData = [
   {
     id: 0,
     review:
-      "We had no online presence before partnering with the team. They built a professional, industry-focused website that led to a clear increase in customer inquiries. The process was smooth and efficient from start to finish.",
-    // reviewerImg: "/path/to/image.jpg",
+      "Netflows took our old site and turned it into a modern, fast, and functional platform that finally reflects our quality of service. The blog feature has made a real difference in traffic, and I love how easy it is to update content.",
+    reviewerImg: KarsonTestiImg,
     reviewerName: "Karson Kolle",
     reviewerTitle: "Founder at Duct Daddy",
   },
@@ -18,6 +20,7 @@ const TestimonialData = [
     id: 1,
     review:
       "Working with this team was a game-changer for our business. They took the time to understand our needs and delivered a website that not only looks great but also performs exceptionally well. Highly recommend!",
+    // reviewerImg: KarsonTestiImg,
     reviewerName: "John Doe",
     reviewerTitle: "CEO at Tech Innovations",
   },
@@ -25,6 +28,7 @@ const TestimonialData = [
     id: 2,
     review:
       "From the initial consultation to the final launch, the team was professional and attentive. They transformed our outdated website into a modern, user-friendly platform that has received rave reviews from our customers.",
+    // reviewerImg: KarsonTestiImg,
     reviewerName: "Jane Smith",
     reviewerTitle: "Marketing Director at Creative Solutions",
   },
@@ -64,16 +68,16 @@ export default function Testimonials() {
               <button onClick={prevIndex}>
                 <FaArrowLeft
                   className={`bg-[hsl(0,0%,14%)] p-2 rounded-full w-8 h-8 ${currentIndex === 0
-                      ? "text-[hsl(0,0%,56%)] cursor-not-allowed"
-                      : "cursor-pointer hover:bg-[hsl(0,0%,24%)]"
+                    ? "text-[hsl(0,0%,56%)] cursor-not-allowed"
+                    : "cursor-pointer hover:bg-[hsl(0,0%,24%)]"
                     }`}
                 />
               </button>
               <button onClick={nextIndex}>
                 <FaArrowRight
                   className={`bg-[hsl(0,0%,14%)] p-2 rounded-full w-8 h-8 ${currentIndex === TestimonialData.length - 1
-                      ? "text-[hsl(0,0%,56%)] cursor-not-allowed"
-                      : "cursor-pointer hover:bg-[hsl(0,0%,24%)]"
+                    ? "text-[hsl(0,0%,56%)] cursor-not-allowed"
+                    : "cursor-pointer hover:bg-[hsl(0,0%,24%)]"
                     }`}
                 />
               </button>
@@ -85,7 +89,7 @@ export default function Testimonials() {
           <Testimonial
             key={currentTestimonial.id}
             review={currentTestimonial.review}
-            // reviewerImg={currentTestimonial.reviewerImg}
+            reviewerImg={currentTestimonial.reviewerImg}
             reviewerName={currentTestimonial.reviewerName}
             reviewerTitle={currentTestimonial.reviewerTitle}
           />
