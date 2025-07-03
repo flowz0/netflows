@@ -1,3 +1,16 @@
+# [1.28.0](https://github.com/flowz0/netflows/compare/v1.27.1...v1.28.0) (2025-07-03)
+
+
+### Bug Fixes
+
+* implement MultiStepForm component into BookConsultationPage ([28ec397](https://github.com/flowz0/netflows/commit/28ec3977e9ad2d5e84671ed0d2b7288e1bea1cb2))
+
+
+### Features
+
+* create a functional MultiStepForm component ([288e626](https://github.com/flowz0/netflows/commit/288e626fa7cf7e6c638db4286d1c8ad9b7fa04ca))
+* create custom SelectBtn & Select menu components ([84b93cc](https://github.com/flowz0/netflows/commit/84b93cc13bdb949b0c5e59e06ab202129d1c34ec))
+
 ## [1.27.1](https://github.com/flowz0/netflows/compare/v1.27.0...v1.27.1) (2025-07-03)
 
 
