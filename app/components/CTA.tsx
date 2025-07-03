@@ -12,7 +12,7 @@ export default function CTA() {
           We design, develop, and maintain modern web solutions. Perfect for startups, small businesses, or growing brands.
         </p>
         <Link href="/book-consultation">
-          <Button variant="primary" className="mt-8">Schedule Free Call</Button>
+          <Button variant="primary" className="mt-8">Book Free Consultation</Button>
         </Link>
       </div>
     </section>
