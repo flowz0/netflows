@@ -15,7 +15,7 @@ function ServiceDetail({ service }: Props) {
         <h4 className="text-[#f5f5f5] text-3xl/[1.8rem] font-bold text-center md:text-4xl/[3rem]">
           {service.title}
         </h4>
-        <p className="text-[#a8a8a8] text-base/[1.6rem] md:text-base/[1.8rem] mt-4 text-center max-w-xl md:mt-2">
+        <p className="text-[#a8a8a8] text-base/[1.6rem] md:text-base/[1.8rem] mt-4 text-center max-w-lg md:mt-2">
           {service.description}
         </p>
       </div>
@@ -23,7 +23,7 @@ function ServiceDetail({ service }: Props) {
         <Image
           src={service.image}
           alt={`${service.title} image`}
-          className="object-cover h-80 w-auto pointer-events-none"
+          className="object-cover h-full sm:h-80 w-auto pointer-events-none"
         />
       </div>
     </article>
