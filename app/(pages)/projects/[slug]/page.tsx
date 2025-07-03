@@ -47,6 +47,10 @@ export default async function ProjectPage({ params }: Props) {
         industry={project.industry}
         summary={project.summary}
         brandLogo={project.brandLogo}
+        development={project.development}
+        design={project.design}
+        maintenance={project.maintenance}
+        techStack={project.techStack}
         projectBanner={project.projectBanner}
       />
       <ProjectBody
