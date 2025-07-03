@@ -9,7 +9,7 @@ export default function Projects() {
           <h2 className="text-[#f5f5f5] text-4xl/[2.6rem] font-semibold text-center md:text-start md:text-5xl/[3.4rem]">
             What We&apos;ve <span className="text-[#00b4ff] font-bold">Built</span>
           </h2>
-          <p className="text-[#a8a8a8] text-base/[1.8rem] mt-4 max-w-2xl text-center md:text-start lg:mx-0 md:text-lg/[2rem]">
+          <p className="text-[#a8a8a8] text-base/[1.8rem] mt-4 max-w-md text-center md:text-start lg:mx-0 md:text-lg/[2rem]">
             Explore the web design and development solutions we&apos;ve crafted for clients across industries.
           </p>
         </div>
