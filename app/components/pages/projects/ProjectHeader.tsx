@@ -26,37 +26,41 @@ export default function ProjectHeader({
 }: ProjectType) {
   const techMap: Record<
     string,
-    { name: string; Icon: React.ElementType, color: string; }
+    {
+      name: string,
+      Icon: React.ElementType,
+      color: string;
+    }
   > = {
     nextjs: {
       name: "Next.js",
       Icon: SiNextdotjs,
-      color: "ffffff"
+      color: "#ffffff"
     },
     typescript: {
       name: "TypeScript",
       Icon: SiTypescript,
-      color: "3178C6"
+      color: "#3178C6"
     },
     tailwind: {
       name: "Tailwind CSS",
       Icon: SiTailwindcss,
-      color: "38bdf8"
+      color: "#38bdf8"
     },
     express: {
       name: "Express",
       Icon: SiExpress,
-      color: "ffffff"
+      color: "#ffffff"
     },
     node: {
       name: "Node.js",
       Icon: SiNodedotjs,
-      color: "66cc33"
+      color: "#66cc33"
     },
     mongodb: {
       name: "MongoDB",
       Icon: SiMongodb,
-      color: "00ed64"
+      color: "#00ed64"
     },
   };
 
@@ -100,24 +104,17 @@ export default function ProjectHeader({
             <div>
               <h3 className="font-semibold sm:text-lg">Tech stack</h3>
               <ul className="flex flex-wrap gap-2 mt-2">
-
                 {techStack &&
-                  Object.entries(techStack)
-                    .filter(([_, isUsed]) => isUsed)
-                    .map(([key]) => {
-                      const tech = techMap[key];
-                      if (!tech) return null;
-
-                      return (
-                        <ProjectTech
-                          key={key}
-                          Icon={tech.Icon}
-                          name={tech.name}
-                          iconColor={tech.color}
-                        />
-                      );
-                    })}
-
+                  Object.entries(techStack).map(([techName, isUsed]) =>
+                    isUsed && techMap[techName] ? (
+                      <ProjectTech
+                        key={techName}
+                        Icon={techMap[techName].Icon}
+                        name={techMap[techName].name}
+                        iconColor={techMap[techName].color}
+                      />
+                    ) : null
+                  )}
               </ul>
             </div>
           </div>
