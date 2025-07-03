@@ -12,6 +12,15 @@ export type ProjectType = {
   maintenance?: boolean;
   comingSoon?: boolean;
   link?: string;
+  techStack?: {
+    nextjs?: boolean;
+    typescript?: boolean;
+    tailwind?: boolean;
+    express?: boolean;
+    node?: boolean;
+    mongodb?: boolean;
+    [key: string]: boolean | undefined;
+  };
   projectThumbnail?: StaticImageData;
   projectBanner?: StaticImageData;
   challenge?: string;
