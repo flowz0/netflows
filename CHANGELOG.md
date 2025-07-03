@@ -1,3 +1,14 @@
+## [1.27.1](https://github.com/flowz0/netflows/compare/v1.27.0...v1.27.1) (2025-07-03)
+
+
+### Bug Fixes
+
+* optimize techMap and ProjectTech conditional rendering in ProjectHeader component ([6911657](https://github.com/flowz0/netflows/commit/6911657674b06774393f96a0e325fac3a0d08755))
+* update Book Free Consultation Link text in Navbar component ([dc80e92](https://github.com/flowz0/netflows/commit/dc80e92bf96fde5b729665188a26140b04599810))
+* update Button text in CTA component ([3a85262](https://github.com/flowz0/netflows/commit/3a8526281d52795d9ea63dfb0c321486cc4c99cc))
+* update Button text in Hero component ([ccb4437](https://github.com/flowz0/netflows/commit/ccb443749fa41cc6e1bdb072e8cad72c6ca6b248))
+* update prop types and interpolating iconColor to inline style in ProjectTech component ([903ed74](https://github.com/flowz0/netflows/commit/903ed74cb5957c9ecbb64b46e221f2f3f5c51706))
+
 # [1.27.0](https://github.com/flowz0/netflows/compare/v1.26.8...v1.27.0) (2025-07-03)
 
 
