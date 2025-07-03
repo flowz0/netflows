@@ -28,7 +28,7 @@ export default function Navbar() {
   }, [isOpen]);
 
   return (
-    <nav className="bg-[rgba(10,10,10,0.92)] backdrop-blur-lg fixed h-16 w-full z-50">
+    <nav className={`${isOpen ? "bg-[#0a0a0a]" : "bg-[rgba(10,10,10,0.92)] backdrop-blur-lg"} fixed h-16 w-full z-50`}>
       <div className="flex justify-between items-center h-full max-w-7xl mx-auto px-6">
         <Link
           href="/"
@@ -71,7 +71,7 @@ export default function Navbar() {
                   : "bg-[#242424] text-[#f5f5f5] hover:bg-[hsl(0,0%,24%)] active:bg-[hsl(0,0%,34%)]"
                 } `}
             >
-              Schedule Free Call
+              Schedule Free Consultation
             </Link>
           </li>
         </ul>
@@ -119,8 +119,8 @@ export default function Navbar() {
                   <Link
                     href={link.href}
                     className={`${(link.href === "/projects" && pathname.startsWith("/projects")) || pathname === link.href
-                        ? "text-[#00b4ff]"
-                        : "text-[#f5f5f5]"
+                      ? "text-[#00b4ff]"
+                      : "text-[#f5f5f5]"
                       }`}
 
                     onClick={() => setIsOpen(!isOpen)}
