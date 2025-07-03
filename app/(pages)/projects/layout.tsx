@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Testimonials from "@/app/components/pages/home/Testimonials";
+import CTA from "@/app/components/CTA";
 
 export const metadata: Metadata = {
   title: "Case Studies | Netflows",
@@ -15,6 +16,7 @@ export default function ProjectLayout({
     <>
       {children}
       <Testimonials />
+      <CTA />
     </>
   );
 }
