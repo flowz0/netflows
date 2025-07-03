@@ -45,7 +45,7 @@ function Services() {
           <h2 className="text-[#f5f5f5] text-4xl/[2.6rem] mt-4 font-semibold text-center md:text-5xl/[3.4rem]">
             What We Do Best
           </h2>
-          <p className="text-[#a8a8a8] text-base/[1.8rem] mt-4 max-w-2xl mx-auto text-center lg:mx-0 md:text-lg/[2rem]">
+          <p className="text-[#a8a8a8] text-base/[1.8rem] mt-4 max-w-lg mx-auto text-center lg:mx-0 md:text-lg/[2rem]">
             We build custom websites and web apps designed to convert. Optimized for performance and growth with secure, accessible, and responsive experiences on every device.
           </p>
         </div>
