@@ -1,3 +1,10 @@
+## [1.26.6](https://github.com/flowz0/netflows/compare/v1.26.5...v1.26.6) (2025-07-02)
+
+
+### Bug Fixes
+
+* optimize Link and add smooth animation to show brand name is clickable in ProjectHeader component ([c632e32](https://github.com/flowz0/netflows/commit/c632e322e6e5bc1dd025ec9c9008b7498120cf3d))
+
 ## [1.26.5](https://github.com/flowz0/netflows/compare/v1.26.4...v1.26.5) (2025-07-02)
 
 
