@@ -28,7 +28,7 @@ export default function Navbar() {
   }, [isOpen]);
 
   return (
-    <nav className="bg-[#0a0a0a] fixed h-16 w-full z-50">
+    <nav className="bg-[rgba(10,10,10,0.92)] backdrop-blur-lg fixed h-16 w-full z-50">
       <div className="flex justify-between items-center h-full max-w-7xl mx-auto px-6">
         <Link
           href="/"
