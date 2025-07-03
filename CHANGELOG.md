@@ -1,3 +1,19 @@
+# [1.27.0](https://github.com/flowz0/netflows/compare/v1.26.8...v1.27.0) (2025-07-03)
+
+
+### Bug Fixes
+
+* add techStack object to project types ([da35167](https://github.com/flowz0/netflows/commit/da35167bd22a5dc1cc1f52bbbb11fe133c80f01e))
+* add techStack object to projects data ([02db5d0](https://github.com/flowz0/netflows/commit/02db5d0c4f4cc90ba03cee2f3ed5b68e57e89b6b))
+* pass project services and techStack data through ProjectHeader in ProjectPage ([9668659](https://github.com/flowz0/netflows/commit/96686590b37eff056a050458134a25994dfa5b28))
+* remove old tech stack component placeholder assets ([2007106](https://github.com/flowz0/netflows/commit/2007106187f7c47f26074e5cab0a38f5ffb7b0bf))
+* use project services & techStack props to conditionally render services and techStack in ProjectHeader component ([40e073d](https://github.com/flowz0/netflows/commit/40e073d4ce8654d57f968bcc00592c74396d6306))
+
+
+### Features
+
+* create reusable ProjectTech component ([2b74356](https://github.com/flowz0/netflows/commit/2b7435644f4825d96be6a232a68c5295f7f12a52))
+
 ## [1.26.8](https://github.com/flowz0/netflows/compare/v1.26.7...v1.26.8) (2025-07-03)
 
 
