@@ -1,3 +1,10 @@
+## [1.26.7](https://github.com/flowz0/netflows/compare/v1.26.6...v1.26.7) (2025-07-03)
+
+
+### Bug Fixes
+
+* add hover effect to BrandLogo in Navbar component ([686897e](https://github.com/flowz0/netflows/commit/686897ea11b51cc70b13cf1ccc9c9b85f84d3b2b))
+
 ## [1.26.6](https://github.com/flowz0/netflows/compare/v1.26.5...v1.26.6) (2025-07-02)
 
 
