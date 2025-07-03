@@ -39,7 +39,7 @@ export default function Navbar() {
             : <Image
               src={BrandLogo}
               alt="Netflows logo"
-              className="h-6 w-auto"
+              className="h-6 w-auto transition-transform duration-300 ease-in-out hover:scale-105 active:scale-95"
               draggable="false"
               priority={false}
             />
