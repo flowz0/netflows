@@ -24,6 +24,14 @@ const ProjectData: ProjectType[] = [
     development: true,
     design: true,
     maintenance: true,
+    techStack: {
+      nextjs: true,
+      typescript: true,
+      tailwind: true,
+      express: true,
+      node: true,
+      mongodb: true
+    },
     link: "https://www.ductdaddykc.com/",
     projectThumbnail: DDDCThumbnail,
     projectBanner: DDDCBanner,
