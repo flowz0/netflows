@@ -1,3 +1,18 @@
+## [1.26.8](https://github.com/flowz0/netflows/compare/v1.26.7...v1.26.8) (2025-07-03)
+
+
+### Bug Fixes
+
+* add dark glass effect as background for Navbar component ([0c57c3b](https://github.com/flowz0/netflows/commit/0c57c3b99c954a74242d2ad63122769addd3db7e))
+* decrease max width for paragraph in BookConsultationPage ([fde9545](https://github.com/flowz0/netflows/commit/fde95458252424773c7207392e3a87e7b43cdb02))
+* decrease max width for paragraph in FAQs component ([04d1f8f](https://github.com/flowz0/netflows/commit/04d1f8fe8b9f8031a7802fefe13a70ef16dc2651))
+* decrease max width on paragraph and optimize responsive Image height in ServiceDetail component ([1263b42](https://github.com/flowz0/netflows/commit/1263b42fc1f167075c6ace6fe12f591af96d3bba))
+* decrease max width on paragraph in Projects component ([601f5b3](https://github.com/flowz0/netflows/commit/601f5b300ea63d31c0ed80b4032a640f1ed50c05))
+* decrease max width on paragraph in Services component ([7f95416](https://github.com/flowz0/netflows/commit/7f95416db1c4587f19b120a6ba7526d2d95a9c48))
+* optimize CTA component ([cf35c92](https://github.com/flowz0/netflows/commit/cf35c928387b92f10cda929b2d5258c75ffeab79))
+* update Button text to Schedule Free Consultation in Hero component ([71cb274](https://github.com/flowz0/netflows/commit/71cb274762e126f90be11eeab76b1ddaf426522a))
+* update consultation Link and add isOpen condition for nav bg color in Navbar component ([f060a55](https://github.com/flowz0/netflows/commit/f060a55528843af1cbdde1f31dacda34b03dc78e))
+
 ## [1.26.7](https://github.com/flowz0/netflows/compare/v1.26.6...v1.26.7) (2025-07-03)
 
 
