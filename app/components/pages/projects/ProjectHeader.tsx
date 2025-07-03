@@ -1,21 +1,65 @@
 import Image from "next/image";
-
-import PlaceholderLogo from "@/public/2000x2000.svg";
-
-import NextjsLogo from "@/public/logos/nextjs.svg";
-import TypeScriptLogo from "@/public/logos/typescript.svg";
-import TailwindLogo from "@/public/logos/tailwindcss.svg";
 import Link from "next/link";
-import { ProjectType } from "@/app/types/project";
+import PlaceholderLogo from "@/public/2000x2000.svg";
 import { HiExternalLink } from "react-icons/hi";
+import {
+  SiExpress,
+  SiMongodb,
+  SiNextdotjs,
+  SiNodedotjs,
+  SiTailwindcss,
+  SiTypescript
+} from "react-icons/si";
+import { ProjectType } from "@/app/types/project";
+import ProjectTech from "./ProjectTech";
 
 export default function ProjectHeader({
   brandLogo,
   brandName,
   summary,
   link,
-  projectBanner
+  projectBanner,
+  techStack,
+  development,
+  design,
+  maintenance
 }: ProjectType) {
+  const techMap: Record<
+    string,
+    { name: string; Icon: React.ElementType, color: string; }
+  > = {
+    nextjs: {
+      name: "Next.js",
+      Icon: SiNextdotjs,
+      color: "ffffff"
+    },
+    typescript: {
+      name: "TypeScript",
+      Icon: SiTypescript,
+      color: "3178C6"
+    },
+    tailwind: {
+      name: "Tailwind CSS",
+      Icon: SiTailwindcss,
+      color: "38bdf8"
+    },
+    express: {
+      name: "Express",
+      Icon: SiExpress,
+      color: "ffffff"
+    },
+    node: {
+      name: "Node.js",
+      Icon: SiNodedotjs,
+      color: "66cc33"
+    },
+    mongodb: {
+      name: "MongoDB",
+      Icon: SiMongodb,
+      color: "00ed64"
+    },
+  };
+
   return (
     <>
       <div className="md:flex md:flex-col">
@@ -42,47 +86,38 @@ export default function ProjectHeader({
             <div>
               <h3 className="font-semibold sm:text-lg">Scope of work</h3>
               <div className="flex flex-wrap gap-2 mt-2">
-                <p className="bg-purple-200 text-purple-900 font-bold py-1 px-4 rounded-full">Web Design</p>
-                <p className="bg-sky-200 text-sky-900 font-bold py-1 px-4 rounded-full">Web Development</p>
-                <p className="bg-amber-200 text-amber-900 font-bold py-1 px-4 rounded-full">Website Maintenance</p>
+                {design && (
+                  <p className="bg-purple-200 text-purple-900 font-bold py-1 px-4 rounded-full">Web Design</p>
+                )}
+                {development && (
+                  <p className="bg-sky-200 text-sky-900 font-bold py-1 px-4 rounded-full">Web Development</p>
+                )}
+                {maintenance && (
+                  <p className="bg-amber-200 text-amber-900 font-bold py-1 px-4 rounded-full">Website Maintenance</p>
+                )}
               </div>
             </div>
             <div>
               <h3 className="font-semibold sm:text-lg">Tech stack</h3>
               <ul className="flex flex-wrap gap-2 mt-2">
-                <li className="bg-[hsl(0,0%,14%)] flex items-center gap-2 py-2 px-3 rounded-lg">
-                  <Image
-                    src={NextjsLogo}
-                    alt="Tech stack logo"
-                    className="text-[#06B6D4] bg-[#ffffff] p-1 w-6 h-6 rounded-md"
-                    draggable={false}
-                  />
-                  <p>
-                    Next.js
-                  </p>
-                </li>
-                <li className="bg-[hsl(0,0%,14%)] flex items-center gap-2 py-2 px-3 rounded-lg">
-                  <Image
-                    src={TypeScriptLogo}
-                    alt="Tech stack logo"
-                    className="text-[#06B6D4] bg-[#3178C6] p-1 w-6 h-6 rounded-md"
-                    draggable={false}
-                  />
-                  <p>
-                    TypeScript
-                  </p>
-                </li>
-                <li className="bg-[hsl(0,0%,14%)] flex items-center gap-2 py-2 px-3 rounded-lg">
-                  <Image
-                    src={TailwindLogo}
-                    alt="Tech stack logo"
-                    className="text-[#06B6D4] bg-[#06B6D4] p-1 w-6 h-6 rounded-md"
-                    draggable={false}
-                  />
-                  <p>
-                    Tailwind CSS
-                  </p>
-                </li>
+
+                {techStack &&
+                  Object.entries(techStack)
+                    .filter(([_, isUsed]) => isUsed)
+                    .map(([key]) => {
+                      const tech = techMap[key];
+                      if (!tech) return null;
+
+                      return (
+                        <ProjectTech
+                          key={key}
+                          Icon={tech.Icon}
+                          name={tech.name}
+                          iconColor={tech.color}
+                        />
+                      );
+                    })}
+
               </ul>
             </div>
           </div>
