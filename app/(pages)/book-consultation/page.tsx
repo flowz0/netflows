@@ -7,7 +7,7 @@ export default function BookConsultationPage() {
           <br />
           Free <span className="text-[#00b4ff] font-bold">Discovery</span> Call
         </h1>
-        <p className="text-[#a8a8a8] text-base/[1.8rem] mt-4 max-w-xl text-center lg:mx-0 md:text-lg/[2rem]">
+        <p className="text-[#a8a8a8] text-base/[1.8rem] mt-4 max-w-lg text-center lg:mx-0 md:text-lg/[2rem]">
           Let&apos;s explore your vision, define your goals, and lay the groundwork for a custom web solution that drives results.
         </p>
       </header>
