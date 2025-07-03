@@ -71,7 +71,7 @@ export default function Navbar() {
                   : "bg-[#242424] text-[#f5f5f5] hover:bg-[hsl(0,0%,24%)] active:bg-[hsl(0,0%,34%)]"
                 } `}
             >
-              Schedule Free Consultation
+              Book Free Consultation
             </Link>
           </li>
         </ul>
