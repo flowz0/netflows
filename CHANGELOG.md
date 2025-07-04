@@ -1,3 +1,10 @@
+## [1.29.2](https://github.com/flowz0/netflows/compare/v1.29.1...v1.29.2) (2025-07-04)
+
+
+### Bug Fixes
+
+* update steps 1 label to "Info" in MultiStepForm component ([465cbe4](https://github.com/flowz0/netflows/commit/465cbe45c2f4d7fdcd9dfa350c4bad40599515c1))
+
 ## [1.29.1](https://github.com/flowz0/netflows/compare/v1.29.0...v1.29.1) (2025-07-04)
 
 
