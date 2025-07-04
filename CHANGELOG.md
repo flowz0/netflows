@@ -1,3 +1,10 @@
+## [1.29.3](https://github.com/flowz0/netflows/compare/v1.29.2...v1.29.3) (2025-07-04)
+
+
+### Bug Fixes
+
+* Stepper responsive line and icon sizing in MultiStepForm component ([10050d4](https://github.com/flowz0/netflows/commit/10050d418db1318be7cbbafd5866a940d1df7c20))
+
 ## [1.29.2](https://github.com/flowz0/netflows/compare/v1.29.1...v1.29.2) (2025-07-04)
 
 
