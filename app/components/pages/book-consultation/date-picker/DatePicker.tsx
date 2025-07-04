@@ -59,14 +59,18 @@ export const DatePicker = ({ onSelectDate }: DatePickerProps) => {
   }, [setShowMonthSelector, setShowYearSelector]);
 
   return (
-    <div ref={datePickerRef} className="bg-[#242424] rounded-lg h-[21rem] w-full max-w-[16rem]">
-      <p className="bg-[hsl(0,0%,20%)] text-[hsl(0,0%,60%)] py-3 px-5 rounded-lg text-sm active:ring-0 focus:outline-none active:outline-none focus:border-none active:border-none placeholder:text-[hsl(0,0%,60%)] focus:ring-2 focus:ring-[#0080DB]">
+    <div ref={datePickerRef} className="bg-[#242424] rounded-lg h-[22rem] w-full max-w-[16rem]">
+      <p className="text-[hsl(0,0%,60%)] text-center flex flex-col text-sm">
         Date Selected:
-        {selectedDate && (
-          <span className="ml-2 text-[hsl(0,0%,80%)]">
-            {format(selectedDate, "PPP")}
-          </span>
-        )}
+        {/* {selectedDate && ( */}
+        <span className="bg-[hsl(0,0%,20%)] text-[hsl(0,0%,92%)] mt-2 py-3 px-5 rounded-lg text-lg active:ring-0 focus:outline-none active:outline-none focus:border-none active:border-none placeholder:text-[hsl(0,0%,60%)] focus:ring-2 focus:ring-[#0080DB]">
+          {selectedDate ? (
+            format(selectedDate, "PPP")
+          ) : (
+            format(new Date(), "PPP")
+          )}
+        </span>
+        {/* )} */}
       </p>
       {/* Header */}
       <div className="mt-8 flex justify-between items-center">
