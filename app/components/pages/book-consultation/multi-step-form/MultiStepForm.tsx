@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { FaUser, FaCalendarAlt, FaClock, FaCheckCircle } from "react-icons/fa";
 import Select from "./Select";
+import { DatePicker } from "../date-picker/DatePicker";
 
 const steps = [
   { id: 1, label: "Contact", icon: FaUser },
@@ -34,9 +35,9 @@ export default function MultiStepForm() {
   };
 
   return (
-    <form className="bg-[#242424] mt-12 py-20 px-12 rounded-2xl shadow-xs shadow-[#242424]">
+    <form className="bg-[#242424] mt-12 py-12 px-4 rounded-2xl shadow-xs shadow-[#242424] sm:py-16 sm:px-10">
       {/* Stepper */}
-      <div className="flex items-center justify-center gap-x-6">
+      <div className="flex items-center justify-center gap-x-2 sm:gap-x-6">
         {steps.map((s, i) => {
           const Icon = s.icon;
           const isCurrent = step === s.id;
@@ -49,11 +50,11 @@ export default function MultiStepForm() {
               : "text-[hsl(0,0%,40%)]";
 
           return (
-            <div key={s.id} className="flex items-center gap-x-6">
+            <div key={s.id} className="flex items-center gap-x-2 sm:gap-x-6">
               {/* Line before step */}
               {i !== 0 && (
                 <div
-                  className={`h-px w-16 ${step > s.id - 1 ? "bg-[hsl(0,0%,80%)]" : "bg-[hsl(0,0%,40%)]"
+                  className={`h-px w-4 sm:w-16 ${step > s.id - 1 ? "bg-[hsl(0,0%,80%)]" : "bg-[hsl(0,0%,40%)]"
                     }`}
                 />
               )}
@@ -64,7 +65,7 @@ export default function MultiStepForm() {
                 aria-current={isCurrent ? "step" : undefined}
               >
                 <Icon className="w-6 h-6" />
-                <p className="mt-2 text-sm font-medium">{s.label}</p>
+                <p className="hidden mt-2 text-sm font-medium sm:block">{s.label}</p>
               </div>
             </div>
           );
@@ -72,7 +73,7 @@ export default function MultiStepForm() {
       </div>
 
       {step === 1 && (
-        <div className="flex flex-col gap-y-4 mt-16">
+        <div className="flex flex-col gap-y-4 mt-12 sm:mt-16">
           <div className="flex flex-col">
             <label htmlFor="name" className="text-[hsl(0,0%,80%)] text-sm">Full name</label>
             <input
@@ -149,15 +150,14 @@ export default function MultiStepForm() {
       )}
 
       {step === 2 && (
-        <div className="flex flex-col mt-16">
-          <label htmlFor="date" className="text-[hsl(0,0%,80%)] text-sm">Date</label>
-          <input
-            type="date"
-            id="date"
-            placeholder="01/01/2025"
-            value={formData.date}
-            onChange={(e) => setFormData({ ...formData, date: e.target.value })}
-            className="mt-2 bg-[hsl(0,0%,20%)] py-3 px-5 rounded-lg active:ring-0 focus:outline-none active:outline-none focus:border-none active:border-none placeholder:text-[hsl(0,0%,60%)] focus:ring-2 focus:ring-[#0080DB]"
+        <div className="flex items-center flex-col mt-12 sm:mt-16">
+          <DatePicker
+            onSelectDate={(date) => {
+              setFormData((prev) => ({
+                ...prev,
+                date: date.toISOString().split("T")[0], // Store as YYYY-MM-DD
+              }));
+            }}
           />
           <div className="mt-8 flex gap-x-2">
             <button
@@ -177,7 +177,7 @@ export default function MultiStepForm() {
       )}
 
       {step === 3 && (
-        <div className="flex flex-col mt-16">
+        <div className="flex flex-col mt-12 sm:mt-16">
           <label htmlFor="time" className="text-[hsl(0,0%,80%)] text-sm">Time</label>
           <input
             type="time"
@@ -205,7 +205,7 @@ export default function MultiStepForm() {
       )}
 
       {step === 4 && (
-        <div className="flex flex-col items-center mt-16">
+        <div className="flex flex-col items-center mt-12 sm:mt-16">
           <FaCheckCircle className="text-[#00b4ff] h-16 w-16" />
           <h2 className="mt-8 text-2xl font-semibold sm:text-3xl">Congratulations!</h2>
           <p className="mt-4 max-w-md text-center">You booked a consultation with Netflows. Set a reminder for your scheduled consultation so you don&apos;t miss it.</p>
