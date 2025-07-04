@@ -54,7 +54,7 @@ export default function MultiStepForm() {
               {/* Line before step */}
               {i !== 0 && (
                 <div
-                  className={`h-px w-4 sm:w-16 ${step > s.id - 1 ? "bg-[hsl(0,0%,80%)]" : "bg-[hsl(0,0%,40%)]"
+                  className={`h-px w-6 sm:w-16 ${step > s.id - 1 ? "bg-[hsl(0,0%,80%)]" : "bg-[hsl(0,0%,40%)]"
                     }`}
                 />
               )}
@@ -64,7 +64,7 @@ export default function MultiStepForm() {
                 className={`flex flex-col items-center gap-y-2 ${colorClass} transition-colors duration-300`}
                 aria-current={isCurrent ? "step" : undefined}
               >
-                <Icon className="w-6 h-6" />
+                <Icon className="w-6 h-6 sm:w-7 sm:h-7" />
                 <p className="hidden mt-2 text-sm font-medium sm:block">{s.label}</p>
               </div>
             </div>
