@@ -1,3 +1,17 @@
+# [1.29.0](https://github.com/flowz0/netflows/compare/v1.28.2...v1.29.0) (2025-07-04)
+
+
+### Bug Fixes
+
+* integrate DatePicker into MultiStepForm component ([2cf7761](https://github.com/flowz0/netflows/commit/2cf77614076a580268b2fceac7356f6e164c1f47))
+* npm install date-fns ([db79477](https://github.com/flowz0/netflows/commit/db79477517998b2e4e90fdd496e20b7d6f114438))
+* responsive width and optimize code for Select, SelectBtn components ([f7b3378](https://github.com/flowz0/netflows/commit/f7b33784bd267422560167c08286dae196a3b893))
+
+
+### Features
+
+* create a functional DatePicker component ([385f426](https://github.com/flowz0/netflows/commit/385f426afa6a1cdace89603b5aaac6862af1c9f2))
+
 ## [1.28.2](https://github.com/flowz0/netflows/compare/v1.28.1...v1.28.2) (2025-07-04)
 
 
