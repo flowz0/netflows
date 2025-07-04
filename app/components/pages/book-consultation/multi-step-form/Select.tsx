@@ -37,7 +37,7 @@ export default function Select({ label, options, selected, onChange }: SelectPro
   }, []);
 
   return (
-    <div className="relative inline-block w-64">
+    <div className="relative inline-block w-full">
       <label htmlFor="service" className="text-[hsl(0,0%,80%)] text-sm">{label}</label>
       <button
         ref={buttonRef}
@@ -49,7 +49,7 @@ export default function Select({ label, options, selected, onChange }: SelectPro
         className="w-full mt-2 bg-[hsl(0,0%,20%)] py-3 px-5 rounded-lg cursor-pointer flex items-center justify-between active:ring-0 focus:outline-none active:outline-none focus:border-none active:border-none placeholder:text-[hsl(0,0%,60%)] focus:ring-2 focus:ring-[#0080DB]"
       >
         <span
-          className={`inline-flex truncate ${selected === "" ? "text-[hsl(0,0%,60%)]" : "text-[hsl(0,0%,92%)]"
+          className={`truncate ${selected === "" ? "text-[hsl(0,0%,60%)]" : "text-[hsl(0,0%,92%)]"
             }`}
         >
           {options.find((o) => o.value === selected)?.label || "Select a service"}
@@ -85,7 +85,6 @@ export default function Select({ label, options, selected, onChange }: SelectPro
             >
               {option.label}
               {selected === option.value && option.value !== "" && (
-                // <span className=" absolute inset-y-0 right-0 flex items-center pr-4">✔</span>
                 <FaCheck className="text-[#0080DB] w-4 h-4" />
               )}
             </li>
