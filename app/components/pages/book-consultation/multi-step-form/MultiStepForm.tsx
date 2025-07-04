@@ -7,7 +7,7 @@ import Select from "./Select";
 import { DatePicker } from "../date-picker/DatePicker";
 
 const steps = [
-  { id: 1, label: "Contact", icon: FaUser },
+  { id: 1, label: "Info", icon: FaUser },
   { id: 2, label: "Date", icon: FaCalendarAlt },
   { id: 3, label: "Time", icon: FaClock },
   { id: 4, label: "Booked", icon: FaCheckCircle },
