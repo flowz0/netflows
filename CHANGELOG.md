@@ -1,3 +1,10 @@
+## [1.29.1](https://github.com/flowz0/netflows/compare/v1.29.0...v1.29.1) (2025-07-04)
+
+
+### Bug Fixes
+
+* improve selectedDate output display in DatePicker component ([aea4403](https://github.com/flowz0/netflows/commit/aea44037ebf5c72ede9e130902032ca12e1d0c20))
+
 # [1.29.0](https://github.com/flowz0/netflows/compare/v1.28.2...v1.29.0) (2025-07-04)
 
 
