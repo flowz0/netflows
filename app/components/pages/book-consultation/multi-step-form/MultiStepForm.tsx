@@ -6,10 +6,10 @@ import { FaUser, FaCalendarAlt, FaClock, FaCheckCircle } from "react-icons/fa";
 import Select from "./Select";
 
 const steps = [
-  { id: 1, label: "Information", icon: FaUser },
+  { id: 1, label: "Contact", icon: FaUser },
   { id: 2, label: "Date", icon: FaCalendarAlt },
   { id: 3, label: "Time", icon: FaClock },
-  { id: 4, label: "Complete", icon: FaCheckCircle },
+  { id: 4, label: "Booked", icon: FaCheckCircle },
 ];
 
 export default function MultiStepForm() {
@@ -39,28 +39,32 @@ export default function MultiStepForm() {
       <div className="flex items-center justify-center gap-x-6">
         {steps.map((s, i) => {
           const Icon = s.icon;
-          const isActive = step === s.id;
+          const isCurrent = step === s.id;
           const isCompleted = step > s.id;
+
+          const colorClass = isCurrent
+            ? "text-[#00b4ff]"
+            : isCompleted
+              ? "text-[hsl(0,0%,80%)]"
+              : "text-[hsl(0,0%,40%)]";
 
           return (
             <div key={s.id} className="flex items-center gap-x-6">
-              {/* Left line (skip for first) */}
+              {/* Line before step */}
               {i !== 0 && (
                 <div
-                  className={`h-px w-16 ${step > s.id - 1 ? "bg-[#00b4ff]" : "bg-[hsl(0,0%,40%)]"
+                  className={`h-px w-16 ${step > s.id - 1 ? "bg-[hsl(0,0%,80%)]" : "bg-[hsl(0,0%,40%)]"
                     }`}
                 />
               )}
 
               {/* Step icon and label */}
               <div
-                className={`flex flex-col items-center gap-y-2 ${isActive || isCompleted
-                  ? "text-[#00b4ff]"
-                  : "text-[hsl(0,0%,40%)]"
-                  }`}
+                className={`flex flex-col items-center gap-y-2 ${colorClass} transition-colors duration-300`}
+                aria-current={isCurrent ? "step" : undefined}
               >
                 <Icon className="w-6 h-6" />
-                <p className="mt-2">{s.label}</p>
+                <p className="mt-2 text-sm font-medium">{s.label}</p>
               </div>
             </div>
           );
