@@ -1,10 +1,10 @@
 import FAQs from "@/app/components/pages/home/FAQs";
-import MultiStepForm from "@/app/components/pages/multi-step-form/MultiStepForm";
+import MultiStepForm from "@/app/components/pages/book-consultation/multi-step-form/MultiStepForm";
 
 export default function BookConsultationPage() {
   return (
     <>
-      <main className="py-32 px-6 max-w-7xl mx-auto">
+      <main className="pt-24 pb-16 px-6 max-w-7xl mx-auto sm:pb-32">
         <header className="flex flex-col items-center">
           <h1 className="text-[#f5f5f5] text-4xl/[2.6rem] font-semibold text-center md:text-5xl/[3.4rem]">
             Schedule Your
