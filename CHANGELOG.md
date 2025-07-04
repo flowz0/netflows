@@ -1,3 +1,12 @@
+## [1.28.2](https://github.com/flowz0/netflows/compare/v1.28.1...v1.28.2) (2025-07-04)
+
+
+### Bug Fixes
+
+* optimize spacing in ProjectsPage, CTA, Footer, FAQs, Features, Hero, Projects, Services, Testimonials components ([65a73b8](https://github.com/flowz0/netflows/commit/65a73b835439328ff3a112f99bac2f64b84cf391))
+* restructure book-consultation components ([7cbae8f](https://github.com/flowz0/netflows/commit/7cbae8f216a97f0d3242e6b98f65baa112627041))
+* update MultiStepForm component import and optimize spacing in BookConsultationPage ([5aa51fc](https://github.com/flowz0/netflows/commit/5aa51fc8b5ef518fe68eaaa11e1b00db81afb90b))
+
 ## [1.28.1](https://github.com/flowz0/netflows/compare/v1.28.0...v1.28.1) (2025-07-03)
 
 
