@@ -36,7 +36,7 @@ function Services() {
   const activeService = serviceData.find((s) => s.id === activeServiceId);
 
   return (
-    <section id="services" className="pt-32 bg-[#0a0a0a] lg:pb-32">
+    <section id="services" className="pt-32 pb-16 bg-[#0a0a0a] sm:pb-32">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col items-center">
           <p className="bg-[#00b3ff] text-[#0a0a0a] font-bold py-1 px-5 w-fit rounded-full">
@@ -50,7 +50,7 @@ function Services() {
           </p>
         </div>
 
-        <div className="mt-12 flex flex-col gap-6 lg:flex-row lg:justify-between">
+        <div className="mt-16 flex flex-col gap-6 lg:flex-row lg:justify-between">
           <div className="bg-[#242424] px-4 py-6 rounded-2xl h-fit flex flex-col gap-y-3 md:p-4 lg:w-2/5">
             {/* Service Button */}
             {serviceData.map((service) => (

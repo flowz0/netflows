@@ -24,7 +24,7 @@ const FooterLink: React.FC<FooterLinkProps> = ({ children, href, className, targ
 
 export default function Footer() {
   return (
-    <footer className="bg-[#242424] py-16 md:py-24">
+    <footer className="bg-[#242424] py-16 md:py-32">
       <div className="max-w-7xl px-6 mx-auto">
         <div className="flex flex-col flex-wrap justify-between gap-8 sm:flex-row">
           <div className="flex flex-col gap-2">
@@ -74,7 +74,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <h4 className="mt-16 font-semibold sm:text-lg">
+        <h4 className="mt-24 font-semibold sm:mt-32 sm:text-lg">
           © 2025 Netflows
         </h4>
 

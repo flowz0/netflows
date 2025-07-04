@@ -15,7 +15,7 @@ export default function ProjectsPage() {
           life through thoughtful design and modern web solutions.
         </p>
       </div>
-      <div className="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-6">
         {ProjectData.slice(0, 4).map((project) => (
           <ProjectCard key={project.id} project={project} />
         ))}

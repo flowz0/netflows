@@ -1,13 +1,12 @@
 import Image from "next/image";
-import Button from "../../Button";
-
+import Button from "@/app/components/Button";
 import HeroImg from "@/public/home/homepage-img.svg";
 import Link from "next/link";
 
 export default function Hero() {
   return (
-    <header className="py-32">
-      <div className="max-w-7xl mx-auto px-6 flex flex-col justify-between gap-12 items-center lg:flex-row">
+    <header className="pt-14">
+      <div className="max-w-7xl mt-8 mx-auto px-6 flex flex-col justify-between gap-12 items-center lg:flex-row">
         <div className="max-w-xl flex flex-col items-center lg:items-start">
           <h1 className="text-[#f5f5f5] text-4xl/[2.466rem] font-semibold text-center lg:text-start md:text-5xl/[3.016rem]">
             We Build Websites That <span className="text-[rgb(0,180,255)] font-bold">Grow</span> Your Business
