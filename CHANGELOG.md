@@ -1,3 +1,10 @@
+## [1.28.1](https://github.com/flowz0/netflows/compare/v1.28.0...v1.28.1) (2025-07-03)
+
+
+### Bug Fixes
+
+* restructure CTA component in page layouts ([267e545](https://github.com/flowz0/netflows/commit/267e5455745b0d776c63ac3d5fdfdbed7dbc51a2))
+
 # [1.28.0](https://github.com/flowz0/netflows/compare/v1.27.1...v1.28.0) (2025-07-03)
 
 
