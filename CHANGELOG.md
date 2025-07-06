@@ -1,3 +1,17 @@
+# [1.33.0](https://github.com/flowz0/netflows/compare/v1.32.2...v1.33.0) (2025-07-06)
+
+
+### Bug Fixes
+
+* animate hover for ProjectCard component ([6cc6b22](https://github.com/flowz0/netflows/commit/6cc6b2268840f53c2003da50c5784fc3141887bb))
+* update header text in Hero component ([84920a2](https://github.com/flowz0/netflows/commit/84920a2bcf7391607f0cd427f2a614397476fe9a))
+
+
+### Features
+
+* **button:** integrate button-animation for primary variant ([1904ff1](https://github.com/flowz0/netflows/commit/1904ff1172702858b0fe0ac8aef43ef55addd62b))
+* **styles:** add button-animation utility ([ae76da5](https://github.com/flowz0/netflows/commit/ae76da54b5c4e5f32a9af661fdc414128e2034ae))
+
 ## [1.32.2](https://github.com/flowz0/netflows/compare/v1.32.1...v1.32.2) (2025-07-06)
 
 
