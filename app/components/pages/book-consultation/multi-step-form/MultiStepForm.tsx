@@ -5,8 +5,9 @@ import { FaUser, FaCalendarAlt, FaClock, FaCheckCircle } from "react-icons/fa";
 import Select from "./Select";
 import { DatePicker } from "../date-picker/DatePicker";
 import PhoneNumber from "./PhoneNumber";
-import { formatTimeTo12Hour } from "@/app/utils/formatTime";
-import { formatDate } from "@/app/utils/formatDate";
+
+import { format } from "date-fns";
+import Step4 from "./Step4";
 
 const steps = [
   { id: 1, label: "Info", icon: FaUser },
@@ -53,7 +54,6 @@ export default function MultiStepForm() {
 
           return (
             <div key={s.id} className="flex items-center gap-x-2 sm:gap-x-6">
-              {/* Line before step */}
               {i !== 0 && (
                 <div
                   className={`h-px w-6 sm:w-16 ${step > s.id - 1 ? "bg-[hsl(0,0%,80%)]" : "bg-[hsl(0,0%,40%)]"
@@ -149,10 +149,11 @@ export default function MultiStepForm() {
       {step === 2 && (
         <div className="flex items-center flex-col mt-8 sm:mt-12">
           <DatePicker
+            defaultDate={formData.date}
             onSelectDate={(date) => {
               setFormData((prev) => ({
                 ...prev,
-                date: date.toISOString().split("T")[0], // Store as YYYY-MM-DD
+                date: format(date, "yyyy-MM-dd")
               }));
             }}
           />
@@ -175,7 +176,9 @@ export default function MultiStepForm() {
 
       {step === 3 && (
         <div className="flex flex-col mt-8 sm:mt-12">
-          <label htmlFor="time" className="text-[hsl(0,0%,80%)] text-sm">Time</label>
+          <label htmlFor="time" className="text-[hsl(0,0%,80%)] text-sm">
+            Consultation Time
+          </label>
           <input
             type="time"
             id="time"
