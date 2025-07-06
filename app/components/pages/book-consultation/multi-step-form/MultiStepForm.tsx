@@ -110,15 +110,15 @@ export default function MultiStepForm() {
                 }}
                 options={[
                   { value: "", label: "Choose a service" },
-                  { value: "web-development", label: "Web Development" },
-                  { value: "web-design", label: "Web Design" },
-                  { value: "maintenance-support", label: "Maintenance & Support" },
-                  { value: "web-hosting", label: "Web Hosting" },
-                  { value: "domain-name", label: "Domain Name" },
-                  { value: "seo-optimization", label: "SEO Optimization" },
-                  { value: "performance-optimization", label: "Performance Optimization" },
-                  { value: "additional-pages", label: "Additional Pages" },
-                  { value: "3rd-party-api-integration", label: "3rd Party API Integration" },
+                  { value: "web development", label: "Web Development" },
+                  { value: "web design", label: "Web Design" },
+                  { value: "maintenance & support", label: "Maintenance & Support" },
+                  { value: "web hosting", label: "Web Hosting" },
+                  { value: "domain name", label: "Domain Name" },
+                  { value: "SEO optimization", label: "SEO Optimization" },
+                  { value: "performance optimization", label: "Performance Optimization" },
+                  { value: "additional pages", label: "Additional Pages" },
+                  { value: "3rd party api integration", label: "3rd Party API Integration" },
                 ]}
               />
             </div>
