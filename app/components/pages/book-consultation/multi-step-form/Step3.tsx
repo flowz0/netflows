@@ -4,10 +4,10 @@ interface Step3Props {
   formData: FormData;
   handleChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
   prevStep: () => void;
-  handleSubmit: () => void;
+  nextStep: () => void;
 }
 
-export default function Step3({ formData, handleChange, prevStep, handleSubmit }: Step3Props) {
+export default function Step3({ formData, handleChange, prevStep, nextStep }: Step3Props) {
   return (
     <div className="flex flex-col mt-8 sm:mt-12">
       <label htmlFor="time" className="text-[hsl(0,0%,80%)] text-sm">
@@ -31,7 +31,7 @@ export default function Step3({ formData, handleChange, prevStep, handleSubmit }
         </button>
         <button
           type="button"
-          onClick={handleSubmit}
+          onClick={nextStep}
           className="bg-[hsl(198,100%,40%)] text-[hsl(0,0%,92%)] w-fit font-semibold px-4 py-2 rounded-lg cursor-pointer hover:bg-[hsl(198,100%,48%)]"
         >
           Book Consultation
