@@ -34,7 +34,7 @@ export const YearSelector = ({ onSelect, selectedYear }: Props) => {
           data-year={year}
           type="button"
           onClick={() => onSelect(year)}
-          className={`px-2 py-4 rounded-lg text-center transition-colors duration-300 ease-in-out cursor-pointer
+          className={`px-2 py-2 rounded-lg text-center transition-colors duration-300 ease-in-out cursor-pointer
             ${year === selectedYear
               ? "bg-[hsl(198,100%,40%)] text-[hsl(0,0%,92%)]"
               : "text-[hsl(0,0%,60%)] hover:bg-[hsl(0,0%,20%)]"}`}
