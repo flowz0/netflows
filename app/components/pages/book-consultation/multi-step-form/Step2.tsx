@@ -23,12 +23,14 @@ export default function Step2({ formData, setFormData, prevStep, nextStep }: Ste
       />
       <div className="mt-4 flex gap-x-1">
         <button
+          type="button"
           onClick={prevStep}
           className="bg-[hsl(0,0%,40%)] text-[hsl(0,0%,92%)] w-fit font-semibold px-4 py-2 rounded-lg cursor-pointer hover:bg-[hsl(0,0%,48%))]"
         >
           Back
         </button>
         <button
+          type="button"
           onClick={nextStep}
           className="bg-[hsl(198,100%,40%)] text-[hsl(0,0%,92%)] w-fit font-semibold px-4 py-2 rounded-lg cursor-pointer hover:bg-[hsl(198,100%,48%)]"
         >

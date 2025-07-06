@@ -13,9 +13,12 @@ interface SelectProps {
   options: Option[];
   selected: string;
   onChange: (value: string) => void;
+  onBlur?: (e: React.FocusEvent<HTMLInputElement>) => void;
+  error?: string;
+  required?: boolean;
 }
 
-export default function Select({ label, options, selected, onChange }: SelectProps) {
+export default function Select({ label, options, selected, onChange, onBlur, error, required }: SelectProps) {
   const [open, setOpen] = useState(false);
   const buttonRef = useRef<HTMLButtonElement>(null);
   const menuRef = useRef<HTMLUListElement>(null);
@@ -38,7 +41,16 @@ export default function Select({ label, options, selected, onChange }: SelectPro
 
   return (
     <div className="relative inline-block w-full">
-      <label htmlFor="service" className="text-[hsl(0,0%,80%)] text-sm">{label}</label>
+      <label htmlFor="service" className="text-[hsl(0,0%,80%)] text-sm">
+        {label}
+        {required && <span className="text-[hsl(0,100%,68%)] ml-1">*</span>}
+      </label>
+      <input
+        type="hidden"
+        name="service"
+        value={selected}
+        onBlur={onBlur}
+      />
       <button
         ref={buttonRef}
         aria-haspopup="listbox"
@@ -46,7 +58,8 @@ export default function Select({ label, options, selected, onChange }: SelectPro
         type="button"
         aria-expanded={open}
         onClick={() => setOpen(!open)}
-        className="w-full mt-2 bg-[hsl(0,0%,20%)] py-3 px-5 rounded-lg cursor-pointer flex items-center justify-between active:ring-0 focus:outline-none active:outline-none focus:border-none active:border-none placeholder:text-[hsl(0,0%,60%)] focus:ring-2 focus:ring-[#0080DB]"
+        className={`mt-2 bg-[hsl(0,0%,20%)] py-3 px-5 rounded-lg flex items-center justify-between w-full focus:outline-none placeholder:text-[hsl(0,0%,60%)] ${error ? "ring-2 ring-[hsl(0,100%,68%)]" : "focus:ring-2 focus:ring-[#0080DB]"
+          }`}
       >
         <span
           className={`truncate ${selected === "" ? "text-[hsl(0,0%,60%)]" : "text-[hsl(0,0%,92%)]"
@@ -56,7 +69,11 @@ export default function Select({ label, options, selected, onChange }: SelectPro
         </span>
         <FaArrowDown className={`text-[hsl(0,0%,60%)] w-4 h-4 pointer-events-none transition-transform duration-300 ease-in-out ${open ? "rotate-180" : ""}`} />
       </button>
-
+      {error && (
+        <p className="text-sm text-[hsl(0,100%,68%)] mt-2" id={`${name}-error`}>
+          {error}
+        </p>
+      )}
       {open && (
         <ul
           ref={menuRef}
@@ -67,6 +84,7 @@ export default function Select({ label, options, selected, onChange }: SelectPro
           {options.map((option) => (
             <li
               key={option.value}
+              id="service"
               role="option"
               aria-selected={selected === option.value}
               className={`relative select-none py-3 px-5 rounded-lg flex items-center justify-between ${option.value === ""

@@ -1,54 +1,76 @@
 import { FormData } from "@/app/types/formData";
 import PhoneNumber from "./PhoneNumber";
 import Select from "./Select";
-import { useState } from "react";
+import FormInput from "./FormInput";
+import TextArea from "./TextArea";
 
 interface Step2Props {
   formData: FormData;
-  setFormData: React.Dispatch<React.SetStateAction<FormData>>;
+  handleChange: (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => void;
+  onInputBlur?: (e: React.FocusEvent<HTMLInputElement>) => void;
+  onTextareaBlur?: (e: React.FocusEvent<HTMLTextAreaElement>) => void;
+  error?: Partial<FormData>;
   nextStep: () => void;
 }
 
-export default function Step1({formData, setFormData, nextStep}: Step2Props) {
-  const [selectedService, setSelectedService] = useState("");
-  
+export default function Step1({ formData, handleChange, onInputBlur, onTextareaBlur, error, nextStep }: Step2Props) {
   return (
     <div className="flex flex-col mt-8 sm:mt-12">
       <div className="flex flex-col gap-y-4">
-        <div className="flex flex-col">
-          <label htmlFor="name" className="text-[hsl(0,0%,80%)] text-sm">Full name</label>
-          <input
-            type="text"
-            id="name"
-            placeholder="John Doe"
-            value={formData.name}
-            onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-            className="mt-2 bg-[hsl(0,0%,20%)] py-3 px-5 rounded-lg active:ring-0 focus:outline-none active:outline-none focus:border-none active:border-none placeholder:text-[hsl(0,0%,60%)] focus:ring-2 focus:ring-[#0080DB]"
-          />
-        </div>
-        <div className="flex flex-col">
-          <label htmlFor="email" className="text-[hsl(0,0%,80%)] text-sm">Email</label>
-          <input
-            type="email"
-            id="email"
-            placeholder="example@email.com"
-            value={formData.email}
-            onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-            className="mt-2 bg-[hsl(0,0%,20%)] py-3 px-5 rounded-lg active:ring-0 focus:outline-none active:outline-none focus:border-none active:border-none placeholder:text-[hsl(0,0%,60%)] focus:ring-2 focus:ring-[#0080DB]"
-          />
-        </div>
+        <FormInput
+          name="firstName"
+          label="First name"
+          placeholder="John"
+          value={formData.firstName}
+          onChange={handleChange}
+          onBlur={onInputBlur}
+          error={error?.firstName}
+          required
+        />
+        <FormInput
+          name="lastName"
+          label="Last name"
+          placeholder="Doe"
+          value={formData.lastName}
+          onChange={handleChange}
+          onBlur={onInputBlur}
+          error={error?.lastName}
+          required
+        />
+        <FormInput
+          name="email"
+          label="Email"
+          placeholder="example@email.com"
+          value={formData.email}
+          onChange={handleChange}
+          onBlur={onInputBlur}
+          error={error?.email}
+          required
+        />
         <PhoneNumber
           value={formData.phone}
-          onChange={(formatted) => setFormData({ ...formData, phone: formatted })}
+          onChange={handleChange}
+          onBlur={onInputBlur}
+          error={error?.phone}
+          required
         />
         <div className="flex flex-col">
           <Select
             label="Service"
-            selected={selectedService}
-            onChange={(value) => {
-              setSelectedService(value);
-              setFormData((prev) => ({ ...prev, service: value }));
+            selected={formData.service}
+            onChange={(value: string) => {
+              const syntheticEvent = {
+                target: {
+                  name: "service",
+                  value: value,
+                },
+              } as React.ChangeEvent<HTMLInputElement>;
+
+              handleChange(syntheticEvent);
             }}
+            onBlur={onInputBlur}
+            error={error?.service}
+            required
             options={[
               { value: "", label: "Choose a service" },
               { value: "web development", label: "Web Development" },
@@ -63,20 +85,20 @@ export default function Step1({formData, setFormData, nextStep}: Step2Props) {
             ]}
           />
         </div>
-        <div className="flex flex-col">
-          <label htmlFor="message" className="text-[hsl(0,0%,80%)] text-sm">Message</label>
-          <textarea
-            id="message"
-            placeholder="Aditional information"
-            value={formData.message}
-            rows={4}
-            onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-            className="mt-2 bg-[hsl(0,0%,20%)] py-3 px-5 rounded-lg resize-none active:ring-0 focus:outline-none active:outline-none focus:border-none active:border-none placeholder:text-[hsl(0,0%,60%)] focus:ring-2 focus:ring-[#0080DB]"
-          />
-        </div>
+        <TextArea
+          name="message"
+          label="Message"
+          placeholder="Additional information"
+          value={formData.message}
+          onChange={handleChange}
+          onBlur={onTextareaBlur}
+          error={error?.message}
+          required
+        />
       </div>
       <button
         onClick={nextStep}
+        type="button"
         className="bg-[hsl(198,100%,40%)] text-[hsl(0,0%,92%)] mt-4 w-fit font-semibold px-4 py-2 rounded-lg cursor-pointer hover:bg-[hsl(198,100%,48%)]"
       >
         Next
