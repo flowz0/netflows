@@ -1,3 +1,10 @@
+## [1.32.1](https://github.com/flowz0/netflows/compare/v1.32.0...v1.32.1) (2025-07-06)
+
+
+### Bug Fixes
+
+* add name and service props to Step4 component ([0255ba0](https://github.com/flowz0/netflows/commit/0255ba031896cb923056abfa3c92d95fdd3874a8))
+
 # [1.31.0](https://github.com/flowz0/netflows/compare/v1.30.0...v1.31.0) (2025-07-06)
 
 
