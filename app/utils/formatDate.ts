@@ -1,13 +1,8 @@
-export function formatDate(dateString: string): string {
-  const date = new Date(dateString);
-  if (isNaN(date.getTime())) return "Invalid date";
+import { parse, format } from "date-fns";
 
-  const options: Intl.DateTimeFormatOptions = {
-    weekday: "long",
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-  };
+export function formatDate(dateString: string) {
+  if (!dateString) return "";
 
-  return date.toLocaleDateString("en-US", options);
+  const parsed = parse(dateString, "yyyy-MM-dd", new Date());
+  return format(parsed, "PPP"); // Example: Jul 6th, 2025
 }
