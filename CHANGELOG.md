@@ -1,3 +1,11 @@
+## [1.32.2](https://github.com/flowz0/netflows/compare/v1.32.1...v1.32.2) (2025-07-06)
+
+
+### Bug Fixes
+
+* error 'Select' & 'PhoneNumber' is defined but never used in MultiStepForm ([648c1e0](https://github.com/flowz0/netflows/commit/648c1e0298db4bd3cb711df425b5bff7c2a5d893))
+* update Select value options in MultiStepForm component ([0f48d15](https://github.com/flowz0/netflows/commit/0f48d1549679730ec5d46939b467fdcfda8cf024))
+
 ## [1.32.1](https://github.com/flowz0/netflows/compare/v1.32.0...v1.32.1) (2025-07-06)
 
 
