@@ -13,7 +13,7 @@ interface DatePickerProps {
   onSelectDate: (date: Date) => void;
 }
 
-export const DatePicker = ({ onSelectDate }: DatePickerProps) => {
+export const DatePicker = ({ defaultDate, onSelectDate }: DatePickerProps) => {
   const {
     selectedDate,
     currentMonth,
@@ -27,7 +27,7 @@ export const DatePicker = ({ onSelectDate }: DatePickerProps) => {
     selectDate,
     handleMonthSelect,
     handleYearSelect,
-  } = useDatePicker();
+  } = useDatePicker(defaultDate);
 
   const datePickerRef = useRef<HTMLDivElement>(null);
 
