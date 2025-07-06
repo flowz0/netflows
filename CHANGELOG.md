@@ -1,3 +1,13 @@
+## [1.31.1](https://github.com/flowz0/netflows/compare/v1.31.0...v1.31.1) (2025-07-06)
+
+
+### Bug Fixes
+
+* add DatePicker date to formData state ([3145817](https://github.com/flowz0/netflows/commit/31458176f1afe396149fde5da3b51c3317340373))
+* DatePicker state and date format in MultiStepForm component ([a366a84](https://github.com/flowz0/netflows/commit/a366a8401fbf51017b4f41252866b7cc27ffd2ae))
+* optimize formatDate util function ([ee201ad](https://github.com/flowz0/netflows/commit/ee201ad43663724fad29a8201cbf979b83b22ea4))
+* prase date in useDatePicker ([85cdda8](https://github.com/flowz0/netflows/commit/85cdda822bbfcfe5c347ea7b57bad237c33a5d8b))
+
 # [1.31.0](https://github.com/flowz0/netflows/compare/v1.30.0...v1.31.0) (2025-07-06)
 
 
