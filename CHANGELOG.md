@@ -1,3 +1,18 @@
+# [1.30.0](https://github.com/flowz0/netflows/compare/v1.29.3...v1.30.0) (2025-07-06)
+
+
+### Bug Fixes
+
+* decrease padding for button in YearSelector component ([e098c42](https://github.com/flowz0/netflows/commit/e098c423db861c3daa530f69ab6888c489728229))
+* improve UX instruct user to pick a date ([9a0daa3](https://github.com/flowz0/netflows/commit/9a0daa361b7413430c6662f34eb34d773aed84c8))
+* remove paragraph from FAQs component ([22893f6](https://github.com/flowz0/netflows/commit/22893f67c23ef95eb62d959f8a5c8b0617076c86))
+* update faqs data ([03aeb7b](https://github.com/flowz0/netflows/commit/03aeb7b268b7b912a5c8d05d9059e6773500d982))
+
+
+### Features
+
+* create PhoneNumber component to automatically format phone number input ([5fb2e1e](https://github.com/flowz0/netflows/commit/5fb2e1e1d3c0544fc053f20588e01c2d77cdecc3))
+
 ## [1.29.3](https://github.com/flowz0/netflows/compare/v1.29.2...v1.29.3) (2025-07-04)
 
 
