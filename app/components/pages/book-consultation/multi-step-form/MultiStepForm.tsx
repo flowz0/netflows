@@ -2,12 +2,11 @@
 
 import { FormData } from "@/app/types/formData";
 import { useState } from "react";
-import { format } from "date-fns";
+import Step2 from "./Step2";
 import Step3 from "./Step3";
 import Step4 from "./Step4";
 import Select from "./Select";
 import PhoneNumber from "./PhoneNumber";
-import { DatePicker } from "../date-picker/DatePicker";
 import { FaUser, FaCalendarAlt, FaClock, FaCheckCircle } from "react-icons/fa";
 
 const steps = [
@@ -144,35 +143,17 @@ export default function MultiStepForm() {
         </div>
       )}
 
-      {step === 2 && (
-        <div className="flex items-center flex-col mt-8 sm:mt-12">
-          <DatePicker
-            defaultDate={formData.date}
-            onSelectDate={(date) => {
-              setFormData((prev) => ({
-                ...prev,
-                date: format(date, "yyyy-MM-dd")
-              }));
-            }}
-          />
-          <div className="mt-4 flex gap-x-1">
-            <button
-              onClick={prevStep}
-              className="bg-[hsl(0,0%,40%)] text-[hsl(0,0%,92%)] w-fit font-semibold px-4 py-2 rounded-lg cursor-pointer hover:bg-[hsl(0,0%,48%))]"
-            >
-              Back
-            </button>
-            <button
-              onClick={nextStep}
-              className="bg-[hsl(198,100%,40%)] text-[hsl(0,0%,92%)] w-fit font-semibold px-4 py-2 rounded-lg cursor-pointer hover:bg-[hsl(198,100%,48%)]"
-            >
-              Next
-            </button>
-          </div>
-        </div>
-      )}
+      {step === 2 &&
+        <Step2
+          formData={formData}
+          date={formData.date}
+          setFormData={setFormData}
+          prevStep={prevStep}
+          nextStep={nextStep}
+        />
+      }
 
-      {step === 3 && (
+      {step === 3 &&
         <Step3
           time={formData.time}
           setFormData={setFormData}
@@ -180,9 +161,16 @@ export default function MultiStepForm() {
           prevStep={prevStep}
           handleSubmit={handleSubmit}
         />
-      )}
+      }
 
-      {step === 4 && <Step4 time={formData.time} date={formData.date} />}
+      {step === 4 &&
+        <Step4
+          name={formData.name}
+          time={formData.time}
+          date={formData.date}
+          service={formData.service}
+        />
+      }
     </form>
   );
 }
