@@ -7,6 +7,7 @@ import Step4 from "./Step4";
 import { FaUser, FaCalendarAlt, FaClock, FaCheckCircle } from "react-icons/fa";
 import Step1 from "./Step1";
 import { FormData } from "@/app/types/formData";
+import { format } from "date-fns";
 
 const steps = [
   { id: 1, label: "Info", icon: FaUser },
@@ -67,7 +68,20 @@ export default function MultiStepForm() {
     if (name === "message" && !value.trim()) {
       return "Message is required.";
     }
+
+    if (name === "date" && !value.trim()) {
+      return "Date is required.";
+    }
+    if (name === "time" && !value.trim()) {
+      return "Time is required.";
+    }
     return "";
+  };
+
+  const onBtnBlur = (e: React.FocusEvent<HTMLButtonElement>) => {
+    const { name, value } = e.target;
+    const error = validateField(name as keyof FormData, value);
+    setErrors((prev) => ({ ...prev, [name]: error }));
   };
 
   const handleInputBlur = (e: React.FocusEvent<HTMLInputElement>) => {
@@ -92,30 +106,60 @@ export default function MultiStepForm() {
     }));
   };
 
-  const validateForm = () => {
+  const handleDateChange = (selectedDate: Date) => {
+    const formattedDate = format(selectedDate, "yyyy-MM-dd");
+
+    setFormData((prev) => ({ ...prev, date: formattedDate }));
+
+    // Remove error if valid date
+    const error = validateField("date", formattedDate);
+    setErrors((prev) => ({
+      ...prev,
+      date: error || undefined,
+    }));
+  };
+
+  const prevStep = () => step > 1 && setStep(step - 1);
+
+  const validateStep1 = () => {
+    const requiredFields: (keyof FormData)[] = [
+      "firstName", "lastName", "email", "phone", "service", "message",
+    ];
     const newErrors: Partial<FormData> = {};
-    (Object.keys(formData) as (keyof FormData)[]).forEach((key) => {
-      const value = formData[key];
-      const error = validateField(key, value);
-      if (error) newErrors[key] = error;
+    requiredFields.forEach((field) => {
+      const error = validateField(field, formData[field]);
+      if (error) newErrors[field] = error;
     });
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
 
-  const nextStep = () => {
-    if (!validateForm()) return;
-    if (step < 4) {
-      console.log("Submitted Data:", formData);
-      setStep(step + 1);
-    };
-  }
-  const prevStep = () => step > 1 && setStep(step - 1);
+  const validateStep2 = () => {
+    const error = validateField("date", formData.date);
+    setErrors((prev) => ({ ...prev, date: error }));
+    return !error;
+  };
 
-  const handleSubmit = () => {
-    if (!validateForm()) return;
-    console.log("Submitted Data:", formData);
-    nextStep();
+  const validateStep3 = () => {
+    const error = validateField("time", formData.time);
+    setErrors((prev) => ({ ...prev, time: error }));
+    return !error;
+  };
+
+
+  const nextStep = () => {
+    let isValid = false;
+    if (step === 1) isValid = validateStep1();
+    else if (step === 2) isValid = validateStep2();
+    else if (step === 3) isValid = validateStep3();
+
+    if (!isValid) return;
+
+    if (step === 3) {
+      console.log("Submitted Data:", formData);
+    }
+
+    setStep((prev) => prev + 1);
   };
 
   return (
@@ -166,9 +210,11 @@ export default function MultiStepForm() {
       {step === 2 &&
         <Step2
           formData={formData}
-          setFormData={setFormData}
           prevStep={prevStep}
           nextStep={nextStep}
+          onBtnBlur={onBtnBlur}
+          error={errors}
+          onDateChange={handleDateChange}
         />
       }
 
@@ -177,7 +223,7 @@ export default function MultiStepForm() {
           handleChange={handleChange}
           formData={formData}
           prevStep={prevStep}
-          handleSubmit={handleSubmit}
+          nextStep={nextStep}
         />
       }
 
