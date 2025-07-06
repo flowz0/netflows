@@ -7,7 +7,7 @@ const faqData: FAQProps[] = [
   },
   {
     question: "How long does it take to build a website or application?",
-    answer: "Timelines vary by scope: a basic brochure site typically takes 4-6 weeks, while a robust web app can take 12-20 weeks. We'll give you a detailed project schedule during the proposal phase, with clear milestones and delivery dates."
+    answer: "Timelines vary by scope: a basic brochure site typically takes 2-4 weeks, while a robust web app can take 4-12 weeks. We'll give you a detailed project schedule during the proposal phase, with clear milestones and delivery dates."
   },
   {
     question: "Do you build responsive, mobile-friendly websites?",
@@ -19,11 +19,11 @@ const faqData: FAQProps[] = [
   },
   {
     question: "Do you handle e-commerce and payment integrations?",
-    answer: "Yes. We build secure, PCI-compliant e-commerce sites using Shopify, WooCommerce, or custom React/Node stacks. We integrate popular payment gateways (Stripe, PayPal) and help optimize checkout flow to reduce cart abandonment."
+    answer: "Yes. We build secure, PCI-compliant e-commerce sites using Shopify or integrate popular payment gateways (Stripe, PayPal) and optimize checkout flow to reduce cart abandonment."
   },
   {
     question: "How do I get started?",
-    answer: "Simply reach out via our contact form or book a free 30-minute consultation. We'll discuss your goals, review your requirements, and share a tailored proposal."
+    answer: "Reach out by booking a free consultation. We'll discuss your goals, review your requirements, and share a tailored proposal."
   },
 ];
 
