@@ -5,8 +5,6 @@ import { useState } from "react";
 import Step2 from "./Step2";
 import Step3 from "./Step3";
 import Step4 from "./Step4";
-import Select from "./Select";
-import PhoneNumber from "./PhoneNumber";
 import { FaUser, FaCalendarAlt, FaClock, FaCheckCircle } from "react-icons/fa";
 import Step1 from "./Step1";
 
