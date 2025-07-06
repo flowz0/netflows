@@ -1,11 +1,12 @@
 "use client";
 
-import Link from "next/link";
 import { useState } from "react";
 import { FaUser, FaCalendarAlt, FaClock, FaCheckCircle } from "react-icons/fa";
 import Select from "./Select";
 import { DatePicker } from "../date-picker/DatePicker";
 import PhoneNumber from "./PhoneNumber";
+import { formatTimeTo12Hour } from "@/app/utils/formatTime";
+import { formatDate } from "@/app/utils/formatDate";
 
 const steps = [
   { id: 1, label: "Info", icon: FaUser },
@@ -74,80 +75,71 @@ export default function MultiStepForm() {
       </div>
 
       {step === 1 && (
-        <div className="flex flex-col gap-y-4 mt-12 sm:mt-16">
-          <div className="flex flex-col">
-            <label htmlFor="name" className="text-[hsl(0,0%,80%)] text-sm">Full name</label>
-            <input
-              type="text"
-              id="name"
-              placeholder="John Doe"
-              value={formData.name}
-              onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-              className="mt-2 bg-[hsl(0,0%,20%)] py-3 px-5 rounded-lg active:ring-0 focus:outline-none active:outline-none focus:border-none active:border-none placeholder:text-[hsl(0,0%,60%)] focus:ring-2 focus:ring-[#0080DB]"
-            />
-          </div>
-          <div className="flex flex-col">
-            <label htmlFor="email" className="text-[hsl(0,0%,80%)] text-sm">Email</label>
-            <input
-              type="email"
-              id="email"
-              placeholder="example@email.com"
-              value={formData.email}
-              onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-              className="mt-2 bg-[hsl(0,0%,20%)] py-3 px-5 rounded-lg active:ring-0 focus:outline-none active:outline-none focus:border-none active:border-none placeholder:text-[hsl(0,0%,60%)] focus:ring-2 focus:ring-[#0080DB]"
-            />
-          </div>
-          <PhoneNumber
-            value={formData.phone}
-            onChange={(formatted) => setFormData({ ...formData, phone: formatted })}
-          />
-          {/* <div className="flex flex-col">
-            <label htmlFor="phone" className="text-[hsl(0,0%,80%)] text-sm">Phone number</label>
-            <input
-              type="tel"
-              id="phone"
-              placeholder="+1 (555) 555-5555"
+        <div className="flex flex-col mt-8 sm:mt-12">
+          <div className="flex flex-col gap-y-4">
+            <div className="flex flex-col">
+              <label htmlFor="name" className="text-[hsl(0,0%,80%)] text-sm">Full name</label>
+              <input
+                type="text"
+                id="name"
+                placeholder="John Doe"
+                value={formData.name}
+                onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                className="mt-2 bg-[hsl(0,0%,20%)] py-3 px-5 rounded-lg active:ring-0 focus:outline-none active:outline-none focus:border-none active:border-none placeholder:text-[hsl(0,0%,60%)] focus:ring-2 focus:ring-[#0080DB]"
+              />
+            </div>
+            <div className="flex flex-col">
+              <label htmlFor="email" className="text-[hsl(0,0%,80%)] text-sm">Email</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="example@email.com"
+                value={formData.email}
+                onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                className="mt-2 bg-[hsl(0,0%,20%)] py-3 px-5 rounded-lg active:ring-0 focus:outline-none active:outline-none focus:border-none active:border-none placeholder:text-[hsl(0,0%,60%)] focus:ring-2 focus:ring-[#0080DB]"
+              />
+            </div>
+            <PhoneNumber
               value={formData.phone}
-              onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-              className="mt-2 bg-[hsl(0,0%,20%)] py-3 px-5 rounded-lg active:ring-0 focus:outline-none active:outline-none focus:border-none active:border-none placeholder:text-[hsl(0,0%,60%)] focus:ring-2 focus:ring-[#0080DB]"
+              onChange={(formatted) => setFormData({ ...formData, phone: formatted })}
             />
-          </div> */}
-          <div className="flex flex-col">
-            <Select
-              label="Service"
-              selected={selectedService}
-              onChange={(value) => {
-                setSelectedService(value);
-                setFormData((prev) => ({ ...prev, service: value }));
-              }}
-              options={[
-                { value: "", label: "Choose a service" },
-                { value: "web-development", label: "Web Development" },
-                { value: "web-design", label: "Web Design" },
-                { value: "maintenance-support", label: "Maintenance & Support" },
-                { value: "web-hosting", label: "Web Hosting" },
-                { value: "domain-name", label: "Domain Name" },
-                { value: "seo-optimization", label: "SEO Optimization" },
-                { value: "performance-optimization", label: "Performance Optimization" },
-                { value: "additional-pages", label: "Additional Pages" },
-                { value: "3rd-party-api-integration", label: "3rd Party API Integration" },
-              ]}
-            />
-          </div>
-          <div className="flex flex-col">
-            <label htmlFor="message" className="text-[hsl(0,0%,80%)] text-sm">Message</label>
-            <textarea
-              id="message"
-              placeholder="Aditional information"
-              value={formData.message}
-              rows={4}
-              onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-              className="mt-2 bg-[hsl(0,0%,20%)] py-3 px-5 rounded-lg resize-none active:ring-0 focus:outline-none active:outline-none focus:border-none active:border-none placeholder:text-[hsl(0,0%,60%)] focus:ring-2 focus:ring-[#0080DB]"
-            />
+            <div className="flex flex-col">
+              <Select
+                label="Service"
+                selected={selectedService}
+                onChange={(value) => {
+                  setSelectedService(value);
+                  setFormData((prev) => ({ ...prev, service: value }));
+                }}
+                options={[
+                  { value: "", label: "Choose a service" },
+                  { value: "web-development", label: "Web Development" },
+                  { value: "web-design", label: "Web Design" },
+                  { value: "maintenance-support", label: "Maintenance & Support" },
+                  { value: "web-hosting", label: "Web Hosting" },
+                  { value: "domain-name", label: "Domain Name" },
+                  { value: "seo-optimization", label: "SEO Optimization" },
+                  { value: "performance-optimization", label: "Performance Optimization" },
+                  { value: "additional-pages", label: "Additional Pages" },
+                  { value: "3rd-party-api-integration", label: "3rd Party API Integration" },
+                ]}
+              />
+            </div>
+            <div className="flex flex-col">
+              <label htmlFor="message" className="text-[hsl(0,0%,80%)] text-sm">Message</label>
+              <textarea
+                id="message"
+                placeholder="Aditional information"
+                value={formData.message}
+                rows={4}
+                onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                className="mt-2 bg-[hsl(0,0%,20%)] py-3 px-5 rounded-lg resize-none active:ring-0 focus:outline-none active:outline-none focus:border-none active:border-none placeholder:text-[hsl(0,0%,60%)] focus:ring-2 focus:ring-[#0080DB]"
+              />
+            </div>
           </div>
           <button
             onClick={nextStep}
-            className="bg-[hsl(198,100%,40%)] text-[hsl(0,0%,92%)] mt-6 w-fit font-semibold px-4 py-2 rounded-lg cursor-pointer hover:bg-[hsl(198,100%,48%)]"
+            className="bg-[hsl(198,100%,40%)] text-[hsl(0,0%,92%)] mt-4 w-fit font-semibold px-4 py-2 rounded-lg cursor-pointer hover:bg-[hsl(198,100%,48%)]"
           >
             Next
           </button>
@@ -155,7 +147,7 @@ export default function MultiStepForm() {
       )}
 
       {step === 2 && (
-        <div className="flex items-center flex-col mt-12 sm:mt-16">
+        <div className="flex items-center flex-col mt-8 sm:mt-12">
           <DatePicker
             onSelectDate={(date) => {
               setFormData((prev) => ({
@@ -164,7 +156,7 @@ export default function MultiStepForm() {
               }));
             }}
           />
-          <div className="mt-8 flex gap-x-2">
+          <div className="mt-4 flex gap-x-1">
             <button
               onClick={prevStep}
               className="bg-[hsl(0,0%,40%)] text-[hsl(0,0%,92%)] w-fit font-semibold px-4 py-2 rounded-lg cursor-pointer hover:bg-[hsl(0,0%,48%))]"
@@ -182,7 +174,7 @@ export default function MultiStepForm() {
       )}
 
       {step === 3 && (
-        <div className="flex flex-col mt-12 sm:mt-16">
+        <div className="flex flex-col mt-8 sm:mt-12">
           <label htmlFor="time" className="text-[hsl(0,0%,80%)] text-sm">Time</label>
           <input
             type="time"
@@ -192,7 +184,7 @@ export default function MultiStepForm() {
             onChange={(e) => setFormData({ ...formData, time: e.target.value })}
             className="mt-2 bg-[hsl(0,0%,20%)] py-3 px-5 rounded-lg active:ring-0 focus:outline-none active:outline-none focus:border-none active:border-none placeholder:text-[hsl(0,0%,60%)] focus:ring-2 focus:ring-[#0080DB]"
           />
-          <div className="mt-8 flex gap-x-2">
+          <div className="mt-4 flex gap-x-1">
             <button
               onClick={prevStep}
               className="bg-[hsl(0,0%,40%)] text-[hsl(0,0%,92%)] w-fit font-semibold px-4 py-2 rounded-lg cursor-pointer hover:bg-[hsl(0,0%,48%))]"
@@ -210,16 +202,23 @@ export default function MultiStepForm() {
       )}
 
       {step === 4 && (
-        <div className="flex flex-col items-center mt-12 sm:mt-16">
+        <div className="flex flex-col items-center mt-8 sm:mt-12">
           <FaCheckCircle className="text-[#00b4ff] h-16 w-16" />
-          <h2 className="mt-8 text-2xl font-semibold sm:text-3xl">Congratulations!</h2>
-          <p className="mt-4 max-w-md text-center">You booked a consultation with Netflows. Set a reminder for your scheduled consultation so you don&apos;t miss it.</p>
-          <Link
-            href="/"
-            className="bg-[hsl(198,100%,40%)] text-[hsl(0,0%,92%)] mt-8 w-fit font-semibold px-4 py-2 rounded-lg cursor-pointer hover:bg-[hsl(198,100%,48%)]"
-          >
-            Return home
-          </Link>
+          <h2 className="mt-6 text-2xl font-semibold sm:text-3xl">
+            Consultation Booked
+          </h2>
+          <p className="mt-4 max-w-md text-center">
+            Congratulations! You successfully booked a consultation with Netflows. Make sure to set a reminder so you don&apos;t miss it.
+          </p>
+          <div className="bg-[hsl(0,0%,20%)] rounded-lg mt-6 py-6 px-12 sm:px-16 text-center">
+            <p className="text-[hsl(0,0%,60%)] text-sm">Consultation Details</p>
+            <p className="text-[hsl(0,0%,92%)] mt-2 text-2xl sm:text-3xl">
+              {formatTimeTo12Hour(formData.time)}
+            </p>
+            <p className="text-[hsl(0,0%,92%)] mt-1 text-lg sm:text-xl">
+              {formatDate(formData.date)}
+            </p>
+          </div>
         </div>
       )}
     </form>
