@@ -16,9 +16,6 @@ export default function FAQs() {
           <br />
           Need to Know
         </h2>
-        <p className="text-[#a8a8a8] text-base/[1.8rem] mt-4 max-w-xl mx-auto text-center lg:mx-0 md:text-lg/[2rem]">
-          Learn how our web design and development process works, what to expect, and how we deliver results for businesses like yours.
-        </p>
       </div>
 
       <div className="mt-16 flex flex-col gap-6 lg:flex-row">
