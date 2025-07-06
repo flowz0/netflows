@@ -59,7 +59,7 @@ export const DatePicker = ({ onSelectDate }: DatePickerProps) => {
   }, [setShowMonthSelector, setShowYearSelector]);
 
   return (
-    <div ref={datePickerRef} className="bg-[#242424] rounded-lg h-[22rem] w-full max-w-[16rem]">
+    <div ref={datePickerRef} className="bg-[#242424] rounded-lg h-[24rem] w-full max-w-[16rem]">
       <p className="text-[hsl(0,0%,60%)] text-center flex flex-col text-sm">
         Date Selected:
         {/* {selectedDate && ( */}
@@ -67,7 +67,7 @@ export const DatePicker = ({ onSelectDate }: DatePickerProps) => {
           {selectedDate ? (
             format(selectedDate, "PPP")
           ) : (
-            format(new Date(), "PPP")
+            "Pick a date"
           )}
         </span>
         {/* )} */}
