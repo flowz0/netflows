@@ -5,6 +5,7 @@ import { useState } from "react";
 import { FaUser, FaCalendarAlt, FaClock, FaCheckCircle } from "react-icons/fa";
 import Select from "./Select";
 import { DatePicker } from "../date-picker/DatePicker";
+import PhoneNumber from "./PhoneNumber";
 
 const steps = [
   { id: 1, label: "Info", icon: FaUser },
@@ -96,7 +97,11 @@ export default function MultiStepForm() {
               className="mt-2 bg-[hsl(0,0%,20%)] py-3 px-5 rounded-lg active:ring-0 focus:outline-none active:outline-none focus:border-none active:border-none placeholder:text-[hsl(0,0%,60%)] focus:ring-2 focus:ring-[#0080DB]"
             />
           </div>
-          <div className="flex flex-col">
+          <PhoneNumber
+            value={formData.phone}
+            onChange={(formatted) => setFormData({ ...formData, phone: formatted })}
+          />
+          {/* <div className="flex flex-col">
             <label htmlFor="phone" className="text-[hsl(0,0%,80%)] text-sm">Phone number</label>
             <input
               type="tel"
@@ -106,7 +111,7 @@ export default function MultiStepForm() {
               onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
               className="mt-2 bg-[hsl(0,0%,20%)] py-3 px-5 rounded-lg active:ring-0 focus:outline-none active:outline-none focus:border-none active:border-none placeholder:text-[hsl(0,0%,60%)] focus:ring-2 focus:ring-[#0080DB]"
             />
-          </div>
+          </div> */}
           <div className="flex flex-col">
             <Select
               label="Service"
