@@ -11,9 +11,12 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 interface DatePickerProps {
   defaultDate?: string;
   onSelectDate: (date: Date) => void;
+  onBlur?: (e: React.FocusEvent<HTMLButtonElement>) => void;
+  required?: boolean;
+  error?: string;
 }
 
-export const DatePicker = ({ defaultDate, onSelectDate }: DatePickerProps) => {
+export const DatePicker = ({ defaultDate, onSelectDate, required, error, onBlur }: DatePickerProps) => {
   const {
     selectedDate,
     currentMonth,
@@ -60,18 +63,23 @@ export const DatePicker = ({ defaultDate, onSelectDate }: DatePickerProps) => {
 
   return (
     <div ref={datePickerRef} className="bg-[#242424] rounded-lg h-[24rem] w-full max-w-[16rem]">
-      <p className="text-[hsl(0,0%,60%)] text-center flex flex-col text-sm">
-        Date Selected:
-        {/* {selectedDate && ( */}
-        <span className="bg-[hsl(0,0%,20%)] text-[hsl(0,0%,92%)] mt-2 py-3 px-5 rounded-lg text-lg active:ring-0 focus:outline-none active:outline-none focus:border-none active:border-none placeholder:text-[hsl(0,0%,60%)] focus:ring-2 focus:ring-[#0080DB]">
+      <p className="text-[hsl(0,0%,60%)] flex flex-col text-sm">
+        <span>Date{required && <span className="text-[hsl(0,100%,68%)] ml-1">*</span>}</span>
+        <span onBlur={onBlur} className={`${selectedDate ? "text-[hsl(0,0%,92%)]" : "text-[hsl(0,0%,60%)]"} mt-2 bg-[hsl(0,0%,20%)] py-3 px-5 rounded-lg focus:outline-none placeholder:text-[hsl(0,0%,60%)] ${
+          error ? "ring-2 ring-[hsl(0,100%,68%)]" : "focus:ring-2 focus:ring-[#0080DB]"
+        }`}>
           {selectedDate ? (
             format(selectedDate, "PPP")
           ) : (
-            "Pick a date"
+            "Select a date"
           )}
         </span>
-        {/* )} */}
       </p>
+      {error && (
+        <p className="text-sm text-[hsl(0,100%,68%)] mt-2" id="date-error">
+          {error}
+        </p>
+      )}
       {/* Header */}
       <div className="mt-8 flex justify-between items-center">
         <button type="button" onClick={prevMonth}>
@@ -135,6 +143,8 @@ export const DatePicker = ({ defaultDate, onSelectDate }: DatePickerProps) => {
                     selectDate(day);
                     onSelectDate(day);
                   }}
+                  id="date"
+                  name="date"
                   className={`p-1 rounded-full transition cursor-pointer 
                     ${selectedDate && isSameDay(day, selectedDate)
                       ? "ring-2 ring-[#0080DB]"
