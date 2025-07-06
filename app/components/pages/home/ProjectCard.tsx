@@ -33,7 +33,7 @@ const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
       onClick={handleClick}
       className={`bg-[hsl(0,0%,14%)] py-6 px-6 sm:py-12 sm:px-12 md:py-8 md:px-8 rounded-3xl ${comingSoon
         ? "cursor-not-allowed"
-        : "cursor-pointer"
+        : "cursor-pointer transition-transform duration-300 ease-in-out hover:-translate-y-2"
         }`}>
       <div className="flex justify-between items-center">
         <h3 className="text-[#f5f5f5] text-2xl font-semibold md:text-3xl">
