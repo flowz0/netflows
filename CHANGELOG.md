@@ -1,3 +1,15 @@
+# [1.32.0](https://github.com/flowz0/netflows/compare/v1.31.1...v1.32.0) (2025-07-06)
+
+
+### Bug Fixes
+
+* **types:** define and apply FormData type to resolve type mismatch in Step3 ([5c5ec66](https://github.com/flowz0/netflows/commit/5c5ec66a19299ccbe1335906dce05f94bf123c41))
+
+
+### Features
+
+* **step3:** create consultation time input step ([69a4221](https://github.com/flowz0/netflows/commit/69a42217639b09c5158b99e95baaeca90d9acdb9))
+
 ## [1.31.1](https://github.com/flowz0/netflows/compare/v1.31.0...v1.31.1) (2025-07-06)
 
 
