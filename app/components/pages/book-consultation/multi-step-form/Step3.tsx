@@ -2,13 +2,12 @@ import { FormData } from "@/app/types/formData";
 
 interface Step3Props {
   formData: FormData;
-  time: string;
   setFormData: React.Dispatch<React.SetStateAction<FormData>>;
   prevStep: () => void;
   handleSubmit: () => void;
 }
 
-export default function Step3({ formData, time, setFormData, prevStep, handleSubmit }: Step3Props) {
+export default function Step3({ formData, setFormData, prevStep, handleSubmit }: Step3Props) {
   return (
     <div className="flex flex-col mt-8 sm:mt-12">
       <label htmlFor="time" className="text-[hsl(0,0%,80%)] text-sm">
@@ -18,7 +17,7 @@ export default function Step3({ formData, time, setFormData, prevStep, handleSub
         type="time"
         id="time"
         placeholder="1:45 PM"
-        value={time}
+        value={formData.time}
         onChange={(e) => setFormData({ ...formData, time: e.target.value })}
         className="mt-2 bg-[hsl(0,0%,20%)] py-3 px-5 rounded-lg active:ring-0 focus:outline-none active:outline-none focus:border-none active:border-none placeholder:text-[hsl(0,0%,60%)] focus:ring-2 focus:ring-[#0080DB]"
       />

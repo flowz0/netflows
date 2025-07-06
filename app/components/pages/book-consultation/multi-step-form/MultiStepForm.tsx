@@ -88,7 +88,6 @@ export default function MultiStepForm() {
 
       {step === 3 &&
         <Step3
-          time={formData.time}
           setFormData={setFormData}
           formData={formData}
           prevStep={prevStep}
