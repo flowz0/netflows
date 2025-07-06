@@ -1,13 +1,14 @@
 "use client";
 
+import { FormData } from "@/app/types/formData";
 import { useState } from "react";
-import { FaUser, FaCalendarAlt, FaClock, FaCheckCircle } from "react-icons/fa";
-import Select from "./Select";
-import { DatePicker } from "../date-picker/DatePicker";
-import PhoneNumber from "./PhoneNumber";
-
 import { format } from "date-fns";
+import Step3 from "./Step3";
 import Step4 from "./Step4";
+import Select from "./Select";
+import PhoneNumber from "./PhoneNumber";
+import { DatePicker } from "../date-picker/DatePicker";
+import { FaUser, FaCalendarAlt, FaClock, FaCheckCircle } from "react-icons/fa";
 
 const steps = [
   { id: 1, label: "Info", icon: FaUser },
@@ -18,7 +19,8 @@ const steps = [
 
 export default function MultiStepForm() {
   const [step, setStep] = useState(1);
-  const [formData, setFormData] = useState({
+  const [selectedService, setSelectedService] = useState("");
+  const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",
     phone: "",
@@ -27,7 +29,6 @@ export default function MultiStepForm() {
     date: "",
     time: "",
   });
-  const [selectedService, setSelectedService] = useState("");
 
   const nextStep = () => step < 4 && setStep(step + 1);
   const prevStep = () => step > 1 && setStep(step - 1);
@@ -45,13 +46,11 @@ export default function MultiStepForm() {
           const Icon = s.icon;
           const isCurrent = step === s.id;
           const isCompleted = step > s.id;
-
           const colorClass = isCurrent
             ? "text-[#00b4ff]"
             : isCompleted
               ? "text-[hsl(0,0%,80%)]"
               : "text-[hsl(0,0%,40%)]";
-
           return (
             <div key={s.id} className="flex items-center gap-x-2 sm:gap-x-6">
               {i !== 0 && (
@@ -60,7 +59,6 @@ export default function MultiStepForm() {
                     }`}
                 />
               )}
-
               {/* Step icon and label */}
               <div
                 className={`flex flex-col items-center gap-y-2 ${colorClass} transition-colors duration-300`}
@@ -175,41 +173,16 @@ export default function MultiStepForm() {
       )}
 
       {step === 3 && (
-        <div className="flex flex-col mt-8 sm:mt-12">
-          <label htmlFor="time" className="text-[hsl(0,0%,80%)] text-sm">
-            Consultation Time
-          </label>
-          <input
-            type="time"
-            id="time"
-            placeholder="1:45 PM"
-            value={formData.time}
-            onChange={(e) => setFormData({ ...formData, time: e.target.value })}
-            className="mt-2 bg-[hsl(0,0%,20%)] py-3 px-5 rounded-lg active:ring-0 focus:outline-none active:outline-none focus:border-none active:border-none placeholder:text-[hsl(0,0%,60%)] focus:ring-2 focus:ring-[#0080DB]"
-          />
-          <div className="mt-4 flex gap-x-1">
-            <button
-              onClick={prevStep}
-              className="bg-[hsl(0,0%,40%)] text-[hsl(0,0%,92%)] w-fit font-semibold px-4 py-2 rounded-lg cursor-pointer hover:bg-[hsl(0,0%,48%))]"
-            >
-              Back
-            </button>
-            <button
-              onClick={handleSubmit}
-              className="bg-[hsl(198,100%,40%)] text-[hsl(0,0%,92%)] w-fit font-semibold px-4 py-2 rounded-lg cursor-pointer hover:bg-[hsl(198,100%,48%)]"
-            >
-              Book Consultation
-            </button>
-          </div>
-        </div>
-      )}
-
-      {step === 4 && (
-        <Step4
+        <Step3
           time={formData.time}
-          date={formData.date}
+          setFormData={setFormData}
+          formData={formData}
+          prevStep={prevStep}
+          handleSubmit={handleSubmit}
         />
       )}
+
+      {step === 4 && <Step4 time={formData.time} date={formData.date} />}
     </form>
   );
 }
