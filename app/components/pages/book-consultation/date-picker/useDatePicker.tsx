@@ -10,10 +10,19 @@ import {
   setMonth,
   setYear,
 } from "date-fns";
+import { parse } from "date-fns";
 
-export const useDatePicker = () => {
-  const [selectedDate, setSelectedDate] = useState<Date | null>(null);
-  const [currentMonth, setCurrentMonth] = useState(new Date());
+export const useDatePicker = (defaultDate?: string) => {
+  const [selectedDate, setSelectedDate] = useState<Date | null>(() => {
+    if (defaultDate) {
+      return parse(defaultDate, "yyyy-MM-dd", new Date());
+    }
+    return null;
+  });
+  const [currentMonth, setCurrentMonth] = useState<Date>(
+    selectedDate ?? new Date()
+  );
+
   const [showMonthSelector, setShowMonthSelector] = useState(false);
   const [showYearSelector, setShowYearSelector] = useState(false);
 
