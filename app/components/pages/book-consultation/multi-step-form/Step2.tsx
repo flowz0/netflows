@@ -4,17 +4,16 @@ import { format } from "date-fns";
 
 interface Step2Props {
   formData: FormData;
-  date: string;
   setFormData: React.Dispatch<React.SetStateAction<FormData>>;
   prevStep: () => void;
   nextStep: () => void;
 }
 
-export default function Step2({ formData, date, setFormData, prevStep, nextStep }: Step2Props) {
+export default function Step2({ formData, setFormData, prevStep, nextStep }: Step2Props) {
   return (
     <div className="flex items-center flex-col mt-8 sm:mt-12">
       <DatePicker
-        defaultDate={date}
+        defaultDate={formData.date}
         onSelectDate={(selectedDate: Date) =>
           setFormData({
             ...formData,
