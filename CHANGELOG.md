@@ -1,3 +1,16 @@
+# [1.31.0](https://github.com/flowz0/netflows/compare/v1.30.0...v1.31.0) (2025-07-06)
+
+
+### Bug Fixes
+
+* optimize code and implement formatTime and formatDate in MultiStepForm component ([4142861](https://github.com/flowz0/netflows/commit/4142861ace7f93e71dd18e6ea614120215095e64))
+
+
+### Features
+
+* create formatDate util function ([6c7aa7d](https://github.com/flowz0/netflows/commit/6c7aa7d2a6779d1beb14b7e4f6d4a6f1df34519d))
+* create formatTime util function ([264b686](https://github.com/flowz0/netflows/commit/264b6862242969594ca2edde1cb89379e754ba82))
+
 # [1.30.0](https://github.com/flowz0/netflows/compare/v1.29.3...v1.30.0) (2025-07-06)
 
 
