@@ -1,4 +1,5 @@
 import { FormData } from "@/app/types/formData";
+import TimeInput from "./TimeInput";
 
 interface Step3Props {
   formData: FormData;
@@ -10,16 +11,9 @@ interface Step3Props {
 export default function Step3({ formData, handleChange, prevStep, nextStep }: Step3Props) {
   return (
     <div className="flex flex-col mt-8 sm:mt-12">
-      <label htmlFor="time" className="text-[hsl(0,0%,80%)] text-sm">
-        Consultation Time
-      </label>
-      <input
-        type="time"
-        id="time"
-        placeholder="1:45 PM"
-        value={formData.time}
-        onChange={handleChange}
-        className="mt-2 bg-[hsl(0,0%,20%)] py-3 px-5 rounded-lg active:ring-0 focus:outline-none active:outline-none focus:border-none active:border-none placeholder:text-[hsl(0,0%,60%)] focus:ring-2 focus:ring-[#0080DB]"
+      <TimeInput
+        formData={formData}
+        handleChange={handleChange}
       />
       <div className="mt-4 flex gap-x-1">
         <button
