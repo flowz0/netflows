@@ -2,26 +2,26 @@
 
 @layer utilities {
   .button-animation {
-    animation: button-animation 4s infinite;
+    animation: button-animation ease-in-out 3s infinite;
   }
 
   @keyframes button-animation {
     0% {
-      background-color: hsl(198, 100%, 50%);
-      box-shadow: 0 0 2px 1px hsl(198, 100%, 50%);
-      /* Red */
+      opacity: 1;
+      background-color: #00b4ff;
+      box-shadow: 0 0 2px 1px #00b4ff;
     }
 
     50% {
-      background-color: hsl(188, 100%, 50%);
-      box-shadow: 0 0 2px 1px hsl(188, 100%, 50%);
-      /* Green */
+      opacity: 0.8;
+      background-color: #00b4ff;
+      box-shadow: 0 0 2px 1px #00b4ff;
     }
 
     100% {
-      background-color: hsl(198, 100%, 50%);
-      box-shadow: 0 0 2px 1px hsl(198, 100%, 50%);
-      /* Blue */
+      opacity: 1;
+      background-color: #00b4ff;
+      box-shadow: 0 0 2px 1px #00b4ff;
     }
   }
 }
