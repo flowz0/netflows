@@ -1,3 +1,23 @@
+# [1.34.0](https://github.com/flowz0/netflows/compare/v1.33.0...v1.34.0) (2025-07-08)
+
+
+### Bug Fixes
+
+* create onBlur function for different elements, validate steps, optimize nextStep, and remove handleSubmit in MultiStepForm component ([e14c59a](https://github.com/flowz0/netflows/commit/e14c59a11187177e6140db9346942ad9aded9d88))
+* integrate onBlur, required, and error handling into DatePicker component ([08bb4e8](https://github.com/flowz0/netflows/commit/08bb4e89168e73dfe17862fe52753d37f8f3e7f3))
+* integrate TimeInput component into Step3 component ([22b687e](https://github.com/flowz0/netflows/commit/22b687e1b066256a7b9b503c0d06949c4cee8bdf))
+* optimize code, remove date prop, use formData prop instead ([c880588](https://github.com/flowz0/netflows/commit/c880588d24c3fb3f9bd3584bea764e635c11f5c9))
+* optimize Step3 code by removing date props and replacing with formData ([f026ae7](https://github.com/flowz0/netflows/commit/f026ae7ac4e3c4f39544ea302a146ef929fcb737))
+* pass error, onBtnBlur function, handleData, and required props to DatePicker from Step2 component ([d11ee30](https://github.com/flowz0/netflows/commit/d11ee3063d8579f5eea87addb649d830680fa7b7))
+* update Step3 to use new nextStep functionality ([512105f](https://github.com/flowz0/netflows/commit/512105f160be3eab4ed9b69686df8a57ddcb44df))
+
+
+### Features
+
+* create TimeInput component and handle time data ([b94fe8e](https://github.com/flowz0/netflows/commit/b94fe8ea27a0ef4c1fbc11244ecd514e33788ed4))
+* **form:** add input validation, error handling, and reusable input components ([140e78c](https://github.com/flowz0/netflows/commit/140e78ce7c218164660e86ae12803b2df2ccdef4))
+* functioning MultiStepForm MVP ([a20d6e0](https://github.com/flowz0/netflows/commit/a20d6e0255660135676f33f7cad86a1c3ac1df9c)), closes [#3](https://github.com/flowz0/netflows/issues/3)
+
 # [1.33.0](https://github.com/flowz0/netflows/compare/v1.32.2...v1.33.0) (2025-07-06)
 
 
