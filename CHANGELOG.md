@@ -1,3 +1,18 @@
+# [1.35.0](https://github.com/flowz0/netflows/compare/v1.34.0...v1.35.0) (2025-07-08)
+
+
+### Bug Fixes
+
+* optmize Button animation and improve UX ([5085f68](https://github.com/flowz0/netflows/commit/5085f6898eb8f902be6abe16344bba65e8dbfc3a))
+
+
+### Features
+
+* create sendConsultationFormAction to pass formData to sendEmail function ([9b2a6c3](https://github.com/flowz0/netflows/commit/9b2a6c3615379f10569613f6ecf51e1e62bef0a4))
+* create sendEmail function to send formData, setApiKey, use template for SendGrid Email API ([ffbfa7b](https://github.com/flowz0/netflows/commit/ffbfa7b6230534e2851dc7c25a76e9f6b1863ed4))
+* integrate sendConsultationFormAction into MultiStepForm component ([508a22a](https://github.com/flowz0/netflows/commit/508a22a539afab09de234a9ba8354a67021030c9))
+* npm install --save @sendgrid/mail ([b2e5047](https://github.com/flowz0/netflows/commit/b2e50472e9d2e2f8513f7c4af02b47b4277f185f))
+
 # [1.34.0](https://github.com/flowz0/netflows/compare/v1.33.0...v1.34.0) (2025-07-08)
 
 
