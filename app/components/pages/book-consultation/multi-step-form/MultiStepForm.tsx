@@ -1,12 +1,13 @@
 "use client";
 
-import { FormData } from "@/app/types/formData";
 import { useState } from "react";
 import Step2 from "./Step2";
 import Step3 from "./Step3";
 import Step4 from "./Step4";
 import { FaUser, FaCalendarAlt, FaClock, FaCheckCircle } from "react-icons/fa";
 import Step1 from "./Step1";
+import { FormData } from "@/app/types/formData";
+import { format } from "date-fns";
 
 const steps = [
   { id: 1, label: "Info", icon: FaUser },
@@ -18,7 +19,8 @@ const steps = [
 export default function MultiStepForm() {
   const [step, setStep] = useState(1);
   const [formData, setFormData] = useState<FormData>({
-    name: "",
+    firstName: "",
+    lastName: "",
     email: "",
     phone: "",
     service: "",
@@ -26,13 +28,138 @@ export default function MultiStepForm() {
     date: "",
     time: "",
   });
+  const [errors, setErrors] = useState<Partial<FormData>>({});
 
-  const nextStep = () => step < 4 && setStep(step + 1);
+  type FieldValue = string;
+
+  const validateField = (
+    name: keyof FormData,
+    value: FieldValue
+  ): string => {
+    if (typeof value !== "string") return "";
+    if (name === "firstName" && !value.trim()) {
+      return "First name is required.";
+    } else if (name === "firstName" && value.length < 3) {
+      return "First name must be more than 3 characters."
+    }
+    if (name === "lastName" && !value.trim()) {
+      return "Last name is required.";
+    } else if (name === "lastName" && value.length < 3) {
+      return "Last name must be more than 3 characters.";
+    }
+    if (name === "email") {
+      if (!value.trim()) {
+        return "Email is required.";
+      } else {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(value)) {
+          return "Email is not valid.";
+        }
+      }
+    }
+    if (name === "phone" && !value.trim()) {
+      return "Phone number is required";
+    } else if (name === "phone" && value.length < 14) {
+      return "Phone number is not valid.";
+    }
+    if (name === "service" && !value.trim()) {
+      return "Service is required.";
+    }
+    if (name === "message" && !value.trim()) {
+      return "Message is required.";
+    }
+
+    if (name === "date" && !value.trim()) {
+      return "Date is required.";
+    }
+    if (name === "time" && !value.trim()) {
+      return "Time is required.";
+    }
+    return "";
+  };
+
+  const onBtnBlur = (e: React.FocusEvent<HTMLButtonElement>) => {
+    const { name, value } = e.target;
+    const error = validateField(name as keyof FormData, value);
+    setErrors((prev) => ({ ...prev, [name]: error }));
+  };
+
+  const handleInputBlur = (e: React.FocusEvent<HTMLInputElement>) => {
+    const { name, value } = e.target;
+    const error = validateField(name as keyof FormData, value);
+    setErrors((prev) => ({ ...prev, [name]: error }));
+  };
+
+  const handleTextareaBlur = (e: React.FocusEvent<HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    const error = validateField(name as keyof FormData, value);
+    setErrors((prev) => ({ ...prev, [name]: error }));
+  };
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }))
+    const error = validateField(name as keyof FormData, value);
+    setErrors((prev) => ({
+      ...prev,
+      [name]: error || undefined,
+    }));
+  };
+
+  const handleDateChange = (selectedDate: Date) => {
+    const formattedDate = format(selectedDate, "yyyy-MM-dd");
+
+    setFormData((prev) => ({ ...prev, date: formattedDate }));
+
+    // Remove error if valid date
+    const error = validateField("date", formattedDate);
+    setErrors((prev) => ({
+      ...prev,
+      date: error || undefined,
+    }));
+  };
+
   const prevStep = () => step > 1 && setStep(step - 1);
 
-  const handleSubmit = () => {
-    console.log("Submitted Data:", formData);
-    nextStep();
+  const validateStep1 = () => {
+    const requiredFields: (keyof FormData)[] = [
+      "firstName", "lastName", "email", "phone", "service", "message",
+    ];
+    const newErrors: Partial<FormData> = {};
+    requiredFields.forEach((field) => {
+      const error = validateField(field, formData[field]);
+      if (error) newErrors[field] = error;
+    });
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
+  const validateStep2 = () => {
+    const error = validateField("date", formData.date);
+    setErrors((prev) => ({ ...prev, date: error }));
+    return !error;
+  };
+
+  const validateStep3 = () => {
+    const error = validateField("time", formData.time);
+    setErrors((prev) => ({ ...prev, time: error }));
+    return !error;
+  };
+
+
+  const nextStep = () => {
+    let isValid = false;
+    if (step === 1) isValid = validateStep1();
+    else if (step === 2) isValid = validateStep2();
+    else if (step === 3) isValid = validateStep3();
+
+    if (!isValid) return;
+
+    if (step === 3) {
+      console.log("Submitted Data:", formData);
+    }
+
+    setStep((prev) => prev + 1);
   };
 
   return (
@@ -71,35 +198,38 @@ export default function MultiStepForm() {
 
       {step === 1 &&
         <Step1
+          handleChange={handleChange}
+          onInputBlur={handleInputBlur}
+          onTextareaBlur={handleTextareaBlur}
           formData={formData}
-          setFormData={setFormData}
           nextStep={nextStep}
+          error={errors}
         />
       }
 
       {step === 2 &&
         <Step2
           formData={formData}
-          date={formData.date}
-          setFormData={setFormData}
           prevStep={prevStep}
           nextStep={nextStep}
+          onBtnBlur={onBtnBlur}
+          error={errors}
+          onDateChange={handleDateChange}
         />
       }
 
       {step === 3 &&
         <Step3
-          time={formData.time}
-          setFormData={setFormData}
+          handleChange={handleChange}
           formData={formData}
           prevStep={prevStep}
-          handleSubmit={handleSubmit}
+          nextStep={nextStep}
         />
       }
 
       {step === 4 &&
         <Step4
-          name={formData.name}
+          firstName={formData.firstName}
           time={formData.time}
           date={formData.date}
           service={formData.service}
