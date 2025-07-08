@@ -8,6 +8,7 @@ import { FaUser, FaCalendarAlt, FaClock, FaCheckCircle } from "react-icons/fa";
 import Step1 from "./Step1";
 import { FormData } from "@/app/types/formData";
 import { format } from "date-fns";
+import { sendConsultationFormAction } from "@/app/actions/email";
 
 const steps = [
   { id: 1, label: "Info", icon: FaUser },
@@ -147,7 +148,7 @@ export default function MultiStepForm() {
   };
 
 
-  const nextStep = () => {
+  const nextStep = async () => {
     let isValid = false;
     if (step === 1) isValid = validateStep1();
     else if (step === 2) isValid = validateStep2();
@@ -156,8 +157,9 @@ export default function MultiStepForm() {
     if (!isValid) return;
 
     if (step === 3) {
-      console.log("Submitted Data:", formData);
+      await sendConsultationFormAction(formData);
     }
+
 
     setStep((prev) => prev + 1);
   };
