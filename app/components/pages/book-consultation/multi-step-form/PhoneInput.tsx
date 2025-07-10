@@ -1,6 +1,6 @@
 "use client";
 
-interface PhoneNumberProps {
+interface PhoneInputProps {
   value: string;
   onBlur?: (e: React.FocusEvent<HTMLInputElement>) => void;
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
@@ -8,9 +8,9 @@ interface PhoneNumberProps {
   required?: boolean;
 }
 
-export default function PhoneNumber({ value, onChange, onBlur, error, required }: PhoneNumberProps) {
+export default function PhoneInput({ value, onChange, onBlur, error, required }: PhoneInputProps) {
   const formatPhoneNumber = (input: string) => {
-    const cleaned = input.replace(/\D/g, "");
+    const cleaned = input.replace(/\D/g, "").slice(0, 10); // allow only 10 digits
     const match = cleaned.match(/^(\d{0,3})(\d{0,3})(\d{0,4})$/);
 
     if (!match) return input;
@@ -18,14 +18,26 @@ export default function PhoneNumber({ value, onChange, onBlur, error, required }
     const [, area, prefix, line] = match;
     let formatted = "";
 
-    if (area) formatted += `(${area}`;
-    if (area.length === 3) formatted += `) `;
-    if (prefix) formatted += prefix;
-    if (prefix.length === 3 && line) formatted += `-`;
-    if (line) formatted += line;
+    if (area.length > 0 && prefix.length > 0) {
+      // Only format as (xxx) when prefix exists
+      formatted += `(${area})`;
+    } else {
+      // Otherwise just show digits
+      formatted += area;
+    }
+
+    if (prefix.length) {
+      formatted += ` ${prefix}`;
+    }
+
+    if (line.length) {
+      formatted += `-${line}`;
+    }
 
     return formatted;
   };
+
+
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const input = e.target.value;
