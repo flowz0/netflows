@@ -20,7 +20,7 @@ export default function Step2({ formData, prevStep, nextStep, error, onBtnBlur, 
         defaultDate={formData.date}
         onSelectDate={onDateChange}
       />
-      <div className="mt-4 flex gap-x-1">
+      <div className="mt-12 flex gap-x-1">
         <button
           type="button"
           onClick={prevStep}

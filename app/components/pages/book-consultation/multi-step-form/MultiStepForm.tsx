@@ -224,6 +224,8 @@ export default function MultiStepForm() {
         <Step3
           handleChange={handleChange}
           formData={formData}
+          handleInputBlur={handleInputBlur}
+          error={errors}
           prevStep={prevStep}
           nextStep={nextStep}
         />

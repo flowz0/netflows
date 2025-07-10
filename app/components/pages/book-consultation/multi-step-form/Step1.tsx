@@ -1,5 +1,5 @@
 import { FormData } from "@/app/types/formData";
-import PhoneNumber from "./PhoneNumber";
+import PhoneInput from "./PhoneInput";
 import Select from "./Select";
 import FormInput from "./FormInput";
 import TextArea from "./TextArea";
@@ -47,7 +47,7 @@ export default function Step1({ formData, handleChange, onInputBlur, onTextareaB
           error={error?.email}
           required
         />
-        <PhoneNumber
+        <PhoneInput
           value={formData.phone}
           onChange={handleChange}
           onBlur={onInputBlur}
