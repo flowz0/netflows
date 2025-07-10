@@ -1,3 +1,13 @@
+## [1.35.1](https://github.com/flowz0/netflows/compare/v1.35.0...v1.35.1) (2025-07-10)
+
+
+### Bug Fixes
+
+* add input autocomplete bg color to globals.css ([baa407e](https://github.com/flowz0/netflows/commit/baa407e5ea7c700a7a55951313d7aacab6b09b8f))
+* increase margin top for buttons to fix collision with DatePicker in Step2 component ([99f004a](https://github.com/flowz0/netflows/commit/99f004a66eca9ee558f12a444fc3bce691ee1eb7))
+* integrate handleInputBlur and error handling for TimeInput component and pass data from MultiStepForm > Step 3 > TimeInput ([0707708](https://github.com/flowz0/netflows/commit/07077086deb4b32e1c4ff34f3e962eea40c95534))
+* update phone input formatting to allow area code deletion ([d73048b](https://github.com/flowz0/netflows/commit/d73048bf7ff64479de81a45506e3f8a77089fbd8))
+
 # [1.35.0](https://github.com/flowz0/netflows/compare/v1.34.0...v1.35.0) (2025-07-08)
 
 
