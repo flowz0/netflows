@@ -3,10 +3,12 @@ import Select from "./Select";
 
 interface TimeInputProps {
   formData: FormData;
+  handleInputBlur?: (e: React.FocusEvent<HTMLInputElement>) => void;
+  error?: Partial<FormData>;
   handleChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-export default function TimeInput({ formData, handleChange }: TimeInputProps) {
+export default function TimeInput({ formData, handleChange, error, handleInputBlur }: TimeInputProps) {
   return (
     <div className="flex flex-col">
       <Select
@@ -22,8 +24,8 @@ export default function TimeInput({ formData, handleChange }: TimeInputProps) {
 
           handleChange(syntheticEvent);
         }}
-        // onBlur={onInputBlur}
-        // error={error?.time}
+        onBlur={handleInputBlur}
+        error={error?.time}
         required
         options={[
           { value: "", label: "Choose a time (Pacific Standard Timezone)" },
