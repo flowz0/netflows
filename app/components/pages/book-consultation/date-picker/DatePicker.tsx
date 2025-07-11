@@ -94,7 +94,6 @@ export const DatePicker = ({ defaultDate, onSelectDate, required, error, onBlur 
             }}
             className={`${showMonthSelector ? "bg-[hsl(198,100%,40%)]" : "bg-[hsl(0,0%,40%)]"}  text-neutral-200 rounded-lg px-2 py-1 text-sm font-semibold cursor-pointer transition-colors duration-300 ease-in-out hover:bg-neutral-600`}
           >
-            {/* {showMonthSelector ? <IoIosClose className="w-6 h-6" /> : format(currentMonth, "MMMM")} */}
             {format(currentMonth, "MMMM")}
           </button>
           <button
@@ -105,7 +104,6 @@ export const DatePicker = ({ defaultDate, onSelectDate, required, error, onBlur 
             }}
             className={`${showYearSelector ? "bg-[hsl(198,100%,40%)]" : "bg-[hsl(0,0%,40%)]"}  text-neutral-200 rounded-lg px-2 py-1 text-sm font-semibold cursor-pointer transition-colors duration-300 ease-in-out hover:bg-neutral-600`}
           >
-            {/* {showYearSelector ? <IoIosClose className="w-6 h-6" /> : format(currentMonth, "yyyy")} */}
             {format(currentMonth, "yyyy")}
           </button>
         </div>

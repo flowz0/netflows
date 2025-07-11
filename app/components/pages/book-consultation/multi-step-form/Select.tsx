@@ -92,8 +92,7 @@ export default function Select({ label, options, selected, onChange, onBlur, err
                 : selected === option.value
                   ? "bg-[hsl(0,0%,20%)] text-[hsl(0,0%,92%)] cursor-pointer"
                   : "text-[hsl(0,0%,60%)] hover:bg-[hsl(0,0%,20%)] cursor-pointer"
-                }
-`}
+                }`}
               onClick={() => {
                 if (option.value !== "") {
                   onChange(option.value);
