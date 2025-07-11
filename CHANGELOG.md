@@ -1,3 +1,10 @@
+## [1.35.2](https://github.com/flowz0/netflows/compare/v1.35.1...v1.35.2) (2025-07-11)
+
+
+### Bug Fixes
+
+* optimize and improve source code for pages and components ([57711f6](https://github.com/flowz0/netflows/commit/57711f637ffd64b7c3064534bdc27023ea50a4eb))
+
 ## [1.35.1](https://github.com/flowz0/netflows/compare/v1.35.0...v1.35.1) (2025-07-10)
 
 
