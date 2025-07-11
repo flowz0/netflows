@@ -10,7 +10,7 @@ interface PhoneInputProps {
 
 export default function PhoneInput({ value, onChange, onBlur, error, required }: PhoneInputProps) {
   const formatPhoneNumber = (input: string) => {
-    const cleaned = input.replace(/\D/g, "").slice(0, 10); // allow only 10 digits
+    const cleaned = input.replace(/\D/g, "").slice(0, 10);
     const match = cleaned.match(/^(\d{0,3})(\d{0,3})(\d{0,4})$/);
 
     if (!match) return input;
@@ -25,19 +25,14 @@ export default function PhoneInput({ value, onChange, onBlur, error, required }:
       // Otherwise just show digits
       formatted += area;
     }
-
     if (prefix.length) {
       formatted += ` ${prefix}`;
     }
-
     if (line.length) {
       formatted += `-${line}`;
     }
-
     return formatted;
   };
-
-
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const input = e.target.value;
