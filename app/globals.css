@@ -9,7 +9,7 @@
     border-radius: 0.5rem;
   }
 
-  .button-animation {
+  /* .button-animation {
     animation: button-animation ease-in-out 3s infinite;
   }
 
@@ -31,5 +31,5 @@
       background-color: #00b4ff;
       box-shadow: 0 0 2px 1px #00b4ff;
     }
-  }
+  } */
 }
