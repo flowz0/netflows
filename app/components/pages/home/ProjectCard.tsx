@@ -76,7 +76,7 @@ const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
       <div className="relative overflow-hidden bg-cover bg-no-repeat mt-8 rounded-3xl">
         {comingSoon ?
           (
-            <p className="bg-[rgba(36,36,36,0.9)] absolute border border-[#a8a8a8] flex items-center justify-center h-full w-full text-lg rounded-3xl backdrop-blur-xs">
+            <p className="bg-[rgba(36,36,36,0.9)] absolute border-2 border-[#a8a8a8] flex items-center justify-center h-full w-full text-lg rounded-3xl backdrop-blur-md">
               Coming soon...
             </p>
           ) : ""
@@ -84,7 +84,7 @@ const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
         <Image
           src={projectThumbnail || PlaceholderImg}
           alt={`${brandName} project image`}
-          className="h-[200px] object-cover rounded-2xl transition duration-300 ease-in-out hover:scale-110 sm:h-[300px]"
+          className="h-[200px] object-cover rounded-2xl transition duration-300 ease-in-out hover:scale-110 sm:h-[280px]"
           draggable={false}
         />
       </div>
