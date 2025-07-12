@@ -1,3 +1,13 @@
+## [1.35.3](https://github.com/flowz0/netflows/compare/v1.35.2...v1.35.3) (2025-07-12)
+
+
+### Bug Fixes
+
+* comment out button-animation in globals.css ([687405a](https://github.com/flowz0/netflows/commit/687405a2561d0652dedfc3d249b8c6c045fb24eb))
+* increase border size and decrease responsive Image height in ProjectCard component ([2db1ce2](https://github.com/flowz0/netflows/commit/2db1ce29fab374b52210ee0fc854269676a819f6))
+* remove button-animation and add primary bg color to Button component ([00cb9f0](https://github.com/flowz0/netflows/commit/00cb9f0e9593f0e3968232f3f01dcbbb54d6394b))
+* show 2 cols only for desktop and center text until desktop in Projects component ([cafd301](https://github.com/flowz0/netflows/commit/cafd3010d6a6ab2e2135d67c0f4b2dd51ad2b68e))
+
 ## [1.35.2](https://github.com/flowz0/netflows/compare/v1.35.1...v1.35.2) (2025-07-11)
 
 
