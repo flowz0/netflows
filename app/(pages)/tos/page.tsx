@@ -68,7 +68,7 @@ export default function TOSPage() {
           <li>A 50% deposit may be required to start the project unless otherwise stated.</li>
           <li>Final payment is due upon project completion and prior to final delivery.</li>
           <li>Late payments may incur interest or project delays.</li>
-          <li>No refunds are provided once the work has been delivered unless otherwise agreed in writing.</li>
+          <li>No refunds are provided once the work has started or been delivered unless otherwise agreed in writing.</li>
         </ul>
       </section>
       <section className="mt-12">
