@@ -5,32 +5,34 @@ import Testimonial from "./Testimonial";
 
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
-import KarsonTestiImg from "@/public/testimonials/karson-template-img.jpg";
+import Karson from "@/public/testimonials/karson.jpg";
+import Melissa from "@/public/testimonials/melissa.png";
+import James from "@/public/testimonials/james.png";
 
 const TestimonialData = [
   {
     id: 0,
     review:
-      "Netflows took our old site and turned it into a modern, fast, and functional platform that finally reflects our quality of service. The blog feature has made a real difference in traffic, and I love how easy it is to update content.",
-    reviewerImg: KarsonTestiImg,
+      "Netflows redesigned our website and built a custom blog platform with a secure dashboard and SEO optimization. It not only looks great but has also driven more traffic to our site. He was professional, efficient, and delivered exactly what we needed.",
+    reviewerImg: Karson,
     reviewerName: "Karson Kolle",
-    reviewerTitle: "Founder at Duct Daddy",
+    reviewerTitle: "Founder at Duct Daddy Duct Cleaning",
   },
   {
     id: 1,
     review:
-      "Working with this team was a game-changer for our business. They took the time to understand our needs and delivered a website that not only looks great but also performs exceptionally well. Highly recommend!",
-    // reviewerImg: KarsonTestiImg,
-    reviewerName: "John Doe",
-    reviewerTitle: "CEO at Tech Innovations",
+      "Netflows helped us stand out with a modern, mobile-friendly website that reflects our professionalism. He also created a custom quote request form that automatically sends client info to our inbox, saving us time and streamlining our process. We've had more inquiries since the redesign and couldn't be happier with the results.",
+    reviewerImg: Melissa,
+    reviewerName: "Melissa R.",
+    reviewerTitle: "Owner at PureFlow Plumbing",
   },
   {
     id: 2,
     review:
-      "From the initial consultation to the final launch, the team was professional and attentive. They transformed our outdated website into a modern, user-friendly platform that has received rave reviews from our customers.",
-    // reviewerImg: KarsonTestiImg,
-    reviewerName: "Jane Smith",
-    reviewerTitle: "Marketing Director at Creative Solutions",
+      "Our old site was outdated and hard to navigate. Netflows completely revamped it with a fast, clean design that loads quickly and works perfectly on mobile. He also added an SEO-optimized blog where we can share seasonal tips, which has helped boost our visibility in local search results. Highly recommend for any service business looking to grow online.",
+    reviewerImg: James,
+    reviewerName: "James D.",
+    reviewerTitle: "Founder of GreenScape Lawn & Garden",
   },
 ];
 
