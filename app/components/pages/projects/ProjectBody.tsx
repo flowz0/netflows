@@ -24,10 +24,10 @@ export default function ProjectBody({
 }: ProjectType) {
   return (
     <div>
-      <h2 className="text-[#f5f5f5] text-4xl/[2.4rem] font-semibold mt-12 md:text-5xl/[3rem]">
+      <h2 className="text-[#f5f5f5] text-4xl font-semibold mt-12 md:text-5xl">
         {challenge}
       </h2>
-      <p className="text-[#a8a8a8] text-base/[1.6rem] mt-3 lg:mx-0 md:text-lg/[1.8rem]">
+      <p className="text-[#a8a8a8] text-base mt-3 lg:mx-0 md:text-lg">
         {challengeDesc}
       </p>
       <Image
@@ -36,10 +36,10 @@ export default function ProjectBody({
         className="object-cover h-full w-full mt-8 rounded-xl"
         draggable={false}
       />
-      <h2 className="text-[#f5f5f5] text-4xl/[2.4rem] font-semibold mt-12 md:text-5xl/[3rem]">
+      <h2 className="text-[#f5f5f5] text-4xl font-semibold mt-12 md:text-5xl">
         {solution}
       </h2>
-      <p className="text-[#a8a8a8] text-base/[1.6rem] mt-3 lg:mx-0 md:text-lg/[1.8rem]">
+      <p className="text-[#a8a8a8] text-base mt-3 lg:mx-0 md:text-lg">
         {solutionDesc}
       </p>
       <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
@@ -68,10 +68,10 @@ export default function ProjectBody({
           draggable={false}
         />
       </div>
-      <h2 className="text-[#f5f5f5] text-4xl/[2.4rem] font-semibold mt-12 md:text-5xl/[3rem]">
+      <h2 className="text-[#f5f5f5] text-4xl font-semibold mt-12 md:text-5xl">
         {results}
       </h2>
-      <p className="text-[#a8a8a8] text-base/[1.6rem] mt-3 lg:mx-0 md:text-lg/[1.8rem]">
+      <p className="text-[#a8a8a8] text-base mt-3 lg:mx-0 md:text-lg">
         {resultsDesc}
       </p>
       <Image
@@ -80,10 +80,10 @@ export default function ProjectBody({
         className="object-cover h-full w-full mt-8 rounded-xl"
         draggable={false}
       />
-      <h2 className="text-[#f5f5f5] text-4xl/[2.4rem] font-semibold mt-12 md:text-5xl/[3rem]">
+      <h2 className="text-[#f5f5f5] text-4xl font-semibold mt-12 md:text-5xl">
         {takeaways}
       </h2>
-      <p className="text-[#a8a8a8] text-base/[1.6rem] mt-3 lg:mx-0 md:text-lg/[1.8rem]">
+      <p className="text-[#a8a8a8] text-base mt-3 lg:mx-0 md:text-lg">
         {takeawaysDesc}
       </p>
       <div className="grid grid-cols-1 gap-4 mt-8 sm:grid-cols-2">
