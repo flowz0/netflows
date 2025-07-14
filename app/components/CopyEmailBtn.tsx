@@ -4,7 +4,7 @@ import { useState } from "react";
 
 export default function CopyEmailBtn() {
   const [copied, setCopied] = useState(false);
-  const email = "netflowsxyz@gmail.com"
+  const email = "contact@netflows.xyz"
 
   const handleCopy = async () => {
     try {
