@@ -123,6 +123,7 @@ export default function GuidelinesPage() {
         </p>
         <ul className="list-disc text-[#a8a8a8] text-base/[1.8rem] flex flex-col mt-4 pl-5">
           <li>Maintenance and security updates</li>
+          <li>Fully managed hosting for website or application</li>
           <li>Feature additions and performance tuning</li>
           <li>SEO and analytics enhancements</li>
           <li><span className="text-[#f5f5f5] font-semibold">Lead generation through search optimization and improving online reviews</span></li>
