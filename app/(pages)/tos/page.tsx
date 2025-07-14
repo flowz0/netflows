@@ -9,7 +9,7 @@ export default function TOSPage() {
           Terms of Service
         </h1>
         <h4 className="text-[#f5f5f5] text-base/[1.8rem] font-semibold mt-8 md:text-lg/[2rem]">
-          Last Updated: May 28, 2025
+          Last Updated: July 13, 2025
         </h4>
         <p className="text-[#a8a8a8] text-base/[1.8rem] mt-4">
           Welcome to Netflows, a California-based web development and design agency. By accessing or using our website, booking services, or entering into a service agreement, you agree to be bound by these Terms of Service.
@@ -68,7 +68,7 @@ export default function TOSPage() {
           <li>A 50% deposit may be required to start the project unless otherwise stated.</li>
           <li>Final payment is due upon project completion and prior to final delivery.</li>
           <li>Late payments may incur interest or project delays.</li>
-          <li>No refunds are provided once the work has been delivered unless otherwise agreed in writing.</li>
+          <li>No refunds are provided once the work has started or been delivered unless otherwise agreed in writing.</li>
         </ul>
       </section>
       <section className="mt-12">
