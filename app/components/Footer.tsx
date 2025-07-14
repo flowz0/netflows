@@ -55,7 +55,7 @@ export default function Footer() {
 
           <div className="flex flex-col gap-2">
             <h3 className="text-[#a8a8a8] uppercase">Contact Us</h3>
-            <FooterLink href="mailto:netflowsxyz@gmail.com">
+            <FooterLink href="mailto:contact@netflows.xyz">
               contact@netflows.xyz
             </FooterLink>
           </div>
