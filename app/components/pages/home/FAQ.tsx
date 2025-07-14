@@ -32,7 +32,7 @@ export default function FAQ({ question, answer }: FAQProps) {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.2 }}
-              className="text-[#f5f5f5] mt-4 text-start text-base/[1.6rem]"
+              className="text-[#a8a8a8] mt-4 text-start text-base/[1.6rem]"
             >
               {answer}
             </motion.p>
