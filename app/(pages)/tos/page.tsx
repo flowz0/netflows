@@ -113,7 +113,7 @@ export default function TOSPage() {
           Clients may terminate their contract only in cases of <span className="text-[#f5f5f5] font-semibold">breach of agreement</span> by Netflows or <span className="text-[#f5f5f5] font-semibold">mutual written consent</span>. Netflows reserves the right to terminate the agreement if the client:
         </p>
         <ul className="list-disc text-[#a8a8a8] text-base/[1.8rem] flex flex-col mt-4 pl-5">
-          <li>Fails to make a required payment within 10 business days</li>
+          <li>Fails to make a required payment within 5 business days</li>
           <li>Violates any part of these Terms</li>
           <li>Engages in abusive or unethical conduct</li>
         </ul>
