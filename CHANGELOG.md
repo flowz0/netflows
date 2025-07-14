@@ -1,3 +1,13 @@
+## [1.35.7](https://github.com/flowz0/netflows/compare/v1.35.6...v1.35.7) (2025-07-14)
+
+
+### Bug Fixes
+
+* change arrow color on hover in ProjectCard component ([ee85cc6](https://github.com/flowz0/netflows/commit/ee85cc61fc6fa70980bc2adcef4af5dd9528ff44))
+* set width to fit for FooterLink component in Footer ([2cd5db0](https://github.com/flowz0/netflows/commit/2cd5db0c8149375eb7e754444f4ccd6904759d87))
+* update revew & reviewerImg TestimonialData in Testimonials component ([6b8fd61](https://github.com/flowz0/netflows/commit/6b8fd61093b92f4adf806b9d647e21e6d0ca271e))
+* update testimonials assets ([b149a3a](https://github.com/flowz0/netflows/commit/b149a3a6476922f6ee50e0bc92077bc9c1199021))
+
 ## [1.35.6](https://github.com/flowz0/netflows/compare/v1.35.5...v1.35.6) (2025-07-14)
 
 
