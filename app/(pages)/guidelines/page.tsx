@@ -61,7 +61,7 @@ export default function GuidelinesPage() {
           4. Project Timelines
         </h2>
         <ul className="list-disc text-[#a8a8a8] text-base/[1.8rem] flex flex-col mt-4 pl-5">
-          <li>Timelines are estimated based on your responsiveness and our workload</li>
+          <li>Timelines are estimated based on scope of project, your responsiveness, and our workload</li>
           <li>Delays caused by late feedback, asset delivery, or payments may shift deadlines</li>
           <li>We will always communicate major timeline changes in advance</li>
         </ul>
