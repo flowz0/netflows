@@ -1,3 +1,16 @@
+## [1.35.5](https://github.com/flowz0/netflows/compare/v1.35.4...v1.35.5) (2025-07-14)
+
+
+### Bug Fixes
+
+* add fully managed hosting to post-launch support on GuidelinesPage ([a7de0dc](https://github.com/flowz0/netflows/commit/a7de0dc14e79c3e8d7a9c493943ba62cc49e3865))
+* update email address in CopyEmailBtn component ([27795b3](https://github.com/flowz0/netflows/commit/27795b399f27404140ae8ad14e233e2ea81f54c5))
+* update payment terms no refunds description and last updated date on TOSPage ([4efa0bb](https://github.com/flowz0/netflows/commit/4efa0bb4b388553c724a894da115145738169252))
+* update payment terms no refunds description on TOSPage ([4dce9dc](https://github.com/flowz0/netflows/commit/4dce9dce014cbd08459d3688c359c7721fdc5528))
+* update project timelines on GuidelinesPage ([976e23d](https://github.com/flowz0/netflows/commit/976e23dcb901fd09181b23c1658f0575e1c6c232))
+* update respect & collaboration description on GuidelinesPage ([fbdbe14](https://github.com/flowz0/netflows/commit/fbdbe146ca3018596c17ab02348442e2c6322995))
+* update termination policy ([912e758](https://github.com/flowz0/netflows/commit/912e75866533a6368bb38a93ca621f0c701097d9))
+
 ## [1.35.4](https://github.com/flowz0/netflows/compare/v1.35.3...v1.35.4) (2025-07-14)
 
 
