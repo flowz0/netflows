@@ -54,15 +54,15 @@ export default function Testimonials() {
   return (
     <section className="pt-32 pb-16 sm:pb-32">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="flex flex-col justify-between gap-12 lg:items-end lg:flex-row">
-          <h2 className="text-[#f5f5f5] text-4xl/[2.6rem] font-semibold lg:text-start md:text-5xl/[3.4rem]">
+        <div className="flex flex-col sm:justify-between sm:gap-12 lg:items-end lg:flex-row">
+          <h2 className="text-[#f5f5f5] text-4xl font-semibold lg:text-start md:text-5xl">
             What our clients
             <br />
             are <span className="text-[#00b4ff] font-bold">saying</span> about
             <br />
             working with us
           </h2>
-          <div className="flex items-center justify-end gap-4">
+          <div className="mt-8 flex items-center justify-end gap-4 sm:mt-0">
             <p className="text-[#8f8f8f]">{currentTestimonial.id + 1}/{TestimonialData.length}</p>
             <div className="flex justify-end gap-2">
               <button onClick={prevIndex}>
