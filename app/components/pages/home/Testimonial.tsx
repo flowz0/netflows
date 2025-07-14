@@ -26,8 +26,8 @@ export default function Testimonial({
         <FaStar className="w-6 h-6" />
         <FaStarHalfAlt className="w-6 h-6" />
       </div>
-      <p className="text-[#f5f5f5] text-base/[1.8rem] mt-5 max-w-2xl lg:mx-0 md:text-lg/[1.8rem]">
-        <span className="text-[#a8a8a8] text-2xl">&quot;</span> {review} <span className="text-[#a8a8a8] text-2xl">&quot;</span>
+      <p className="text-[#f5f5f5] text-base mt-5 max-w-2xl lg:mx-0 md:text-lg">
+        <span className="text-[#a8a8a8]">&quot;</span> {review} <span className="text-[#a8a8a8]">&quot;</span>
       </p>
       <div className="flex items-start gap-4 mt-4">
         <Image
