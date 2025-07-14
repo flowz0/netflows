@@ -33,13 +33,13 @@ const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
       onClick={handleClick}
       className={`bg-[hsl(0,0%,14%)] py-6 px-6 sm:py-12 sm:px-12 md:py-8 md:px-8 rounded-3xl ${comingSoon
         ? "cursor-not-allowed"
-        : "cursor-pointer transition-transform duration-300 ease-in-out hover:-translate-y-2"
+        : "cursor-pointer group transition-transform duration-300 ease-in-out hover:-translate-y-2"
         }`}>
       <div className="flex justify-between items-center">
         <h3 className="text-[#f5f5f5] text-2xl font-semibold md:text-3xl">
           {brandName || "Project Name"}
         </h3>
-        <p className="text-[#a8a8a8] flex items-center transition-colors duration-300 hover:text-[#f5f5f5]">
+        <p className="text-[#a8a8a8] flex items-center transition-colors duration-300 ease-in-out group-hover:text-[#00b4ff]">
           <span className="sr-only">View Project</span>
           <FaArrowUp className="w-6 h-6 rotate-45 ml-2" />
         </p>
