@@ -92,7 +92,7 @@ export default function PrivacyPolicyPage() {
           <li><span className="text-[#f5f5f5] font-semibold">Right to Non-Discrimination:</span> Exercising your CCPA rights will not result in any discriminatory treatment.</li>
         </ul>
         <p className="text-[#a8a8a8] text-base/[1.8rem] mt-4">
-          To exercise these rights, email us at <span className="text-[#f5f5f5] font-semibold">netflowsxyz@gmail.com</span> with the subject line <span className="text-[#f5f5f5] font-semibold">&quot;CCPA Request&quot;</span> and allow up to 30 days for a response.
+          To exercise these rights, email us at <span className="text-[#f5f5f5] font-semibold">contact@netflows.xyz</span> with the subject line <span className="text-[#f5f5f5] font-semibold">&quot;CCPA Request&quot;</span> and allow up to 30 days for a response.
         </p>
       </section>
       <section className="mt-12">
@@ -118,7 +118,7 @@ export default function PrivacyPolicyPage() {
           <li>Request data portability</li>
         </ul>
         <p className="text-[#a8a8a8] text-base/[1.8rem] mt-4">
-          You may contact us at <span className="text-[#f5f5f5] font-semibold">netflowsxyz@gmail.com</span> with the subject line <span className="text-[#f5f5f5] font-semibold">&quot;International Privacy Request&quot;</span> to exercise your rights under applicable data laws.
+          You may contact us at <span className="text-[#f5f5f5] font-semibold">contact@netflows.xyz</span> with the subject line <span className="text-[#f5f5f5] font-semibold">&quot;International Privacy Request&quot;</span> to exercise your rights under applicable data laws.
         </p>
       </section>
       <section className="mt-12">
