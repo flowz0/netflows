@@ -28,29 +28,16 @@ export default function Footer() {
       <div className="max-w-7xl px-6 mx-auto">
         <div className="flex flex-col flex-wrap justify-between gap-8 sm:flex-row">
           <div className="flex flex-col gap-2">
-            <h3 className="text-[#a8a8a8] uppercase">Resources</h3>
-            <FooterLink href="/projects">
-              Projects
-            </FooterLink>
-            <FooterLink href="/#faqs">
-              FAQs
-            </FooterLink>
-            <FooterLink href="/privacy">Privacy Policy</FooterLink>
-            <FooterLink href="/tos">Terms of Service</FooterLink>
-            <FooterLink href="/guidelines">Guidelines</FooterLink>
+            <h3 className="text-[#a8a8a8] uppercase">Useful Links</h3>
+            <FooterLink href="/projects">Projects</FooterLink>
+            <FooterLink href="/#faqs">FAQs</FooterLink>
           </div>
 
           <div className="flex flex-col gap-2">
-            <h3 className="text-[#a8a8a8] uppercase">Services</h3>
-            <FooterLink href="/#services">
-              Web Design
-            </FooterLink>
-            <FooterLink href="/#services">
-              Web Development
-            </FooterLink>
-            <FooterLink href="/#services">
-              Website Maintenance
-            </FooterLink>
+            <h3 className="text-[#a8a8a8] uppercase">Resources</h3>
+            <FooterLink href="/privacy">Privacy Policy</FooterLink>
+            <FooterLink href="/tos">Terms of Service</FooterLink>
+            <FooterLink href="/guidelines">Guidelines</FooterLink>
           </div>
 
           <div className="flex flex-col gap-2">
