@@ -61,7 +61,7 @@ export default function GuidelinesPage() {
           4. Project Timelines
         </h2>
         <ul className="list-disc text-[#a8a8a8] text-base/[1.8rem] flex flex-col mt-4 pl-5">
-          <li>Timelines are estimated based on your responsiveness and our workload</li>
+          <li>Timelines are estimated based on scope of project, your responsiveness, and our workload</li>
           <li>Delays caused by late feedback, asset delivery, or payments may shift deadlines</li>
           <li>We will always communicate major timeline changes in advance</li>
         </ul>
@@ -123,6 +123,7 @@ export default function GuidelinesPage() {
         </p>
         <ul className="list-disc text-[#a8a8a8] text-base/[1.8rem] flex flex-col mt-4 pl-5">
           <li>Maintenance and security updates</li>
+          <li>Fully managed hosting for website or application</li>
           <li>Feature additions and performance tuning</li>
           <li>SEO and analytics enhancements</li>
           <li><span className="text-[#f5f5f5] font-semibold">Lead generation through search optimization and improving online reviews</span></li>
@@ -136,7 +137,7 @@ export default function GuidelinesPage() {
           10. Respect & Collaboration
         </h2>
         <p className="text-[#a8a8a8] text-base/[1.8rem] mt-4">
-          We value mutual respect and collaboration. We do our best to create an enjoyable, productive process—and we ask the same from our clients. Inappropriate behavior or unprofessional conduct may result in service termination (see our <AnimatedLink href="/tos" className="text-[#f5f5f5] font-semibold">Terms of Service</AnimatedLink> for more info).
+          We value mutual respect and collaboration. We do our best to create an enjoyable, productive process and we ask the same from our clients. Inappropriate behavior or unprofessional conduct may result in service termination (see our <AnimatedLink href="/tos" className="text-[#f5f5f5] font-semibold">Terms of Service</AnimatedLink> for more info).
         </p>
       </section>
       <section className="mt-12">
