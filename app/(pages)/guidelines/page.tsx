@@ -137,7 +137,7 @@ export default function GuidelinesPage() {
           10. Respect & Collaboration
         </h2>
         <p className="text-[#a8a8a8] text-base/[1.8rem] mt-4">
-          We value mutual respect and collaboration. We do our best to create an enjoyable, productive process—and we ask the same from our clients. Inappropriate behavior or unprofessional conduct may result in service termination (see our <AnimatedLink href="/tos" className="text-[#f5f5f5] font-semibold">Terms of Service</AnimatedLink> for more info).
+          We value mutual respect and collaboration. We do our best to create an enjoyable, productive process and we ask the same from our clients. Inappropriate behavior or unprofessional conduct may result in service termination (see our <AnimatedLink href="/tos" className="text-[#f5f5f5] font-semibold">Terms of Service</AnimatedLink> for more info).
         </p>
       </section>
       <section className="mt-12">
