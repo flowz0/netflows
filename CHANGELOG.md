@@ -1,3 +1,10 @@
+## [1.35.6](https://github.com/flowz0/netflows/compare/v1.35.5...v1.35.6) (2025-07-14)
+
+
+### Bug Fixes
+
+* update email address on PrivacyPolicyPage and Footer component ([2c7458d](https://github.com/flowz0/netflows/commit/2c7458d826e16a9874c6df301a512a624ad45b0f))
+
 ## [1.35.5](https://github.com/flowz0/netflows/compare/v1.35.4...v1.35.5) (2025-07-14)
 
 
