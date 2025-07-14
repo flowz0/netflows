@@ -74,15 +74,15 @@ export default function ProjectHeader({
             className="w-12 h-auto object-cover rounded-lg"
             draggable={false}
           />
-          <h1 className="text-[#f5f5f5] text-3xl/[2.4rem] font-semibold flex items-baseline gap-x-2 md:text-4xl/[3rem]">
+          <h1 className="text-[#f5f5f5] text-3xl font-semibold flex items-baseline gap-x-2 md:text-4xl">
             {brandName}
-            <HiExternalLink className="text-[hsl(0,0%,60%)] transition-transform duration-300 ease-in-out w-6 h-6 group-hover:text-[#00b4ff] group-hover:scale-125 group-hover:translate-x-2" />
+            <HiExternalLink className="text-[hsl(0,0%,60%)] transition-transform duration-300 ease-in-out w-6 h-6 group-hover:text-[#00b4ff] group-hover:scale-110 group-hover:translate-x-2" />
           </h1>
         </Link>
 
         <div className="md:flex md:justify-between md:items-start gap-x-8 mt-4">
           <div className="md:max-w-1/2">
-            <p className="text-[#a8a8a8] text-base/[1.6rem] max-w-lg lg:mx-0 md:text-lg/[1.8rem]">
+            <p className="text-[#a8a8a8] text-base max-w-lg lg:mx-0 md:text-lg">
               {summary}
             </p>
           </div>
