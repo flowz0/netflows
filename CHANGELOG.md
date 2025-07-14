@@ -1,3 +1,11 @@
+## [1.35.8](https://github.com/flowz0/netflows/compare/v1.35.7...v1.35.8) (2025-07-14)
+
+
+### Bug Fixes
+
+* add services FooterLink to useful links in Footer ([fa4eabb](https://github.com/flowz0/netflows/commit/fa4eabb5652588482c3ad0fb69ccee101ed9001e))
+* update FooterLink components in Footer ([0760c28](https://github.com/flowz0/netflows/commit/0760c2831015ed432a782cca6d3e8c5afe413708))
+
 ## [1.35.7](https://github.com/flowz0/netflows/compare/v1.35.6...v1.35.7) (2025-07-14)
 
 
