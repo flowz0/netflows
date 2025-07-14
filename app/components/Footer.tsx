@@ -29,6 +29,7 @@ export default function Footer() {
         <div className="flex flex-col flex-wrap justify-between gap-8 sm:flex-row">
           <div className="flex flex-col gap-2">
             <h3 className="text-[#a8a8a8] uppercase">Useful Links</h3>
+            <FooterLink href="/#services">Services</FooterLink>
             <FooterLink href="/projects">Projects</FooterLink>
             <FooterLink href="/#faqs">FAQs</FooterLink>
           </div>
