@@ -1,3 +1,19 @@
+## [1.35.4](https://github.com/flowz0/netflows/compare/v1.35.3...v1.35.4) (2025-07-14)
+
+
+### Bug Fixes
+
+* optimize animation & line-height in ProjectHeader component ([1fe4e6c](https://github.com/flowz0/netflows/commit/1fe4e6c812f4886408f9472c95fbde62e037dcc6))
+* optimize line-height & margin in FAQs component ([19f1b2c](https://github.com/flowz0/netflows/commit/19f1b2c1956b21905f0683d6b32f440ea143c64d))
+* optimize line-height & margin in Services component ([918f4e6](https://github.com/flowz0/netflows/commit/918f4e62a5d6bfbb7bd351bc72a4a76e9e08cc1f))
+* optimize line-height and margins on ProjectsPage ([dedfccf](https://github.com/flowz0/netflows/commit/dedfccfd324e9d38cd3efb7b0716be0ed2782cd5))
+* optimize line-height in CTA component ([29ce35f](https://github.com/flowz0/netflows/commit/29ce35f549f53ba736f514d8c01d88d11e150d75))
+* optimize line-height in Hero component ([c4ccb0a](https://github.com/flowz0/netflows/commit/c4ccb0af5218dcbb8aae5fdeb57a5f0b4c556525))
+* optimize line-height in ProjectBody component ([bb51f18](https://github.com/flowz0/netflows/commit/bb51f18a99549823a7f7850dfabeec3f5a32ea70))
+* optimize Testimonials component style customization ([5bd6455](https://github.com/flowz0/netflows/commit/5bd6455bfd5bf6f67d38c35366a5e9b53359aee8))
+* optimize text size & line-height in Testimonial component ([ba120ba](https://github.com/flowz0/netflows/commit/ba120ba08f545f4d3968332c28fb066c2966732f))
+* update answer text color in FAQ component ([5a82c17](https://github.com/flowz0/netflows/commit/5a82c1711f92c063dd92e393eefd9a65ba87c867))
+
 ## [1.35.3](https://github.com/flowz0/netflows/compare/v1.35.2...v1.35.3) (2025-07-12)
 
 
