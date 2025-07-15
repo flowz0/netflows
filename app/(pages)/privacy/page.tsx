@@ -1,8 +1,8 @@
-import CopyEmailBtn from "@/app/components/CopyEmailBtn";
 import { Metadata } from "next";
+import CopyEmailBtn from "@/app/components/CopyEmailBtn";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Netflows",
+  title: "Privacy Policy",
 };
 
 export default function PrivacyPolicyPage() {
