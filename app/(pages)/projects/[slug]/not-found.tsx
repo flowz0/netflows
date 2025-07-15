@@ -1,10 +1,11 @@
+import { Metadata } from "next";
 import Image from "next/image";
 import Button from "@/app/components/Button";
 import Link from "next/link";
 
 import NotFound404 from "@/public/404-not-found.svg";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Project Not Found | Netflows"
 };
 
@@ -21,7 +22,7 @@ export default function PageNotFound() {
           <p className="text-[#a8a8a8] text-base/[2.024rem] mt-4 text-center md:text-lg/[2.274rem] lg:text-start">
             Looks like you&apos;ve hit a dead end. But don&apos;t worry you can head back home and keep exploring.
           </p>
-          <Link href='/'>
+          <Link href='/projects'>
             <Button className="mt-8">Go to projects</Button>
           </Link>
         </div>
