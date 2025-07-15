@@ -1,3 +1,24 @@
+## [1.35.9](https://github.com/flowz0/netflows/compare/v1.35.8...v1.35.9) (2025-07-15)
+
+
+### Bug Fixes
+
+* add autocomplete attribute to input in Select component ([591a065](https://github.com/flowz0/netflows/commit/591a06568e8defdadf6d3f3dfdaa10bba8888983))
+* add autocomplete attribute to textarea in TextArea component ([e6c42b8](https://github.com/flowz0/netflows/commit/e6c42b8bc8c7c3bd7069b115d03a7bbb94582cb2))
+* add autocomplete prop to FormInput component ([349d3b9](https://github.com/flowz0/netflows/commit/349d3b9e7554c327670c4951ebb66e3bf15bafa5))
+* add autocomplete prop to PhoneInput component ([c9d264b](https://github.com/flowz0/netflows/commit/c9d264baee36ed55398693c414cede7ddc3200f8))
+* add metadata title to BookConsultationPage ([258e699](https://github.com/flowz0/netflows/commit/258e69916401d9f688c48db98721139bd3f619b9))
+* add metadata to PrivacyPolicyPage ([e0bfdde](https://github.com/flowz0/netflows/commit/e0bfdde3f0b2ab4b2114fb5c8679bf7330877c57))
+* add metadata to projects page ([83ac5c8](https://github.com/flowz0/netflows/commit/83ac5c81c43bb2935234fdd7e61714fa5bce6721))
+* cache ProjectData and add dynamic open graph project image url ([af36da1](https://github.com/flowz0/netflows/commit/af36da1cad0aa1ed7a698ca01c964030e67a6189))
+* fix metadata for ProjectNotFound ([4eeb523](https://github.com/flowz0/netflows/commit/4eeb523050475bcf816021450ae5aae3850b0ea6))
+* **form:** pass autoComplete type through inputs in Step1 component ([29d7973](https://github.com/flowz0/netflows/commit/29d7973a872067e483817610ce6a3d2af76c123d))
+* import opengraph-image asset ([07e4be1](https://github.com/flowz0/netflows/commit/07e4be151043b1a4f99e870f8a23d24a2580a91a))
+* optimize app layout SEO ([11aef62](https://github.com/flowz0/netflows/commit/11aef62c2fdf95ce3ab606c412dc30337fc97266))
+* optimize Image in ProjectCard component ([df6661f](https://github.com/flowz0/netflows/commit/df6661fec62de0a2c1f2c5a8e97ed60d70b2460d))
+* optimize Image in ProjectHeader component ([ddda168](https://github.com/flowz0/netflows/commit/ddda168a0e0c5acfb2724153d60528d445f44b06))
+* remove metadata from projects layout ([c6a7fb5](https://github.com/flowz0/netflows/commit/c6a7fb552ffee8a00c8c39eedf4b670836ed6818))
+
 ## [1.35.8](https://github.com/flowz0/netflows/compare/v1.35.7...v1.35.8) (2025-07-14)
 
 
