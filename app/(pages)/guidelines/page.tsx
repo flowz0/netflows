@@ -1,5 +1,10 @@
+import { Metadata } from "next";
 import AnimatedLink from "@/app/components/AnimatedLink";
 import CopyEmailBtn from "@/app/components/CopyEmailBtn";
+
+export const metadata: Metadata = {
+  title: "Client Service Guidelines",
+};
 
 export default function GuidelinesPage() {
   return (
