@@ -23,10 +23,10 @@ export const metadata: Metadata = {
     default: "Web Design, Development, and Managed Hosting for Small Businesses | Netflows",
     template: "%s | Netflows"
   },
-  description: "Netflows based in California offers expert web design, development, and hassle-free hosting for growing businesses.",
+  description: "Netflows offers expert web design, development, and hassle-free hosting for growing businesses.",
   openGraph: {
-    title: "Web Development & Design | Netflows",
-    description: "Professional web development, design, and fully managed hosting by Netflows.",
+    title: "Web Design, Development, and Managed Hosting for Small Businesses | Netflows",
+    description: "Netflows offers expert web design, development, and hassle-free hosting for growing businesses.",
     url: "https://www.netflows.dev",
     siteName: "Netflows",
     images: [
@@ -42,8 +42,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Web Development & Design | Netflows",
-    description: "Professional web development, design, and fully managed hosting by Netflows.",
+    title: "Web Design, Development, and Managed Hosting for Small Businesses | Netflows",
+    description: "Netflows offers expert web design, development, and hassle-free hosting for growing businesses.",
     images: ["/app/opengraph-image.png"],
   },
 };
