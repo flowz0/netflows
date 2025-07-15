@@ -1,3 +1,13 @@
+## [1.35.12](https://github.com/flowz0/netflows/compare/v1.35.11...v1.35.12) (2025-07-15)
+
+
+### Bug Fixes
+
+* align Image properly in Hero component ([785475b](https://github.com/flowz0/netflows/commit/785475bd6b375940aa27b4aa7390ed7a4bd62efc))
+* update faqData answer ([b0e9eaa](https://github.com/flowz0/netflows/commit/b0e9eaaf1cac01475923db7031ed6edc7b9703e7))
+* update review TestimonialData in Testimonials component ([36ee9e0](https://github.com/flowz0/netflows/commit/36ee9e00f378387f1d7c03bdefe972187af38455))
+* website maintenance description in Services component ([0659b88](https://github.com/flowz0/netflows/commit/0659b88fb51144dea38386221a575a7b8482689c))
+
 ## [1.35.11](https://github.com/flowz0/netflows/compare/v1.35.10...v1.35.11) (2025-07-15)
 
 
