@@ -1,5 +1,10 @@
+import { Metadata } from "next";
 import AnimatedLink from "@/app/components/AnimatedLink";
 import CopyEmailBtn from "@/app/components/CopyEmailBtn";
+
+export const metadata: Metadata = {
+  title: "Terms of Service",
+};
 
 export default function TOSPage() {
   return (
