@@ -13,7 +13,7 @@ const TestimonialData = [
   {
     id: 0,
     review:
-      "Netflows redesigned our website and built a custom blog platform with a secure dashboard and SEO optimization. It not only looks great but has also driven more traffic to our site. He was professional, efficient, and delivered exactly what we needed.",
+      "Netflows redesigned our website and built a custom blog platform with a secure dashboard and SEO optimizations. It not only looks great but has also driven more traffic to our site. He was professional, efficient, and delivered exactly what we needed.",
     reviewerImg: Karson,
     reviewerName: "Karson Kolle",
     reviewerTitle: "Founder at Duct Daddy Duct Cleaning",
