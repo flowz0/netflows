@@ -34,6 +34,7 @@ export default function TextArea({
         onBlur={onBlur}
         rows={4}
         required={required}
+        autoComplete="off"
         className={`mt-2 bg-[hsl(0,0%,20%)] py-3 px-5 rounded-lg focus:outline-none placeholder:text-[hsl(0,0%,60%)] ${error ? "ring-2 ring-[hsl(0,100%,68%)]" : "focus:ring-2 focus:ring-[#0080DB]"
           }`}
         aria-invalid={!!error}

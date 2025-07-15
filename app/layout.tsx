@@ -18,8 +18,34 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Web Development for Startups and Small Businesses | Netflows",
-  description: "Netflows is a web development agency that builds, designs, and maintains high-performance websites and apps for startups and small businesses.",
+  metadataBase: new URL("https://www.netflows.xyz"),
+  title: {
+    default: "Web Design, Development, and Managed Hosting for Small Businesses | Netflows",
+    template: "%s | Netflows"
+  },
+  description: "Netflows based in California offers expert web design, development, and hassle-free hosting for growing businesses.",
+  openGraph: {
+    title: "Web Development & Design | Netflows",
+    description: "Professional web development, design, and fully managed hosting by Netflows.",
+    url: "https://www.netflows.dev",
+    siteName: "Netflows",
+    images: [
+      {
+        url: "/app/opengraph-image.png", // Make sure this path exists
+        width: 1200,
+        height: 630,
+        alt: "Netflows Open Graph Image",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Web Development & Design | Netflows",
+    description: "Professional web development, design, and fully managed hosting by Netflows.",
+    images: ["/app/opengraph-image.png"],
+  },
 };
 
 export default function RootLayout({

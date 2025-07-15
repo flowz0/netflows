@@ -25,6 +25,7 @@ export default function Step1({ formData, handleChange, onInputBlur, onTextareaB
           onChange={handleChange}
           onBlur={onInputBlur}
           error={error?.firstName}
+          autoComplete="given-name"
           required
         />
         <FormInput
@@ -35,6 +36,7 @@ export default function Step1({ formData, handleChange, onInputBlur, onTextareaB
           onChange={handleChange}
           onBlur={onInputBlur}
           error={error?.lastName}
+          autoComplete="family-name"
           required
         />
         <FormInput
@@ -45,6 +47,7 @@ export default function Step1({ formData, handleChange, onInputBlur, onTextareaB
           onChange={handleChange}
           onBlur={onInputBlur}
           error={error?.email}
+          autoComplete="email"
           required
         />
         <PhoneInput
@@ -52,6 +55,7 @@ export default function Step1({ formData, handleChange, onInputBlur, onTextareaB
           onChange={handleChange}
           onBlur={onInputBlur}
           error={error?.phone}
+          autoComplete="tel-national"
           required
         />
         <div className="flex flex-col">

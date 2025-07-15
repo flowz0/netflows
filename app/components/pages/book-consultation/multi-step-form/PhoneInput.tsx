@@ -4,11 +4,12 @@ interface PhoneInputProps {
   value: string;
   onBlur?: (e: React.FocusEvent<HTMLInputElement>) => void;
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  autoComplete?: string;
   error?: string;
   required?: boolean;
 }
 
-export default function PhoneInput({ value, onChange, onBlur, error, required }: PhoneInputProps) {
+export default function PhoneInput({ value, onChange, onBlur, autoComplete, error, required }: PhoneInputProps) {
   const formatPhoneNumber = (input: string) => {
     const cleaned = input.replace(/\D/g, "").slice(0, 10);
     const match = cleaned.match(/^(\d{0,3})(\d{0,3})(\d{0,4})$/);
@@ -65,6 +66,7 @@ export default function PhoneInput({ value, onChange, onBlur, error, required }:
         onChange={handleInputChange}
         onBlur={onBlur}
         maxLength={14}
+        autoComplete={autoComplete}
         placeholder="(555) 555-5555"
         className={`mt-2 bg-[hsl(0,0%,20%)] py-3 px-5 rounded-lg focus:outline-none placeholder:text-[hsl(0,0%,60%)] ${error ? "ring-2 ring-[hsl(0,100%,68%)]" : "focus:ring-2 focus:ring-[#0080DB]"
           }`}
