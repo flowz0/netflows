@@ -1,3 +1,10 @@
+## [1.35.10](https://github.com/flowz0/netflows/compare/v1.35.9...v1.35.10) (2025-07-15)
+
+
+### Bug Fixes
+
+* optimize app layout metadata ([04661a3](https://github.com/flowz0/netflows/commit/04661a36932e610ef0a37a2cc84c0e69e2c12d45))
+
 ## [1.35.9](https://github.com/flowz0/netflows/compare/v1.35.8...v1.35.9) (2025-07-15)
 
 
