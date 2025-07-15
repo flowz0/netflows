@@ -84,8 +84,10 @@ const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
         <Image
           src={projectThumbnail || PlaceholderImg}
           alt={`${brandName} project image`}
-          className="h-[200px] object-cover rounded-2xl transition duration-300 ease-in-out hover:scale-110 sm:h-[280px]"
+          className="h-40 w-full object-cover rounded-2xl transition duration-300 ease-in-out hover:scale-110 sm:h-[280px]"
           draggable={false}
+          priority={false}
+          quality={100}
         />
       </div>
     </div>
