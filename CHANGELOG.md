@@ -1,3 +1,12 @@
+## [1.35.11](https://github.com/flowz0/netflows/compare/v1.35.10...v1.35.11) (2025-07-15)
+
+
+### Bug Fixes
+
+* add Metadata to GuidelinesPage ([fb03a2f](https://github.com/flowz0/netflows/commit/fb03a2fa653d390a0fe396ace9386d1fc3555b39))
+* add Metadata to TOSPage ([7895b84](https://github.com/flowz0/netflows/commit/7895b84ebd36f752a9d112afdf71c070190b4dbc))
+* update Metadata for PrivacyPolicyPage ([07aec28](https://github.com/flowz0/netflows/commit/07aec2813e0bc5c7dadda85c2b36de59dffa8ecb))
+
 ## [1.35.10](https://github.com/flowz0/netflows/compare/v1.35.9...v1.35.10) (2025-07-15)
 
 
