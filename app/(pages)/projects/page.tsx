@@ -1,5 +1,11 @@
+import { Metadata } from "next";
+
 import ProjectData from "@/app/data/projects";
 import ProjectCard from "@/app/components/pages/home/ProjectCard";
+
+export const metadata: Metadata = {
+  title: "Web Design & Development Case Studies",
+};
 
 export default function ProjectsPage() {
   return (
