@@ -15,7 +15,7 @@ const faqData: FAQProps[] = [
   },
   {
     question: "What kind of post-launch support do you offer?",
-    answer: "We offer tiered maintenance plans that include security updates, backups, uptime monitoring, and minor content changes. Plus, you can scale up support anytime, perfect if you plan to add features or want peace of mind after launch."
+    answer: "We offer tiered maintenance plans that include fully managed hosting, security updates, backups, uptime monitoring, and minor content changes. Plus, you can scale up support anytime, perfect if you plan to add features or want peace of mind after launch."
   },
   {
     question: "Do you handle e-commerce and payment integrations?",

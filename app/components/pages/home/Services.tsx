@@ -26,7 +26,7 @@ const serviceData: ServiceType[] = [
   {
     id: 3,
     title: "Website Maintenance",
-    description: "Keep your website running smoothly with regular updates, security patches, and performance optimization services.",
+    description: "Keep your site running smoothly with fully managed hosting, regular updates, security patches, and SEO optimization services.",
     image: MaintenanceImg,
   },
 ];
