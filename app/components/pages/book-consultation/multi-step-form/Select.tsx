@@ -50,6 +50,7 @@ export default function Select({ label, options, selected, onChange, onBlur, err
         name="service"
         value={selected}
         onBlur={onBlur}
+        autoComplete="off"
       />
       <button
         ref={buttonRef}
