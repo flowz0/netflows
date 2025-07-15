@@ -5,6 +5,7 @@ interface Props {
   placeholder: string;
   value: string;
   className?: string;
+  autoComplete?: string;
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
   onBlur?: (e: React.FocusEvent<HTMLInputElement>) => void;
   error?: string;
@@ -19,6 +20,7 @@ export default function FormInput({
   value,
   onChange,
   onBlur,
+  autoComplete,
   error,
   required,
 }: Props) {
@@ -37,6 +39,7 @@ export default function FormInput({
         onChange={onChange}
         onBlur={onBlur}
         required={required}
+        autoComplete={autoComplete}
         className={`mt-2 bg-[hsl(0,0%,20%)] py-3 px-5 rounded-lg focus:outline-none placeholder:text-[hsl(0,0%,60%)] ${
           error ? "ring-2 ring-[hsl(0,100%,68%)]" : "focus:ring-2 focus:ring-[#0080DB]"
         }`}
