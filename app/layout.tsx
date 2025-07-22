@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
+import { Nunito } from "next/font/google";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
-const roboto = Roboto({
-  variable: "--font-roboto-sans",
+const nunito = Nunito({
+  variable: "--font-nunito",
   weight: ["300", "400", "500", "600", "700"],
   subsets: ["latin"],
 });
 
 const inter = Inter({
-  variable: "--font-inter-sans",
+  variable: "--font-inter",
   weight: ["200", "300", "400", "500", "600", "700"],
   subsets: ["latin"],
 });
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     siteName: "Netflows",
     images: [
       {
-        url: "/app/opengraph-image.png", // Make sure this path exists
+        url: "/app/opengraph-image.png",
         width: 1200,
         height: 630,
         alt: "Netflows Open Graph Image",
@@ -56,7 +56,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${roboto.variable} ${inter.variable} bg-[#0a0a0a] text-[#f5f5f5] antialiased`}
+        className={`${nunito.variable} ${inter.variable} bg-black5 text-black antialiased`}
       >
         <Navbar />
         {children}
