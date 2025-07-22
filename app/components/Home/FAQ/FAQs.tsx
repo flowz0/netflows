@@ -1,0 +1,31 @@
+import faqData from "@/app/data/faqs";
+import FAQItem from "./FAQItem";
+
+export default function FAQs() {
+  return (
+    <section className="mt-64 max-w-7xl mx-auto">
+      <div className="flex flex-col items-center">
+        <h2 className="text-h2 font-bold text-center font-nunito text-black">
+          Frequently Asked Questions
+        </h2>
+        <p className="mt-4 text-p max-w-6xl text-center font-inter text-black75">
+          If you still have questions that we didn&apos;t answer here.
+          <br />
+          Please feel free to email us: contact@netflows.xyz
+        </p>
+      </div>
+
+      <div className="mt-16">
+        {faqData.map(({question, answer}, index) => (
+          <div key={index}>
+            <FAQItem
+              question={question}
+              answer={answer}
+            />
+            {index !== faqData.length - 1 && <hr />}
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
