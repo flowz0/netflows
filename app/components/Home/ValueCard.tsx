@@ -20,9 +20,11 @@ export default function ValueCard({ Icon, title, desc }: ValueCardProps) {
       <p className="text-black75 font-p font-inter mt-4">
         {desc}
       </p>
-      <Link href="/" className="text-black50 text-small font-inter font-medium mt-12 flex items-center transition-all duration-300 ease-in-out gap-x-2 group hover:text-black75 hover:gap-x-3">
-        Learn more
-        <FaArrowRight className="h-4 w-4 text-black50 group-hover:text-black75" />
+      <Link href="/" className="mt-12 flex items-center transition-all duration-300 gap-x-2 w-fit hover:gap-x-4">
+        <span className="text-black50 text-small font-inter font-medium">
+          Learn more
+        </span>
+        <FaArrowRight className="h-4 w-4 text-black50" />
       </Link>
     </div>
   );
