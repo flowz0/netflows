@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import HeroImg from "@/public/hero-img.png";
+import ExpandingCircleButton from "../ExpandingCircleButton";
 
 export default function Hero() {
   return (
@@ -12,9 +13,7 @@ export default function Hero() {
         <p className="mt-4 text-p text-center font-inter text-black75">
           Strategic web design and development that turns visitors into customers.
         </p>
-        <button className="mt-12 py-4 px-8 text-p font-inter rounded-2xl cursor-pointer text-black5 bg-linear-to-r from-primary to-secondary">
-          Book Free Consultation
-        </button>
+        <ExpandingCircleButton text="Book Free Consultation" className="mt-12" />
       </div>
       <Image
         src={HeroImg}

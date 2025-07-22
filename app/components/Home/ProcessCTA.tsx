@@ -1,5 +1,6 @@
 import PlaceholderAvatar from "@/public/2000x2000.svg";
 import Image from "next/image";
+import ExpandingCircleButton from "../ExpandingCircleButton";
 
 export default function ProcessCTA() {
   return (
@@ -26,9 +27,7 @@ export default function ProcessCTA() {
           Join businesses leveling up their online presence
         </p>
       </div>
-      <button className="py-4 px-8 text-p font-inter rounded-2xl cursor-pointer text-black5 bg-linear-to-r from-primary to-secondary">
-        Book Free Consultation
-      </button>
+      <ExpandingCircleButton text="Book Free Consultation" />
     </div>
   );
 }
