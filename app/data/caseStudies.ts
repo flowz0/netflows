@@ -1,10 +1,11 @@
-import CaseStudyImg from "@/public/projects/dddc-thumbnail.png";
+import DuctDaddyImg from "@/public/projects/dddc-thumbnail.png";
+import NetflowsImg from "@/public/hero-img.png";
 
 export const caseStudies = [
   {
     company: "Duct Daddy",
     industry: "HVAC Service Platform",
-    img: CaseStudyImg,
+    img: DuctDaddyImg,
     services: {
       development: true,
       design: true,
@@ -15,7 +16,7 @@ export const caseStudies = [
   {
     company: "Netflows",
     industry: "Creative Digital Agency",
-    img: CaseStudyImg,
+    img: NetflowsImg,
     services: {
       development: true,
       design: true,
