@@ -1,8 +1,10 @@
 import DuctDaddyImg from "@/public/projects/dddc-thumbnail.png";
 import NetflowsImg from "@/public/hero-img.png";
+import { ProjectType } from "../types/project.type";
 
-export const caseStudies = [
+const ProjectData: ProjectType[] = [
   {
+    id: "0",
     company: "Duct Daddy",
     industry: "HVAC Service Platform",
     img: DuctDaddyImg,
@@ -14,6 +16,7 @@ export const caseStudies = [
     },
   },
   {
+    id: "1",
     company: "Netflows",
     industry: "Creative Digital Agency",
     img: NetflowsImg,
@@ -25,3 +28,5 @@ export const caseStudies = [
     },
   },
 ];
+
+export default ProjectData;

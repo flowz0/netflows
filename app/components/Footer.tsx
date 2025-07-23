@@ -1,80 +1,97 @@
+import NetflowsImg from "@/public/netflows-brand-transparent.png";
 import Image from "next/image";
 import Link from "next/link";
-
-import NetflowsImg from "@/public/Netflows-brand.png";
-
-type FooterLinkProps = {
-  children: React.ReactNode;
-  href: string;
-  target?: string;
-  className?: string;
-}
-
-const FooterLink: React.FC<FooterLinkProps> = ({ children, href, className, target }) => {
-  return (
-    <Link
-      href={href}
-      target={target}
-      className={`${className} text-[#f5f5f5] w-fit font-semibold transition-colors duration-300 hover:text-[#00b4ff]`}
-    >
-      {children}
-    </Link>
-  );
-}
+import { SiFacebook, SiLinkedin } from "react-icons/si";
+import { FaEnvelope } from "react-icons/fa6";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#242424] py-16 md:py-32">
-      <div className="max-w-7xl px-6 mx-auto">
-        <div className="flex flex-col flex-wrap justify-between gap-8 sm:flex-row">
-          <div className="flex flex-col gap-2">
-            <h3 className="text-[#a8a8a8] uppercase">Useful Links</h3>
-            <FooterLink href="/#services">Services</FooterLink>
-            <FooterLink href="/projects">Projects</FooterLink>
-            <FooterLink href="/#faqs">FAQs</FooterLink>
+    <footer className="mt-64 mb-32 px-6 max-w-7xl mx-auto">
+      <div className="flex items-center w-full h-full">
+        <div className="grid grid-cols-1 gap-y-12 w-full sm:grid-cols-2 sm:justify-between lg:grid-cols-4">
+          <div className="flex flex-col justify-between w-fit">
+            {/* brand */}
+            <Link href="/">
+              <Image
+                src={NetflowsImg}
+                alt="Netflows brand"
+                className="h-8 w-auto"
+              />
+            </Link>
+            <div className="mt-8 sm:mt-0">
+              <p className="text-black75 text-small">
+                ©2025 Netflows, LLC.
+              </p>
+              <p className="text-black75 text-small">
+                <Link href="/" className="transition-colors duration-300 ease-in-out hover:text-secondary">Terms of Service</Link>
+                {" "} | {" "}
+                <Link href="/" className="transition-colors duration-300 ease-in-out hover:text-secondary">Privacy Policy</Link>
+              </p>
+            </div>
           </div>
 
-          <div className="flex flex-col gap-2">
-            <h3 className="text-[#a8a8a8] uppercase">Resources</h3>
-            <FooterLink href="/privacy">Privacy Policy</FooterLink>
-            <FooterLink href="/tos">Terms of Service</FooterLink>
-            <FooterLink href="/guidelines">Guidelines</FooterLink>
+          {/* services */}
+          <div className="w-fit">
+            <h6 className="text-black text-h6 font-bold font-nunito">
+              Services
+            </h6>
+            <div className="flex flex-col gap-y-2 mt-4">
+              <Link href="/" className="text-black75 text-p w-fit transition-colors duration-300 ease-in-out hover:text-secondary">
+                Web Development
+              </Link>
+              <Link href="/" className="text-black75 text-p w-fit transition-colors duration-300 ease-in-out hover:text-secondary">
+                UI/UX Design
+              </Link>
+              <Link href="/" className="text-black75 text-p w-fit transition-colors duration-300 ease-in-out hover:text-secondary">
+                Maintenance
+              </Link>
+            </div>
           </div>
 
-          <div className="flex flex-col gap-2">
-            <h3 className="text-[#a8a8a8] uppercase">Contact Us</h3>
-            <FooterLink href="mailto:contact@netflows.xyz">
-              contact@netflows.xyz
-            </FooterLink>
+          {/* useful links */}
+          <div className="w-fit">
+            <h6 className="text-black text-h6 font-bold font-nunito">
+              Useful Links
+            </h6>
+            <div className="flex flex-col gap-y-2 mt-4">
+              <Link href="/" className="text-black75 text-p w-fit transition-colors duration-300 ease-in-out hover:text-secondary">
+                About
+              </Link>
+              <Link href="/" className="text-black75 text-p w-fit transition-colors duration-300 ease-in-out hover:text-secondary">
+                Projects
+              </Link>
+              <Link href="/" className="text-black75 text-p w-fit transition-colors duration-300 ease-in-out hover:text-secondary">
+                Contact
+              </Link>
+            </div>
           </div>
 
-          <div className="flex flex-col gap-2">
-            <h3 className="text-[#a8a8a8] uppercase">Follow Us</h3>
-            <FooterLink href="https://www.instagram.com/netflowsxyz/" target="_blank">
-              Instagram
-            </FooterLink>
-            <FooterLink href="https://www.linkedin.com/company/netflowsxyz" target="_blank">
-              LinkedIn
-            </FooterLink>
-            <FooterLink href="https://x.com/Netflowsxyz" target="_blank">
-              X
-            </FooterLink>
+          {/* get in touch */}
+          <div className="w-fit">
+            <h6 className="text-black text-h6 font-bold font-nunito">
+              Get In Touch
+            </h6>
+            <div className="flex flex-col gap-y-2 mt-4">
+              <p className="text-black75 text-p">
+                Questions or feedback?
+              </p>
+              <p className="text-black75 text-p">
+                We&apos;d love to hear from you.
+              </p>
+            </div>
+            <div className="mt-12 flex gap-x-6">
+              <Link href="/" className="transition-colors duration-300 ease-in-out hover:text-secondary">
+                <FaEnvelope className="w-8 h-8" />
+              </Link>
+              <Link href="/" className="transition-colors duration-300 ease-in-out hover:text-secondary">
+                <SiFacebook className="w-8 h-8" />
+              </Link>
+              <Link href="/" className="transition-colors duration-300 ease-in-out hover:text-secondary">
+                <SiLinkedin className="w-8 h-8" />
+              </Link>
+            </div>
           </div>
         </div>
-
-        <h4 className="mt-24 font-semibold sm:mt-32 sm:text-lg">
-          © 2025 Netflows
-        </h4>
-
-        <Link href="/">
-          <Image
-            src={NetflowsImg}
-            alt="Netflows Brand"
-            className="h-fit w-full mt-16 transition-transform duration-500 hover:translate-y-2"
-            draggable={false}
-          />
-        </Link>
-
       </div>
     </footer>
   );

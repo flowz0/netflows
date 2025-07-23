@@ -1,4 +1,4 @@
-import { ProjectType } from "../types/project";
+import { ProjectType } from "../types/old-project";
 
 import DuctDaddyLogo from "@/public/projects/duct-daddy-logo.png";
 import DDDCThumbnail from "@/public/projects/dddc-thumbnail.png";

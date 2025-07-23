@@ -1,20 +1,23 @@
 import { SERVICE_STYLES } from "@/app/constants/serviceStyles";
-import Image, { StaticImageData } from "next/image";
+import { ProjectProps } from "@/app/types/project.type";
+import Image from "next/image";
 
 import { FaExternalLinkAlt } from "react-icons/fa";
 
-interface CaseStudyCardProps {
-  company: string;
-  industry: string;
-  img: StaticImageData;
-  services: Record<string, boolean>;
-}
+const CaseStudyCard: React.FC<ProjectProps> = ({ project }) => {
+  const {
+    company,
+    industry,
+    services,
+    img
+  } = project;
 
-export default function CaseStudyCard({ company, industry, img, services }: CaseStudyCardProps) {
   return (
     <div className="border border-black75 rounded-2xl py-8 px-8 cursor-pointer transition-shadow duration-300 ease-in-out hover:shadow-[0_16px_60px_#924bf7]">
       <div className="flex items-center justify-between">
-        <h5 className="text-h5 font-bold font-nunito text-black">{company}</h5>
+        <h5 className="text-h6 sm:text-h5 font-bold font-nunito text-black">
+          {company}
+        </h5>
         <div className="bg-primary h-12 w-12 rounded-full flex items-center justify-center">
           <FaExternalLinkAlt className="text-black5 h-4 w-4" />
         </div>
@@ -45,10 +48,12 @@ export default function CaseStudyCard({ company, industry, img, services }: Case
       <Image
         src={img}
         alt="Case study thumbnail"
-        className="mt-8 rounded-2xl object-cover h-48 sm:h-80"
+        className="mt-8 rounded-lg object-cover h-64 sm:h-80"
         draggable={false}
         priority={false}
       />
     </div>
   );
 }
+
+export default CaseStudyCard;

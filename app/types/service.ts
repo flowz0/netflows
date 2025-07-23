@@ -1,8 +1,9 @@
 import { StaticImageData } from "next/image";
 
-export type ServiceType = {
-  id: number;
+export interface ServiceItemProps {
   title: string;
   description: string;
-  image: StaticImageData;
+  image?: StaticImageData | string;
+  isOpen: boolean;
+  onClick: () => void;
 };

@@ -1,21 +1,23 @@
-import Hero from "./components/pages/home/Hero";
-import Features from "./components/pages/home/Features";
-import Services from "./components/pages/home/Services";
-import Projects from "./components/pages/home/Projects";
-import Testimonials from "./components/pages/home/Testimonials";
-import FAQs from "./components/pages/home/FAQs";
-import CTA from "./components/CTA";
+import Hero from "./components/Home/Hero";
+import ValueProposition from "./components/Home/Why/ValueProposition";
+import Services from "./components/Home/Service/Services";
+import CaseStudies from "./components/Home/Study/CaseStudies";
+import Testimonials from "./components/Home/Testimonial/Testimonials";
+import Process from "./components/Home/Process/Process";
+import FAQs from "./components/Home/FAQ/FAQs";
+import CTA from "./components/Home/CTA";
 
 export default function Home() {
   return (
-    <main>
+    <>
       <Hero />
-      <Features />
+      <ValueProposition />
       <Services />
-      <Projects />
+      <CaseStudies />
       <Testimonials />
+      <Process />
       <FAQs />
       <CTA />
-    </main>
+    </>
   );
 };

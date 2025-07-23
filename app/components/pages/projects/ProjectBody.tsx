@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 import PlaceholderImg from "@/public/1920x1080.svg";
-import { ProjectType } from "@/app/types/project";
+import { ProjectType } from "@/app/types/old-project";
 
 export default function ProjectBody({
   challenge,

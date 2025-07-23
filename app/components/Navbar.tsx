@@ -1,21 +1,15 @@
 "use client";
 
-import Link from "next/link";
-import { useEffect, useState } from "react";
-import { usePathname } from "next/navigation";
-import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 
-import BrandLogo from "@/public/Netflows-brand.png";
-import AnimatedLink from "./AnimatedLink";
+import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
+import ExpandingCircleButton from "./ExpandingCircleButton";
+import Link from "next/link";
+import NetflowsLogo from "@/public/netflows-logo-transparent.png";
 
 export default function Navbar() {
-  const Links = [
-    { name: "Services", href: "/#services" },
-    { name: "Projects", href: "/projects" },
-    { name: "FAQ", href: "/#faqs" },
-  ];
-
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
 
@@ -27,112 +21,99 @@ export default function Navbar() {
     }
   }, [isOpen]);
 
+  const Links = [
+    { label: "About", href: "/about" },
+    { label: "Projects", href: "/projects" },
+    { label: "Services", href: "/services" },
+  ];
+
   return (
-    <nav className={`${isOpen ? "bg-[#0a0a0a]" : "bg-[rgba(10,10,10,0.92)] backdrop-blur-lg"} fixed h-16 w-full z-50`}>
-      <div className="flex justify-between items-center h-full max-w-7xl mx-auto px-6">
-        <Link
-          href="/"
-          onClick={() => setIsOpen(false)}
-        >
-          {isOpen
-            ? ""
-            : <Image
-              src={BrandLogo}
-              alt="Netflows logo"
-              className="h-6 w-auto transition-transform duration-300 ease-in-out hover:scale-105 active:scale-95"
-              draggable="false"
-              priority={false}
-            />
-          }
-        </Link>
-
-        {/* Desktop Links */}
-        <ul className="hidden text-[#f5f5f5] font-semibold text-base/[32px] tracking-[0.016em] md:flex md:items-center md:gap-x-6">
-          {Links.map((link) => (
-            <li key={link.href}>
-              <AnimatedLink
-                href={link.href}
-                className={`${(link.href === "/projects" && pathname.startsWith("/projects")) || pathname === link.href
-                  ? "duration-300 transition-colors text-[#00b4ff]"
-                  : ""
-                  }`}
-
-              >
-                {link.name}
-              </AnimatedLink>
-            </li>
-          ))} <li>
-
-            <Link
-              href="/book-consultation"
-              className={`hidden duration-300 transition-colors py-1 px-5 font-semibold text-base/[32px] tracking-[0.016em] rounded-lg md:block
-            ${pathname === "/book-consultation"
-                  ? "bg-[hsl(0,0%,34%)] text-[#f5f5f5]"
-                  : "bg-[#242424] text-[#f5f5f5] hover:bg-[hsl(0,0%,24%)] active:bg-[hsl(0,0%,34%)]"
-                } `}
-            >
-              Book Free Consultation
+    <header className="bg-black5 h-32 top-0 sticky z-30">
+      <nav className="max-w-7xl mx-auto h-full">
+        <div className="flex items-center justify-between h-full px-6">
+          <div className="flex items-center justify-center gap-x-12">
+            <Link href="/">
+              <Image
+                src={NetflowsLogo}
+                alt="Netflows logo"
+                className="h-16 w-auto"
+              />
             </Link>
-          </li>
-        </ul>
 
-
-        {/* Mobile menu button */}
-        <button
-          type="button"
-          onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden flex flex-col justify-center items-center cursor-pointer py-2.5"
-          aria-label="Toggle menu"
-          aria-expanded={isOpen}
-        >
-          <span className={`bg-[#f5f5f5] block transition-all duration-300 ease-out 
-                    h-0.5 w-7 rounded-sm ${isOpen ?
-              'rotate-45 translate-y-1' : '-translate-y-0.5'
-            }`} >
-          </span>
-          <span className={`bg-[#f5f5f5] block transition-all duration-300 ease-out 
-                    h-0.5 w-7 rounded-sm my-0.5 ${isOpen ?
-              'opacity-0' : 'opacity-100'
-            }`} >
-          </span>
-          <span className={`bg-[#f5f5f5] block transition-all duration-300 ease-out
-            h-0.5 w-7 rounded-sm ${isOpen ?
-              '-rotate-45 -translate-y-1' : 'translate-y-0.5'
-            }`} >
-          </span>
-        </button>
-      </div>
-
-      {/* Mobile Links */}
-      <AnimatePresence>
-        {isOpen && (
-          <motion.div
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: "100vh", opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.2, ease: "easeInOut" }}
-            className="md:hidden bg-[#0a0a0a]"
-          >
-            <ul className="flex flex-col gap-y-2 px-8 font-bold text-3xl/[42px] tracking-[0.016em]">
-              {Links.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className={`${(link.href === "/projects" && pathname.startsWith("/projects")) || pathname === link.href
-                      ? "text-[#00b4ff]"
-                      : "text-[#f5f5f5]"
-                      }`}
-
-                    onClick={() => setIsOpen(!isOpen)}
-                  >
-                    {link.name}
-                  </Link>
-                </li>
+            <div className="hidden md:flex gap-x-8">
+              {Links.map(({ label, href }) => (
+                <Link
+                  key={href}
+                  href={href}
+                  className={`text-h6 font-bold font-nunito ${pathname === href ? 'text-black' : 'text-black50 hover:text-black'
+                    }`}
+                >
+                  {label}
+                </Link>
               ))}
-            </ul>
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </nav>
+            </div>
+          </div>
+          <ExpandingCircleButton text="Book Free Consultation" className="hidden lg:block" />
+
+          {/* mobile */}
+          {/* Mobile menu button */}
+          <button
+            type="button"
+            onClick={() => setIsOpen(!isOpen)}
+            className="md:hidden flex flex-col justify-center items-center cursor-pointer w-12 h-12 relative z-50"
+            aria-label="Toggle menu"
+            aria-expanded={isOpen}
+          >
+            <span
+              className={`bg-black50 block transition-all duration-300 ease-in-out h-1 w-9 rounded-sm absolute ${isOpen
+                ? 'rotate-45 top-1/2'
+                : 'top-[calc(50%-10px)]'
+                }`}
+            ></span>
+            <span
+              className={`bg-black50 block transition-all duration-300 ease-in-out h-1 w-9 rounded-sm absolute ${isOpen
+                ? 'opacity-0 top-1/2'
+                : 'top-1/2'
+                }`}
+            ></span>
+            <span
+              className={`bg-black50 block transition-all duration-300 ease-in-out h-1 w-9 rounded-sm absolute ${isOpen
+                ? '-rotate-45 top-1/2'
+                : 'top-[calc(50%+10px)]'
+                }`}
+            ></span>
+          </button>
+        </div>
+        {/* Mobile Links */}
+        <AnimatePresence>
+          {isOpen && (
+            <motion.div
+              initial={{ height: 0, opacity: 0 }}
+              animate={{ height: "100vh", opacity: 1 }}
+              exit={{ height: 0, opacity: 0 }}
+              transition={{ duration: 0.2, ease: "easeInOut" }}
+              className="md:hidden bg-black5"
+            >
+              <ul className="flex flex-col gap-y-2 px-6 text-h5 font-bold font-nunito">
+                {Links.map((link) => (
+                  <li key={link.href}>
+                    <Link
+                      href={link.href}
+                      className={`${pathname === link.href
+                        ? "text-primary"
+                        : "text-black50"
+                        }`}
+                      onClick={() => setIsOpen(!isOpen)}
+                    >
+                      {link.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </nav>
+    </header>
   );
-};
+}

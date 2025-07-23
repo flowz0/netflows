@@ -4,9 +4,11 @@ import TestimonialCard from "./TestimonialCard";
 export default function Testimonials() {
   return (
     <section className="mt-64">
-      <div className="max-w-7xl mx-auto flex flex-col items-center">
-        <h2 className="text-h2 font-bold text-center font-nunito text-black">
-          Don&apos;t Take Our Word For It
+      <div className="max-w-7xl mx-auto px-6 flex flex-col items-center">
+        <h2 className="text-h4 font-bold font-nunito text-center text-black sm:text-h2">
+          Don&apos;t Take {" "}
+          <br className="lg:hidden" />
+          Our Word For It
         </h2>
         <p className="mt-4 text-p max-w-6xl text-center font-inter text-black75">
           See what our clients have to say about us.

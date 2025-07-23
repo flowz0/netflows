@@ -3,13 +3,9 @@
 import { useState } from "react";
 import { FaAngleLeft } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
+import { FAQProps } from "@/app/types/faq";
 
-interface FAQItemProps {
-  question: string;
-  answer: string;
-};
-
-export default function FAQItem({ question, answer }: FAQItemProps) {
+export default function FAQItem({ question, answer }: FAQProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -18,17 +14,19 @@ export default function FAQItem({ question, answer }: FAQItemProps) {
       className={`transition-all duration-300 ease-in-out group cursor-pointer w-full ${isOpen
         ? "py-16"
         : "py-8"
-      }`}
+        }`}
     >
-      <div className="flex items-center justify-between">
-        <h5 className={`text-black text-h5 font-nunito font-medium transition-transform duration-300 ease-in-out ${isOpen
+      <div className="flex items-center justify-between gap-x-4">
+        <h5 className={`text-black text-h6 sm:text-h5 font-nunito font-medium text-start text-wrap transition-transform duration-300 ease-in-out ${isOpen
           ? ""
           : "group-hover:translate-x-4"
-        }`}>
+          }`}>
           {question}
         </h5>
-        <div className="bg-primary h-16 w-16 rounded-full flex items-center justify-center">
-          <FaAngleLeft className={`text-black5 h-8 w-8 transition-transform duration-500 ease-in-out ${isOpen ? "-rotate-90" : ""}`} />
+        <div className="">
+          <div className="bg-primary h-12 w-12 sm:h-16 sm:w-16 rounded-full flex items-center justify-center">
+            <FaAngleLeft className={`text-black5 h-6 w-6 sm:h-8 sm:w-8 transition-transform duration-500 ease-in-out ${isOpen ? "-rotate-90" : ""}`} />
+          </div>
         </div>
       </div>
 

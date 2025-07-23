@@ -1,8 +1,6 @@
 import Image, { StaticImageData } from "next/image";
 import { FaQuoteLeft } from "react-icons/fa";
 
-import TestimonialImg from "@/public/2000x2000.svg";
-
 interface TestimonialProps {
   review: string;
   reviewer: string;

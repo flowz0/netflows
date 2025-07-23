@@ -5,9 +5,9 @@ import ExpandingCircleButton from "../ExpandingCircleButton";
 
 export default function Hero() {
   return (
-    <section className="mt-32 max-w-7xl mx-auto">
-      <div className="flex flex-col items-center">
-        <h1 className="text-h2 font-bold font-nunito text-center sm:text-h1">
+    <section className="mt-12 max-w-7xl mx-auto lg:mt-24">
+      <div className="flex flex-col items-center px-6">
+        <h1 className="text-h3 font-bold font-nunito text-center sm:text-h1">
           Grow your digital presence
         </h1>
         <p className="mt-4 text-p text-center font-inter text-black75">

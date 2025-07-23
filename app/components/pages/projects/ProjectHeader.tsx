@@ -10,7 +10,7 @@ import {
   SiTailwindcss,
   SiTypescript
 } from "react-icons/si";
-import { ProjectType } from "@/app/types/project";
+import { ProjectType } from "@/app/types/old-project";
 import ProjectTech from "./ProjectTech";
 
 export default function ProjectHeader({

@@ -1,8 +1,8 @@
-import Image from "next/image";
-import Button from "./components/Button";
 import Link from "next/link";
+import ExpandingCircleButton from "./components/ExpandingCircleButton";
+import Image from "next/image";
 
-import NotFound404 from "@/public/404-not-found.svg";
+import NotFoundImg from "@/public/page-not-found.svg";
 
 export const metadata = {
   title: "Page Not Found | Netflows"
@@ -10,28 +10,32 @@ export const metadata = {
 
 export default function PageNotFound() {
   return (
-    <header className="pt-32 pb-16">
-      <div className="max-w-7xl mx-auto px-6 flex flex-col justify-between gap-8 items-center lg:flex-row">
-        <div className="max-w-xl flex flex-col items-center lg:items-start">
-          <h1 className="text-[#f5f5f5] text-4xl/[2.466rem] text-center font-bold md:text-5xl/[3.016rem] lg:text-start">
+    <main className="mt-16 max-w-7xl mx-auto lg:mt-20">
+      <div className="px-6 flex flex-col items-center justify-between lg:flex-row">
+        <div className="flex flex-col items-center text-center lg:text-start lg:items-start lg:w-2/3">
+          <h1 className="text-h3 font-bold font-nunito sm:text-h1">
             This Page
             <br />
-            Does <span className="text-[#00b4ff]">Not</span> Exist
+            Does Not Exist
           </h1>
-          <p className="text-[#a8a8a8] text-base/[2.024rem] mt-4 text-center md:text-lg/[2.274rem] lg:text-start">
+          <p className="mt-4 text-p font-inter max-w-lg text-black75">
             Looks like you&apos;ve hit a dead end. But don&apos;t worry you can head back home and keep exploring.
           </p>
-          <Link href='/'>
-            <Button className="mt-8">Go to homepage</Button>
+          <Link href="/">
+            <ExpandingCircleButton text="Return to Homepage" className="mt-12" />
           </Link>
         </div>
-        <Image
-          src={NotFound404}
-          alt="Landing page hero image"
-          className="object-cover h-full pointer-events-none"
-          priority
-        />
+
+        <div className="mt-16 lg:mt-0">
+          <Image
+            src={NotFoundImg}
+            alt="Page not found image"
+            className="h-[480px]"
+            draggable={false}
+            priority
+          />
+        </div>
       </div>
-    </header>
+    </main>
   );
 };

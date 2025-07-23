@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
-import ProjectData from "@/app/data/projects";
-import ProjectCard from "@/app/components/pages/home/ProjectCard";
+import CaseStudyCard from "@/app/components/Home/Study/CaseStudyCard";
+import ProjectData from "@/app/data/project.data";
 
 export const metadata: Metadata = {
   title: "Web Design & Development Case Studies",
@@ -9,21 +9,19 @@ export const metadata: Metadata = {
 
 export default function ProjectsPage() {
   return (
-    <main className="pt-24 px-6 max-w-7xl mx-auto lg:pb-32">
-      <div className="flex flex-col items-center">
-        <h1 className="text-[#f5f5f5] mt-4 text-4xl font-semibold text-center md:text-5xl">
-          What We&apos;ve <span className="text-[#00b4ff] font-bold">Built</span> {" "}
-          <br className="hidden sm:block" />
-          With Our Partners
+    <main className="mt-16 px-6 max-w-7xl mx-auto lg:mt-24">
+      <div className="flex flex-col">
+        <h1 className="text-black text-h3 font-bold font-nunito sm:text-h1">
+          What We&apos;ve Built
         </h1>
-        <p className="text-[#a8a8a8] text-base mt-4 max-w-xl text-center lg:mx-0 md:text-lg">
+        <p className="mt-4 max-w-3xl text-p font-inter text-black75">
           Take a look at projects where we helped partners bring their ideas to
-          life through thoughtful design and modern web solutions.
+          life through strategic design and modern web solutions.
         </p>
       </div>
-      <div className="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-6">
         {ProjectData.slice(0, 4).map((project) => (
-          <ProjectCard key={project.id} project={project} />
+          <CaseStudyCard key={project.id} project={project} />
         ))}
       </div>
     </main>
