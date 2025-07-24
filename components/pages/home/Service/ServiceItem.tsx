@@ -26,7 +26,7 @@ export default function ServiceItem({ title, description, image, isOpen, onClick
             <Image
               src={image}
               alt={`${title} image`}
-              className="absolute bottom-[-184px] right-0 h-[280px] opacity-80 md:bottom-auto md:right-[-32px] md:h-[320px] lg:h-[400px] w-auto object-cover z-10"
+              className="absolute bottom-[-184px] right-0 h-[280px] opacity-80 lg:bottom-auto md:right-[-32px] md:h-[320px] lg:h-[400px] w-auto object-cover z-10"
               priority={false}
               draggable={false}
               quality={80}
