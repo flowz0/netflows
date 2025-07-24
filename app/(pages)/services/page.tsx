@@ -12,7 +12,7 @@ export default function Page() {
           Services That We Offer
         </h1>
         <p className="mt-4 max-w-4xl text-p font-inter text-black75">
-          We offer services that can help businesses improve their visibility and business reputation online, expand market reach, and increase turnover through effective digital strategies.
+          We offer services that can help businesses improve their visibility, business reputation online, expand market reach, and increase turnover through effective digital strategies.
         </p>
       </div>
       <div className="mt-32 flex flex-col gap-y-16">

@@ -45,7 +45,7 @@ export default function FAQItem({ question, answer }: FAQProps) {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.2 }}
-              className="text-black75 mt-4 text-p text-start"
+              className="text-black75 mt-4 text-p text-start font-inter"
             >
               {answer}
             </motion.p>

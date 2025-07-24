@@ -59,7 +59,7 @@ export const TestimonialDataBottom = [
     avatar: MacrosDImg,
   },
   {
-    review: "The website is user-friendly, acessible on all devices, and fast. We seen a 60% increase in leads within the first month with our new automated booking system.",
+    review: "Netflows created an automated booking system for us. We seen a 60% increase in leads within the first month and improved workflow.",
     reviewer: "Renee Talbot",
     role: "Marketing Lead, LuxeClean Interiors",
     avatar: ReneeTImg,

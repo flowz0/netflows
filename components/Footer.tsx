@@ -23,10 +23,10 @@ export default function Footer() {
               />
             </Link>
             <div className="mt-8 sm:mt-0">
-              <p className="text-black75 text-small">
+              <p className="text-black75 text-small font-inter">
                 ©2025 Netflows, LLC.
               </p>
-              <p className="text-black75 text-small">
+              <p className="text-black75 text-small font-inter">
                 <Link href="/tos" className="transition-colors duration-300 ease-in-out hover:text-secondary">Terms of Service</Link>
                 {" "} | {" "}
                 <Link href="/privacy" className="transition-colors duration-300 ease-in-out hover:text-secondary">Privacy Policy</Link>
@@ -40,13 +40,13 @@ export default function Footer() {
               Services
             </h6>
             <div className="flex flex-col gap-y-2 mt-4">
-              <Link href="/services" className="text-black75 text-p w-fit transition-colors duration-300 ease-in-out hover:text-secondary">
+              <Link href="/services" className="text-black75 text-p w-fit font-inter transition-colors duration-300 ease-in-out hover:text-secondary">
                 Web Development
               </Link>
-              <Link href="/services" className="text-black75 text-p w-fit transition-colors duration-300 ease-in-out hover:text-secondary">
+              <Link href="/services" className="text-black75 text-p w-fit font-inter transition-colors duration-300 ease-in-out hover:text-secondary">
                 UI/UX Design
               </Link>
-              <Link href="/services" className="text-black75 text-p w-fit transition-colors duration-300 ease-in-out hover:text-secondary">
+              <Link href="/services" className="text-black75 text-p w-fit font-inter transition-colors duration-300 ease-in-out hover:text-secondary">
                 Maintenance
               </Link>
             </div>
@@ -58,13 +58,13 @@ export default function Footer() {
               Useful Links
             </h6>
             <div className="flex flex-col gap-y-2 mt-4">
-              <Link href="/about" className="text-black75 text-p w-fit transition-colors duration-300 ease-in-out hover:text-secondary">
+              <Link href="/about" className="text-black75 text-p w-fit font-inter transition-colors duration-300 ease-in-out hover:text-secondary">
                 About
               </Link>
-              <Link href="/projects" className="text-black75 text-p w-fit transition-colors duration-300 ease-in-out hover:text-secondary">
+              <Link href="/projects" className="text-black75 text-p w-fit font-inter transition-colors duration-300 ease-in-out hover:text-secondary">
                 Projects
               </Link>
-              <Link href="/booking" className="text-black75 text-p w-fit transition-colors duration-300 ease-in-out hover:text-secondary">
+              <Link href="/booking" className="text-black75 text-p w-fit font-inter transition-colors duration-300 ease-in-out hover:text-secondary">
                 Contact
               </Link>
             </div>
@@ -76,10 +76,10 @@ export default function Footer() {
               Get In Touch
             </h6>
             <div className="flex flex-col gap-y-2 mt-4">
-              <p className="text-black75 text-p">
+              <p className="text-black75 text-p font-inter">
                 Questions or feedback?
               </p>
-              <p className="text-black75 text-p">
+              <p className="text-black75 text-p font-inter">
                 We&apos;d love to hear from you.
               </p>
             </div>
