@@ -21,7 +21,7 @@ export default function Hero() {
       <Image
         src={HeroImg}
         alt="Hero image"
-        className="mt-32 object-cover lg:rounded-lg w-full h-64 sm:h-[680px] md:drop-shadow-[0_16px_32px_rgb(146,75,247)]"
+        className="mt-32 object-cover lg:rounded-lg w-full h-64 sm:h-[680px] animate-drop-shadow"
         draggable={false}
         priority={true}
         quality={100}
