@@ -1,3 +1,10 @@
+# [2.2.0](https://github.com/flowz0/netflows/compare/v2.1.0...v2.2.0) (2025-07-24)
+
+
+### Features
+
+* animate drop shadow for Hero Image and MultiStepForm components ([860aced](https://github.com/flowz0/netflows/commit/860acede1903ca08609c8a0fca32f227ea2cf2ba))
+
 # [2.1.0](https://github.com/flowz0/netflows/compare/v2.0.4...v2.1.0) (2025-07-24)
 
 
