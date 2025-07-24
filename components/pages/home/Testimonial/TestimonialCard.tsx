@@ -27,7 +27,8 @@ export default function TestimonialCard({
           className="h-16 w-16 object-cover object-top rounded-full"
           draggable={false}
           priority={false}
-          quality={90}
+          quality={75}
+          loading="lazy"
         />
         <div>
           <h6 className="text-p text-black">{reviewer}</h6>

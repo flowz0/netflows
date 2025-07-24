@@ -37,6 +37,9 @@ export default function ProjectBody({ project }: ProjectProps) {
         alt="Project image"
         className="object-cover h-full w-full mt-8 rounded-xl"
         draggable={false}
+        priority={false}
+        quality={80}
+        loading="lazy"
       />
       <h2 className="text-black text-h5 font-bold font-nunito mt-16 sm:text-h4 md:text-h2">
         {solution}
@@ -50,24 +53,36 @@ export default function ProjectBody({ project }: ProjectProps) {
           alt="Project image"
           className="object-cover h-full w-full rounded-xl"
           draggable={false}
+          priority={false}
+          quality={80}
+          loading="lazy"
         />
         <Image
           src={solutionImg2 || PlaceholderImg}
           alt="Project image"
           className="object-cover h-full w-full rounded-xl"
           draggable={false}
+          priority={false}
+          quality={80}
+          loading="lazy"
         />
         <Image
           src={solutionImg3 || PlaceholderImg}
           alt="Project image"
           className="object-cover h-full w-full rounded-xl"
           draggable={false}
+          priority={false}
+          quality={80}
+          loading="lazy"
         />
         <Image
           src={solutionImg4 || PlaceholderImg}
           alt="Project image"
           className="object-cover h-full w-full rounded-xl"
           draggable={false}
+          priority={false}
+          quality={80}
+          loading="lazy"
         />
       </div>
       <h2 className="text-black text-h5 font-bold font-nunito mt-16 sm:text-h4 md:text-h2">
@@ -81,6 +96,9 @@ export default function ProjectBody({ project }: ProjectProps) {
         alt="Project image"
         className="object-cover h-full w-full mt-8 rounded-xl"
         draggable={false}
+        priority={false}
+        quality={80}
+        loading="lazy"
       />
       <h2 className="text-black text-h5 font-bold font-nunito mt-16 sm:text-h4 md:text-h2">
         {takeaways}
@@ -94,18 +112,27 @@ export default function ProjectBody({ project }: ProjectProps) {
           alt="Project image"
           className="object-cover h-full w-full rounded-xl"
           draggable={false}
+          priority={false}
+          quality={80}
+          loading="lazy"
         />
         <Image
           src={takeawaysImg2 || PlaceholderImg}
           alt="Project image"
           className="object-cover h-full w-full rounded-xl"
           draggable={false}
+          priority={false}
+          quality={80}
+          loading="lazy"
         />
         <Image
           src={takeawaysImg3 || PlaceholderImg}
           alt="Project image"
           className="object-cover h-full w-full rounded-xl sm:col-span-2"
           draggable={false}
+          priority={false}
+          quality={80}
+          loading="lazy"
         />
       </div>
     </div>
