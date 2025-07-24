@@ -29,7 +29,7 @@ export default function ProjectBody({ project }: ProjectProps) {
       <h2 className="text-black text-h5 font-bold font-nunito sm:text-h4 md:text-h2">
         {challenge}
       </h2>
-      <p className="text-black75 text-p mt-4 lg:mx-0">
+      <p className="text-black75 text-p font-inter mt-4 lg:mx-0">
         {challengeDesc}
       </p>
       <Image
@@ -44,7 +44,7 @@ export default function ProjectBody({ project }: ProjectProps) {
       <h2 className="text-black text-h5 font-bold font-nunito mt-16 sm:text-h4 md:text-h2">
         {solution}
       </h2>
-      <p className="text-black75 text-p mt-4 lg:mx-0">
+      <p className="text-black75 text-p font-inter mt-4 lg:mx-0">
         {solutionDesc}
       </p>
       <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
@@ -88,7 +88,7 @@ export default function ProjectBody({ project }: ProjectProps) {
       <h2 className="text-black text-h5 font-bold font-nunito mt-16 sm:text-h4 md:text-h2">
         {results}
       </h2>
-      <p className="text-black75 text-p mt-4 lg:mx-0">
+      <p className="text-black75 text-p font-inter mt-4 lg:mx-0">
         {resultsDesc}
       </p>
       <Image
@@ -103,7 +103,7 @@ export default function ProjectBody({ project }: ProjectProps) {
       <h2 className="text-black text-h5 font-bold font-nunito mt-16 sm:text-h4 md:text-h2">
         {takeaways}
       </h2>
-      <p className="text-black75 text-p mt-4 lg:mx-0">
+      <p className="text-black75 text-p mt-4 font-inter lg:mx-0">
         {takeawaysDesc}
       </p>
       <div className="grid grid-cols-1 gap-4 mt-8 sm:grid-cols-2">

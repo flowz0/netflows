@@ -17,7 +17,7 @@ export default function TestimonialCard({
   return (
     <div className="border border-black75 py-8 px-8 rounded-2xl w-[400px] cursor-default">
       <FaQuoteLeft className="text-primary w-6 h-6" />
-      <p className="mt-4 text-p text-black">
+      <p className="text-black75 text-p font-inter mt-4">
         {review}
       </p>
       <div className="mt-8 flex items-center gap-x-4">
@@ -31,8 +31,8 @@ export default function TestimonialCard({
           loading="lazy"
         />
         <div>
-          <h6 className="text-p text-black">{reviewer}</h6>
-          <p className="text-small text-black50">{role}</p>
+          <h6 className="text-black text-p font-medium font-inter">{reviewer}</h6>
+          <p className="text-black75 text-small font-inter">{role}</p>
         </div>
       </div>
     </div>
