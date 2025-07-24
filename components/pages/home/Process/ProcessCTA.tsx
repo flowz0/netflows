@@ -7,7 +7,7 @@ import Button from "@/components/Button";
 
 export default function ProcessCTA() {
   return (
-    <div className="mt-6 border border-black py-8 px-8 rounded-2xl flex flex-col items-center justify-between lg:flex-row lg:h-[128px]">
+    <div className="mt-6 border border-black py-12 px-8 rounded-2xl flex flex-col items-center justify-between lg:flex-row lg:h-[128px]">
       <div className="flex flex-col items-center gap-x-4 lg:flex-row">
         <div className="flex -space-x-2">
           <Image
