@@ -20,7 +20,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.netflows.xyz"),
   title: {
-    default: "Web Design, Development, and Managed Hosting for Small Businesses | Netflows",
+    default: "Web Design and Development for Small Businesses & Startups | Netflows",
     template: "%s | Netflows"
   },
   description: "Netflows offers expert web design, development, and hassle-free hosting for growing businesses.",
