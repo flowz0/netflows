@@ -5,9 +5,9 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import ExpandingCircleButton from "./Button";
 import Link from "next/link";
 import NetflowsLogo from "@/public/netflows-logo-transparent.png";
+import Button from "./Button";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -37,6 +37,9 @@ export default function Navbar() {
                 src={NetflowsLogo}
                 alt="Netflows logo"
                 className="h-16 w-auto"
+                priority={true}
+                quality={100}
+                loading="eager"
               />
             </Link>
 
@@ -56,7 +59,7 @@ export default function Navbar() {
             </div>
           </div>
           <Link href="/booking">
-            <ExpandingCircleButton text="Book Free Consultation" className="hidden lg:block" variant="gradient" />
+            <Button text="Book Free Consultation" className="hidden lg:block" variant="gradient" />
           </Link>
 
           {/* mobile */}

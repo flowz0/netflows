@@ -29,6 +29,8 @@ export default function ServiceItem({ title, description, image, isOpen, onClick
               className="absolute bottom-[-184px] right-0 h-[280px] opacity-80 md:bottom-auto md:right-[-32px] md:h-[320px] lg:h-[400px] w-auto object-cover z-10"
               priority={false}
               draggable={false}
+              quality={80}
+              loading="lazy"
             />
           )}
         </>

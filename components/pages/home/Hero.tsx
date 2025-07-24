@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import HeroImg from "@/public/hero-img.png";
 import Link from "next/link";
-import ExpandingCircleButton from "../../Button";
+import Button from "@/components/Button";
 
 export default function Hero() {
   return (
@@ -15,7 +15,7 @@ export default function Hero() {
           Strategic web design and development that turns visitors into customers.
         </p>
         <Link href="/booking">
-          <ExpandingCircleButton text="Book Free Consultation" className="mt-12" variant="gradient" />
+          <Button text="Book Free Consultation" className="mt-12" variant="gradient" />
         </Link>
       </div>
       <Image
@@ -24,6 +24,8 @@ export default function Hero() {
         className="mt-32 object-cover rounded-lg w-full h-[480px] sm:h-[680px] drop-shadow-[0_25px_100px_rgb(146,75,247)]"
         draggable={false}
         priority={true}
+        quality={100}
+        loading="eager"
       />
     </section>
   );

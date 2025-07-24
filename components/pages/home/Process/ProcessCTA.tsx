@@ -16,7 +16,8 @@ export default function ProcessCTA() {
             className="object-cover h-16 w-16 lg:h-12 lg:w-12 rounded-full ring-4 ring-black5"
             priority={false}
             draggable={false}
-            quality={90}
+            quality={75}
+            loading="lazy"
           />
           <Image
             src={BusinessManAvatar2}
@@ -24,7 +25,8 @@ export default function ProcessCTA() {
             className="object-cover h-16 w-16 lg:h-12 lg:w-12 rounded-full ring-4 ring-black5"
             priority={false}
             draggable={false}
-            quality={90}
+            quality={75}
+            loading="lazy"
           />
           <Image
             src={BusinessManAvatar3}
@@ -32,7 +34,8 @@ export default function ProcessCTA() {
             className="object-cover h-16 w-16 lg:h-12 lg:w-12 rounded-full ring-4 ring-black5"
             priority={false}
             draggable={false}
-            quality={90}
+            quality={75}
+            loading="lazy"
           />
         </div>
         <p className="text-black75 text-p font-inter text-center mt-4 lg:mt-0">

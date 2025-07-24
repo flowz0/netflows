@@ -73,6 +73,9 @@ export default function ProjectHeader({ project }: ProjectProps) {
             alt={`${brandName} brand logo`}
             className="w-20 h-auto object-cover rounded-lg"
             draggable={false}
+            priority={true}
+            quality={100}
+            loading="eager"
           />
           <Link href={`${link}`} target="_blank" className="flex flex-col mt-8 w-fit group">
             <h1 className="text-black text-h4 sm:text-h3 font-bold font-nunito text-wrap flex items-center gap-x-6 lg:text-h1">
@@ -139,6 +142,7 @@ export default function ProjectHeader({ project }: ProjectProps) {
           draggable={false}
           priority={true}
           quality={100}
+          loading="eager"
         />
       </div>
     </>

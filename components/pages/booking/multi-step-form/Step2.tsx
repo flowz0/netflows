@@ -1,5 +1,5 @@
 import { DatePicker } from "../date-picker/DatePicker";
-import ExpandingCircleButton from "@/components/Button";
+import Button from "@/components/Button";
 import { Step2Props } from "@/types/step.type";
 
 export default function Step2({
@@ -20,13 +20,13 @@ export default function Step2({
         onSelectDate={onDateChange}
       />
       <div className="mt-12 flex md:flex-row gap-x-1">
-        <ExpandingCircleButton
+        <Button
           text="Back"
           onClick={prevStep}
           className="w-fit"
           variant="secondary"
         />
-        <ExpandingCircleButton
+        <Button
           text="Next"
           onClick={nextStep}
           className="w-fit sm:mt-0"

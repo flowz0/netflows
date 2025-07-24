@@ -1,5 +1,5 @@
+import Button from "@/components/Button";
 import Link from "next/link";
-import ExpandingCircleButton from "../../Button";
 
 export default function CTA() {
   return (
@@ -12,7 +12,7 @@ export default function CTA() {
           Schedule a free consultation with our industry expert software engineers and web designers.
         </p>
         <Link href="/booking">
-          <ExpandingCircleButton text="Book Free Consultation" className="mt-8" variant="gradient" />
+          <Button text="Book Free Consultation" className="mt-8" variant="gradient" />
         </Link>
       </div>
     </section>

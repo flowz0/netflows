@@ -77,8 +77,9 @@ const CaseStudyCard: React.FC<ProjectProps> = ({ project }) => {
           alt={`${brandName} project image`}
           className="object-cover h-64 w-auto rounded-2xl sm:h-80"
           draggable={false}
-          priority={false}
+          priority={true}
           quality={100}
+          loading="eager"
         />
       </div>
     </div>

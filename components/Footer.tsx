@@ -16,6 +16,10 @@ export default function Footer() {
                 src={NetflowsImg}
                 alt="Netflows brand"
                 className="h-8 w-auto"
+                quality={100}
+                priority={false}
+                draggable={false}
+                loading="lazy"
               />
             </Link>
             <div className="mt-8 sm:mt-0">
