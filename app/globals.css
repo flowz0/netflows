@@ -39,11 +39,38 @@
   --color-black5: #F3F2F3;
 }
 
+input:-webkit-autofill {
+  background-color: #F3F2F3 !important;
+  -webkit-box-shadow: 0 0 0px 1000px #F3F2F3 inset !important;
+  -webkit-text-fill-color: #0d0c0d !important;
+  color: #0d0c0d;
+}
+
 @layer utilities {
-  input:-webkit-autofill {
-    background-color: #F3F2F3 !important;
-    -webkit-box-shadow: 0 0 0px 1000px #F3F2F3 inset !important;
-    -webkit-text-fill-color: #0d0c0d !important;
-    color: #0d0c0d;
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(calc(-50% - 12px));
+    }
+  }
+
+  .animate-scroll {
+    animation: scroll 30s linear infinite;
+  }
+
+  .animate-scroll-reverse {
+    animation: scroll 30s linear infinite reverse;
+  }
+
+  .animate-scroll:active {
+    animation-play-state: paused;
+  }
+
+  .animate-scroll-reverse:active {
+    animation-play-state: paused;
   }
 }
