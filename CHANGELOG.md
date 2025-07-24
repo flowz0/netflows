@@ -1,3 +1,13 @@
+## [2.2.2](https://github.com/flowz0/netflows/compare/v2.2.1...v2.2.2) (2025-07-24)
+
+
+### Bug Fixes
+
+* fit height for Image in ProjectHeader component ([5d81189](https://github.com/flowz0/netflows/commit/5d81189c63d61d03894650ef8814dfcc6fec0be5))
+* improve About page content ([0bd0430](https://github.com/flowz0/netflows/commit/0bd04300665e84aa8a23f155817af8bb321b31c0))
+* improve service data description ([fce883f](https://github.com/flowz0/netflows/commit/fce883f6a9d79fdf0bf8c278229b17e3baa02e52))
+* update app layout Metadata to optimize SEO ([0191cb9](https://github.com/flowz0/netflows/commit/0191cb970299062035245e4233ec3973b92e4453))
+
 ## [2.2.1](https://github.com/flowz0/netflows/compare/v2.2.0...v2.2.1) (2025-07-24)
 
 
