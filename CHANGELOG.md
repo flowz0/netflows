@@ -1,3 +1,15 @@
+## [2.0.4](https://github.com/flowz0/netflows/compare/v2.0.3...v2.0.4) (2025-07-24)
+
+
+### Bug Fixes
+
+* add Metadata to About and Services page layouts to optimize SEO ([0884a77](https://github.com/flowz0/netflows/commit/0884a7791457395fa13b1fef280c581ac6bc62fa))
+* add Metadata to Projects page to optimize SEO ([14d5f1a](https://github.com/flowz0/netflows/commit/14d5f1a2b3494e581c09c06871f793b1fa264bcf))
+* add missing fonts to elements in Footer, FAQItem, TestimonialCard, and ProjectBody components ([84fd123](https://github.com/flowz0/netflows/commit/84fd12359d8bb28039c53816d88532494d3e7a16))
+* decrease max width for paragraph in CTA component ([f9feab9](https://github.com/flowz0/netflows/commit/f9feab96d96b52a9d399adbd0709edf57dc998b7))
+* improve faq and testimonial data ([1914874](https://github.com/flowz0/netflows/commit/19148743373f4ecab3840a55febcde9cdb13e2b0))
+* improve Services page description ([15ca46d](https://github.com/flowz0/netflows/commit/15ca46da3ba41a33decaf1d2a5a4d38fb6d86454))
+
 ## [2.0.3](https://github.com/flowz0/netflows/compare/v2.0.2...v2.0.3) (2025-07-24)
 
 
