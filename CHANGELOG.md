@@ -1,3 +1,14 @@
+## [2.0.3](https://github.com/flowz0/netflows/compare/v2.0.2...v2.0.3) (2025-07-24)
+
+
+### Bug Fixes
+
+* add default cursor to TestimonialCard component ([ac2a3a0](https://github.com/flowz0/netflows/commit/ac2a3a068a5b19b0b1a10be118abc3fd5cb46cb6))
+* improve Image responsive position in ServiceItem component ([2bf07b8](https://github.com/flowz0/netflows/commit/2bf07b8e38cf2496a25a1e3674ae4343114ec033))
+* optimize shadow for mobile ([0b5e804](https://github.com/flowz0/netflows/commit/0b5e8041bd7b34ec701964f6cf6560ec51892b5a))
+* optimize testimonial.data review for UX/SEO ([c339f2c](https://github.com/flowz0/netflows/commit/c339f2cfc6c7561d8943ce410894f3548fd5db9f))
+* update font size and line height for typography 18px base 1.250 scale ([54b4188](https://github.com/flowz0/netflows/commit/54b4188a6eb9c00abef821758425fa7df5d57f7e))
+
 ## [2.0.2](https://github.com/flowz0/netflows/compare/v2.0.1...v2.0.2) (2025-07-24)
 
 
