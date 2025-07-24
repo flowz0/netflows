@@ -1,3 +1,10 @@
+## [2.0.2](https://github.com/flowz0/netflows/compare/v2.0.1...v2.0.2) (2025-07-24)
+
+
+### Bug Fixes
+
+* optimize app layout SEO ([63eaa70](https://github.com/flowz0/netflows/commit/63eaa709759a8bdbcdd21e2c1faf20ea78067fe9))
+
 ## [2.0.1](https://github.com/flowz0/netflows/compare/v2.0.0...v2.0.1) (2025-07-24)
 
 
