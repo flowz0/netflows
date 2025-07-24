@@ -8,8 +8,8 @@ export default function CTA() {
         <h3 className="text-h5 sm:text-h3 font-bold text-center font-nunito text-black">
           Book a Consultation Today
         </h3>
-        <p className="mt-4 text-p max-w-6xl text-center font-inter text-black75">
-          Schedule a free consultation with our industry expert software engineers and web designers.
+        <p className="mt-4 text-p max-w-2xl text-center font-inter text-black75">
+          Schedule a free consultation with our industry expert software engineers and web designers to bring your vision to life.
         </p>
         <Link href="/booking">
           <Button text="Book Free Consultation" className="mt-8" variant="gradient" />
