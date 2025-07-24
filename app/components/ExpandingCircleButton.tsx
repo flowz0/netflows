@@ -6,13 +6,21 @@ interface ExpandingCircleButtonProps {
   text: string;
   onClick?: () => void;
   className?: string;
+  variant?: 'primary' | 'secondary' | 'gradient';
 }
 
 export default function ExpandingCircleButton({
   text = 'Book Free Consultation',
   onClick,
   className,
+  variant = 'primary'
 }: ExpandingCircleButtonProps) {
+  const baseStyle = "py-4 px-8 text-p font-inter rounded-2xl cursor-pointer transition-transform duration-300 ease-in-out active:scale-95";
+  const variantStyle = {
+    primary: "bg-primary text-black5",
+    secondary: "bg-secondary text-black5",
+    gradient: "text-black5 bg-gradient-to-r from-primary to-secondary",
+  }[variant];
   const buttonRef = useRef<HTMLButtonElement>(null);
   const [circlePos, setCirclePos] = useState({ x: 0, y: 0 });
   const [circleSize, setCircleSize] = useState(0);
@@ -57,7 +65,8 @@ export default function ExpandingCircleButton({
   return (
     <button
       ref={buttonRef}
-      className={`${className} relative overflow-hidden py-4 px-8 text-p font-inter rounded-2xl cursor-pointer text-black5 bg-gradient-to-r from-primary to-secondary`}
+      type="button"
+      className={`${baseStyle} ${variantStyle} ${className} relative overflow-hidden`}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       onClick={onClick}

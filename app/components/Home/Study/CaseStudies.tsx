@@ -1,4 +1,4 @@
-import ProjectData from "@/app/data/project.data";
+import ProjectData from "@/app/data/projects.data";
 import CaseStudyCard from "./CaseStudyCard";
 
 export default function CaseStudies() {

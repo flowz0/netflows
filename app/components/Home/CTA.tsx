@@ -1,3 +1,4 @@
+import Link from "next/link";
 import ExpandingCircleButton from "../ExpandingCircleButton";
 
 export default function CTA() {
@@ -10,7 +11,9 @@ export default function CTA() {
         <p className="mt-4 text-p max-w-6xl text-center font-inter text-black75">
           Schedule a free consultation with our industry expert software engineers and web designers.
         </p>
-        <ExpandingCircleButton text="Book Free Consultation" className="mt-8" />
+        <Link href="/booking">
+          <ExpandingCircleButton text="Book Free Consultation" className="mt-8" variant="gradient" />
+        </Link>
       </div>
     </section>
   );

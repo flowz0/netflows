@@ -7,9 +7,12 @@ export type ProjectType = {
   industry: string;
   summary?: string;
   brandLogo?: StaticImageData;
-  development?: boolean;
-  design?: boolean;
-  maintenance?: boolean;
+  services?: {
+    development?: boolean;
+    design?: boolean;
+    maintenance?: boolean;
+    seo?: boolean;
+  };
   comingSoon?: boolean;
   link?: string;
   techStack?: {

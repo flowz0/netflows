@@ -1,4 +1,4 @@
-import { ProjectType } from "../types/old-project";
+import { ProjectType } from "../types/project.types";
 
 import DuctDaddyLogo from "@/public/projects/duct-daddy-logo.png";
 import DDDCThumbnail from "@/public/projects/dddc-thumbnail.png";
@@ -21,9 +21,12 @@ const ProjectData: ProjectType[] = [
     industry: "HVAC Cleaning Platform",
     summary: "The owner of Duct Daddy reached out to us to design and develop a web application for their business. We created a modern blog content management system and integrated a booking system for customers.",
     brandLogo: DuctDaddyLogo,
-    development: true,
-    design: true,
-    maintenance: true,
+    services: {
+      development: true,
+      design: true,
+      maintenance: true,
+      seo: true,
+    },
     techStack: {
       nextjs: true,
       typescript: true,
@@ -47,7 +50,7 @@ const ProjectData: ProjectType[] = [
     results: "Results",
     resultsDesc: "The new website loads 68% faster on mobile, reduced bounce rate by 32%, and boosted service inquiries by 21% in the first month. The client can now publish blog content confidently and ranks on Google for key HVAC keywords in their local area.",
     resultsImg: DDTestimonialImg,
-    takeaways: "What I Learned",
+    takeaways: "What We Learned",
     takeawaysDesc: "This project deepened our expertise in delivering full-stack business solutions with measurable impact. We sharpened our skills in secure auth systems, modern content management system, and SEO optimization. Improving communication and planning with our partners.",
     takeawaysImg: DDDashboardImg,
     takeawaysImg2: DDLighthouseImg,
@@ -56,29 +59,43 @@ const ProjectData: ProjectType[] = [
   {
     id: 1,
     brandName: "Netflows",
-    industry: "Web Development Agency",
-    summary: "This is where you are probably reading this from. Netflows website was created to be the home of my new web development agency.",
-    // brandLogo: DuctDaddyLogo,
+    industry: "Digital Creative Agency",
+    summary: "The owner of Duct Daddy reached out to us to design and develop a web application for their business. We created a modern blog content management system and integrated a booking system for customers.",
+    brandLogo: DuctDaddyLogo,
     comingSoon: true,
-    development: true,
-    design: true,
-    maintenance: true,
-    // projectBanner: DDDCBanner,
+    services: {
+      development: true,
+      design: true,
+      maintenance: true,
+    },
+    techStack: {
+      nextjs: true,
+      typescript: true,
+      tailwind: true,
+      express: true,
+      node: true,
+      mongodb: true
+    },
+    link: "https://www.netflows.xyz/",
     projectThumbnail: NetflowsThumbnail,
+    projectBanner: DDDCBanner,
     challenge: "The Challenge",
-    challengeDesc: "Show what problem needed solving and how complex it was. The problem the client was facing. Specific pain points. Technical or business challenges.",
-    // challengeImg: img,
+    challengeDesc: "Show up in Google search results for HVAC cleaning related topics. Potential clients looking for a service or more information. Optimize SEO to show on top results for industry. Secure content management system integrated into the website for industry information and traffic.",
+    challengeImg: DDChallengeImg,
     solution: "The Solution",
-    solutionDesc: "Include the service provided, tech stack, key features built, design approach, accessiblity, performance, or SEO optimizations made. Break into phases like: Discovery & Planning, Design & Wireframing, Development, and Testing & Deployment.",
-    // solutionImg: img,
+    solutionDesc: "We went through our process from discovery to deployment. Starting with deliverable planning and wireframing. We implemented a modern UI, performant, SEO optimized, and secure backend with authentication and authorization for approved users to manage blog posts. The final product is fast, scalable, and exceeded client expectations.",
+    solutionImg: DDWireframesImg,
+    solutionImg2: DDCreateBlogImg,
+    solutionImg3: DDProtectedRoutesImg,
+    solutionImg4: DDBlogImg,
     results: "Results",
-    resultsDesc: "Show the impact and outcome (quantitative or qualitative). Metric: Improved mobile load time by 68%, Increase conversions by 25%, Reduced bounce rate by 35%. Client testimonial, screenshots, graphs, analytics snapshopts.",
-    // resultsImg: img,
-    takeaways: "What I Learned (key takeaways)",
-    takeawaysDesc: "Show your growth and how each project contributed to your expertise. New tech/tools you picked up. Challenges you overcame and skills sharpened (communication, testing, optimizations).",
-    // takeawaysImg: img,
-    // takeawaysImg2: img,
-    // takeawaysImg3: img
+    resultsDesc: "The new website loads 68% faster on mobile, reduced bounce rate by 32%, and boosted service inquiries by 21% in the first month. The client can now publish blog content confidently and ranks on Google for key HVAC keywords in their local area.",
+    resultsImg: DDTestimonialImg,
+    takeaways: "What We Learned",
+    takeawaysDesc: "This project deepened our expertise in delivering full-stack business solutions with measurable impact. We sharpened our skills in secure auth systems, modern content management system, and SEO optimization. Improving communication and planning with our partners.",
+    takeawaysImg: DDDashboardImg,
+    takeawaysImg2: DDLighthouseImg,
+    takeawaysImg3: DDCloudinaryImg
   },
 ];
 

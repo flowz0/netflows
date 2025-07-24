@@ -3,6 +3,7 @@ import ExpandingCircleButton from "../../ExpandingCircleButton";
 import BusinessManAvatar1 from "@/public/process/business1.jpg";
 import BusinessManAvatar2 from "@/public/process/business2.jpg";
 import BusinessManAvatar3 from "@/public/process/business3.jpg";
+import Link from "next/link";
 
 export default function ProcessCTA() {
   return (
@@ -38,7 +39,9 @@ export default function ProcessCTA() {
           Join businesses leveling up their online presence
         </p>
       </div>
-      <ExpandingCircleButton text="Book Free Consultation" className="mt-8 lg:mt-0" />
+      <Link href="/booking">
+        <ExpandingCircleButton text="Book Free Consultation" className="mt-8 lg:mt-0" variant="gradient" />
+      </Link>
     </div>
   );
 }

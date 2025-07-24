@@ -10,20 +10,20 @@ import {
   SiTailwindcss,
   SiTypescript
 } from "react-icons/si";
-import { ProjectType } from "@/app/types/old-project";
 import ProjectTech from "./ProjectTech";
+import { ProjectProps } from "@/app/types/project.types";
+import { SERVICE_STYLES } from "@/app/constants/serviceStyles";
 
-export default function ProjectHeader({
-  brandLogo,
-  brandName,
-  summary,
-  link,
-  projectBanner,
-  techStack,
-  development,
-  design,
-  maintenance
-}: ProjectType) {
+export default function ProjectHeader({ project }: ProjectProps) {
+  const {
+    brandLogo,
+    brandName,
+    summary,
+    link,
+    projectBanner,
+    techStack,
+    services
+  } = project;
   const techMap: Record<
     string,
     {
@@ -67,42 +67,53 @@ export default function ProjectHeader({
   return (
     <>
       <div className="md:flex md:flex-col">
-        <Link href={`${link}`} target="_blank" className="flex items-center gap-4 w-fit group">
+        <div>
           <Image
             src={brandLogo || PlaceholderLogo}
             alt={`${brandName} brand logo`}
-            className="w-12 h-auto object-cover rounded-lg"
+            className="w-20 h-auto object-cover rounded-lg"
             draggable={false}
           />
-          <h1 className="text-[#f5f5f5] text-3xl font-semibold flex items-baseline gap-x-2 md:text-4xl">
-            {brandName}
-            <HiExternalLink className="text-[hsl(0,0%,60%)] transition-transform duration-300 ease-in-out w-6 h-6 group-hover:text-[#00b4ff] group-hover:scale-110 group-hover:translate-x-2" />
-          </h1>
-        </Link>
+          <Link href={`${link}`} target="_blank" className="flex flex-col mt-8 w-fit group">
+            <h1 className="text-black text-h4 sm:text-h3 font-bold font-nunito text-wrap flex items-center gap-x-6 lg:text-h1">
+              {brandName}
+              <HiExternalLink className="text-black50 transition-transform duration-300 ease-in-out w-8 h-8 group-hover:text-primary group-hover:scale-110 group-hover:translate-x-2 group-hover:-translate-y-2" />
+            </h1>
+          </Link>
+        </div>
 
-        <div className="md:flex md:justify-between md:items-start gap-x-8 mt-4">
+        <div className="md:flex md:justify-between md:items-start gap-x-8 mt-8">
           <div className="md:max-w-1/2">
-            <p className="text-[#a8a8a8] text-base max-w-lg lg:mx-0 md:text-lg">
+            <p className="text-black75 text-p font-inter max-w-lg lg:mx-0 md:text-lg">
               {summary}
             </p>
           </div>
-          <div className="md:max-w-1/2 flex flex-col gap-4 mt-4 md:mt-0">
+          <div className="md:max-w-1/2 flex flex-col gap-8 mt-8 md:mt-0">
             <div>
-              <h3 className="font-semibold sm:text-lg">Scope of work</h3>
-              <div className="flex flex-wrap gap-2 mt-2">
-                {design && (
-                  <p className="bg-purple-200 text-purple-900 font-bold py-1 px-4 rounded-full">Web Design</p>
-                )}
-                {development && (
-                  <p className="bg-sky-200 text-sky-900 font-bold py-1 px-4 rounded-full">Web Development</p>
-                )}
-                {maintenance && (
-                  <p className="bg-amber-200 text-amber-900 font-bold py-1 px-4 rounded-full">Website Maintenance</p>
-                )}
+              <h6 className="text-black font-bold font-nunito text-h6">Scope of work</h6>
+              <div className="flex flex-wrap gap-2 mt-4">
+                {services &&
+                  Object.entries(services)
+                    .filter(([, value]) => value)
+                    .map(([key]) => {
+                      const { title, bg, text } = SERVICE_STYLES[key] || {
+                        title: key.charAt(0).toUpperCase() + key.slice(1),
+                        bg: "bg-black10",
+                        text: "text-black",
+                      };
+                      return (
+                        <div
+                          key={key}
+                          className={`text-small font-inter px-3 py-1 rounded-full ${bg} ${text}`}
+                        >
+                          {title}
+                        </div>
+                      );
+                    })}
               </div>
             </div>
             <div>
-              <h3 className="font-semibold sm:text-lg">Tech stack</h3>
+              <h3 className="text-black font-bold font-nunito text-h6">Tech stack</h3>
               <ul className="flex flex-wrap gap-2 mt-2">
                 {techStack &&
                   Object.entries(techStack).map(([techName, isUsed]) =>
@@ -120,11 +131,11 @@ export default function ProjectHeader({
           </div>
         </div>
       </div>
-      <div className="flex justify-center mt-12">
+      <div className="flex justify-center mt-16">
         <Image
           src={projectBanner || PlaceholderLogo}
           alt={`${brandName} project cover image`}
-          className="object-cover max-h-96 h-full w-full rounded-xl"
+          className="object-cover h-96 w-full rounded-2xl"
           draggable={false}
           priority={true}
           quality={100}

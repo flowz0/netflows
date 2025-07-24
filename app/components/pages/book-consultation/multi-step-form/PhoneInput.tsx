@@ -53,9 +53,9 @@ export default function PhoneInput({ value, onChange, onBlur, autoComplete, erro
 
   return (
     <div className="flex flex-col">
-      <label htmlFor="phone" className="text-[hsl(0,0%,80%)] text-sm">
+      <label htmlFor="phone" className="text-black50 text-small font-inter">
         Phone Number
-        {required && <span className="text-[hsl(0,100%,68%)] ml-1">*</span>}
+        {required && <span className="text-primary ml-2">*</span>}
       </label>
       <input
         id="phone"
@@ -68,13 +68,13 @@ export default function PhoneInput({ value, onChange, onBlur, autoComplete, erro
         maxLength={14}
         autoComplete={autoComplete}
         placeholder="(555) 555-5555"
-        className={`mt-2 bg-[hsl(0,0%,20%)] py-3 px-5 rounded-lg focus:outline-none placeholder:text-[hsl(0,0%,60%)] ${error ? "ring-2 ring-[hsl(0,100%,68%)]" : "focus:ring-2 focus:ring-[#0080DB]"
+        className={`mt-2 border-b border-black75 text-black75 py-4 focus:outline-none placeholder:text-black25"
           }`}
         aria-invalid={!!error}
         aria-describedby={error ? `${name}-error` : undefined}
       />
       {error && (
-        <p className="text-sm text-[hsl(0,100%,68%)] mt-2" id={`${name}-error`}>
+        <p className="text-primary text-small font-inter mt-2" id="phone-error">
           {error}
         </p>
       )}

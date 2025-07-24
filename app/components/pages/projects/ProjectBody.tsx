@@ -1,33 +1,35 @@
 import Image from "next/image";
 
 import PlaceholderImg from "@/public/1920x1080.svg";
-import { ProjectType } from "@/app/types/old-project";
+import { ProjectProps } from "@/app/types/project.types";
 
-export default function ProjectBody({
-  challenge,
-  challengeDesc,
-  challengeImg,
-  solution,
-  solutionDesc,
-  solutionImg,
-  solutionImg2,
-  solutionImg3,
-  solutionImg4,
-  results,
-  resultsDesc,
-  resultsImg,
-  takeaways,
-  takeawaysDesc,
-  takeawaysImg,
-  takeawaysImg2,
-  takeawaysImg3
-}: ProjectType) {
+export default function ProjectBody({ project }: ProjectProps) {
+  const {
+    challenge,
+    challengeDesc,
+    challengeImg,
+    solution,
+    solutionDesc,
+    solutionImg,
+    solutionImg2,
+    solutionImg3,
+    solutionImg4,
+    results,
+    resultsDesc,
+    resultsImg,
+    takeaways,
+    takeawaysDesc,
+    takeawaysImg,
+    takeawaysImg2,
+    takeawaysImg3
+  } = project;
+
   return (
-    <div>
-      <h2 className="text-[#f5f5f5] text-4xl font-semibold mt-12 md:text-5xl">
+    <div className="mt-32">
+      <h2 className="text-black text-h5 font-bold font-nunito sm:text-h4 md:text-h2">
         {challenge}
       </h2>
-      <p className="text-[#a8a8a8] text-base mt-3 lg:mx-0 md:text-lg">
+      <p className="text-black75 text-p mt-4 lg:mx-0">
         {challengeDesc}
       </p>
       <Image
@@ -36,10 +38,10 @@ export default function ProjectBody({
         className="object-cover h-full w-full mt-8 rounded-xl"
         draggable={false}
       />
-      <h2 className="text-[#f5f5f5] text-4xl font-semibold mt-12 md:text-5xl">
+      <h2 className="text-black text-h5 font-bold font-nunito mt-16 sm:text-h4 md:text-h2">
         {solution}
       </h2>
-      <p className="text-[#a8a8a8] text-base mt-3 lg:mx-0 md:text-lg">
+      <p className="text-black75 text-p mt-4 lg:mx-0">
         {solutionDesc}
       </p>
       <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
@@ -68,10 +70,10 @@ export default function ProjectBody({
           draggable={false}
         />
       </div>
-      <h2 className="text-[#f5f5f5] text-4xl font-semibold mt-12 md:text-5xl">
+      <h2 className="text-black text-h5 font-bold font-nunito mt-16 sm:text-h4 md:text-h2">
         {results}
       </h2>
-      <p className="text-[#a8a8a8] text-base mt-3 lg:mx-0 md:text-lg">
+      <p className="text-black75 text-p mt-4 lg:mx-0">
         {resultsDesc}
       </p>
       <Image
@@ -80,10 +82,10 @@ export default function ProjectBody({
         className="object-cover h-full w-full mt-8 rounded-xl"
         draggable={false}
       />
-      <h2 className="text-[#f5f5f5] text-4xl font-semibold mt-12 md:text-5xl">
+      <h2 className="text-black text-h5 font-bold font-nunito mt-16 sm:text-h4 md:text-h2">
         {takeaways}
       </h2>
-      <p className="text-[#a8a8a8] text-base mt-3 lg:mx-0 md:text-lg">
+      <p className="text-black75 text-p mt-4 lg:mx-0">
         {takeawaysDesc}
       </p>
       <div className="grid grid-cols-1 gap-4 mt-8 sm:grid-cols-2">

@@ -45,7 +45,9 @@ export default function Navbar() {
                 <Link
                   key={href}
                   href={href}
-                  className={`text-h6 font-bold font-nunito ${pathname === href ? 'text-black' : 'text-black50 hover:text-black'
+                  className={`text-h6 font-bold font-nunito ${(href === "/projects" && pathname.startsWith("/projects")) || pathname === href
+                    ? 'text-black'
+                    : 'text-black50 hover:text-black'
                     }`}
                 >
                   {label}
@@ -53,7 +55,9 @@ export default function Navbar() {
               ))}
             </div>
           </div>
-          <ExpandingCircleButton text="Book Free Consultation" className="hidden lg:block" />
+          <Link href="/booking">
+            <ExpandingCircleButton text="Book Free Consultation" className="hidden lg:block" variant="gradient" />
+          </Link>
 
           {/* mobile */}
           {/* Mobile menu button */}

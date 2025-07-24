@@ -1,5 +1,6 @@
 import { FormData } from "@/app/types/formData";
 import { DatePicker } from "../date-picker/DatePicker";
+import ExpandingCircleButton from "@/app/components/ExpandingCircleButton";
 
 interface Step2Props {
   formData: FormData;
@@ -12,7 +13,7 @@ interface Step2Props {
 
 export default function Step2({ formData, prevStep, nextStep, error, onBtnBlur, onDateChange }: Step2Props) {
   return (
-    <div className="flex items-center flex-col mt-8 sm:mt-12">
+    <div className="flex items-center flex-col mt-16">
       <DatePicker
         error={error?.date}
         onBlur={onBtnBlur}
@@ -20,21 +21,18 @@ export default function Step2({ formData, prevStep, nextStep, error, onBtnBlur, 
         defaultDate={formData.date}
         onSelectDate={onDateChange}
       />
-      <div className="mt-12 flex gap-x-1">
-        <button
-          type="button"
+      <div className="mt-12 flex md:flex-row gap-x-1">
+        <ExpandingCircleButton
+          text="Back"
           onClick={prevStep}
-          className="bg-[hsl(0,0%,40%)] text-[hsl(0,0%,92%)] w-fit font-semibold px-4 py-2 rounded-lg cursor-pointer hover:bg-[hsl(0,0%,48%))]"
-        >
-          Back
-        </button>
-        <button
-          type="button"
+          className="w-fit"
+          variant="secondary"
+        />
+        <ExpandingCircleButton
+          text="Next"
           onClick={nextStep}
-          className="bg-[hsl(198,100%,40%)] text-[hsl(0,0%,92%)] w-fit font-semibold px-4 py-2 rounded-lg cursor-pointer hover:bg-[hsl(198,100%,48%)]"
-        >
-          Next
-        </button>
+          className="w-fit sm:mt-0"
+        />
       </div>
     </div>
   );

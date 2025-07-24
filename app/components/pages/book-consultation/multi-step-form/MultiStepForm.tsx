@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 import Step2 from "./Step2";
 import Step3 from "./Step3";
 import Step4 from "./Step4";
@@ -18,6 +18,7 @@ const steps = [
 ];
 
 export default function MultiStepForm() {
+  const formRef = useRef<HTMLFormElement>(null);
   const [step, setStep] = useState(1);
   const [formData, setFormData] = useState<FormData>({
     firstName: "",
@@ -109,9 +110,7 @@ export default function MultiStepForm() {
 
   const handleDateChange = (selectedDate: Date) => {
     const formattedDate = format(selectedDate, "yyyy-MM-dd");
-
     setFormData((prev) => ({ ...prev, date: formattedDate }));
-
     // Remove error if valid date
     const error = validateField("date", formattedDate);
     setErrors((prev) => ({
@@ -120,7 +119,16 @@ export default function MultiStepForm() {
     }));
   };
 
-  const prevStep = () => step > 1 && setStep(step - 1);
+  const scrollToFormTop = () => {
+    formRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const prevStep = () => {
+    if (step > 1) {
+      setStep(step - 1);
+      scrollToFormTop();
+    }
+  };
 
   const validateStep1 = () => {
     const requiredFields: (keyof FormData)[] = [
@@ -147,25 +155,21 @@ export default function MultiStepForm() {
     return !error;
   };
 
-
   const nextStep = async () => {
     let isValid = false;
     if (step === 1) isValid = validateStep1();
     else if (step === 2) isValid = validateStep2();
     else if (step === 3) isValid = validateStep3();
-
     if (!isValid) return;
-
     if (step === 3) {
       await sendConsultationFormAction(formData);
     }
-
-
     setStep((prev) => prev + 1);
+    scrollToFormTop();
   };
 
   return (
-    <form className="bg-[#242424] mt-12 py-12 px-4 rounded-2xl shadow-xs shadow-[#242424] sm:py-16 sm:px-10">
+    <form ref={formRef} className="border-1 border-black75 bg-black5 mt-28 py-12 px-6 rounded-2xl drop-shadow-[0_25px_80px_rgb(146,75,247)] sm:py-20 sm:px-12">
       {/* Stepper */}
       <div className="flex items-center justify-center gap-x-2 sm:gap-x-6">
         {steps.map((s, i) => {
@@ -173,16 +177,15 @@ export default function MultiStepForm() {
           const isCurrent = step === s.id;
           const isCompleted = step > s.id;
           const colorClass = isCurrent
-            ? "text-[#00b4ff]"
+            ? "text-primary"
             : isCompleted
-              ? "text-[hsl(0,0%,80%)]"
-              : "text-[hsl(0,0%,40%)]";
+              ? "text-black50"
+              : "text-black25";
           return (
             <div key={s.id} className="flex items-center gap-x-2 sm:gap-x-6">
               {i !== 0 && (
                 <div
-                  className={`h-px w-6 sm:w-16 ${step > s.id - 1 ? "bg-[hsl(0,0%,80%)]" : "bg-[hsl(0,0%,40%)]"
-                    }`}
+                  className={`h-px w-6 sm:w-16 ${step > s.id - 1 ? "bg-black75" : "bg-black25"}`}
                 />
               )}
               {/* Step icon and label */}
@@ -191,7 +194,9 @@ export default function MultiStepForm() {
                 aria-current={isCurrent ? "step" : undefined}
               >
                 <Icon className="w-6 h-6 sm:w-7 sm:h-7" />
-                <p className="hidden mt-2 text-sm font-medium sm:block">{s.label}</p>
+                <p className={`hidden mt-2 text-small font-inter sm:block ${step === s.id ? "text-primary" : step > s.id - 1 ? "text-black50" : "text-black25"}`}>
+                  {s.label}
+                </p>
               </div>
             </div>
           );

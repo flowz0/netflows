@@ -3,6 +3,7 @@ import PhoneInput from "./PhoneInput";
 import Select from "./Select";
 import FormInput from "./FormInput";
 import TextArea from "./TextArea";
+import ExpandingCircleButton from "@/app/components/ExpandingCircleButton";
 
 interface Step2Props {
   formData: FormData;
@@ -15,8 +16,8 @@ interface Step2Props {
 
 export default function Step1({ formData, handleChange, onInputBlur, onTextareaBlur, error, nextStep }: Step2Props) {
   return (
-    <div className="flex flex-col mt-8 sm:mt-12">
-      <div className="flex flex-col gap-y-4">
+    <div className="flex flex-col mt-12 sm:mt-16">
+      <div className="flex flex-col gap-y-8">
         <FormInput
           name="firstName"
           label="First name"
@@ -100,13 +101,11 @@ export default function Step1({ formData, handleChange, onInputBlur, onTextareaB
           required
         />
       </div>
-      <button
-        onClick={nextStep}
-        type="button"
-        className="bg-[hsl(198,100%,40%)] text-[hsl(0,0%,92%)] mt-4 w-fit font-semibold px-4 py-2 rounded-lg cursor-pointer hover:bg-[hsl(198,100%,48%)]"
-      >
-        Next
-      </button>
+      <ExpandingCircleButton 
+        text="Next" 
+        onClick={nextStep} 
+        className="mt-12 w-fit" 
+      />
     </div>
   );
 }

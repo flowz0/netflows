@@ -62,12 +62,10 @@ export const DatePicker = ({ defaultDate, onSelectDate, required, error, onBlur 
   }, [setShowMonthSelector, setShowYearSelector]);
 
   return (
-    <div ref={datePickerRef} className="bg-[#242424] rounded-lg h-[24rem] w-full max-w-[16rem]">
-      <p className="text-[hsl(0,0%,60%)] flex flex-col text-sm">
-        <span>Date{required && <span className="text-[hsl(0,100%,68%)] ml-1">*</span>}</span>
-        <span onBlur={onBlur} className={`${selectedDate ? "text-[hsl(0,0%,92%)]" : "text-[hsl(0,0%,60%)]"} mt-2 bg-[hsl(0,0%,20%)] py-3 px-5 rounded-lg focus:outline-none placeholder:text-[hsl(0,0%,60%)] ${
-          error ? "ring-2 ring-[hsl(0,100%,68%)]" : "focus:ring-2 focus:ring-[#0080DB]"
-        }`}>
+    <div ref={datePickerRef} className="w-full max-w-[16rem] sm:max-w-[32rem]">
+      <p className="text-black50 text-small font-inter flex flex-col">
+        <span>Date{required && <span className="text-primary ml-2">*</span>}</span>
+        <span onBlur={onBlur} className={`mt-2 border-b border-black75 text-black py-4 focus:outline-none placeholder:text-black25 ${selectedDate ? "text-black75" : "text-black25"}`}>
           {selectedDate ? (
             format(selectedDate, "PPP")
           ) : (
@@ -76,14 +74,14 @@ export const DatePicker = ({ defaultDate, onSelectDate, required, error, onBlur 
         </span>
       </p>
       {error && (
-        <p className="text-sm text-[hsl(0,100%,68%)] mt-2" id="date-error">
+        <p className="text-primary text-small font-inter mt-2" id="date-error">
           {error}
         </p>
       )}
       {/* Header */}
-      <div className="mt-8 flex justify-between items-center">
+      <div className="mt-16 flex justify-between items-center">
         <button type="button" onClick={prevMonth}>
-          <FaArrowLeft className="text-neutral-500 w-4 h-4 cursor-pointer transition-all duration-300 ease-in-out hover:text-neutral-200 active:scale-95" />
+          <FaArrowLeft className="text-black25 w-6 h-6 cursor-pointer transition-all duration-300 ease-in-out hover:text-primary hover:scale-95" />
         </button>
         <div className="flex gap-1">
           <button
@@ -92,7 +90,7 @@ export const DatePicker = ({ defaultDate, onSelectDate, required, error, onBlur 
               setShowMonthSelector((prev) => !prev);
               setShowYearSelector(false);
             }}
-            className={`${showMonthSelector ? "bg-[hsl(198,100%,40%)]" : "bg-[hsl(0,0%,40%)]"}  text-neutral-200 rounded-lg px-2 py-1 text-sm font-semibold cursor-pointer transition-colors duration-300 ease-in-out hover:bg-neutral-600`}
+            className={`${showMonthSelector ? "bg-primary text-black5" : "bg-black10"} rounded-lg px-2 py-1 text-small font-inter cursor-pointer transition-colors duration-300 ease-in-out hover:bg-primary hover:text-black5`}
           >
             {format(currentMonth, "MMMM")}
           </button>
@@ -102,13 +100,13 @@ export const DatePicker = ({ defaultDate, onSelectDate, required, error, onBlur 
               setShowYearSelector((prev) => !prev);
               setShowMonthSelector(false);
             }}
-            className={`${showYearSelector ? "bg-[hsl(198,100%,40%)]" : "bg-[hsl(0,0%,40%)]"}  text-neutral-200 rounded-lg px-2 py-1 text-sm font-semibold cursor-pointer transition-colors duration-300 ease-in-out hover:bg-neutral-600`}
+            className={`${showYearSelector ? "bg-primary text-black5" : "bg-black10"} rounded-lg px-2 py-1 text-small font-inter cursor-pointer transition-colors duration-300 ease-in-out hover:bg-primary hover:text-black5`}
           >
             {format(currentMonth, "yyyy")}
           </button>
         </div>
         <button type="button" onClick={nextMonth}>
-          <FaArrowRight className="text-neutral-500 w-4 h-4 cursor-pointer transition-all duration-300 ease-in-out hover:text-neutral-200 active:scale-95" />
+          <FaArrowRight className="text-black25 w-6 h-6 cursor-pointer transition-all duration-300 ease-in-out hover:text-primary hover:scale-95" />
         </button>
       </div>
 
@@ -124,13 +122,13 @@ export const DatePicker = ({ defaultDate, onSelectDate, required, error, onBlur 
         />
       ) : (
         <>
-          <div className="mt-4 grid grid-cols-7 gap-2 text-center font-semibold text-sm text-[hsl(0,0%,80%)]">
+          <div className="mt-8 grid grid-cols-7 gap-2 text-center text-small font-inter text-black50">
             {["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"].map((d) => (
               <div key={d}>{d}</div>
             ))}
           </div>
 
-          <div className="mt-2 grid grid-cols-7 gap-2 text-center text-sm">
+          <div className="mt-4 grid grid-cols-7 gap-2 text-center text-sm">
             {calendarDays.map((day) => {
               const isCurrentMonth = isSameMonth(day, currentMonth);
               return (
@@ -143,12 +141,12 @@ export const DatePicker = ({ defaultDate, onSelectDate, required, error, onBlur 
                   }}
                   id="date"
                   name="date"
-                  className={`p-1 rounded-full transition cursor-pointer 
+                  className={`p-1 sm:h-16 rounded-full transition cursor-pointer hover:bg-black10 
                     ${selectedDate && isSameDay(day, selectedDate)
-                      ? "ring-2 ring-[#0080DB]"
-                      : "hover:bg-[hsl(0,0%,20%)]"}
-                    ${!isCurrentMonth ? "text-[hsl(0,0%,40%)]" : "text-[hsl(0,0%,92%)]"}
-                    ${isToday(day) ? "bg-[hsl(0,0%,40%)]" : ""}
+                      ? "ring ring-primary"
+                      : "hover:bg-black10"}
+                    ${!isCurrentMonth ? "text-black25" : "text-black"}
+                    ${isToday(day) ? "bg-primary text-black5" : ""}
                   `}
                 >
                   {format(day, "d")}

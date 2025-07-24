@@ -23,9 +23,9 @@ export default function Footer() {
                 ©2025 Netflows, LLC.
               </p>
               <p className="text-black75 text-small">
-                <Link href="/" className="transition-colors duration-300 ease-in-out hover:text-secondary">Terms of Service</Link>
+                <Link href="/tos" className="transition-colors duration-300 ease-in-out hover:text-secondary">Terms of Service</Link>
                 {" "} | {" "}
-                <Link href="/" className="transition-colors duration-300 ease-in-out hover:text-secondary">Privacy Policy</Link>
+                <Link href="/privacy" className="transition-colors duration-300 ease-in-out hover:text-secondary">Privacy Policy</Link>
               </p>
             </div>
           </div>
@@ -36,13 +36,13 @@ export default function Footer() {
               Services
             </h6>
             <div className="flex flex-col gap-y-2 mt-4">
-              <Link href="/" className="text-black75 text-p w-fit transition-colors duration-300 ease-in-out hover:text-secondary">
+              <Link href="/services" className="text-black75 text-p w-fit transition-colors duration-300 ease-in-out hover:text-secondary">
                 Web Development
               </Link>
-              <Link href="/" className="text-black75 text-p w-fit transition-colors duration-300 ease-in-out hover:text-secondary">
+              <Link href="/services" className="text-black75 text-p w-fit transition-colors duration-300 ease-in-out hover:text-secondary">
                 UI/UX Design
               </Link>
-              <Link href="/" className="text-black75 text-p w-fit transition-colors duration-300 ease-in-out hover:text-secondary">
+              <Link href="/services" className="text-black75 text-p w-fit transition-colors duration-300 ease-in-out hover:text-secondary">
                 Maintenance
               </Link>
             </div>
@@ -54,13 +54,13 @@ export default function Footer() {
               Useful Links
             </h6>
             <div className="flex flex-col gap-y-2 mt-4">
-              <Link href="/" className="text-black75 text-p w-fit transition-colors duration-300 ease-in-out hover:text-secondary">
+              <Link href="/about" className="text-black75 text-p w-fit transition-colors duration-300 ease-in-out hover:text-secondary">
                 About
               </Link>
-              <Link href="/" className="text-black75 text-p w-fit transition-colors duration-300 ease-in-out hover:text-secondary">
+              <Link href="/projects" className="text-black75 text-p w-fit transition-colors duration-300 ease-in-out hover:text-secondary">
                 Projects
               </Link>
-              <Link href="/" className="text-black75 text-p w-fit transition-colors duration-300 ease-in-out hover:text-secondary">
+              <Link href="/booking" className="text-black75 text-p w-fit transition-colors duration-300 ease-in-out hover:text-secondary">
                 Contact
               </Link>
             </div>
@@ -80,13 +80,13 @@ export default function Footer() {
               </p>
             </div>
             <div className="mt-12 flex gap-x-6">
-              <Link href="/" className="transition-colors duration-300 ease-in-out hover:text-secondary">
+              <Link href="mailto:contact@netflows.xyz" className="transition-colors duration-300 ease-in-out hover:text-secondary">
                 <FaEnvelope className="w-8 h-8" />
               </Link>
               <Link href="/" className="transition-colors duration-300 ease-in-out hover:text-secondary">
                 <SiFacebook className="w-8 h-8" />
               </Link>
-              <Link href="/" className="transition-colors duration-300 ease-in-out hover:text-secondary">
+              <Link href="https://www.linkedin.com/company/netflowsxyz/about" target="_blank" className="transition-colors duration-300 ease-in-out hover:text-secondary">
                 <SiLinkedin className="w-8 h-8" />
               </Link>
             </div>
