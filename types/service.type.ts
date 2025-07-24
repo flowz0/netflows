@@ -7,3 +7,10 @@ export interface ServiceProps {
   isOpen: boolean;
   onClick: () => void;
 };
+
+export interface ServiceSectionProps {
+  header: string;
+  desc: string;
+  img: StaticImageData;
+  flip?: boolean;
+}
