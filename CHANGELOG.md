@@ -1,3 +1,13 @@
+## [2.0.1](https://github.com/flowz0/netflows/compare/v2.0.0...v2.0.1) (2025-07-24)
+
+
+### Bug Fixes
+
+* add layout to Services page with Testimonials, FAQs, and CTA components ([21a4dcc](https://github.com/flowz0/netflows/commit/21a4dcc7109831f3e2192a43c1c2cbed44a61e41))
+* improve About page and optimize SEO ([d818610](https://github.com/flowz0/netflows/commit/d818610076d672c4b32abd114923ce42d4ba68f9))
+* optimize Images in components ([8e38785](https://github.com/flowz0/netflows/commit/8e387857f316b3bb344f47322d9c024fd2957b64))
+* update Button component import ([329e282](https://github.com/flowz0/netflows/commit/329e282dc8b5cffba66e0ac4d24a4a9e17264b5a))
+
 # [2.0.0](https://github.com/flowz0/netflows/compare/v1.35.12...v2.0.0) (2025-07-24)
 
 
