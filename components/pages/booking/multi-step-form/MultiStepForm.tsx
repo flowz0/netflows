@@ -169,7 +169,7 @@ export default function MultiStepForm() {
   };
 
   return (
-    <form ref={formRef} className="border-1 border-black75 bg-black5 mt-28 py-12 px-6 rounded-2xl drop-shadow-[0_25px_80px_rgb(146,75,247)] sm:py-20 sm:px-12">
+    <form ref={formRef} className="border-1 border-black75 bg-black5 mt-28 py-12 px-6 rounded-2xl md:drop-shadow-[0_16px_32px_rgb(146,75,247)] sm:py-20 sm:px-12">
       {/* Stepper */}
       <div className="flex items-center justify-center gap-x-2 sm:gap-x-6">
         {steps.map((s, i) => {

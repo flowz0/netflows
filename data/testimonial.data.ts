@@ -32,13 +32,13 @@ export const TestimonialDataTop = [
     avatar: GabrielleWImg,
   },
   {
-    review: "We needed a landing page for our new course and Netflows turned it around in 3 days—clean, fast, and perfectly on-brand.",
+    review: "We needed a landing page for our new course and Netflows delivered it in 3 days. The website is high quality and is exactly what we asked for.",
     reviewer: "Tina Brooks",
     role: "Marketing Director, Peak Fitness",
     avatar: TinaBImg,
   },
   {
-    review: "Our previous agency gave us a template site. Netflows actually listened and built a custom solution that fits our brand.",
+    review: "Our previous agency gave us a generic site. Netflows listened to our needs and built a custom solution that fits our brand.",
     reviewer: "Daniel Thompson",
     role: "Manager, Urban Pet Services",
     avatar: DanielCImg,
@@ -59,7 +59,7 @@ export const TestimonialDataBottom = [
     avatar: MacrosDImg,
   },
   {
-    review: "We saw a 40% drop in bounce rate and 2x more contact form submissions within the first month. Netflows nailed it.",
+    review: "The website is user-friendly, acessible on all devices, and fast. We seen a 60% increase in leads within the first month with our new automated booking system.",
     reviewer: "Renee Talbot",
     role: "Marketing Lead, LuxeClean Interiors",
     avatar: ReneeTImg,
@@ -71,7 +71,7 @@ export const TestimonialDataBottom = [
     avatar: NinaPImg,
   },
   {
-    review: "The design is beautiful, but more importantly, it works. It’s mobile-friendly, lightning fast, and built around what our users actually need.",
+    review: "The design is beautiful, but more importantly, it works. It's mobile-friendly, lightning fast, and built around what our users actually need.",
     reviewer: "Andre Flores",
     role: "Creative Director, Northstar Media",
     avatar: AndreFImg,

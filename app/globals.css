@@ -10,22 +10,22 @@
 
 @theme {
   /* Typography */
-  --text-h1: 101px;
-  --text-h1--line-height: 120px;
-  --text-h2: 76px;
-  --text-h2--line-height: 92px;
-  --text-h3: 57px;
-  --text-h3--line-height: 72px;
-  --text-h4: 43px;
-  --text-h4--line-height: 52px;
-  --text-h5: 32px;
-  --text-h5--line-height: 42px;
-  --text-h6: 24px;
-  --text-h6--line-height: 32px;
-  --text-p: 20px;
-  --text-p--line-height: 32px;
-  --text-small: 16px;
-  --text-small--line-height: 26px;
+  --text-h1: 69px;
+  --text-h1--line-height: 79px;
+  --text-h2: 55px;
+  --text-h2--line-height: 63px;
+  --text-h3: 44px;
+  --text-h3--line-height: 51px;
+  --text-h4: 35px;
+  --text-h4--line-height: 40px;
+  --text-h5: 28px;
+  --text-h5--line-height: 32px;
+  --text-h6: 23px;
+  --text-h6--line-height: 27px;
+  --text-p: 18px;
+  --text-p--line-height: 29px;
+  --text-small: 14px;
+  --text-small--line-height: 22px;
 
   /* Colors */
   --color-primary: #924BF7;

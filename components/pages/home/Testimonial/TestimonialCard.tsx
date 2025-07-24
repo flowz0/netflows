@@ -15,7 +15,7 @@ export default function TestimonialCard({
   avatar
 }: TestimonialProps) {
   return (
-    <div className="border border-black75 py-8 px-8 rounded-2xl w-[400px]">
+    <div className="border border-black75 py-8 px-8 rounded-2xl w-[400px] cursor-default">
       <FaQuoteLeft className="text-primary w-6 h-6" />
       <p className="mt-4 text-p text-black">
         {review}
