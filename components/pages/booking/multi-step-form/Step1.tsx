@@ -2,8 +2,8 @@ import PhoneInput from "./PhoneInput";
 import Select from "./Select";
 import FormInput from "./FormInput";
 import TextArea from "./TextArea";
-import ExpandingCircleButton from "@/components/Button";
 import { Step1Props } from "@/types/step.type";
+import Button from "@/components/Button";
 
 export default function Step1({
   formData,
@@ -99,7 +99,7 @@ export default function Step1({
           required
         />
       </div>
-      <ExpandingCircleButton
+      <Button
         text="Next"
         onClick={nextStep}
         className="mt-12 w-fit"

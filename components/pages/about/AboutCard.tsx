@@ -7,9 +7,9 @@ export default function AboutCard({ title, desc, Icon }: AboutCardProps) {
         <Icon className="text-primary w-12 h-12" />
       </div>
       <div>
-        <h6 className="text-black text-h6 font-bold font-nunito">
+        <h5 className="text-black text-h6 font-bold font-nunito sm:text-h5">
           {title}
-        </h6>
+        </h5>
         <p className="text-black75 text-p font-inter mt-4">
           {desc}
         </p>

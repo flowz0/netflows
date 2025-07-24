@@ -1,6 +1,6 @@
 import { Step3Props } from "@/types/step.type";
 import TimeInput from "./TimeInput";
-import ExpandingCircleButton from "@/components/Button";
+import Button from "@/components/Button";
 
 export default function Step3({ 
   formData, 
@@ -19,13 +19,13 @@ export default function Step3({
         handleInputBlur={handleInputBlur}
       />
       <div className="mt-12 flex gap-x-1">
-        <ExpandingCircleButton
+        <Button
           text="Back"
           onClick={prevStep}
           className="w-fit"
           variant="secondary"
         />
-        <ExpandingCircleButton
+        <Button
           text="Book Consultation"
           onClick={nextStep}
           className="w-fit sm:mt-0"

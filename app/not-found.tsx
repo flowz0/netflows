@@ -1,8 +1,8 @@
 import Link from "next/link";
-import ExpandingCircleButton from "../components/Button";
 import Image from "next/image";
 
 import NotFoundImg from "@/public/page-not-found.svg";
+import Button from "@/components/Button";
 
 export const metadata = {
   title: "Page Not Found | Netflows"
@@ -22,7 +22,7 @@ export default function PageNotFound() {
             Looks like you&apos;ve hit a dead end. But don&apos;t worry you can head back home and keep exploring.
           </p>
           <Link href="/">
-            <ExpandingCircleButton text="Return to Homepage" className="mt-12" />
+            <Button text="Return to Homepage" className="mt-12" />
           </Link>
         </div>
 
