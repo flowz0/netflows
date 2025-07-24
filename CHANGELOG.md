@@ -1,3 +1,11 @@
+## [2.2.1](https://github.com/flowz0/netflows/compare/v2.2.0...v2.2.1) (2025-07-24)
+
+
+### Bug Fixes
+
+* animate scroll ([7bc7573](https://github.com/flowz0/netflows/commit/7bc75732a51449bfc04464e335401dce6a888329))
+* set full width to Image in About page ([bb68bb3](https://github.com/flowz0/netflows/commit/bb68bb3bec6ad6476858b08a4d29921cdfc535ce))
+
 # [2.2.0](https://github.com/flowz0/netflows/compare/v2.1.0...v2.2.0) (2025-07-24)
 
 
