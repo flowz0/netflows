@@ -1,3 +1,41 @@
+# [2.0.0](https://github.com/flowz0/netflows/compare/v1.35.12...v2.0.0) (2025-07-24)
+
+
+* feat!: revamp entire project for v2 ([13df99d](https://github.com/flowz0/netflows/commit/13df99ddd4b873cbb5b579841b4143f2f1ada1a6))
+
+
+### Bug Fixes
+
+* create CTA, Footer, Navbar v2 component for desktop only ([92c3e10](https://github.com/flowz0/netflows/commit/92c3e10e6a53f610851c1ad85794c72900ebe9da))
+* create ExpandingCircleButton component and implement into CTA btns ([887d632](https://github.com/flowz0/netflows/commit/887d632a4e15cc92d77f28699930d61361b61ec3))
+* create fonts, sizes, line-height, and color variables in globals.css ([3bb2f9b](https://github.com/flowz0/netflows/commit/3bb2f9bc080dba3ccaf45125fe35219a2b2250a1))
+* create Process v2 components ([e1b3778](https://github.com/flowz0/netflows/commit/e1b3778fcb94c3d80695296be80e0c6060331e24))
+* create services and testimonials data ([eb69f79](https://github.com/flowz0/netflows/commit/eb69f793d0d70540650188f27b9438da97890e34))
+* create serviceStyles constant ([4d7ce54](https://github.com/flowz0/netflows/commit/4d7ce54de8dbf28dd802cf03d7aac85ea95a3eb7))
+* create v2 components optimize for desktop only ([65829e7](https://github.com/flowz0/netflows/commit/65829e734775abc6588481bff6b169bfdcbb2276))
+* **globals.css:** decrease text small line height ([34ac47e](https://github.com/flowz0/netflows/commit/34ac47e90110cb4d9d0505468302771309c1762b))
+* improve arrow animation in ValueCard component ([89c5b98](https://github.com/flowz0/netflows/commit/89c5b98b8330c1279e0c855b6d45026539fa9b9a))
+* improve component architectecture, update assets and imports ([e1c7ce1](https://github.com/flowz0/netflows/commit/e1c7ce15fc258524857cb59a5af1f7b0cee18ac5))
+* optimize architecture, components, and pages ([1d795e8](https://github.com/flowz0/netflows/commit/1d795e8cc6a0ebd33c31f4768d381d4bdf9c1fd2))
+* update brand fonts, colors, and remove comment in app layout ([9c1a0e4](https://github.com/flowz0/netflows/commit/9c1a0e4b73646b69c9a23e99ca3b9d197d2116f8))
+* update caseStudies images data ([3353cff](https://github.com/flowz0/netflows/commit/3353cff4b9eaf9dd8c2fcc52635faa3fe78a05d9))
+* update favicon and opengraph-image ([5a5262a](https://github.com/flowz0/netflows/commit/5a5262ab5192410f727dcc5aad05de394f2290c4))
+* update project not found page and remove missing import ([090fa04](https://github.com/flowz0/netflows/commit/090fa045df1a59f79e2736d888bfd285a3a8a787))
+* update testimonial.data and avatar assets ([41b9b45](https://github.com/flowz0/netflows/commit/41b9b456ec8f044b4c8b44f1ba2357262fc6e30b))
+
+
+### Features
+
+* create About page, AboutCard component, about.type, and about layout ([ff2f6c7](https://github.com/flowz0/netflows/commit/ff2f6c7ccd4f318be11800dff04abf27b1761d09))
+* create Service page, ServiceSection component, and ServiceSectionProps ([caf89e4](https://github.com/flowz0/netflows/commit/caf89e4224743296531c986c58b69bec8bff0b50))
+* update components to v2 ([7f2c8a2](https://github.com/flowz0/netflows/commit/7f2c8a2a820fb52075cfd14ec20927d0154ed7c0))
+* update pages and component to v2 ([254f59d](https://github.com/flowz0/netflows/commit/254f59d42d7a21b5d4ca0acc7772e962823294f6))
+
+
+### BREAKING CHANGES
+
+* Overhaule architecture, UI, and optimize code.
+
 ## [1.35.12](https://github.com/flowz0/netflows/compare/v1.35.11...v1.35.12) (2025-07-15)
 
 
