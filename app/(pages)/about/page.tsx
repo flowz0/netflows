@@ -22,7 +22,7 @@ export default function Page() {
           <Image
             src={NetflowsImg}
             alt="Netflows brand"
-            className="h-full max-h-32 w-auto mt-12 transition-transform duration-300 ease-in-out hover:-translate-y-2"
+            className="h-full max-h-32 w-full mt-12 transition-transform duration-300 ease-in-out hover:-translate-y-2"
             draggable={false}
             priority={true}
             quality={100}
