@@ -1,5 +1,5 @@
 import Link from "next/link";
-import ExpandingCircleButton from "./components/ExpandingCircleButton";
+import ExpandingCircleButton from "../components/Button";
 import Image from "next/image";
 
 import NotFoundImg from "@/public/page-not-found.svg";

@@ -1,6 +1,6 @@
 import { Metadata } from "next";
-import MultiStepForm from "@/app/components/pages/book-consultation/multi-step-form/MultiStepForm";
-import FAQs from "@/app/components/Home/FAQ/FAQs";
+import MultiStepForm from "@/components/pages/booking/multi-step-form/MultiStepForm";
+import FAQs from "@/components/pages/home/FAQ/FAQs";
 
 export const metadata: Metadata = {
   title: "Book Free Consultation - Web Development & Design"

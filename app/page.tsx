@@ -1,11 +1,11 @@
-import Hero from "./components/Home/Hero";
-import ValueProposition from "./components/Home/Why/ValueProposition";
-import Services from "./components/Home/Service/Services";
-import CaseStudies from "./components/Home/Study/CaseStudies";
-import Testimonials from "./components/Home/Testimonial/Testimonials";
-import Process from "./components/Home/Process/Process";
-import FAQs from "./components/Home/FAQ/FAQs";
-import CTA from "./components/Home/CTA";
+import CTA from "../components/pages/home/CTA";
+import FAQs from "../components/pages/home/FAQ/FAQs";
+import Hero from "../components/pages/home/Hero";
+import Process from "../components/pages/home/Process/Process";
+import Services from "../components/pages/home/Service/Services";
+import CaseStudies from "../components/pages/home/Study/CaseStudies";
+import Testimonials from "../components/pages/home/Testimonial/Testimonials";
+import ValueProposition from "../components/pages/home/Why/ValueProposition";
 
 export default function Home() {
   return (

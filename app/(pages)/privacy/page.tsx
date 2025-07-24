@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import CopyEmailBtn from "@/app/components/CopyEmailBtn";
+import CopyEmailBtn from "@/components/CopyEmailBtn";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",

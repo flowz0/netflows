@@ -1,6 +1,6 @@
-import Testimonials from "@/app/components/Home/Testimonial/Testimonials";
-import FAQs from "@/app/components/Home/FAQ/FAQs";
-import CTA from "@/app/components/Home/CTA";
+import CTA from "@/components/pages/home/CTA";
+import FAQs from "@/components/pages/home/FAQ/FAQs";
+import Testimonials from "@/components/pages/home/Testimonial/Testimonials";
 
 export default function ProjectLayout({
   children,

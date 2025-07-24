@@ -1,10 +1,10 @@
-import { slugify } from "@/app/lib/slugify";
+import { slugify } from "@/lib/slugify.lib";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import { cache } from "react";
-import ProjectHeader from "@/app/components/pages/projects/ProjectHeader";
-import ProjectBody from "@/app/components/pages/projects/ProjectBody";
-import ProjectData from "@/app/data/projects.data";
+import ProjectHeader from "@/components/pages/projects/ProjectHeader";
+import ProjectBody from "@/components/pages/projects/ProjectBody";
+import ProjectData from "@/data/project.data";
 
 type Props = {
   params: Promise<{ slug: string }>;

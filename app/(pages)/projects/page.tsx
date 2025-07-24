@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
-import CaseStudyCard from "@/app/components/Home/Study/CaseStudyCard";
-import ProjectData from "@/app/data/projects.data";
+import ProjectData from "@/data/project.data";
+import CaseStudyCard from "@/components/pages/home/Study/CaseStudyCard";
 
 export const metadata: Metadata = {
   title: "Web Design & Development Case Studies",

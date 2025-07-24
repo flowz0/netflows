@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import NotFoundImg from "@/public/page-not-found.svg";
-import ExpandingCircleButton from "@/app/components/ExpandingCircleButton";
+import ExpandingCircleButton from "@/components/Button";
 
 export const metadata: Metadata = {
   title: "Project Not Found | Netflows"

@@ -9,9 +9,8 @@ export default function Page() {
           We offer services that can help businesses improve their visibility and business reputation online, expand market reach, and increase turnover through effective digital strategies.
         </p>
       </div>
-
       <div className="mt-16">
-
+        
       </div>
     </main>
   );
