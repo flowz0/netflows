@@ -58,8 +58,20 @@ input:-webkit-autofill {
     }
   }
 
+  @keyframes dropshadow {
+    0% {
+      filter: drop-shadow(0 16px 32px rgb(74, 114, 247))
+    }
+    50% {
+      filter: drop-shadow(0 16px 32px rgb(146,75,247))
+    }
+    100% {
+      filter: drop-shadow(0 16px 32px rgb(74, 114, 247))
+    }
+  }
+
   .animate-scroll {
-    animation: scroll 30s linear infinite;
+    animation: scroll 30s linear ease-in-out infinite;
   }
 
   .animate-scroll-reverse {
@@ -72,5 +84,9 @@ input:-webkit-autofill {
 
   .animate-scroll-reverse:active {
     animation-play-state: paused;
+  }
+
+  .animate-drop-shadow {
+    animation: dropshadow 8s linear infinite;
   }
 }
