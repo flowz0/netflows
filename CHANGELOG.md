@@ -1,3 +1,16 @@
+# [2.1.0](https://github.com/flowz0/netflows/compare/v2.0.4...v2.1.0) (2025-07-24)
+
+
+### Bug Fixes
+
+* increase ProcessCTA component padding to improve UI/UX ([513800d](https://github.com/flowz0/netflows/commit/513800d0eba12c9d8aaaa5cfc75925047f78a470))
+
+
+### Features
+
+* create infinite scroll animation ([f59944c](https://github.com/flowz0/netflows/commit/f59944c5a06c7001b2d2360f944b4ab8123f337d))
+* **testimonials:** implment infinite scroll animation and only show when in view to optimize performance ([697260f](https://github.com/flowz0/netflows/commit/697260f19bfb4d9070da2fde4060424d806e3def))
+
 ## [2.0.4](https://github.com/flowz0/netflows/compare/v2.0.3...v2.0.4) (2025-07-24)
 
 
