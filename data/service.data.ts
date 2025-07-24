@@ -10,7 +10,7 @@ export const services = [
   },
   {
     title: "UI/UX Design",
-    description: "UI/UX design pixel-perfect digital experiences for a great user experience.",
+    description: "Design pixel-perfect digital experiences for a great user experience.",
     image: WebDesignImg,
   },
   {

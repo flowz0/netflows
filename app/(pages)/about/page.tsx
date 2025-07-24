@@ -68,12 +68,12 @@ export default function Page() {
             Icon={FaTachometerAlt}
           />
           <AboutCard
-            title="Collaboration commitment"
+            title="Collaborative commitment"
             desc="We treat your goals like our own. Expect clear communication, quick turnarounds, and a process that respects your time."
             Icon={FaHandshake}
           />
           <AboutCard
-            title="Scalable solution"
+            title="Scalable solutions"
             desc="Need to grow later? No problem. We build with flexibility in mind so you can scale without starting over."
             Icon={FaCubes}
           />
@@ -89,7 +89,7 @@ export default function Page() {
               <div className="flex flex-col items-center">
                 <FaRocket className="text-primary w-20 h-20 sm:w-28 sm:h-28" />
                 <h6 className="text-black text-h5 font-bold font-nunito text-center mt-12 md:text-h4">
-                  25+ Solutions launched
+                  25+ Solutions Launched
                 </h6>
                 <p className="text-black75 text-p font-inter text-center mt-4">
                   From high-converting landing pages to custom full-stack builds, each solution is crafted to meet real business goals and drive results.
@@ -100,7 +100,7 @@ export default function Page() {
               <div className="flex flex-col items-center">
                 <FaSmile className="text-primary w-20 h-20 sm:w-28 sm:h-28" />
                 <h6 className="text-black text-h5 md:text-h4 font-bold font-nunito text-center mt-12">
-                  99.9% Partner satisfaction
+                  99.9% Partner Satisfaction
                 </h6>
                 <p className="text-black75 text-p font-inter text-center mt-4">
                   Every solution ends with a happy partner. Our commitment to clear communication, quality work, and dependable support ensures it.

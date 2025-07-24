@@ -138,7 +138,7 @@ export default function ProjectHeader({ project }: ProjectProps) {
         <Image
           src={projectBanner || PlaceholderLogo}
           alt={`${brandName} project cover image`}
-          className="object-cover h-96 w-full rounded-2xl"
+          className="object-cover h-fit max-h-96 w-full rounded-2xl"
           draggable={false}
           priority={true}
           quality={100}
