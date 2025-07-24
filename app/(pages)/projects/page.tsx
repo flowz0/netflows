@@ -4,7 +4,8 @@ import ProjectData from "@/data/project.data";
 import CaseStudyCard from "@/components/pages/home/Study/CaseStudyCard";
 
 export const metadata: Metadata = {
-  title: "Web Design & Development Case Studies",
+  title: "Web Design & Development Projects",
+  description: "Take a look at projects where we helped partners bring their ideas to life through strategic design and modern web solutions."
 };
 
 export default function ProjectsPage() {
