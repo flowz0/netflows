@@ -1,3 +1,11 @@
+## [2.2.7](https://github.com/flowz0/netflows/compare/v2.2.6...v2.2.7) (2025-08-04)
+
+
+### Bug Fixes
+
+* add button to each ServiceSection in Services page ([fb4aa1c](https://github.com/flowz0/netflows/commit/fb4aa1ca765bd8b4afd68eb13030da5cf31b39b2))
+* improve UX for pages and components ([a1aebf5](https://github.com/flowz0/netflows/commit/a1aebf561efbae33daf9d122a5ebbed2f85e3295))
+
 ## [2.2.6](https://github.com/flowz0/netflows/compare/v2.2.5...v2.2.6) (2025-08-04)
 
 
