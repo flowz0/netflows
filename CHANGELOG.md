@@ -1,3 +1,14 @@
+## [2.2.6](https://github.com/flowz0/netflows/compare/v2.2.5...v2.2.6) (2025-08-04)
+
+
+### Bug Fixes
+
+* add schema for search engines to app layout ([f31f1fa](https://github.com/flowz0/netflows/commit/f31f1fa28835498e35eea99466f4e4b472aa606e))
+* decrease max width for paragraph in Services page ([43b32a9](https://github.com/flowz0/netflows/commit/43b32a974f30c70f29c8f80cb3a3d863cb23c2f3))
+* optimize SEO and leads for Hero component ([eefcd2f](https://github.com/flowz0/netflows/commit/eefcd2fa42b1d143b5af30dd3bf3db7723a68083))
+* update active color on mobile menu and desktop in Navbar component ([89d8e01](https://github.com/flowz0/netflows/commit/89d8e01cda27a6c81e0ce95cabdae8c4221f22e5))
+* update Netflows transparent logo and Netflows logo assets ([168e895](https://github.com/flowz0/netflows/commit/168e89598ca138de724d61751f0408371d0a6345))
+
 ## [2.2.5](https://github.com/flowz0/netflows/compare/v2.2.4...v2.2.5) (2025-08-04)
 
 
