@@ -1,3 +1,10 @@
+## [2.2.5](https://github.com/flowz0/netflows/compare/v2.2.4...v2.2.5) (2025-08-04)
+
+
+### Bug Fixes
+
+* update Links hover color to primary in Footer component ([1d01eeb](https://github.com/flowz0/netflows/commit/1d01eeb90ef2050aadcc8e3155313f13d87558db))
+
 ## [2.2.4](https://github.com/flowz0/netflows/compare/v2.2.3...v2.2.4) (2025-08-04)
 
 
