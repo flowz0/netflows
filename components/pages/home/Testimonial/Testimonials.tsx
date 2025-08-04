@@ -1,10 +1,10 @@
 "use client";
 
-import { TestimonialDataBottom, TestimonialDataTop } from "@/data/testimonial.data";
-import TestimonialCard from "./TestimonialCard";
+import { bottomRowReviews, topRowReviews } from "@/data/testimonials";
 import { useEffect, useRef, useState } from "react";
+import TestimonialCard from "./TestimonialCard";
 
-export default function Testimonials() {
+export default function TestimonialSection() {
   const sectionRef = useRef<HTMLElement | null>(null);
   const [inView, setInView] = useState(false);
 
@@ -50,7 +50,7 @@ export default function Testimonials() {
 
         <div className="mt-16 w-full overflow-hidden">
           <div className={`flex gap-x-6 w-max ${inView ? "animate-scroll" : ""}`}>
-            {[...TestimonialDataTop, ...TestimonialDataTop].map((testimonial, index) => (
+            {[...topRowReviews, ...topRowReviews].map((testimonial, index) => (
               <div key={index}>
                 <TestimonialCard
                   review={testimonial.review}
@@ -64,7 +64,7 @@ export default function Testimonials() {
         </div>
         <div className="mt-6 w-full overflow-hidden">
           <div className={`flex gap-x-6 w-max ${inView ? "animate-scroll-reverse" : ""}`}>
-            {[...TestimonialDataBottom, ...TestimonialDataBottom].map((testimonial, index) => (
+            {[...bottomRowReviews, ...bottomRowReviews].map((testimonial, index) => (
               <div key={index}>
                 <TestimonialCard
                   review={testimonial.review}

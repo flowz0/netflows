@@ -24,15 +24,17 @@ export default function TestimonialCard({
         <Image
           src={avatar}
           alt="Review avatar"
-          className="h-16 w-16 object-cover object-top rounded-full"
+          className="h-12 w-12 object-cover object-top rounded-full"
+          width={500}
+          height={500}
           draggable={false}
           priority={false}
           quality={75}
           loading="lazy"
         />
         <div>
-          <h6 className="text-black text-p font-medium font-inter">{reviewer}</h6>
-          <p className="text-black75 text-small font-inter">{role}</p>
+          <h6 className="text-black50 text-p font-inter">{reviewer}</h6>
+          <p className="text-black50 text-small font-inter">{role}</p>
         </div>
       </div>
     </div>

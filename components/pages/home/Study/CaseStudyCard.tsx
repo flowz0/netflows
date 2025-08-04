@@ -28,7 +28,7 @@ const CaseStudyCard: React.FC<ProjectProps> = ({ project }) => {
   return (
     <div onClick={handleClick} className={`border border-black75 rounded-2xl py-8 px-8 transition-shadow duration-300 ease-in-out ${comingSoon
       ? "cursor-not-allowed"
-      : "cursor-pointer hover:shadow-[0_16px_60px_#924bf7]"
+      : "cursor-pointer hover:shadow-[0_16px_32px_#924bf7]"
       }`}>
       <div className="flex items-center justify-between">
         <h5 className="text-h6 sm:text-h5 font-bold font-nunito text-black">

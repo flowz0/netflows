@@ -4,7 +4,7 @@ import Hero from "../components/pages/home/Hero";
 import Process from "../components/pages/home/Process/Process";
 import Services from "../components/pages/home/Service/Services";
 import CaseStudies from "../components/pages/home/Study/CaseStudies";
-import Testimonials from "../components/pages/home/Testimonial/Testimonials";
+import TestimonialSection from "../components/pages/home/Testimonial/Testimonials";
 import ValueProposition from "../components/pages/home/Why/ValueProposition";
 
 export default function Home() {
@@ -14,7 +14,7 @@ export default function Home() {
       <ValueProposition />
       <Services />
       <CaseStudies />
-      <Testimonials />
+      <TestimonialSection />
       <Process />
       <FAQs />
       <CTA />
