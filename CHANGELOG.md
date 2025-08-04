@@ -1,3 +1,11 @@
+## [2.2.3](https://github.com/flowz0/netflows/compare/v2.2.2...v2.2.3) (2025-08-04)
+
+
+### Bug Fixes
+
+* decrease shadow blur for CaseStudyCard component ([887447c](https://github.com/flowz0/netflows/commit/887447c82dbf23e35e4baefecc408d397d79ea54))
+* optimize TestimonialSection component infinite scrolling animation functionality ([1f17de8](https://github.com/flowz0/netflows/commit/1f17de85a57ff4dfea9f6dfd430389c2b77d2bd4))
+
 ## [2.2.2](https://github.com/flowz0/netflows/compare/v2.2.1...v2.2.2) (2025-07-24)
 
 
