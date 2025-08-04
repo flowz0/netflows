@@ -1,3 +1,12 @@
+## [2.2.4](https://github.com/flowz0/netflows/compare/v2.2.3...v2.2.4) (2025-08-04)
+
+
+### Bug Fixes
+
+* improve responsive spacing for all pages and components ([c915b91](https://github.com/flowz0/netflows/commit/c915b91c268575a6d4981980a88153ecef8d0a9f))
+* improve spacing for project slug page ([a108f7f](https://github.com/flowz0/netflows/commit/a108f7f4d4e396e8bff7c152534f2d11ad2b66ba))
+* remove brandLogo from ProjectHeader ([bd83f3c](https://github.com/flowz0/netflows/commit/bd83f3c9e7a128a29640234ca2c5c646d681bd4d))
+
 ## [2.2.3](https://github.com/flowz0/netflows/compare/v2.2.2...v2.2.3) (2025-08-04)
 
 
