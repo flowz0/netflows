@@ -16,7 +16,6 @@ import { SERVICE_STYLES } from "@/constants/service.constant";
 
 export default function ProjectHeader({ project }: ProjectProps) {
   const {
-    brandLogo,
     brandName,
     summary,
     link,
@@ -68,16 +67,7 @@ export default function ProjectHeader({ project }: ProjectProps) {
     <>
       <div className="md:flex md:flex-col">
         <div>
-          <Image
-            src={brandLogo || PlaceholderLogo}
-            alt={`${brandName} brand logo`}
-            className="w-20 h-auto object-cover rounded-lg"
-            draggable={false}
-            priority={true}
-            quality={100}
-            loading="eager"
-          />
-          <Link href={`${link}`} target="_blank" className="flex flex-col mt-8 w-fit group">
+          <Link href={`${link}`} target="_blank" className="flex flex-col w-fit group">
             <h1 className="text-black text-h4 sm:text-h3 font-bold font-nunito text-wrap flex items-center gap-x-6 lg:text-h1">
               {brandName}
               <HiExternalLink className="text-black50 transition-transform duration-300 ease-in-out w-8 h-8 group-hover:text-primary group-hover:scale-110 group-hover:translate-x-2 group-hover:-translate-y-2" />
@@ -85,7 +75,7 @@ export default function ProjectHeader({ project }: ProjectProps) {
           </Link>
         </div>
 
-        <div className="md:flex md:justify-between md:items-start gap-x-8 mt-8">
+        <div className="md:flex md:justify-between md:items-start gap-x-8 mt-4">
           <div className="md:max-w-1/2">
             <p className="text-black75 text-p font-inter max-w-lg lg:mx-0 md:text-lg">
               {summary}
@@ -134,11 +124,11 @@ export default function ProjectHeader({ project }: ProjectProps) {
           </div>
         </div>
       </div>
-      <div className="flex justify-center mt-16">
+      <div className="flex justify-center mt-12">
         <Image
           src={projectBanner || PlaceholderLogo}
           alt={`${brandName} project cover image`}
-          className="object-cover h-fit max-h-96 w-full rounded-2xl"
+          className="object-cover h-36 md:h-full max-h-96 w-full rounded-2xl"
           draggable={false}
           priority={true}
           quality={100}

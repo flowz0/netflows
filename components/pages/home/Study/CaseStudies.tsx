@@ -3,7 +3,7 @@ import CaseStudyCard from "./CaseStudyCard";
 
 export default function CaseStudies() {
   return (
-    <section className="mt-64 px-6 max-w-7xl mx-auto">
+    <section className="mt-32 px-6 max-w-7xl mx-auto md:mt-64">
       <div className="flex flex-col items-center">
         <h2 className="text-h4 font-bold font-nunito text-black sm:text-h2">
           Case Studies
@@ -13,7 +13,7 @@ export default function CaseStudies() {
         </p>
       </div>
       
-      <div className="mt-16 grid grid-cols-1 gap-y-6 lg:gap-x-6 lg:grid-cols-2">
+      <div className="mt-8 grid grid-cols-1 gap-y-6 md:gap-x-6 md:grid-cols-2 md:mt-12">
         {ProjectData.slice(0, 2).map((project) => (
           <CaseStudyCard
             key={project.id}

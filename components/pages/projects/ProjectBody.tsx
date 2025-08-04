@@ -41,7 +41,7 @@ export default function ProjectBody({ project }: ProjectProps) {
         quality={80}
         loading="lazy"
       />
-      <h2 className="text-black text-h5 font-bold font-nunito mt-16 sm:text-h4 md:text-h2">
+      <h2 className="text-black text-h5 font-bold font-nunito mt-32 sm:text-h4 md:text-h2">
         {solution}
       </h2>
       <p className="text-black75 text-p font-inter mt-4 lg:mx-0">
@@ -85,7 +85,7 @@ export default function ProjectBody({ project }: ProjectProps) {
           loading="lazy"
         />
       </div>
-      <h2 className="text-black text-h5 font-bold font-nunito mt-16 sm:text-h4 md:text-h2">
+      <h2 className="text-black text-h5 font-bold font-nunito mt-32 sm:text-h4 md:text-h2">
         {results}
       </h2>
       <p className="text-black75 text-p font-inter mt-4 lg:mx-0">
@@ -100,7 +100,7 @@ export default function ProjectBody({ project }: ProjectProps) {
         quality={80}
         loading="lazy"
       />
-      <h2 className="text-black text-h5 font-bold font-nunito mt-16 sm:text-h4 md:text-h2">
+      <h2 className="text-black text-h5 font-bold font-nunito mt-32 sm:text-h4 md:text-h2">
         {takeaways}
       </h2>
       <p className="text-black75 text-p mt-4 font-inter lg:mx-0">

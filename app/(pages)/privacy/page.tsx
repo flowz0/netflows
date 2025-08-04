@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 
 export default function PrivacyPolicyPage() {
   return (
-    <main className="mt-16 px-6 max-w-7xl mx-auto lg:mt-24">
+    <main className="mt-16 px-6 max-w-7xl mx-auto md:mt-32">
       <header>
         <h1 className="text-black text-h4 sm:text-h3 font-bold font-nunito md:text-h1">
           Privacy Policy
@@ -19,7 +19,7 @@ export default function PrivacyPolicyPage() {
           Last Updated: May 27, 2025
         </p>
       </header>
-      <section className="mt-24">
+      <section className="mt-16 md:mt-32">
         <h2 className="text-black text-h5 sm:text-h4 font-bold font-nunito md:text-h2">
           1. Information We Collect
         </h2>
@@ -33,7 +33,7 @@ export default function PrivacyPolicyPage() {
           <li>Booking Details (Date, Time, Zoom Link, Selected Service)</li>
         </ul>
       </section>
-      <section className="mt-16">
+      <section className="mt-16 md:mt-32">
         <h2 className="text-black text-h5 sm:text-h4 font-bold font-nunito md:text-h2">
           2. How We Collect Your Information
         </h2>
@@ -41,7 +41,7 @@ export default function PrivacyPolicyPage() {
           We collect this information directly through our custom booking/calendar service integrated on our website. This is the only method by which we gather your personal information.
         </p>
       </section>
-      <section className="mt-16">
+      <section className="mt-16 md:mt-32">
         <h2 className="text-black text-h5 sm:text-h4 font-bold font-nunito md:text-h2">
           3. How We Use Your Information
         </h2>
@@ -57,7 +57,7 @@ export default function PrivacyPolicyPage() {
           <li>Facilitate invoicing and payments via Stripe</li>
         </ul>
       </section>
-      <section className="mt-16">
+      <section className="mt-16 md:mt-32">
         <h2 className="text-black text-h5 sm:text-h4 font-bold font-nunito md:text-h2">
           4. How We Share Your Information
         </h2>
@@ -69,7 +69,7 @@ export default function PrivacyPolicyPage() {
           <li><span className="font-semibold">Stripe</span> for secure invoicing and payment processing</li>
         </ul>
       </section>
-      <section className="mt-16">
+      <section className="mt-16 md:mt-32">
         <h2 className="text-black text-h5 sm:text-h4 font-bold font-nunito md:text-h2">
           5. Data Security
         </h2>
@@ -83,7 +83,7 @@ export default function PrivacyPolicyPage() {
           <li><span className="font-semibold">MongoDB</span> as our secure data storage solution</li>
         </ul>
       </section>
-      <section className="mt-16">
+      <section className="mt-16 md:mt-32">
         <h2 className="text-black text-h5 sm:text-h4 font-bold font-nunito md:text-h2">
           6. Your Rights Under the California Consumer Privacy Act (CCPA)
         </h2>
@@ -100,7 +100,7 @@ export default function PrivacyPolicyPage() {
           To exercise these rights, email us at <span className="font-semibold">contact@netflows.xyz</span> with the subject line <span className="font-semibold">&quot;CCPA Request&quot;</span> and allow up to 30 days for a response.
         </p>
       </section>
-      <section className="mt-16">
+      <section className="mt-16 md:mt-32">
         <h2 className="text-black text-h5 sm:text-h4 font-bold font-nunito md:text-h2">
           7. International Data Compliance (GDPR, PIPEDA, etc.)
         </h2>
@@ -126,7 +126,7 @@ export default function PrivacyPolicyPage() {
           You may contact us at <span className="font-semibold">contact@netflows.xyz</span> with the subject line <span className="font-semibold">&quot;International Privacy Request&quot;</span> to exercise your rights under applicable data laws.
         </p>
       </section>
-      <section className="mt-16">
+      <section className="mt-16 md:mt-32">
         <h2 className="text-black text-h5 sm:text-h4 font-bold font-nunito md:text-h2">
           8. Data Retention
         </h2>
@@ -134,7 +134,7 @@ export default function PrivacyPolicyPage() {
           We retain your personal data for 1 year to ensure your project is completed and supported. If the project extends beyond that period, data retention terms will be covered in your service contract.
         </p>
       </section>
-      <section className="mt-16">
+      <section className="mt-16 md:mt-32">
         <h2 className="text-black text-h5 sm:text-h4 font-bold font-nunito md:text-h2">
           9. Cookies & Tracking Technologies
         </h2>
@@ -154,7 +154,7 @@ export default function PrivacyPolicyPage() {
           If and when these tools are implemented, we will provide a clear <span className="font-semibold">cookie notice and opt-in/opt-out options</span> in accordance with laws like GDPR and the ePrivacy Directive (EU), as well as other applicable regulations.
         </p>
       </section>
-      <section className="mt-16">
+      <section className="mt-16 md:mt-32">
         <h2 className="text-black text-h5 sm:text-h4 font-bold font-nunito md:text-h2">
           10. Contacting Us
         </h2>
@@ -166,7 +166,7 @@ export default function PrivacyPolicyPage() {
           We typically respond within 24 - 48 hours.
         </p>
       </section>
-      <section className="mt-16">
+      <section className="mt-16 md:mt-32">
         <h2 className="text-black text-h5 sm:text-h4 font-bold font-nunito md:text-h2">
           11. Changes to This Privacy Policy
         </h2>

@@ -9,12 +9,12 @@ export const metadata: Metadata = {
 export default function BookConsultationPage() {
   return (
     <>
-      <main className="mt-16 px-6 max-w-7xl mx-auto lg:mt-24">
+      <main className="mt-16 px-6 max-w-7xl mx-auto lg:mt-32">
         <header className="flex flex-col items-center">
           <h1 className="text-black text-h4 font-bold font-nunito text-center md:text-h1">
             Schedule Your
             <br />
-            Free Discovery Call
+            Free <span className="text-primary">Discovery</span> Call
           </h1>
           <p className="mt-4 text-p font-inter text-center max-w-xl text-black75">
             Let&apos;s explore your vision, define your goals, and lay the groundwork for a custom web solution that drives results.

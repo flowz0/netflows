@@ -50,7 +50,7 @@ export default async function ProjectPage({ params }: Props) {
 
   return (
     <main>
-      <article className="mt-16 px-6 max-w-7xl mx-auto lg:mt-24">
+      <article className="mt-8 px-6 max-w-7xl mx-auto lg:mt-16">
         <ProjectHeader
           project={project}
         />

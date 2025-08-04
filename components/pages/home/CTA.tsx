@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function CTA() {
   return (
-    <section className="mt-64 px-6 max-w-7xl mx-auto">
+    <section className="mt-32 px-6 max-w-7xl mx-auto md:mt-64">
       <div className="border border-black rounded-2xl p-8 sm:h-[400px] flex flex-col items-center justify-center">
         <h3 className="text-h5 sm:text-h3 font-bold text-center font-nunito text-black">
           Book a Consultation Today
