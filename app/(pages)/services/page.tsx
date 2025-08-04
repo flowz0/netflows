@@ -10,9 +10,9 @@ export default function Page() {
     <main className="mt-16 px-6 max-w-7xl mx-auto cursor-default md:mt-32">
       <div className="flex flex-col items-center">
         <h1 className="text-black text-h3 font-bold font-nunito text-center sm:text-h1">
-          Services That We Offer
+          Services We Provide
         </h1>
-        <p className="mt-4 max-w-3xl text-p font-inter text-center text-black75">
+        <p className="mt-4 max-w-2xl text-p font-inter text-center text-black75">
           We offer services that can help businesses improve their visibility, business reputation online, expand market reach, and increase turnover through effective digital strategies.
         </p>
         <Button variant="gradient" text="Schedule Free Consultation" className="mt-8 md:mt-12" />
