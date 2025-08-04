@@ -27,9 +27,9 @@ export default function Footer() {
                 ©2025 Netflows, LLC.
               </p>
               <p className="text-black75 text-small font-inter">
-                <Link href="/tos" className="transition-colors duration-300 ease-in-out hover:text-secondary">Terms of Service</Link>
+                <Link href="/tos" className="transition-colors duration-300 ease-in-out hover:text-primary">Terms of Service</Link>
                 {" "} | {" "}
-                <Link href="/privacy" className="transition-colors duration-300 ease-in-out hover:text-secondary">Privacy Policy</Link>
+                <Link href="/privacy" className="transition-colors duration-300 ease-in-out hover:text-primary">Privacy Policy</Link>
               </p>
             </div>
           </div>
@@ -40,13 +40,13 @@ export default function Footer() {
               Services
             </h6>
             <div className="flex flex-col gap-y-2 mt-4">
-              <Link href="/services" className="text-black75 text-p w-fit font-inter transition-colors duration-300 ease-in-out hover:text-secondary">
+              <Link href="/services" className="text-black75 text-p w-fit font-inter transition-colors duration-300 ease-in-out hover:text-primary">
                 Web Development
               </Link>
-              <Link href="/services" className="text-black75 text-p w-fit font-inter transition-colors duration-300 ease-in-out hover:text-secondary">
+              <Link href="/services" className="text-black75 text-p w-fit font-inter transition-colors duration-300 ease-in-out hover:text-primary">
                 UI/UX Design
               </Link>
-              <Link href="/services" className="text-black75 text-p w-fit font-inter transition-colors duration-300 ease-in-out hover:text-secondary">
+              <Link href="/services" className="text-black75 text-p w-fit font-inter transition-colors duration-300 ease-in-out hover:text-primary">
                 Maintenance
               </Link>
             </div>
@@ -58,13 +58,13 @@ export default function Footer() {
               Useful Links
             </h6>
             <div className="flex flex-col gap-y-2 mt-4">
-              <Link href="/about" className="text-black75 text-p w-fit font-inter transition-colors duration-300 ease-in-out hover:text-secondary">
+              <Link href="/about" className="text-black75 text-p w-fit font-inter transition-colors duration-300 ease-in-out hover:text-primary">
                 About
               </Link>
-              <Link href="/projects" className="text-black75 text-p w-fit font-inter transition-colors duration-300 ease-in-out hover:text-secondary">
+              <Link href="/projects" className="text-black75 text-p w-fit font-inter transition-colors duration-300 ease-in-out hover:text-primary">
                 Projects
               </Link>
-              <Link href="/booking" className="text-black75 text-p w-fit font-inter transition-colors duration-300 ease-in-out hover:text-secondary">
+              <Link href="/booking" className="text-black75 text-p w-fit font-inter transition-colors duration-300 ease-in-out hover:text-primary">
                 Contact
               </Link>
             </div>
@@ -84,13 +84,13 @@ export default function Footer() {
               </p>
             </div>
             <div className="mt-12 flex gap-x-6">
-              <Link href="mailto:contact@netflows.xyz" className="transition-colors duration-300 ease-in-out hover:text-secondary">
+              <Link href="mailto:contact@netflows.xyz" className="transition-colors duration-300 ease-in-out hover:text-primary">
                 <FaEnvelope className="w-8 h-8" />
               </Link>
-              <Link href="/" className="transition-colors duration-300 ease-in-out hover:text-secondary">
+              <Link href="/" className="transition-colors duration-300 ease-in-out hover:text-primary">
                 <SiFacebook className="w-8 h-8" />
               </Link>
-              <Link href="https://www.linkedin.com/company/netflowsxyz/about" target="_blank" className="transition-colors duration-300 ease-in-out hover:text-secondary">
+              <Link href="https://www.linkedin.com/company/netflowsxyz/about" target="_blank" className="transition-colors duration-300 ease-in-out hover:text-primary">
                 <SiLinkedin className="w-8 h-8" />
               </Link>
             </div>
