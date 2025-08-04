@@ -53,11 +53,59 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    name: "Netflows",
+    image: "https://www.netflows.xyz/assets/netflows-logo.png",
+    "@id": "https://www.netflows.xyz",
+    url: "https://www.netflows.xyz",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "California",
+      addressLocality: "California",
+      addressRegion: "CA",
+      postalCode: "",
+      addressCountry: "US",
+    },
+    openingHoursSpecification: [
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+        ],
+        opens: "00:00",
+        closes: "23:59",
+      },
+    ],
+    sameAs: [
+      "https://www.linkedin.com/company/netflowsxyz",
+      "https://www.instagram.com/netflowsxyz",
+      "https://x.com/netflowsxyz",
+    ],
+    description:
+      "Netflows is a California-based web design and development agency that builds fast, modern, and scalable websites to help businesses grow online.",
+    priceRange: "$$",
+    areaServed: {
+      "@type": "Country",
+      name: "United States"
+    }
+  };
+
   return (
     <html lang="en" className="scroll-smooth">
       <body
         className={`${nunito.variable} ${inter.variable} bg-black5 text-black antialiased`}
       >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
         <Navbar />
         {children}
         <Footer />
