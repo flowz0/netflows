@@ -49,7 +49,7 @@ export default function Navbar() {
                   key={href}
                   href={href}
                   className={`text-h6 font-bold font-nunito ${(href === "/projects" && pathname.startsWith("/projects")) || pathname === href
-                    ? 'text-black'
+                    ? 'text-primary'
                     : 'text-black50 hover:text-black'
                     }`}
                 >
@@ -101,18 +101,18 @@ export default function Navbar() {
               transition={{ duration: 0.2, ease: "easeInOut" }}
               className="md:hidden bg-black5"
             >
-              <ul className="flex flex-col gap-y-2 px-6 text-h5 font-bold font-nunito">
-                {Links.map((link) => (
-                  <li key={link.href}>
+              <ul className="flex flex-col gap-y-4 px-6 text-h4 font-bold font-nunito">
+                {Links.map(({href, label}) => (
+                  <li key={href}>
                     <Link
-                      href={link.href}
-                      className={`${pathname === link.href
+                      href={href}
+                      className={`${(href === "/projects" && pathname.startsWith("/projects")) || pathname === href
                         ? "text-primary"
-                        : "text-black50"
+                        : "text-black50 hover:text-primary"
                         }`}
                       onClick={() => setIsOpen(!isOpen)}
                     >
-                      {link.label}
+                      {label}
                     </Link>
                   </li>
                 ))}
