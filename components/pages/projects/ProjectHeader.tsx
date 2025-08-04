@@ -16,7 +16,6 @@ import { SERVICE_STYLES } from "@/constants/service.constant";
 
 export default function ProjectHeader({ project }: ProjectProps) {
   const {
-    brandLogo,
     brandName,
     summary,
     link,
@@ -68,16 +67,7 @@ export default function ProjectHeader({ project }: ProjectProps) {
     <>
       <div className="md:flex md:flex-col">
         <div>
-          <Image
-            src={brandLogo || PlaceholderLogo}
-            alt={`${brandName} brand logo`}
-            className="w-20 h-auto object-cover rounded-lg"
-            draggable={false}
-            priority={true}
-            quality={100}
-            loading="eager"
-          />
-          <Link href={`${link}`} target="_blank" className="flex flex-col mt-8 w-fit group">
+          <Link href={`${link}`} target="_blank" className="flex flex-col w-fit group">
             <h1 className="text-black text-h4 sm:text-h3 font-bold font-nunito text-wrap flex items-center gap-x-6 lg:text-h1">
               {brandName}
               <HiExternalLink className="text-black50 transition-transform duration-300 ease-in-out w-8 h-8 group-hover:text-primary group-hover:scale-110 group-hover:translate-x-2 group-hover:-translate-y-2" />
