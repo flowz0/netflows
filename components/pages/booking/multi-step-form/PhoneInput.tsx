@@ -74,7 +74,7 @@ export default function PhoneInput({ value, onChange, onBlur, autoComplete, erro
         aria-describedby={error ? `${name}-error` : undefined}
       />
       {error && (
-        <p className="text-primary text-small font-inter mt-2" id="phone-error">
+        <p className="text-primary text-small font-inter mt-2 cursor-default" id="phone-error">
           {error}
         </p>
       )}

@@ -31,7 +31,7 @@ export default function TestimonialSection() {
   }, []);
   return (
     <section ref={sectionRef} className="mt-32 md:mt-64">
-      <div className="max-w-7xl mx-auto px-6 flex flex-col items-center">
+      <div className="max-w-7xl mx-auto px-6 flex flex-col items-center cursor-default">
         <h2 className="text-h4 font-bold font-nunito text-center text-black sm:text-h2">
           Don&apos;t Take {" "}
           <br className="lg:hidden" />

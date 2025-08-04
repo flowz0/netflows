@@ -5,7 +5,7 @@ import { Step4Props } from "@/types/step.type";
 
 export default function Step4({firstName, time, date, service}: Step4Props) {
   return (
-    <div className="flex flex-col items-center mt-16">
+    <div className="flex flex-col items-center mt-16 cursor-pointer">
       <FaCheckCircle className="text-primary h-32 w-32" />
       <h2 className="text-black75 text-h4 font-bold font-nunito text-center mt-8 sm:text-h3">
         Consultation Booked
@@ -17,10 +17,10 @@ export default function Step4({firstName, time, date, service}: Step4Props) {
         <p className="text-black5 text-small font-inter">
           Consultation Details
         </p>
-        <h3 className="text-black5 text-h5 font-bold font-nunito mt-4 sm:text-h4">
+        <h3 className="text-black5 text-h5 font-bold font-nunito mt-4 cursor-auto sm:text-h4">
           {formatTimeTo12Hour(time)}
         </h3>
-        <h4 className="text-black5 text-p font-inter mt-2">
+        <h4 className="text-black5 text-p font-inter cursor-auto mt-2">
           {formatDate(date)}
         </h4>
       </div>

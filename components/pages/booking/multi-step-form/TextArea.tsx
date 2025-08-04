@@ -41,7 +41,7 @@ export default function TextArea({
         aria-describedby={error ? `${name}-error` : undefined}
       />
       {error && (
-        <p className="text-primary text-small font-inter mt-2" id={`${name}-error`}>
+        <p className="text-primary text-small font-inter mt-2 cursor-default" id={`${name}-error`}>
           {error}
         </p>
       )}

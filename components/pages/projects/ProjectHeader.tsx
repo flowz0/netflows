@@ -75,7 +75,7 @@ export default function ProjectHeader({ project }: ProjectProps) {
           </Link>
         </div>
 
-        <div className="md:flex md:justify-between md:items-start gap-x-8 mt-4">
+        <div className="md:flex md:justify-between md:items-start gap-x-8 mt-4 cursor-default">
           <div className="md:max-w-1/2">
             <p className="text-black75 text-p font-inter max-w-lg lg:mx-0 md:text-lg">
               {summary}

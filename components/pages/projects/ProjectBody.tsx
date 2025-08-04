@@ -25,7 +25,7 @@ export default function ProjectBody({ project }: ProjectProps) {
   } = project;
 
   return (
-    <div className="mt-32">
+    <div className="mt-32 cursor-default">
       <h2 className="text-black text-h5 font-bold font-nunito sm:text-h4 md:text-h2">
         {challenge}
       </h2>

@@ -4,7 +4,7 @@ import ProcessCTA from "./ProcessCTA";
 export default function Process() {
   return (
     <section className="mt-32 px-6 max-w-7xl mx-auto md:mt-64">
-      <div className="flex flex-col lg:flex-row">
+      <div className="flex flex-col cursor-default lg:flex-row">
         <h2 className="text-h4 font-bold font-nunito text-black sm:text-h2 lg:w-4/6">
           Our Process
         </h2>

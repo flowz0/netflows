@@ -1,8 +1,7 @@
 import NetflowsImg from "@/public/netflows-brand-transparent.png";
 import Image from "next/image";
 import Link from "next/link";
-import { SiFacebook, SiLinkedin } from "react-icons/si";
-import { FaEnvelope } from "react-icons/fa6";
+import { SiX, SiLinkedin, SiInstagram } from "react-icons/si";
 
 export default function Footer() {
   return (
@@ -23,12 +22,12 @@ export default function Footer() {
               />
             </Link>
             <div className="mt-8 sm:mt-0">
-              <p className="text-black75 text-small font-inter">
-                ©2025 Netflows, LLC.
+              <p className="text-black75 text-small font-inter cursor-default">
+                ©2025 Netflows
               </p>
               <p className="text-black75 text-small font-inter">
                 <Link href="/tos" className="transition-colors duration-300 ease-in-out hover:text-primary">Terms of Service</Link>
-                {" "} | {" "}
+                <span className="cursor-default">{" "}|{" "}</span>
                 <Link href="/privacy" className="transition-colors duration-300 ease-in-out hover:text-primary">Privacy Policy</Link>
               </p>
             </div>
@@ -36,7 +35,7 @@ export default function Footer() {
 
           {/* services */}
           <div className="w-fit">
-            <h6 className="text-black text-h6 font-bold font-nunito">
+            <h6 className="text-black text-h6 font-bold font-nunito cursor-default">
               Services
             </h6>
             <div className="flex flex-col gap-y-2 mt-4">
@@ -54,7 +53,7 @@ export default function Footer() {
 
           {/* useful links */}
           <div className="w-fit">
-            <h6 className="text-black text-h6 font-bold font-nunito">
+            <h6 className="text-black text-h6 font-bold font-nunito cursor-default">
               Useful Links
             </h6>
             <div className="flex flex-col gap-y-2 mt-4">
@@ -71,7 +70,7 @@ export default function Footer() {
           </div>
 
           {/* get in touch */}
-          <div className="w-fit">
+          <div className="w-fit cursor-default">
             <h6 className="text-black text-h6 font-bold font-nunito">
               Get In Touch
             </h6>
@@ -84,14 +83,14 @@ export default function Footer() {
               </p>
             </div>
             <div className="mt-12 flex gap-x-6">
-              <Link href="mailto:contact@netflows.xyz" className="transition-colors duration-300 ease-in-out hover:text-primary">
-                <FaEnvelope className="w-8 h-8" />
-              </Link>
-              <Link href="/" className="transition-colors duration-300 ease-in-out hover:text-primary">
-                <SiFacebook className="w-8 h-8" />
-              </Link>
               <Link href="https://www.linkedin.com/company/netflowsxyz/about" target="_blank" className="transition-colors duration-300 ease-in-out hover:text-primary">
                 <SiLinkedin className="w-8 h-8" />
+              </Link>
+              <Link href="https://www.instagram.com/netflowsxyz/" target="_blank" className="transition-colors duration-300 ease-in-out hover:text-primary">
+                <SiInstagram className="w-8 h-8" />
+              </Link>
+              <Link href="https://x.com/Netflowsxyz" target="_blank" className="transition-colors duration-300 ease-in-out hover:text-primary">
+                <SiX className="w-8 h-8" />
               </Link>
             </div>
           </div>

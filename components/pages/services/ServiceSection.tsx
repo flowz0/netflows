@@ -1,8 +1,10 @@
 import Image from "next/image";
 
 import { ServiceSectionProps } from "@/types/service.type";
+import Button from "@/components/Button";
+import Link from "next/link";
 
-export default function ServiceSection({ header, desc, img, flip }: ServiceSectionProps) {
+export default function ServiceSection({ header, desc, img, flip, buttonLabel }: ServiceSectionProps) {
   return (
     <section>
       <div className="flex flex-col gap-x-4 lg:flex-row lg:items-center lg:justify-between">
@@ -13,12 +15,15 @@ export default function ServiceSection({ header, desc, img, flip }: ServiceSecti
           <p className="text-black75 text-p font-inter text-center max-w-lg mt-4">
             {desc}
           </p>
+          <Link href="/booking">
+            <Button variant="gradient" text={buttonLabel} className="mt-8" />
+          </Link>
         </div>
 
         <Image
           src={img}
           alt="Service image"
-          className={`h-96 w-auto md:h-[480px] ${flip ? "lg:order-1" : ""}`}
+          className={`h-96 w-auto md:h-[480px] ${flip ? "lg:order-1" : ""} mt-12 lg:mt-0`}
           priority={true}
           quality={100}
           draggable={false}
