@@ -13,7 +13,7 @@ export default function Services() {
 
   return (
     <section className="mt-32 px-6 max-w-7xl mx-auto md:mt-64">
-      <div className="flex flex-col lg:flex-row">
+      <div className="flex flex-col cursor-default lg:flex-row">
         <h2 className="text-h4 font-bold font-nunito text-black lg:w-3/5 sm:text-h2">
           What Services
           <br />

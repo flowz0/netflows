@@ -4,7 +4,7 @@ import CaseStudyCard from "./CaseStudyCard";
 export default function CaseStudies() {
   return (
     <section className="mt-32 px-6 max-w-7xl mx-auto md:mt-64">
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center cursor-default">
         <h2 className="text-h4 font-bold font-nunito text-black sm:text-h2">
           Case Studies
         </h2>

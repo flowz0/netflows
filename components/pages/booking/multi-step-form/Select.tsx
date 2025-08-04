@@ -52,6 +52,7 @@ export default function Select({ label, options, selected, onChange, onBlur, err
           value={selected}
           onBlur={onBlur}
           autoComplete="off"
+          className="cursor-pointer"
         />
         <button
           ref={buttonRef}
@@ -60,7 +61,7 @@ export default function Select({ label, options, selected, onChange, onBlur, err
           type="button"
           aria-expanded={open}
           onClick={() => setOpen(!open)}
-          className={`mt-2 border-b border-black75 text-black75 py-4 focus:outline-none placeholder:text-black25 flex items-center justify-between w-full"
+          className={`mt-2 border-b border-black75 text-black75 py-4 cursor-pointer focus:outline-none placeholder:text-black25 flex items-center justify-between w-full"
           }`}
         >
           <span

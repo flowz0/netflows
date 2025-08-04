@@ -5,14 +5,14 @@ import FaqData from "@/data/faq.data";
 export default function FAQs() {
   return (
     <section className="mt-32 px-6 max-w-7xl mx-auto md:mt-64">
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center cursor-default">
         <h2 className="text-h4 font-bold font-nunito text-center text-black sm:text-h2">
           Frequently Asked Questions
         </h2>
         <p className="mt-4 text-p max-w-6xl text-center font-inter text-black75">
           If you still have questions that we didn&apos;t answer here.
           <br />
-          Please feel free to email us contact@netflows.xyz
+          Please feel free to email us <span className="cursor-auto">contact@netflows.xyz</span>
         </p>
       </div>
 

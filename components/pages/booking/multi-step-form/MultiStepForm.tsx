@@ -171,7 +171,7 @@ export default function MultiStepForm() {
   return (
     <form ref={formRef} className="border-1 border-black75 bg-black5 mt-16 md:mt-32 py-12 px-6 rounded-2xl animate-drop-shadow sm:py-20 sm:px-12">
       {/* Stepper */}
-      <div className="flex items-center justify-center gap-x-2 sm:gap-x-6">
+      <div className="flex items-center justify-center gap-x-2 cursor-default sm:gap-x-6">
         {steps.map((s, i) => {
           const Icon = s.icon;
           const isCurrent = step === s.id;

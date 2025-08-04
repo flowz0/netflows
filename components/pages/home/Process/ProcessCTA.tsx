@@ -38,7 +38,7 @@ export default function ProcessCTA() {
             loading="lazy"
           />
         </div>
-        <p className="text-black75 text-p font-inter text-center mt-4 lg:mt-0">
+        <p className="text-black75 text-p font-inter text-center mt-4 cursor-default lg:mt-0">
           Join businesses leveling up their online presence
         </p>
       </div>

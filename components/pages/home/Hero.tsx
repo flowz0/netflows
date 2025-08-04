@@ -7,7 +7,7 @@ import Button from "@/components/Button";
 export default function Hero() {
   return (
     <section className="mt-16 max-w-7xl mx-auto lg:mt-32">
-      <div className="flex flex-col items-center px-6">
+      <div className="flex flex-col items-center cursor-default px-6">
         <h1 className="text-h3 font-bold font-nunito text-center sm:text-h1">
           <span className="text-primary">Grow</span> Online. {" "}
           <br />
@@ -16,8 +16,8 @@ export default function Hero() {
         <p className="text-black75 text-p text-center font-inter max-w-xl mt-4">
           We craft high-performing solutions that drive traffic, build trust, and help small businesses scale with ease.
         </p>
-        <Link href="/booking">
-          <Button text="Get My Free Consultation" className="mt-8 md:mt-12" variant="gradient" />
+        <Link href="/booking" className="mt-8 md:mt-12">
+          <Button text="Get My Free Consultation" variant="gradient" />
         </Link>
       </div>
       <Image
