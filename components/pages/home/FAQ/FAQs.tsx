@@ -4,7 +4,7 @@ import FaqData from "@/data/faq.data";
 
 export default function FAQs() {
   return (
-    <section className="mt-64 px-6 max-w-7xl mx-auto">
+    <section className="mt-32 px-6 max-w-7xl mx-auto md:mt-64">
       <div className="flex flex-col items-center">
         <h2 className="text-h4 font-bold font-nunito text-center text-black sm:text-h2">
           Frequently Asked Questions
@@ -16,7 +16,7 @@ export default function FAQs() {
         </p>
       </div>
 
-      <div className="mt-16">
+      <div className="mt-8 md:mt-12">
         {FaqData.map(({question, answer}, index) => (
           <div key={index}>
             <FAQItem

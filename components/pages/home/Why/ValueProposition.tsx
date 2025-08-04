@@ -4,7 +4,7 @@ import { MdTrendingUp, MdViewModule, MdInsights } from "react-icons/md";
 
 export default function ValueProposition() {
   return (
-    <section className="mt-48 max-w-7xl mx-auto">
+    <section className="mt-32 max-w-7xl mx-auto md:mt-64">
       <div className="px-6 grid grid-cols-1 gap-x-6 gap-y-6 lg:grid-cols-3">
         <ValueCard
           Icon={MdTrendingUp}

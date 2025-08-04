@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function ProjectsPage() {
   return (
-    <main className="mt-16 px-6 max-w-7xl mx-auto lg:mt-24">
+    <main className="mt-16 px-6 max-w-7xl mx-auto md:mt-32">
       <div className="flex flex-col">
         <h1 className="text-black text-h3 font-bold font-nunito sm:text-h1">
           What We&apos;ve Built
@@ -20,7 +20,7 @@ export default function ProjectsPage() {
           life through strategic design and modern web solutions.
         </p>
       </div>
-      <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <div className="mt-8 grid grid-cols-1 gap-y-6 md:gap-x-6 md:grid-cols-2 md:mt-12">
         {ProjectData.slice(0, 4).map((project) => (
           <CaseStudyCard key={project.id} project={project} />
         ))}

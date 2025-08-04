@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function TOSPage() {
   return (
-    <main className="mt-16 px-6 max-w-7xl mx-auto lg:mt-24">
+    <main className="mt-16 px-6 max-w-7xl mx-auto md:mt-32">
       <header>
         <h1 className="text-black text-h4 sm:text-h3 font-bold font-nunito md:text-h1">
           Terms of Service
@@ -23,15 +23,15 @@ export default function TOSPage() {
           Last Updated: July 13, 2025
         </p>
       </header>
-      <section className="mt-24">
+      <section className="mt-16 md:mt-32">
         <h2 className="text-black text-h5 sm:text-h4 font-bold font-nunito md:text-h2">
           1. Introduction
         </h2>
         <p className="text-black75 text-p font-inter mt-8">
-          These Terms of Service (&quot;Terms&quot;) govern the use of all services provided by <span className="font-semibold">Netflows</span>, including website development, web design, consultations, demo calls, and related offerings. These Terms form a binding agreement between <span className="font-semibold">you</span> <span className="font-semibold">(&quot;Client&quot;)</span> and <span className="font-semibold">Netflows</span> (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;).
+          These Terms of Service (&quot;Terms&quot;) govern the use of all services provided by <span className="font-semibold">Netflows</span>, including website development, web design, consultations, demo calls, and related offerings. These Terms form a binding agreement between <span className="font-semibold">you</span> (&quot;Client&quot;) and <span className="font-semibold">Netflows</span> (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;).
         </p>
       </section>
-      <section className="mt-16">
+      <section className="mt-16 md:mt-32">
         <h2 className="text-black text-h5 sm:text-h4 font-bold font-nunito md:text-h2">
           2. Scope of Services
         </h2>
@@ -49,7 +49,7 @@ export default function TOSPage() {
           All services will be detailed and confirmed through written agreement (contract or invoice).
         </p>
       </section>
-      <section className="mt-16">
+      <section className="mt-16 md:mt-32">
         <h2 className="text-black text-h5 sm:text-h4 font-bold font-nunito md:text-h2">
           3. Client Responsibilities
         </h2>
@@ -64,7 +64,7 @@ export default function TOSPage() {
           <li>Review and approve deliverables within agreed timelines</li>
         </ul>
       </section>
-      <section className="mt-16">
+      <section className="mt-16 md:mt-32">
         <h2 className="text-black text-h5 sm:text-h4 font-bold font-nunito md:text-h2">
           4. Payment Terms
         </h2>
@@ -76,7 +76,7 @@ export default function TOSPage() {
           <li>No refunds are provided once the work has started or been delivered unless otherwise agreed in writing.</li>
         </ul>
       </section>
-      <section className="mt-12">
+      <section className="mt-16 md:mt-32">
         <h2 className="text-black text-h5 sm:text-h4 font-bold font-nunito md:text-h2">
           5. Ownership & Licensing
         </h2>
@@ -86,7 +86,7 @@ export default function TOSPage() {
           <li>We reserve the right to display work in our portfolio unless an NDA is signed.</li>
         </ul>
       </section>
-      <section className="mt-16">
+      <section className="mt-16 md:mt-32">
         <h2 className="text-black text-h5 sm:text-h4 font-bold font-nunito md:text-h2">
           6. Intellectual Property
         </h2>
@@ -94,7 +94,7 @@ export default function TOSPage() {
           All Netflows branding, proprietary frameworks, and any reusable code libraries remain the intellectual property of Netflows and may not be used or resold without written consent.
         </p>
       </section>
-      <section className="mt-16">
+      <section className="mt-16 md:mt-32">
         <h2 className="text-black text-h5 sm:text-h4 font-bold font-nunito md:text-h2">
           7. Confidentiality
         </h2>
@@ -102,7 +102,7 @@ export default function TOSPage() {
           Both parties agree to maintain the confidentiality of all non-public information disclosed during the project, including business practices, login credentials, client data, and proprietary strategies.
         </p>
       </section>
-      <section className="mt-16">
+      <section className="mt-16 md:mt-32">
         <h2 className="text-black text-h5 sm:text-h4 font-bold font-nunito md:text-h2">
           8. Limitation of Liability
         </h2>
@@ -110,7 +110,7 @@ export default function TOSPage() {
           Netflows will not be liable for any indirect, incidental, or consequential damages, including lost profits, data loss, or third-party service interruptions (e.g., hosting or email failures).
         </p>
       </section>
-      <section className="mt-16">
+      <section className="mt-16 md:mt-32">
         <h2 className="text-black text-h5 sm:text-h4 font-bold font-nunito md:text-h2">
           9. Termination Policy
         </h2>
@@ -126,7 +126,7 @@ export default function TOSPage() {
           All work completed up to the termination date will be invoiced and payable. Any deposit is non-refundable unless otherwise stated.
         </p>
       </section>
-      <section className="mt-16">
+      <section className="mt-16 md:mt-32">
         <h2 className="text-black text-h5 sm:text-h4 font-bold font-nunito md:text-h2">
           10. Dispute Resolution & Governing Law
         </h2>
@@ -134,7 +134,7 @@ export default function TOSPage() {
           These Terms are governed by the laws of the <span className="font-semibold">State of California, USA</span>. Any disputes will first attempt resolution through mediation. If unresolved, disputes will be settled in the courts of California, in the county where Netflows operates.
         </p>
       </section>
-      <section className="mt-16">
+      <section className="mt-16 md:mt-32">
         <h2 className="text-black text-h5 sm:text-h4 font-bold font-nunito md:text-h2">
           11. Changes to Terms
         </h2>
@@ -142,7 +142,7 @@ export default function TOSPage() {
           We reserve the right to update these Terms at any time. The latest version will always be posted on our website. Continued use of our services after changes implies acceptance of the updated Terms.
         </p>
       </section>
-      <section className="mt-16">
+      <section className="mt-16 md:mt-32">
         <h2 className="text-black text-h5 sm:text-h4 font-bold font-nunito md:text-h2">
           12. Contact
         </h2>
@@ -154,7 +154,7 @@ export default function TOSPage() {
           We typically respond within 24 - 48 hours.
         </p>
       </section>
-      <section className="mt-16">
+      <section className="mt-16 md:mt-32">
         <h2 className="text-black text-h5 sm:text-h4 font-bold font-nunito md:text-h2">
           13. Cookies & Tracking
         </h2>
@@ -170,7 +170,7 @@ export default function TOSPage() {
           Users may choose to disable cookies through their browser settings.
         </p>
       </section>
-      <section className="mt-16">
+      <section className="mt-16 md:mt-32">
         <h2 className="text-black text-h5 sm:text-h4 font-bold font-nunito md:text-h2">
           14. Entire Agreement
         </h2>

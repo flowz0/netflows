@@ -6,7 +6,7 @@ import { FaEnvelope } from "react-icons/fa6";
 
 export default function Footer() {
   return (
-    <footer className="mt-64 mb-32 px-6 max-w-7xl mx-auto">
+    <footer className="mt-32 mb-16 px-6 max-w-7xl mx-auto md:mt-64 md:mb-32">
       <div className="flex items-center w-full h-full">
         <div className="grid grid-cols-1 gap-y-12 w-full sm:grid-cols-2 sm:justify-between lg:grid-cols-4">
           <div className="flex flex-col justify-between w-fit">

@@ -75,7 +75,7 @@ export default function ProjectHeader({ project }: ProjectProps) {
           </Link>
         </div>
 
-        <div className="md:flex md:justify-between md:items-start gap-x-8 mt-8">
+        <div className="md:flex md:justify-between md:items-start gap-x-8 mt-4">
           <div className="md:max-w-1/2">
             <p className="text-black75 text-p font-inter max-w-lg lg:mx-0 md:text-lg">
               {summary}
@@ -124,11 +124,11 @@ export default function ProjectHeader({ project }: ProjectProps) {
           </div>
         </div>
       </div>
-      <div className="flex justify-center mt-16">
+      <div className="flex justify-center mt-12">
         <Image
           src={projectBanner || PlaceholderLogo}
           alt={`${brandName} project cover image`}
-          className="object-cover h-fit max-h-96 w-full rounded-2xl"
+          className="object-cover h-36 md:h-full max-h-96 w-full rounded-2xl"
           draggable={false}
           priority={true}
           quality={100}

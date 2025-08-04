@@ -30,7 +30,7 @@ export default function TestimonialSection() {
     };
   }, []);
   return (
-    <section ref={sectionRef} className="mt-64">
+    <section ref={sectionRef} className="mt-32 md:mt-64">
       <div className="max-w-7xl mx-auto px-6 flex flex-col items-center">
         <h2 className="text-h4 font-bold font-nunito text-center text-black sm:text-h2">
           Don&apos;t Take {" "}
@@ -48,7 +48,7 @@ export default function TestimonialSection() {
           className="pointer-events-none absolute inset-0 z-10 bg-linear-[90deg,rgba(243,242,243,1)_0%,rgba(243,242,243,0)_20%,rgba(243,242,243,0)_80%,rgba(243,242,243,1)_100%]"
         />
 
-        <div className="mt-16 w-full overflow-hidden">
+        <div className="mt-8 w-full overflow-hidden md:mt-12">
           <div className={`flex gap-x-6 w-max ${inView ? "animate-scroll" : ""}`}>
             {[...topRowReviews, ...topRowReviews].map((testimonial, index) => (
               <div key={index}>

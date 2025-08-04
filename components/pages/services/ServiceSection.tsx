@@ -18,7 +18,7 @@ export default function ServiceSection({ header, desc, img, flip }: ServiceSecti
         <Image
           src={img}
           alt="Service image"
-          className={`h-96 w-auto md:h-[600px] ${flip ? "lg:order-1" : ""}`}
+          className={`h-96 w-auto md:h-[480px] ${flip ? "lg:order-1" : ""}`}
           priority={true}
           quality={100}
           draggable={false}
