@@ -13,4 +13,5 @@ export interface ServiceSectionProps {
   desc: string;
   img: StaticImageData;
   flip?: boolean;
+  buttonLabel: string;
 }
