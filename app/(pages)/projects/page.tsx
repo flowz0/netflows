@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function ProjectsPage() {
   return (
-    <main className="mt-16 px-6 max-w-7xl mx-auto md:mt-32">
+    <main className="mt-8 px-6 max-w-7xl mx-auto md:mt-16">
       <div className="flex flex-col cursor-default">
         <h1 className="text-black text-h3 font-bold font-nunito sm:text-h1">
           What We&apos;ve Built

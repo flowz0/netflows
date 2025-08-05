@@ -6,7 +6,7 @@ import MaintenanceImg from "@/public/service/maintenance.svg";
 
 export default function Page() {
   return (
-    <main className="mt-16 px-6 max-w-7xl mx-auto cursor-default md:mt-32">
+    <main className="mt-8 px-6 max-w-7xl mx-auto cursor-default md:mt-16">
       <div className="flex flex-col items-center">
         <h1 className="text-black text-h3 font-bold font-nunito text-center sm:text-h1">
           Services We Provide

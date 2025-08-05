@@ -15,7 +15,7 @@ import { FaEnvelope } from "react-icons/fa6";
 
 export default function Page() {
   return (
-    <main className="mt-16 px-6 max-w-7xl mx-auto cursor-default lg:mt-32">
+    <main className="mt-8 px-6 max-w-7xl mx-auto cursor-default lg:mt-16">
       <div className="flex flex-col items-center">
         <div className="flex flex-col items-center">
           <p className="text-black5 bg-secondary text-small font-inter w-fit py-1 px-4 rounded-full">About</p>

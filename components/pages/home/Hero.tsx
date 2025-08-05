@@ -6,7 +6,7 @@ import Button from "@/components/Button";
 
 export default function Hero() {
   return (
-    <section className="mt-16 max-w-7xl mx-auto lg:mt-32">
+    <section className="mt-8 max-w-7xl mx-auto lg:mt-16">
       <div className="flex flex-col items-center cursor-default px-6">
         <h1 className="text-h3 font-bold font-nunito text-center sm:text-h1">
           <span className="text-primary">Grow</span> Online. {" "}
