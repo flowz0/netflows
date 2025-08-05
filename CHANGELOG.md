@@ -1,3 +1,13 @@
+## [2.2.8](https://github.com/flowz0/netflows/compare/v2.2.7...v2.2.8) (2025-08-05)
+
+
+### Bug Fixes
+
+* decrease Image sizes in ProcessCTA component ([7c9f760](https://github.com/flowz0/netflows/commit/7c9f760c68c44357ef3d0e675502d1b81bd058a8))
+* decrease responsive spacing for pages ([fe9d1f1](https://github.com/flowz0/netflows/commit/fe9d1f1ad38718e5082b1fc837d791a7993729b0))
+* improve about page UI/UX ([ce1a15e](https://github.com/flowz0/netflows/commit/ce1a15ee9d7f8133ddbd470b102c35200ee64095))
+* improve projects page UI/UX ([1102780](https://github.com/flowz0/netflows/commit/11027800d82e988a0a82383d71eed1e0475f7dd2))
+
 ## [2.2.7](https://github.com/flowz0/netflows/compare/v2.2.6...v2.2.7) (2025-08-04)
 
 
