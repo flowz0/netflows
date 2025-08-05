@@ -13,7 +13,7 @@ export default function ProcessCTA() {
           <Image
             src={BusinessManAvatar1}
             alt="Business avatar"
-            className="object-cover h-16 w-16 lg:h-12 lg:w-12 rounded-full ring-4 ring-black5"
+            className="object-cover h-12 w-12 rounded-full ring-4 ring-black5"
             priority={false}
             draggable={false}
             quality={75}
@@ -22,7 +22,7 @@ export default function ProcessCTA() {
           <Image
             src={BusinessManAvatar2}
             alt="Business avatar"
-            className="object-cover h-16 w-16 lg:h-12 lg:w-12 rounded-full ring-4 ring-black5"
+            className="object-cover h-12 w-12 rounded-full ring-4 ring-black5"
             priority={false}
             draggable={false}
             quality={75}
@@ -31,7 +31,7 @@ export default function ProcessCTA() {
           <Image
             src={BusinessManAvatar3}
             alt="Business avatar"
-            className="object-cover h-16 w-16 lg:h-12 lg:w-12 rounded-full ring-4 ring-black5"
+            className="object-cover h-12 w-12 lg:h-12 lg:w-12 rounded-full ring-4 ring-black5"
             priority={false}
             draggable={false}
             quality={75}
