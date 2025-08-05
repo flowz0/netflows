@@ -11,11 +11,11 @@ export const metadata: Metadata = {
 export default function ProjectsPage() {
   return (
     <main className="mt-8 px-6 max-w-7xl mx-auto md:mt-16">
-      <div className="flex flex-col cursor-default">
-        <h1 className="text-black text-h3 font-bold font-nunito sm:text-h1">
+      <div className="flex flex-col items-center cursor-default">
+        <h1 className="text-black text-h3 font-bold font-nunito text-center sm:text-h1">
           What We&apos;ve Built
         </h1>
-        <p className="mt-4 max-w-3xl text-p font-inter text-black75">
+        <p className="mt-4 max-w-xl text-p font-inter text-center text-black75">
           Take a look at projects where we helped partners bring their ideas to
           life through strategic design and modern web solutions.
         </p>
