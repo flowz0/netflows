@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function TOSPage() {
   return (
-    <main className="mt-16 px-6 max-w-7xl mx-auto md:mt-32">
+    <main className="mt-8 px-6 max-w-7xl mx-auto md:mt-16">
       <header>
         <h1 className="text-black text-h4 sm:text-h3 font-bold font-nunito md:text-h1">
           Terms of Service

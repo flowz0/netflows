@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 export default function BookConsultationPage() {
   return (
     <>
-      <main className="mt-16 px-6 max-w-7xl mx-auto lg:mt-32">
+      <main className="mt-8 px-6 max-w-7xl mx-auto lg:mt-16">
         <header className="flex flex-col items-center cursor-default">
           <h1 className="text-black text-h4 font-bold font-nunito text-center md:text-h1">
             Schedule Your
