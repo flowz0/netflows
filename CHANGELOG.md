@@ -1,3 +1,11 @@
+## [2.2.9](https://github.com/flowz0/netflows/compare/v2.2.8...v2.2.9) (2025-08-06)
+
+
+### Bug Fixes
+
+* improve desc content in Services component ([c3ef6bc](https://github.com/flowz0/netflows/commit/c3ef6bc0e4fc417025327247ec283cd33b913afa))
+* remove flexbox and add grid columns to improve responsiveness in ServiceSelection component ([113c723](https://github.com/flowz0/netflows/commit/113c723787803de02a0cd794c97a6db1bfa5cd20))
+
 ## [2.2.8](https://github.com/flowz0/netflows/compare/v2.2.7...v2.2.8) (2025-08-05)
 
 
