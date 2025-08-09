@@ -1,3 +1,10 @@
+## [2.2.10](https://github.com/flowz0/netflows/compare/v2.2.9...v2.2.10) (2025-08-09)
+
+
+### Bug Fixes
+
+* add google analytics ([391bb40](https://github.com/flowz0/netflows/commit/391bb409c7c54028281f86157aae351f6507c2d7))
+
 ## [2.2.9](https://github.com/flowz0/netflows/compare/v2.2.8...v2.2.9) (2025-08-06)
 
 
