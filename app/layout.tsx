@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import Script from "next/script";
 
 const nunito = Nunito({
   variable: "--font-nunito",
@@ -98,14 +99,31 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="en" className="scroll-smooth">
-      <body
-        className={`${nunito.variable} ${inter.variable} bg-black5 text-black antialiased`}
-      >
+    <html lang="en" className="scroll-smooth" suppressHydrationWarning>
+      <head>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
         />
+        <>
+          <Script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-MSTXE8G75X"
+          />
+          <Script id="google-analytics">
+            {`
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-MSTXE8G75X');
+      `}
+          </Script>
+        </>
+
+      </head>
+      <body
+        className={`${nunito.variable} ${inter.variable} bg-black5 text-black antialiased`}
+      >
         <Navbar />
         {children}
         <Footer />
