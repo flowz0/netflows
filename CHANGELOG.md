@@ -1,3 +1,10 @@
+## [2.2.11](https://github.com/flowz0/netflows/compare/v2.2.10...v2.2.11) (2025-08-09)
+
+
+### Bug Fixes
+
+* update Google Analytics implementation ([80ddbc3](https://github.com/flowz0/netflows/commit/80ddbc3eb08ad74e4b099de145fe69c504f15856))
+
 ## [2.2.10](https://github.com/flowz0/netflows/compare/v2.2.9...v2.2.10) (2025-08-09)
 
 
