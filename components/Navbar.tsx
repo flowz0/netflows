@@ -29,7 +29,7 @@ export default function Navbar() {
       initial={{ y: 0 }}
       animate={{ y: scrollDirection === "down" ? -200 : 0 }}
       transition={{ duration: 0.2, ease: "easeInOut" }}
-      className="bg-black5 h-32 top-0 sticky z-30 w-full border-black border-b"
+      className="bg-black5 h-24 top-0 sticky z-30 w-full"
     >
       <nav className="max-w-7xl mx-auto h-full">
         <div className="flex items-center justify-between h-full px-6">
@@ -38,7 +38,7 @@ export default function Navbar() {
               <Image
                 src={NetflowsLogo}
                 alt="Netflows logo"
-                className="h-16 w-auto"
+                className="h-12 w-auto"
                 priority
                 quality={100}
               />
