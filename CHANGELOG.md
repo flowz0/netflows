@@ -1,3 +1,16 @@
+## [2.2.12](https://github.com/flowz0/netflows/compare/v2.2.11...v2.2.12) (2025-09-18)
+
+
+### Bug Fixes
+
+* **button:** apply bold font to baseStyle ([cb3ca42](https://github.com/flowz0/netflows/commit/cb3ca421fc5dbcb518c7a03effd3788c6f67bd6c))
+* **casestudycard:** improve responsive padding for better UX/UI ([4c2dd26](https://github.com/flowz0/netflows/commit/4c2dd26fd7b52eaf15263e6a46fd4fa3b501427e))
+* **cta:** improve conversions & SEO by updating component content ([cfb0373](https://github.com/flowz0/netflows/commit/cfb0373c7c09f7798feb81ecf0c4a0fd589d6bff))
+* **navbar:** implement useScrollDirection to make Navbar hide when scrolling down & show when scrolling up ([e7faf6e](https://github.com/flowz0/netflows/commit/e7faf6ef2f3b1788d2227c29bb5cb8449ef9db3b))
+* **project.data:** update DDDCThumbnail import ([53f6287](https://github.com/flowz0/netflows/commit/53f628797daf7a1bf08d23d3aeb4f5aa7f730c23))
+* **public/projects:** update ddc-thumbnail image ([3023e81](https://github.com/flowz0/netflows/commit/3023e810a51cf1313f7439e0949878054c550940))
+* **testimonials:** improve UX by decreasing threshold to prevent disruptive visuals ([be377e4](https://github.com/flowz0/netflows/commit/be377e41a4954adc3c4e5b2a7240c4f96ad59e04))
+
 ## [2.2.11](https://github.com/flowz0/netflows/compare/v2.2.10...v2.2.11) (2025-08-09)
 
 
