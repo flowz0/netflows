@@ -9,7 +9,7 @@ export default function Button({
   className,
   variant = 'primary'
 }: ButtonProps) {
-  const baseStyle = "py-4 px-8 text-p font-inter rounded-2xl cursor-pointer transition-transform duration-300 ease-in-out active:scale-95";
+  const baseStyle = "py-4 px-8 text-p font-inter font-bold rounded-2xl cursor-pointer transition-transform duration-300 ease-in-out active:scale-95";
   const variantStyle = {
     primary: "bg-primary text-black5",
     secondary: "bg-secondary text-black5",
