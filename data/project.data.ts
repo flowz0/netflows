@@ -1,7 +1,7 @@
 import { ProjectType } from "../types/project.type";
 
 import DuctDaddyLogo from "@/public/projects/duct-daddy-logo.png";
-import DDDCThumbnail from "@/public/projects/dddc-thumbnail.png";
+import DDDCThumbnail from "@/public/projects/dddc-thumbnail.jpg";
 import DDDCBanner from "@/public/projects/dddc-banner.png";
 import DDChallengeImg from "@/public/projects/dd-challenge-img.jpg";
 import DDWireframesImg from "@/public/projects/dd-wireframes.png";
