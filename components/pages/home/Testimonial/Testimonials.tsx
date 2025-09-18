@@ -15,7 +15,7 @@ export default function TestimonialSection() {
         setInView(entry.isIntersecting);
       },
       {
-        threshold: 0.15,
+        threshold: 0.005,
       }
     );
 
