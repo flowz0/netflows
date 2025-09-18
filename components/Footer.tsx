@@ -82,7 +82,7 @@ export default function Footer() {
                 We&apos;d love to hear from you.
               </p>
             </div>
-            <div className="mt-12 flex gap-x-6">
+            <div className="mt-8 flex gap-x-6">
               <Link href="https://www.linkedin.com/company/netflowsxyz/about" target="_blank" className="transition-colors duration-300 ease-in-out hover:text-primary">
                 <SiLinkedin className="w-8 h-8" />
               </Link>
