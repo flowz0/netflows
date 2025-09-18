@@ -1,24 +1,21 @@
 "use client";
 
 import Image from "next/image";
-
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import Link from "next/link";
 import NetflowsLogo from "@/public/netflows-logo-transparent.png";
 import Button from "./Button";
+import useScrollDirection from "@/hooks/useScrollDirection";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
+  const scrollDirection = useScrollDirection();
 
   useEffect(() => {
-    if (isOpen) {
-      document.body.classList.add("overflow-hidden");
-    } else {
-      document.body.classList.remove("overflow-hidden");
-    }
+    document.body.classList.toggle("overflow-hidden", isOpen);
   }, [isOpen]);
 
   const Links = [
@@ -28,7 +25,12 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="bg-black5 h-32 top-0 sticky z-30">
+    <motion.header
+      initial={{ y: 0 }}
+      animate={{ y: scrollDirection === "down" ? -200 : 0 }}
+      transition={{ duration: 0.2, ease: "easeInOut" }}
+      className="bg-black5 h-32 top-0 sticky z-30 w-full border-black border-b"
+    >
       <nav className="max-w-7xl mx-auto h-full">
         <div className="flex items-center justify-between h-full px-6">
           <div className="flex items-center justify-center gap-x-12">
@@ -37,9 +39,8 @@ export default function Navbar() {
                 src={NetflowsLogo}
                 alt="Netflows logo"
                 className="h-16 w-auto"
-                priority={true}
+                priority
                 quality={100}
-                loading="eager"
               />
             </Link>
 
@@ -48,9 +49,9 @@ export default function Navbar() {
                 <Link
                   key={href}
                   href={href}
-                  className={`text-h6 font-bold font-nunito ${(href === "/projects" && pathname.startsWith("/projects")) || pathname === href
-                    ? 'text-primary'
-                    : 'text-black50 hover:text-black'
+                  className={`text-h6 font-bold font-nunito ${pathname.startsWith(href)
+                    ? "text-primary"
+                    : "text-black50 hover:text-black"
                     }`}
                 >
                   {label}
@@ -58,11 +59,15 @@ export default function Navbar() {
               ))}
             </div>
           </div>
+
           <Link href="/booking">
-            <Button text="Book Free Consultation" className="hidden lg:block" variant="gradient" />
+            <Button
+              text="Book Free Consultation"
+              className="hidden lg:block"
+              variant="gradient"
+            />
           </Link>
 
-          {/* mobile */}
           {/* Mobile menu button */}
           <button
             type="button"
@@ -73,25 +78,26 @@ export default function Navbar() {
           >
             <span
               className={`bg-black50 block transition-all duration-300 ease-in-out h-1 w-9 rounded-sm absolute ${isOpen
-                ? 'rotate-45 top-1/2'
-                : 'top-[calc(50%-10px)]'
+                ? "rotate-45 top-1/2"
+                : "top-[calc(50%-10px)]"
                 }`}
-            ></span>
+            />
             <span
               className={`bg-black50 block transition-all duration-300 ease-in-out h-1 w-9 rounded-sm absolute ${isOpen
-                ? 'opacity-0 top-1/2'
-                : 'top-1/2'
+                ? "opacity-0 top-1/2"
+                : "top-1/2"
                 }`}
-            ></span>
+            />
             <span
               className={`bg-black50 block transition-all duration-300 ease-in-out h-1 w-9 rounded-sm absolute ${isOpen
-                ? '-rotate-45 top-1/2'
-                : 'top-[calc(50%+10px)]'
+                ? "-rotate-45 top-1/2"
+                : "top-[calc(50%+10px)]"
                 }`}
-            ></span>
+            />
           </button>
         </div>
-        {/* Mobile Links */}
+
+        {/* Mobile menu links */}
         <AnimatePresence>
           {isOpen && (
             <motion.div
@@ -102,15 +108,15 @@ export default function Navbar() {
               className="md:hidden bg-black5"
             >
               <ul className="flex flex-col gap-y-4 px-6 text-h4 font-bold font-nunito">
-                {Links.map(({href, label}) => (
+                {Links.map(({ href, label }) => (
                   <li key={href}>
                     <Link
                       href={href}
-                      className={`${(href === "/projects" && pathname.startsWith("/projects")) || pathname === href
+                      className={`${pathname.startsWith(href)
                         ? "text-primary"
                         : "text-black50 hover:text-primary"
                         }`}
-                      onClick={() => setIsOpen(!isOpen)}
+                      onClick={() => setIsOpen(false)}
                     >
                       {label}
                     </Link>
@@ -121,6 +127,6 @@ export default function Navbar() {
           )}
         </AnimatePresence>
       </nav>
-    </header>
+    </motion.header>
   );
 }
