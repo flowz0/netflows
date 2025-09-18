@@ -1,3 +1,10 @@
+## [2.2.13](https://github.com/flowz0/netflows/compare/v2.2.12...v2.2.13) (2025-09-18)
+
+
+### Bug Fixes
+
+* **navbar:** decrease Logo size and Navbar height ([355227b](https://github.com/flowz0/netflows/commit/355227bff35e5de810d8c3a6e6ef28c189fc48a1))
+
 ## [2.2.12](https://github.com/flowz0/netflows/compare/v2.2.11...v2.2.12) (2025-09-18)
 
 
