@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@next/third-parties": "^15.5.3",
     "@sendgrid/mail": "^8.1.5",
     "date-fns": "^4.1.0",
     "framer-motion": "^12.7.3",
