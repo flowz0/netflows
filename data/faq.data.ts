@@ -2,28 +2,44 @@ import { FAQProps } from "@/types/faq.type";
 
 const FaqData: FAQProps[] = [
   {
-    question: "What's your web development process?",
-    answer: "We follow a proven collaborative workflow: Discovery → Design → Development → Testing → Launch → Ongoing Support. Every step is transparent so you always know the project status."
+    question: "1. What services does Netflows offer?",
+    answer: "Netflows specializes in custom web development, responsive web design, and SEO optimization. We build fast, accessible, and scalable websites for startups, small businesses, and growing brands. Whether you need a landing page, full website, or web application we've got you covered."
   },
   {
-    question: "How long does it take to build a website or application?",
-    answer: "Timelines vary by scope: a basic brochure site typically takes no more than 2 weeks, while a robust web application can take up to 4 weeks or more. We'll give you a detailed project schedule during the proposal phase with clear milestones and delivery dates."
+    question: "2. What's the difference between web design and web development?",
+    answer: "Web design focuses on how your website looks and feels like the layout, colors, fonts, and user experience. Web development is the coding that brings the design to life, ensuring the site functions smoothly and works across all devices. At Netflows, we seamlessly handle both."
   },
   {
-    question: "Do you build responsive, mobile-friendly websites?",
-    answer: "Every site and application we build is fully responsive. We ensure it's accessible on all phone, tablet, and desktop devices increasing your reach."
+    question: "3. How long does it take to build a website or application?",
+    answer: "It depends on your project's size and scope. A simple landing page may take 1 - 2 weeks, while a robust web application can take up to 3 - 6 weeks. We'll provide a detailed project schedule during the proposal phase with clear milestones and delivery dates."
   },
   {
-    question: "What kind of post-launch support do you offer?",
-    answer: "We offer tiered maintenance plans that include fully managed hosting, partner support, security updates, backups, uptime monitoring, and minor content changes. Perfect if you plan to add features or want peace of mind after launch."
+    question: "4. Do you offer SEO services with the website?",
+    answer: "Yes! Every website we build is SEO-optimized from the ground up including fast load times, mobile responsiveness, schema markup, and on-page SEO best practices. We also offer ongoing SEO services if you want to grow your organic traffic."
   },
   {
-    question: "Do you handle e-commerce and payment integrations?",
+    question: "5. Can you redesign my current website?",
+    answer: "Absolutely. We offer website redesign services to modernize outdated sites, improve user experience, and optimize performance while preserving your brand identity and SEO rankings."
+  },
+  {
+    question: "6. Will my website be mobile-friendly?",
+    answer: "Yes. Every site and application we build is fully responsive, meaning it looks and functions perfectly across all devices. We ensure it's accessible on all desktop, tablet, and smartphone devices."
+  },
+  {
+    question: "7. Do you provide ongoing support after launch?",
+    answer: "Yes. We offer ongoing maintenance and support plans that include fully managed hosting, security updates, backups, uptime monitoring, analytics, and minor content changes. Perfect if you plan to add features or want peace of mind after launch."
+  },
+  {
+    question: "8. How can a website help my business generate more leads?",
+    answer: "A well-designed website acts as a 24/7 sales tool by showcasing your services, building trust with potential customers, and guiding visitors toward key actions like booking a call or filling out a form. With proper SEO, it attracts organic traffic from search engines, while strategic calls-to-action and contact forms convert that traffic into qualified leads. At Netflows, we focus on creating websites that not only look great but are also optimized to drive real business growth."
+  },
+  {
+    question: "9. Do you handle e-commerce and payment integrations?",
     answer: "Yes. We build secure PCI-compliant e-commerce sites using Shopify or integrate popular payment gateways (Stripe, PayPal) and optimize checkout flow to reduce cart abandonment."
   },
   {
-    question: "How do I get started?",
-    answer: "Reach out by booking a free consultation. We'll discuss your goals, review your requirements, and share a proposal to bring your vision to life."
+    question: "10. How do I get started with Netflows?",
+    answer: "It's easy! Just book a free 15-minute call. We'll learn about your business goals and recommend the best digital solution to help you grow online with no obligation."
   },
 ];
 
