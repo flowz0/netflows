@@ -39,11 +39,11 @@ export default function ProcessCTA() {
           />
         </div>
         <p className="text-black75 text-p font-inter text-center mt-4 cursor-default lg:mt-0">
-          Join businesses leveling up their online presence
+          Join the Businesses Growing with Netflows
         </p>
       </div>
       <Link href="/booking">
-        <Button text="Book Free Consultation" className="mt-8 lg:mt-0" variant="gradient" />
+        <Button text="Book Your Free Strategy Call Today" className="mt-8 lg:mt-0" variant="gradient" />
       </Link>
     </div>
   );
