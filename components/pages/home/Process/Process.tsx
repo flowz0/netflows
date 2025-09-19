@@ -15,22 +15,22 @@ export default function Process() {
         <ProcessCard
           step="01."
           title="Discovery"
-          desc="We learn about your goals, audience, and vision to plan for the next phases."
+          desc="We start with a strategy call to learn about your business, ideal customers, and project goals. This ensures every decision aligns with your brand and drives measurable results."
         />
         <ProcessCard
           step="02."
           title="Design"
-          desc="A clean, user-friendly design that aligns with your brand's identity and goals."
+          desc="Our team creates a clean, responsive design tailored to your brand identity and user journey. We prioritize usability, accessibility, and modern aesthetics to engage visitors and guide them toward action."
         />
         <ProcessCard
           step="03."
           title="Development"
-          desc="Responsive, fast, and secure web solutions built with modern technologies."
+          desc="We develop your website using cutting-edge technologies focusing on performance, security, mobile responsiveness, and SEO best practices to improve search rankings and lead generation."
         />
         <ProcessCard
           step="04."
           title="Launch"
-          desc="After quality assaurance, we launch your solution and offer ongoing support."
+          desc="After rigorous testing and quality assurance, we launch your site and provide ongoing support. From maintenance to updates and analytics, we help you grow and adapt after launch."
         />
       </div>
       <ProcessCTA />
