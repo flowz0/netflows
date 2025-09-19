@@ -12,7 +12,7 @@ export default function CTA() {
           Book a free 15-min strategy call today to discuss how we can design and develop a high-performing website tailored to your goals.
         </p>
         <Link href="/booking" className="mt-8">
-          <Button text="Book My Free Call" variant="gradient" />
+          <Button text="Book My Free Call Today" variant="gradient" />
         </Link>
       </div>
     </section>
