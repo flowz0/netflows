@@ -62,7 +62,7 @@ export default function Navbar() {
 
           <Link href="/booking">
             <Button
-              text="Book Free Consultation"
+              text="Book Free 15-Min Call"
               className="hidden lg:block"
               variant="gradient"
             />
