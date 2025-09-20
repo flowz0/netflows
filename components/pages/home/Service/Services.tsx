@@ -20,7 +20,7 @@ export default function Services() {
           We&apos;re Offering
         </h2>
         <p className="mt-4 text-p font-inter text-black75 md:mt-0 lg:w-2/5">
-          We offer services that can help businesses improve online business reputation, expand market reach, and increase turnover through effective digital strategies.
+          We offer digital solutions to help you grow your online presence, generate leads, and scale your business. From responsive websites to scalable web apps, our services are tailored to your goals and built for results.
         </p>
       </div>
 
