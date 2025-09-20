@@ -10,7 +10,7 @@ export default function ServiceItem({ title, description, image, isOpen, onClick
       onClick={onClick}
       className={`${isOpen
         ? "py-16 grid grid-cols-1 lg:gap-x-4 lg:grid-cols-3 relative cursor-default"
-        : "py-8 flex items-center justify-between cursor-pointer"
+        : "py-8 gap-x-4 flex items-center justify-between cursor-pointer"
         } group transition-all duration-300 ease-in-out items-center gap-x-2`}
     >
       <h3 className={`text-black text-h5 text-wrap sm:text-h4 font-nunito font-light transition-transform duration-300 ease-in-out ${isOpen ? "" : "group-hover:translate-x-4"}`}>
@@ -23,20 +23,22 @@ export default function ServiceItem({ title, description, image, isOpen, onClick
             {description}
           </p>
           {image && (
-            <Image
-              src={image}
-              alt={`${title} image`}
-              className="absolute bottom-[-184px] right-0 h-[280px] opacity-80 lg:bottom-auto md:right-[-32px] md:h-[320px] lg:h-[400px] w-auto object-cover z-10"
-              priority={false}
-              draggable={false}
-              quality={80}
-              loading="lazy"
-            />
+            <div className="flex justify-start lg:block mt-4 lg:mt-0">
+              <Image
+                src={image}
+                alt={`${title} image`}
+                className="lg:absolute lg:right-[-32px] lg:-bottom-16 h-[320px] opacity-80 lg:h-[360px] w-auto object-cover z-10"
+                priority={false}
+                draggable={false}
+                quality={80}
+                loading="lazy"
+              />
+            </div>
           )}
         </>
       ) : (
-        <div className="bg-primary h-12 w-12 sm:h-16 sm:w-16 rounded-full flex items-center justify-center">
-          <FaAngleLeft className="text-black5 h-6 w-6 sm:h-8 sm:w-8 transition-transform duration-500 ease-in-out group-hover:-rotate-90" />
+        <div className="bg-primary p-3 rounded-full flex items-center justify-center">
+          <FaAngleLeft className="text-black5 h-8 w-8 sm:h-8 sm:w-8 transition-transform duration-500 ease-in-out group-hover:-rotate-90" />
         </div>
       )}
     </div>
