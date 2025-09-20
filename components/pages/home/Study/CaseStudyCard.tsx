@@ -26,7 +26,7 @@ const CaseStudyCard: React.FC<ProjectProps> = ({ project }) => {
   };
 
   return (
-    <div onClick={handleClick} className={`border border-black75 rounded-2xl py-6 px-4 sm:py-8 sm:px-8 transition-shadow duration-300 ease-in-out ${comingSoon
+    <div onClick={handleClick} className={`border border-black75 rounded-2xl pt-4 pb-6 px-4 sm:py-8 sm:px-8 transition-shadow duration-300 ease-in-out ${comingSoon
       ? "cursor-not-allowed"
       : "cursor-pointer hover:shadow-[0_16px_32px_#924bf7]"
       }`}>
@@ -75,7 +75,7 @@ const CaseStudyCard: React.FC<ProjectProps> = ({ project }) => {
         <Image
           src={projectThumbnail!}
           alt={`${brandName} project image`}
-          className="object-cover h-64 w-auto rounded-2xl sm:h-80"
+          className="object-cover h-48 w-auto rounded-2xl sm:h-80"
           draggable={false}
           priority={true}
           quality={100}
