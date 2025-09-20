@@ -1,3 +1,11 @@
+## [2.2.16](https://github.com/flowz0/netflows/compare/v2.2.15...v2.2.16) (2025-09-20)
+
+
+### Bug Fixes
+
+* add more Services and update asset imports in Services page ([793511a](https://github.com/flowz0/netflows/commit/793511a9f2fc3931d1cc39afa63e9dde00b8f9f9))
+* improve spacing and alignment layout in ServiceSection component ([42612af](https://github.com/flowz0/netflows/commit/42612afb3004efc8b8ca6671414e60e2160be367))
+
 ## [2.2.15](https://github.com/flowz0/netflows/compare/v2.2.14...v2.2.15) (2025-09-20)
 
 
