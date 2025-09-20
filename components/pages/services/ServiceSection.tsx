@@ -7,13 +7,13 @@ import Link from "next/link";
 export default function ServiceSection({ header, desc, img, flip, buttonLabel }: ServiceSectionProps) {
   return (
     <section>
-      <div className="grid grid-cols-1 lg:grid-cols-2">
-        <div className={`flex flex-col items-center lg:justify-center ${flip ? "lg:order-2" : ""}`}>
-          <h2 className="text-black text-h5 font-bold font-nunito text-center sm:text-h3">
+      <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-x-16">
+        <div className={`flex flex-col justify-center ${flip ? "lg:order-2" : ""}`}>
+          <h2 className="text-black text-h5 font-bold font-nunito text-start sm:text-h3">
             {header}
           </h2>
           <div>
-            <p className="text-black75 text-p font-inter text-center max-w-sm mt-4">
+            <p className="text-black75 text-p font-inter text-start max-w-xl mt-4">
               {desc}
             </p>
           </div>
@@ -26,7 +26,7 @@ export default function ServiceSection({ header, desc, img, flip, buttonLabel }:
           <Image
             src={img}
             alt="Service image"
-            className={`h-96 w-auto md:h-[480px] ${flip ? "lg:order-1" : ""} mt-8 lg:mt-0`}
+            className={`h-96 w-full md:h-[480px] ${flip ? "lg:order-1" : ""} mt-8 lg:mt-0`}
             priority={true}
             quality={100}
             draggable={false}
