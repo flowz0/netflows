@@ -1,3 +1,14 @@
+## [2.2.17](https://github.com/flowz0/netflows/compare/v2.2.16...v2.2.17) (2025-09-20)
+
+
+### Bug Fixes
+
+* add sectionId and improve responiveness in ServiceSection component ([b89fb5f](https://github.com/flowz0/netflows/commit/b89fb5f35f737b0241e0283e9985f5eb7d13facd))
+* add sectionId to ServiceSectionProps in service types ([1fe3424](https://github.com/flowz0/netflows/commit/1fe3424319eb9466521e8be07244bfc82be29bca))
+* add sectionIds and update buttonLabels in Services page ([6b2c222](https://github.com/flowz0/netflows/commit/6b2c22278804740a4920760f2e9edfd0a049098e))
+* improve faq data ([7cbcab6](https://github.com/flowz0/netflows/commit/7cbcab6cf06e80e5d1ced89efd135c602c2c423c))
+* update Services links in Footer component ([dd9fd16](https://github.com/flowz0/netflows/commit/dd9fd16ea4c8437b7ce12d180f978899afb63252))
+
 ## [2.2.16](https://github.com/flowz0/netflows/compare/v2.2.15...v2.2.16) (2025-09-20)
 
 
