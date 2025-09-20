@@ -54,7 +54,7 @@ export default function Process() {
                 updated[index] = true;
                 return updated;
               });
-            }, index * 50);
+            }, index * 100);
             observer.disconnect();
           }
         },
@@ -68,7 +68,7 @@ export default function Process() {
       const observer = new IntersectionObserver(
         ([entry]) => {
           if (entry.isIntersecting) {
-            setTimeout(() => setCtaVisible(true), 250); // delay for smooth blend
+            setTimeout(() => setCtaVisible(true), 400); // delay for smooth blend
             observer.disconnect();
           }
         },
