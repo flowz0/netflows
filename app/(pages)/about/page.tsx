@@ -24,7 +24,7 @@ export default function Page() {
           />
         </div>
         <p className="mt-8 max-w-4xl text-p font-inter text-center text-black75 md:mt-12">
-          Netflows is a web design and development agency focused on helping startups and service-based businesses turn visitors into loyal customers. From fast-loading landing pages to scalable full-stack solutions, we build web experiences that don&apos;t just look great but drive results.
+          Netflows is a web development and design agency focused on helping startups and service-based businesses turn visitors into loyal customers. From fast-loading landing pages to scalable full-stack solutions, we build web experiences that don&apos;t just look great but drive results.
         </p>
       </div>
       <div className="mt-12 md:mt-20">
