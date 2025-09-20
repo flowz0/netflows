@@ -23,7 +23,7 @@ const FaqData: FAQProps[] = [
   },
   {
     question: "6. Will my website be mobile-friendly?",
-    answer: "Yes. Every site and application we build is fully responsive, meaning it looks and functions perfectly across all devices. We ensure it's accessible on all desktop, tablet, and smartphone devices."
+    answer: "Yes. Every site and application we build is fully responsive, meaning it looks and functions perfectly across all devices. We ensure your site is accessible on all desktop, tablet, and smartphone devices."
   },
   {
     question: "7. Do you provide ongoing support after launch?",
@@ -31,7 +31,7 @@ const FaqData: FAQProps[] = [
   },
   {
     question: "8. How can a website help my business generate more leads?",
-    answer: "A well-designed website acts as a 24/7 sales tool by showcasing your services, building trust with potential customers, and guiding visitors toward key actions like booking a call or filling out a form. With proper SEO, it attracts organic traffic from search engines, while strategic calls-to-action and contact forms convert that traffic into qualified leads. At Netflows, we focus on creating websites that not only look great but are also optimized to drive real business growth."
+    answer: "A well-designed website acts as a 24/7 sales tool by showcasing your services, building trust with potential customers, and guiding visitors toward key actions like booking a call or filling out a form. With proper SEO, it attracts organic traffic from search engines (e.g. Google, Yahoo), while strategic calls-to-action and contact forms convert that traffic into qualified leads."
   },
   {
     question: "9. Do you handle e-commerce and payment integrations?",
