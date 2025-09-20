@@ -1,6 +1,6 @@
 import WebDesignImg from "@/public/service/web-design.svg";
 import WebDevelopmentImg from "@/public/service/web-development.svg";
-import ThirdPartyAPIImg from "@/public/service/api.png";
+import ThirdPartyAPIImg from "@/public/service/api2.svg";
 import FullyManagedHostingImg from "@/public/service/fully-managed-hosting.svg";
 import DomainManagementImg from "@/public/service/domain-management.svg";
 import MaintenanceSupportImg from "@/public/service/maintenance-support.svg";

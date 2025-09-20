@@ -2,6 +2,7 @@
 
 import { ButtonProps } from "@/types/button.type";
 import { useRef, useState } from 'react';
+import { motion } from "framer-motion"
 
 export default function Button({
   text = 'Book Free Consultation',
@@ -9,7 +10,7 @@ export default function Button({
   className,
   variant = 'primary'
 }: ButtonProps) {
-  const baseStyle = "py-4 px-8 text-p font-inter font-bold rounded-2xl cursor-pointer transition-transform duration-300 ease-in-out active:scale-95";
+  const baseStyle = "py-4 px-8 text-p font-inter font-bold rounded-2xl cursor-pointer";
   const variantStyle = {
     primary: "bg-primary text-black5",
     secondary: "bg-secondary text-black5",
@@ -57,7 +58,9 @@ export default function Button({
   };
 
   return (
-    <button
+    <motion.button
+      whileHover={{ scale: 1.1 }}
+      whileTap={{ scale: 0.95 }}
       ref={buttonRef}
       type="button"
       className={`${baseStyle} ${variantStyle} ${className} relative overflow-hidden`}
@@ -65,6 +68,7 @@ export default function Button({
       onMouseLeave={handleMouseLeave}
       onClick={onClick}
     >
+
       {/* Expanding + Shrinking Circle */}
       <span
         className="absolute bg-white opacity-10 pointer-events-none rounded-full transition-transform duration-500 ease-in-out"
@@ -79,6 +83,6 @@ export default function Button({
 
       {/* Button Text */}
       <span className="relative z-10">{text}</span>
-    </button>
+    </motion.button>
   );
 }

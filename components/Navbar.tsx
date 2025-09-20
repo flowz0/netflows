@@ -26,9 +26,12 @@ export default function Navbar() {
 
   return (
     <motion.header
-      initial={{ y: 0 }}
-      animate={{ y: scrollDirection === "down" ? -200 : 0 }}
-      transition={{ duration: 0.2, ease: "easeInOut" }}
+      initial={{ y: -20, opacity: 0 }}
+      animate={{
+        y: scrollDirection === "down" ? -200 : 0,
+        opacity: 1,
+      }}
+      transition={{ duration: 0.3, ease: "easeInOut" }}
       className="bg-black5 h-24 top-0 sticky z-30 w-full"
     >
       <nav className="max-w-7xl mx-auto h-full">
@@ -49,10 +52,11 @@ export default function Navbar() {
                 <Link
                   key={href}
                   href={href}
-                  className={`text-h6 font-bold font-nunito ${pathname.startsWith(href)
-                    ? "text-primary"
-                    : "text-black50 hover:text-black"
-                    }`}
+                  className={`text-h6 font-bold font-nunito ${
+                    pathname.startsWith(href)
+                      ? "text-primary"
+                      : "text-black50 hover:text-black"
+                  }`}
                 >
                   {label}
                 </Link>
@@ -77,22 +81,19 @@ export default function Navbar() {
             aria-expanded={isOpen}
           >
             <span
-              className={`bg-black50 block transition-all duration-300 ease-in-out h-1 w-9 rounded-sm absolute ${isOpen
-                ? "rotate-45 top-1/2"
-                : "top-[calc(50%-10px)]"
-                }`}
+              className={`bg-black50 block transition-all duration-300 ease-in-out h-1 w-9 rounded-sm absolute ${
+                isOpen ? "rotate-45 top-1/2" : "top-[calc(50%-10px)]"
+              }`}
             />
             <span
-              className={`bg-black50 block transition-all duration-300 ease-in-out h-1 w-9 rounded-sm absolute ${isOpen
-                ? "opacity-0 top-1/2"
-                : "top-1/2"
-                }`}
+              className={`bg-black50 block transition-all duration-300 ease-in-out h-1 w-9 rounded-sm absolute ${
+                isOpen ? "opacity-0 top-1/2" : "top-1/2"
+              }`}
             />
             <span
-              className={`bg-black50 block transition-all duration-300 ease-in-out h-1 w-9 rounded-sm absolute ${isOpen
-                ? "-rotate-45 top-1/2"
-                : "top-[calc(50%+10px)]"
-                }`}
+              className={`bg-black50 block transition-all duration-300 ease-in-out h-1 w-9 rounded-sm absolute ${
+                isOpen ? "-rotate-45 top-1/2" : "top-[calc(50%+10px)]"
+              }`}
             />
           </button>
         </div>
@@ -112,10 +113,11 @@ export default function Navbar() {
                   <li key={href}>
                     <Link
                       href={href}
-                      className={`${pathname.startsWith(href)
-                        ? "text-primary"
-                        : "text-black50 hover:text-primary"
-                        }`}
+                      className={`${
+                        pathname.startsWith(href)
+                          ? "text-primary"
+                          : "text-black50 hover:text-primary"
+                      }`}
                       onClick={() => setIsOpen(false)}
                     >
                       {label}
