@@ -9,15 +9,15 @@ export default function Hero() {
     <section className="mt-8 max-w-7xl mx-auto lg:mt-16">
       <div className="flex flex-col items-center cursor-default px-6">
         <h1 className="text-h3 font-bold font-nunito text-center sm:text-h2">
-          <span className="text-secondary">Web Development</span> & <span className="text-primary">Design</span>
-          <br />
-          That <span className="text-primary">Helps</span> Your <span className="text-secondary">Business</span> Grow
+          <span className="text-secondary">Websites</span> That Not Only Look {" "}
+          <br className="hidden lg:inline-block" />
+          Good But <span className="text-primary">Grow</span> Your Business
         </h1>
         <p className="text-black75 text-p text-center font-inter max-w-2xl mt-4">
-          At Netflows, we design and develop perfomant, responsive, and SEO-optimized websites that help small businesses and startups grow their online presence, generate more leads, and build long-term customer trust.
+          We build high-performance websites with optimized SEO to attract traffic, convert visitors into leads, and help you scale. Every site is fast, secure, and tailored to your brand.
         </p>
         <Link href="/booking" className="mt-8 md:mt-12">
-          <Button text="Get My Free Consultation" variant="gradient" />
+          <Button text="Get My Free Strategy Call" variant="gradient" />
         </Link>
       </div>
       <Image
