@@ -1,3 +1,10 @@
+# [2.3.0](https://github.com/flowz0/netflows/compare/v2.2.17...v2.3.0) (2025-09-20)
+
+
+### Features
+
+* add scroll and entry animations across home page for enhanced UX ([5eae8db](https://github.com/flowz0/netflows/commit/5eae8dbd08aec8d36e8a629097c50cbe24220f51))
+
 ## [2.2.17](https://github.com/flowz0/netflows/compare/v2.2.16...v2.2.17) (2025-09-20)
 
 
