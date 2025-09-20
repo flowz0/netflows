@@ -3,7 +3,7 @@ import { FAQProps } from "@/types/faq.type";
 const FaqData: FAQProps[] = [
   {
     question: "1. What services does Netflows offer?",
-    answer: "Netflows specializes in custom web development, responsive web design, and SEO optimization. We build fast, accessible, and scalable websites for startups, small businesses, and growing brands. Whether you need a landing page, full website, or web application we've got you covered."
+    answer: "Netflows offers a full suite of web design and development services tailored to help businesses grow online. Our services include custom website development, full-stack web applications, UI/UX design, SEO optimization, eCommerce integration, 3rd-party API integrations, fully managed hosting, domain management, and ongoing web maintenance and support. Whether you need a high-performing marketing site, a scalable SaaS platform, or a conversion-focused landing page. We build fast, secure, and accessible solutions that drive real business results."
   },
   {
     question: "2. What's the difference between web design and web development?",
@@ -39,7 +39,7 @@ const FaqData: FAQProps[] = [
   },
   {
     question: "10. How do I get started with Netflows?",
-    answer: "It's easy! Just book a free 15-minute call. We'll learn about your business goals and recommend the best digital solution to help you grow online with no obligation."
+    answer: "It's easy! Just book a free 15-minute strategy call. We'll learn about your business goals and recommend the best digital solution to help you grow online with no obligation."
   },
 ];
 
