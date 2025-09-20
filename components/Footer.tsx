@@ -39,14 +39,23 @@ export default function Footer() {
               Services
             </h6>
             <div className="flex flex-col gap-y-2 mt-4">
-              <Link href="/services" className="text-black75 text-p w-fit font-inter transition-colors duration-300 ease-in-out hover:text-primary">
-                Web Development
+              <Link href="/services/#web-design-development" className="text-black75 text-p w-fit font-inter transition-colors duration-300 ease-in-out hover:text-primary">
+                Web Design & Development
               </Link>
-              <Link href="/services" className="text-black75 text-p w-fit font-inter transition-colors duration-300 ease-in-out hover:text-primary">
-                UI/UX Design
+              <Link href="/services/#custom-web-apps" className="text-black75 text-p w-fit font-inter transition-colors duration-300 ease-in-out hover:text-primary">
+                Custom Web Applications
               </Link>
-              <Link href="/services" className="text-black75 text-p w-fit font-inter transition-colors duration-300 ease-in-out hover:text-primary">
-                Maintenance
+              <Link href="/services/#third-party-api" className="text-black75 text-p w-fit font-inter transition-colors duration-300 ease-in-out hover:text-primary">
+                3rd-Party API Integrations
+              </Link>
+              <Link href="/services/#fully-managed-hosting" className="text-black75 text-p w-fit font-inter transition-colors duration-300 ease-in-out hover:text-primary">
+                Fully-Managed Hosting
+              </Link>
+              <Link href="/services/#domain-management" className="text-black75 text-p w-fit font-inter transition-colors duration-300 ease-in-out hover:text-primary">
+                Domain Management
+              </Link>
+              <Link href="/services/#maintenance-support" className="text-black75 text-p w-fit font-inter transition-colors duration-300 ease-in-out hover:text-primary">
+                Web Maintenance & Support
               </Link>
             </div>
           </div>
