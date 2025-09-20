@@ -1,3 +1,30 @@
+## [2.2.15](https://github.com/flowz0/netflows/compare/v2.2.14...v2.2.15) (2025-09-20)
+
+
+### Bug Fixes
+
+* decrease mobile padding for CTA component ([1034e51](https://github.com/flowz0/netflows/commit/1034e51aa1d28f81852304953a215b3e779f084a))
+* improve answer faq data to to optimize SEO and increase leads ([9c7d8ed](https://github.com/flowz0/netflows/commit/9c7d8ed91eb5e5bd6007bbd5ac18b193dc164cb5))
+* improve Duct Daddy project summary data ([38cf2c8](https://github.com/flowz0/netflows/commit/38cf2c8f1664bfdcc6cbc3ce2f08d015ab3fd2c3))
+* improve faq data by adding more questions and answers plus optimize for SEO ([258f2d0](https://github.com/flowz0/netflows/commit/258f2d0dd64177fdd80a4200b4c57ecdf7e54b3c))
+* improve Hero component content to optimize SEO ([0e51ed7](https://github.com/flowz0/netflows/commit/0e51ed73fae11c6e55fee9e378bf57b15b20904a))
+* improve Hero component content to optimize SEO and increase conversions ([2830acb](https://github.com/flowz0/netflows/commit/2830acb2e19a2d4aa2dfe72d3ca6d2733a0b2969))
+* improve mobile padding for CaseStudyCard component ([30c7537](https://github.com/flowz0/netflows/commit/30c7537e2ed3c24f156e860fd9e7cd0bf126ce75))
+* improve mobile text responiveness in FAQs component ([66a3ace](https://github.com/flowz0/netflows/commit/66a3ace44b80f63964f59f89147202e86d49528f))
+* improve mobile text responsiveness in CaseStudies and Testimonials components ([f228e32](https://github.com/flowz0/netflows/commit/f228e32c22e92871fa915aa3e867983788759316))
+* improve padding and color for ProjectTech component ([6dbc01d](https://github.com/flowz0/netflows/commit/6dbc01d9bf5733fffab22f895c1ecd1e15105cfa))
+* improve paragraph content to optimize SEO and increase conversions in Services component ([57fd1bb](https://github.com/flowz0/netflows/commit/57fd1bb3958abda903899ff1f004b240025464ce))
+* improve Process component content to optimize SEO ([11355cb](https://github.com/flowz0/netflows/commit/11355cbe529fbd53804f944c235294f5864a92c1))
+* improve ProcessCard component responsive height and spacing ([ec507c7](https://github.com/flowz0/netflows/commit/ec507c7e1551ca578163bc40d7ced71333ddc2bc))
+* improve ProcessCTA component content to optimize SEO ([db695ec](https://github.com/flowz0/netflows/commit/db695ec4f2d84919c2a2067445ffce808566e6a7))
+* improve service Image responsive positioning in ServiceItem component ([da86aee](https://github.com/flowz0/netflows/commit/da86aee03a9ca01ae4ca80e3fa80198b7b02a9df))
+* increase top margin for desc in ProcessCard component ([ac0e5da](https://github.com/flowz0/netflows/commit/ac0e5da2c7c884f5bf9f9f4d6cf07a3ee57bf675))
+* **navbar:** update CTA button content ([48290ec](https://github.com/flowz0/netflows/commit/48290ecb1a61475767b9d3efd8c3c37f76a8278a))
+* properly align Image vertically center in ServiceItem component ([af68e20](https://github.com/flowz0/netflows/commit/af68e203e57ec924043a7df735da5c044a600920))
+* update About page header description ([92408ba](https://github.com/flowz0/netflows/commit/92408baf2303127cb7af193cfdb3eaf7bd4000f0))
+* update button content in CTA component ([855bb5f](https://github.com/flowz0/netflows/commit/855bb5f582d8fff7207bd441f89f4432f4112032))
+* update Service image assets and add new Services to service data ([1d7045c](https://github.com/flowz0/netflows/commit/1d7045c6375493b100a7663b95c083df539042a1))
+
 ## [2.2.14](https://github.com/flowz0/netflows/compare/v2.2.13...v2.2.14) (2025-09-18)
 
 
