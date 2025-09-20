@@ -9,7 +9,9 @@ export default function CaseStudies() {
           Case Studies
         </h2>
         <p className="mt-4 text-p max-w-6xl text-center font-inter text-black75">
-          These are some of our most recent projects.
+          These are some of our most {" "}
+          <br className="sm:hidden" />
+          recent projects.
         </p>
       </div>
       

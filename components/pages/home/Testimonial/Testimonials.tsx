@@ -38,7 +38,9 @@ export default function TestimonialSection() {
           Our Word For It
         </h2>
         <p className="mt-4 text-p max-w-6xl text-center font-inter text-black75">
-          See what our clients have to say about us.
+          See what our clients have to {" "}
+          <br className="sm:hidden" />
+          say about us.
         </p>
       </div>
 
