@@ -19,7 +19,7 @@ const ProjectData: ProjectType[] = [
     id: 0,
     brandName: "Duct Daddy",
     industry: "HVAC Cleaning Platform",
-    summary: "The owner of Duct Daddy reached out to us to design and develop a web application for their business. We created a modern blog content management system and integrated a booking system for customers.",
+    summary: "The owner of Duct Daddy reached out to us to design and develop a web application for their business. We created a modern blog content management system and integrated a booking system to optimize workflow and increase leads.",
     brandLogo: DuctDaddyLogo,
     services: {
       development: true,
