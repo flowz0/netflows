@@ -19,7 +19,7 @@ export default function ProcessCard({
           {title}
         </h6>
       </div>
-      <p className="text-black75 text-p mt-8 font-inter">
+      <p className="text-black75 text-p mt-20 font-inter">
         {desc}
       </p>
     </div>
