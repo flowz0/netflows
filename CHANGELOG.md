@@ -1,3 +1,11 @@
+## [2.2.14](https://github.com/flowz0/netflows/compare/v2.2.13...v2.2.14) (2025-09-18)
+
+
+### Bug Fixes
+
+* **cta:** decrease Button top margin to improve spacing ([f8e8b2e](https://github.com/flowz0/netflows/commit/f8e8b2ef3331483469d42894b19a3702e1cf515b))
+* **footer:** decrease margin top for social icon links ([26a7aee](https://github.com/flowz0/netflows/commit/26a7aee6694e534def1a860df42104d0ab6ecd8c))
+
 ## [2.2.13](https://github.com/flowz0/netflows/compare/v2.2.12...v2.2.13) (2025-09-18)
 
 
