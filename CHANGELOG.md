@@ -1,3 +1,10 @@
+## [2.3.2](https://github.com/flowz0/netflows/compare/v2.3.1...v2.3.2) (2025-09-21)
+
+
+### Bug Fixes
+
+* decrease margin top for ValueProposition component ([79778b2](https://github.com/flowz0/netflows/commit/79778b2b8f0d2bf62e1bd2b6594039f0bb0b8a1f))
+
 ## [2.3.1](https://github.com/flowz0/netflows/compare/v2.3.0...v2.3.1) (2025-09-20)
 
 
