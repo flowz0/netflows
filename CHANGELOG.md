@@ -1,3 +1,10 @@
+## [2.3.3](https://github.com/flowz0/netflows/compare/v2.3.2...v2.3.3) (2025-09-21)
+
+
+### Bug Fixes
+
+* decrease animation delay in Process component ([5655b05](https://github.com/flowz0/netflows/commit/5655b05504c0f6df878ec0f3d0fc7151079c0b2a))
+
 ## [2.3.2](https://github.com/flowz0/netflows/compare/v2.3.1...v2.3.2) (2025-09-21)
 
 
