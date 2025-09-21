@@ -68,7 +68,7 @@ export default function Process() {
       const observer = new IntersectionObserver(
         ([entry]) => {
           if (entry.isIntersecting) {
-            setTimeout(() => setCtaVisible(true), 400); // delay for smooth blend
+            setTimeout(() => setCtaVisible(true), 200); // delay for smooth blend
             observer.disconnect();
           }
         },
