@@ -1,3 +1,10 @@
+# [2.4.0](https://github.com/flowz0/netflows/compare/v2.3.3...v2.4.0) (2025-09-24)
+
+
+### Features
+
+* **contact-form:** add new contact form section and integrate API ([bf2afd9](https://github.com/flowz0/netflows/commit/bf2afd9a8472955a9a021e1a749f21445921cb13))
+
 ## [2.3.3](https://github.com/flowz0/netflows/compare/v2.3.2...v2.3.3) (2025-09-21)
 
 
