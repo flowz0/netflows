@@ -4,12 +4,15 @@ interface PhoneInputProps {
   value: string;
   onBlur?: (e: React.FocusEvent<HTMLInputElement>) => void;
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
-  autoComplete?: string;
   error?: string;
-  required?: boolean;
 }
 
-export default function PhoneInput({ value, onChange, onBlur, autoComplete, error, required }: PhoneInputProps) {
+export default function PhoneInput({
+  value,
+  onChange,
+  onBlur,
+  error,
+}: PhoneInputProps) {
   const formatPhoneNumber = (input: string) => {
     const cleaned = input.replace(/\D/g, "").slice(0, 10);
     const match = cleaned.match(/^(\d{0,3})(\d{0,3})(\d{0,4})$/);
@@ -26,12 +29,14 @@ export default function PhoneInput({ value, onChange, onBlur, autoComplete, erro
       // Otherwise just show digits
       formatted += area;
     }
+
     if (prefix.length) {
       formatted += ` ${prefix}`;
     }
     if (line.length) {
       formatted += `-${line}`;
     }
+
     return formatted;
   };
 
@@ -43,6 +48,7 @@ export default function PhoneInput({ value, onChange, onBlur, autoComplete, erro
       ...e,
       target: {
         ...e.target,
+        id: "phone", // ✅ Needed for your form's handleChange to work
         name: "phone",
         value: formatted,
       },
@@ -52,10 +58,9 @@ export default function PhoneInput({ value, onChange, onBlur, autoComplete, erro
   };
 
   return (
-    <div className="flex flex-col">
-      <label htmlFor="phone" className="text-black50 text-small font-inter">
-        Phone Number
-        {required && <span className="text-primary ml-2">*</span>}
+    <div className="flex flex-col w-full">
+      <label htmlFor="phone" className="text-sm font-inter text-black50">
+        Phone Number <span className="text-primary">*</span>
       </label>
       <input
         id="phone"
@@ -66,15 +71,19 @@ export default function PhoneInput({ value, onChange, onBlur, autoComplete, erro
         onChange={handleInputChange}
         onBlur={onBlur}
         maxLength={14}
-        autoComplete={autoComplete}
-        placeholder="(555) 555-5555"
-        className={`mt-2 border-b border-black75 text-black75 py-4 focus:outline-none placeholder:text-black25"
-          }`}
+        autoComplete="off"
+        placeholder="(123) 456-7890"
+        className={`mt-1 text-p font-nunito text-black75 ring py-2 px-4 rounded-lg focus:outline-none focus:ring-primary ${
+          error ? "ring-primary" : "ring-black10"
+        }`}
         aria-invalid={!!error}
-        aria-describedby={error ? `${name}-error` : undefined}
+        aria-describedby={error ? `phone-error` : undefined}
       />
       {error && (
-        <p className="text-primary text-small font-inter mt-2 cursor-default" id="phone-error">
+        <p
+          className="text-primary text-sm font-inter mt-1 cursor-default"
+          id="phone-error"
+        >
           {error}
         </p>
       )}

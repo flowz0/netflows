@@ -1,5 +1,35 @@
 @import "tailwindcss";
 
+/* Autofill (all browsers) */
+input:autofill {
+  background-color: #F3F2F3 !important;
+  color: #1B181B !important;
+  border: 1px solid #BFBCC2 !important;
+}
+
+/* WebKit Autofill (Chrome, Safari) */
+input:-webkit-autofill {
+  background-color: #F3F2F3 !important;
+  -webkit-text-fill-color: #1B181B !important;
+  border: 1px solid #BFBCC2 !important;
+  box-shadow: 0 0 0px 1000px #F3F2F3 inset !important;
+  transition: background-color 5000s ease-in-out 0s !important; /* Prevents flash of blue */
+}
+
+input:-webkit-autofill:focus {
+  border-color: #924BF7 !important;
+  box-shadow:
+    0 0 0px 1000px #F3F2F3 inset,
+    0 0 5px rgba(191, 188, 194, 0.5) !important;
+}
+
+/* Mozilla-based browsers (optional fallback) */
+input:-moz-autofill {
+  box-shadow: 0 0 0px 1000px #F3F2F3 inset !important;
+  -moz-text-fill-color: #1B181B !important;
+}
+
+
 .font-inter {
   font-family: var(--font-inter), sans-serif;
 }

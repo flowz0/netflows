@@ -1,4 +1,4 @@
-import PhoneInput from "./PhoneInput";
+import PhoneInput from "../PhoneInput";
 import Select from "./Select";
 import FormInput from "./FormInput";
 import TextArea from "./TextArea";
