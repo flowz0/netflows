@@ -1,3 +1,10 @@
+## [2.4.1](https://github.com/flowz0/netflows/compare/v2.4.0...v2.4.1) (2025-09-24)
+
+
+### Bug Fixes
+
+* remove multi-step-form components ([d71c043](https://github.com/flowz0/netflows/commit/d71c0438c5c4c14e4b7fa4a9730a7cbea4cb0641))
+
 # [2.4.0](https://github.com/flowz0/netflows/compare/v2.3.3...v2.4.0) (2025-09-24)
 
 
