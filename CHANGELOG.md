@@ -1,3 +1,10 @@
+## [2.4.2](https://github.com/flowz0/netflows/compare/v2.4.1...v2.4.2) (2025-09-26)
+
+
+### Bug Fixes
+
+* update metadata titles and descriptions to optimize SEO & conversions in app layout ([12afab2](https://github.com/flowz0/netflows/commit/12afab272b12de0ab40b127e0ab3950f0e06247d))
+
 ## [2.4.1](https://github.com/flowz0/netflows/compare/v2.4.0...v2.4.1) (2025-09-24)
 
 
