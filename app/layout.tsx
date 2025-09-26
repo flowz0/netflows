@@ -21,14 +21,14 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.netflows.xyz"),
   title: {
-    default: "Web Design and Development for Small Businesses & Startups | Netflows",
+    default: "Custom Web Design & Scalable Development for Small Businesses | Netflows",
     template: "%s | Netflows"
   },
-  description: "Netflows offers expert web design, web development, and maintenance for growing businesses.",
+  description: "Modern fast-loading websites and custom web applications that help small businesses and startups grow their leads, reach, and revenue. We handle everything from design and development to hosting and ongoing support. Let's build something that moves your business forward.",
   openGraph: {
-    title: "Web Design, Web Development, and Maintenance for Small Businesses & Startups | Netflows",
-    description: "Netflows offers expert web design, web development, and maintenance for growing businesses.",
-    url: "https://www.netflows.dev",
+    title: "Custom Web Design & Scalable Development for Small Businesses | Netflows",
+    description: "Modern fast-loading websites and custom web applications that help small businesses and startups grow their leads, reach, and revenue. We handle everything from design and development to hosting and ongoing support. Let's build something that moves your business forward.",
+    url: "https://www.netflows.xyz",
     siteName: "Netflows",
     images: [
       {
@@ -43,8 +43,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Web Design, Web Development, and Maintenance for Small Businesses & Startups | Netflows",
-    description: "Netflows offers expert web design, web development, and maintenance for growing businesses.",
+    title: "Custom Web Design & Scalable Development for Small Businesses | Netflows",
+    description: "Modern fast-loading websites and custom web applications that help small businesses and startups grow their leads, reach, and revenue. We handle everything from design and development to hosting and ongoing support. Let's build something that moves your business forward.",
     images: ["/app/opengraph-image.png"],
   },
 };
@@ -90,7 +90,7 @@ export default function RootLayout({
       "https://x.com/netflowsxyz",
     ],
     description:
-      "Netflows is a California-based web design and development agency that builds fast, modern, and scalable websites to help businesses grow online.",
+      "Modern fast-loading websites and custom web applications that help small businesses and startups grow their leads, reach, and revenue. We handle everything from design and development to hosting and ongoing support. Let's build something that moves your business forward.",
     priceRange: "$$",
     areaServed: {
       "@type": "Country",
