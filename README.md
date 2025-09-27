@@ -4,5 +4,3 @@
 - TypeScript
 - Tailwind CSS
 - framer-motion
-
-Custom booking form is currently being updated.
