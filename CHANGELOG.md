@@ -1,3 +1,10 @@
+## [2.4.3](https://github.com/flowz0/netflows/compare/v2.4.2...v2.4.3) (2025-09-27)
+
+
+### Bug Fixes
+
+* update README.md ([82bd28c](https://github.com/flowz0/netflows/commit/82bd28c32f3e7bb63dfb460d1ad619d1185efcb4))
+
 ## [2.4.2](https://github.com/flowz0/netflows/compare/v2.4.1...v2.4.2) (2025-09-26)
 
 
