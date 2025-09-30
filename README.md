@@ -4,3 +4,4 @@
 - TypeScript
 - Tailwind CSS
 - framer-motion
+- Brevo Transactional Email API
