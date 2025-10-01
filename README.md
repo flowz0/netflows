@@ -1,4 +1,4 @@
-# Netflows Website
+# Netflows Platform
 **Tech Stack**
 - Next.js
 - TypeScript
