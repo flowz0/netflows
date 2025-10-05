@@ -14,7 +14,7 @@ export default function MobileBooking() {
             Your <span className="text-primary">Business</span> Needs Online
           </h1>
           <p className="mt-4 max-w-2xl text-p font-inter text-black75">
-            This call is focused on understanding your business, goals, and challenges so we can recommend the right solution. It&apos;s the first step in building something valuable together — no commitments, just clarity.
+            This call is focused on understanding your business, goals, and challenges so we can recommend the right solution. It&apos;s the first step in building something valuable together.
           </p>
         </div>
         <div className="mt-8 lg:mt-0">
