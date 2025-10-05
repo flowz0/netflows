@@ -1,3 +1,11 @@
+## [2.4.4](https://github.com/flowz0/netflows/compare/v2.4.3...v2.4.4) (2025-10-05)
+
+
+### Bug Fixes
+
+* update Mobile & Desktop Booking components subheader ([81b5270](https://github.com/flowz0/netflows/commit/81b52702f799f2dbce90fdaf5982865e1118cd21))
+* update title and desc for metadata and schema to optimize SEO ([3a505bb](https://github.com/flowz0/netflows/commit/3a505bb101c8c3e45234951a73ced2776194f210))
+
 ## [2.4.3](https://github.com/flowz0/netflows/compare/v2.4.2...v2.4.3) (2025-09-27)
 
 
