@@ -21,13 +21,13 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.netflows.xyz"),
   title: {
-    default: "Custom Web Design & Scalable Development for Small Businesses | Netflows",
+    default: "Web Design & Development Agency in Modesto, CA | Worry-Free Maintenance & Support | Netflows",
     template: "%s | Netflows"
   },
-  description: "Modern fast-loading websites and custom web applications that help small businesses and startups grow their leads, reach, and revenue. We handle everything from design and development to hosting and ongoing support. Let's build something that moves your business forward.",
+  description: "Custom websites and web apps designed for small businesses in Modesto, CA. Netflows offers modern design, fast performance, and ongoing support so you can focus on growing your business.",
   openGraph: {
-    title: "Custom Web Design & Scalable Development for Small Businesses | Netflows",
-    description: "Modern fast-loading websites and custom web applications that help small businesses and startups grow their leads, reach, and revenue. We handle everything from design and development to hosting and ongoing support. Let's build something that moves your business forward.",
+    title: "Web Design & Development Agency in Modesto, CA | Worry-Free Maintenance & Support | Netflows",
+    description: "Custom websites and web apps designed for small businesses in Modesto, CA. Netflows offers modern design, fast performance, and ongoing support so you can focus on growing your business.",
     url: "https://www.netflows.xyz",
     siteName: "Netflows",
     images: [
@@ -43,8 +43,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Custom Web Design & Scalable Development for Small Businesses | Netflows",
-    description: "Modern fast-loading websites and custom web applications that help small businesses and startups grow their leads, reach, and revenue. We handle everything from design and development to hosting and ongoing support. Let's build something that moves your business forward.",
+    title: "Web Design & Development Agency in Modesto, CA | Worry-Free Maintenance & Support | Netflows",
+    description: "Custom websites and web apps designed for small businesses in Modesto, CA. Netflows offers modern design, fast performance, and ongoing support so you can focus on growing your business.",
     images: ["/app/opengraph-image.png"],
   },
 };
@@ -66,7 +66,7 @@ export default function RootLayout({
       streetAddress: "California",
       addressLocality: "California",
       addressRegion: "CA",
-      postalCode: "",
+      postalCode: "95356",
       addressCountry: "US",
     },
     openingHoursSpecification: [
@@ -90,7 +90,7 @@ export default function RootLayout({
       "https://x.com/netflowsxyz",
     ],
     description:
-      "Modern fast-loading websites and custom web applications that help small businesses and startups grow their leads, reach, and revenue. We handle everything from design and development to hosting and ongoing support. Let's build something that moves your business forward.",
+      "Custom websites and web apps designed for small businesses in Modesto, CA. Netflows offers modern design, fast performance, and ongoing support so you can focus on growing your business.",
     priceRange: "$$",
     areaServed: {
       "@type": "Country",
